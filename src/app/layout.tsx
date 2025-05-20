@@ -3,7 +3,6 @@ import "./globals.css";
 import { eudoxus, editor, inter } from "@/lib/fonts";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dps-template.vercel.app"),  // Remove trailing slash
   title: "DP's Templates",
   description: "Production-Ready UI Kits for Swift & Web",
   openGraph: {
