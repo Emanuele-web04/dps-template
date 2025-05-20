@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: "Effortlessly integrate a library of ready-to-use SwiftUI views and Next.js UI components...",
     type: "website",
     images: [
-      "https://dps-template.vercel.app/metadata.png",  // Full absolute URL
+      "https://dps-template.vercel.app/og.png",  // Full absolute URL
     ],
   },
 };
