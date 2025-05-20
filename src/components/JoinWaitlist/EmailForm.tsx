@@ -13,6 +13,7 @@ const EmailForm = () => {
     <div className="p-2 bg-white/90 ring-2 ring-neutral-200/50 rounded-2xl flex items-center transition-all shadow-lg shadow-neutral-300/50 focus-within:outline-none focus-within:ring-5 focus:ring-gray-300/70 ">
       <input
         type="text"
+        inputMode="text"
         value={email}
         placeholder="Enter your email"
         onChange={handleEmail}
