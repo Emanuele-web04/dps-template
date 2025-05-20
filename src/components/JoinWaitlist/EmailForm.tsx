@@ -17,6 +17,7 @@ const EmailForm = () => {
         value={email}
         placeholder="Enter your email"
         onChange={handleEmail}
+        style={{ fontSize: '16px' }} // Important: iOS won't zoom if font size is at least 16px
         className="w-fit sm:w-[300px] text-sm md:text-base font-sans tracking-tight px-3 text-left text-gray-800 placeholder-gray-400 focus:outline-none "
       />
       {/* button */}
