@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "https://dps-template.vercel.app/", // Replace with your actual domain
     images: [
       {
-        url: "/metadata.png", // Make sure this image exists in your public folder
+        url: "https://dps-template.vercel.app/metadata.png", // Make sure this image exists in your public folder
         width: 1200,
         height: 630,
         alt: "DP's Templates Preview",
