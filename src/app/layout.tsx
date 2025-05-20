@@ -8,7 +8,8 @@ export const metadata: Metadata = {
   description: "Production-Ready UI Kits for Swift & Web",
   openGraph: {
     title: "DP's Templates",
-    description: "Production-Ready UI Kits for Swift & Web",
+    description:
+      "PEffortlessly integrate a library of ready-to-use SwiftUI views and Next.js UI components—no setup or configuration required with DP's Templates. Ship pixel-perfect, production-ready interfaces in minutes and skip the boilerplate. Join our waitlist for early access.",
     type: "website",
     url: "https://dps-template.vercel.app/", // Replace with your actual domain
     images: [
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "DP's Templates Preview",
-      }
+      },
     ],
   },
 };
