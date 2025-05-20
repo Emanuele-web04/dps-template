@@ -3,11 +3,23 @@ import "./globals.css";
 import { eudoxus, editor, inter } from "@/lib/fonts";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dps-template.vercel.app/"), // Replace with your production domain
   title: "DP's Templates",
   description: "Production-Ready UI Kits for Swift & Web",
   openGraph: {
-    images: ["/metadata.png"]
-  }
+    title: "DP's Templates",
+    description: "Production-Ready UI Kits for Swift & Web",
+    type: "website",
+    url: "https://dps-template.vercel.app/", // Replace with your actual domain
+    images: [
+      {
+        url: "/metadata.png", // Make sure this image exists in your public folder
+        width: 1200,
+        height: 630,
+        alt: "DP's Templates Preview",
+      }
+    ],
+  },
 };
 
 export default function RootLayout({
