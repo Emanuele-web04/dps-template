@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DP's Templates",
     description:
-      "PEffortlessly integrate a library of ready-to-use SwiftUI views and Next.js UI components—no setup or configuration required with DP's Templates. Ship pixel-perfect, production-ready interfaces in minutes and skip the boilerplate. Join our waitlist for early access.",
+      "Effortlessly integrate a library of ready-to-use SwiftUI views and Next.js UI components—no setup or configuration required with DP's Templates. Ship pixel-perfect, production-ready interfaces in minutes and skip the boilerplate. Join our waitlist for early access.",
     type: "website",
     url: "https://dps-template.vercel.app/", // Replace with your actual domain
     images: [
       {
-        url: "https://dps-template.vercel.app/metadata.png", // Make sure this image exists in your public folder
+        url: "metadata.png", // Make sure this image exists in your public folder
         width: 1200,
         height: 630,
         alt: "DP's Templates Preview",
