@@ -11,7 +11,7 @@
   --font-sans: var(--font-eudoxus);
   --font-inter: var(--font-inter);
   --font-editor: var(--font-editor);
-  --font-mono: var(--font-editor);
+  --font-mono: var(--font-geist-mono);
 }
 
 @layer {
@@ -37,6 +37,10 @@
 
   .image-card-larger {
     @apply w-[220px] h-[220px] lg:w-[300px] lg:h-[300px] rounded-3xl lg:rounded-4xl 
+  }
+
+  .error-message {
+    @apply absolute top-15 text-red-700/80 bg-red-100/50 p-1.5 font-inter tracking-tight font-medium rounded-md w-fit text-xs mt-2 ml-2
   }
 }
 

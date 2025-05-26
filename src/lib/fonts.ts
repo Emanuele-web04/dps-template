@@ -1,5 +1,10 @@
 import localFont from 'next/font/local'
-import { Geist, Inter } from "next/font/google";
+import { Geist_Mono, Inter } from "next/font/google";
+
+export const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets:["latin"]
+}) 
 
 export const eudoxus = localFont({
     variable: '--font-eudoxus',

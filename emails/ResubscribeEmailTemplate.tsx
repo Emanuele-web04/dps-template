@@ -15,7 +15,7 @@ import {
 } from '@react-email/components';
 import { idFromEmail } from '@/lib/supabase';
 
-export const WaitlistEmailTemplate = async (data: { email: string }) => {
+export const ResubscribeEmailTemplate = async (data: { email: string }) => {
 // Colors
   const main = '#0F172A';
   const secondary = '#64748B';
@@ -46,7 +46,7 @@ export const WaitlistEmailTemplate = async (data: { email: string }) => {
   return (
     <Html>
       <Head />
-      <Preview>Thanks for joining our waitlist!</Preview>
+      <Preview>Welcome back to our waitlist!</Preview>
       <Body style={{ backgroundColor: background, margin: '0', padding: '0', fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
         <Container style={{ maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
           {/* Logo */}
@@ -75,7 +75,7 @@ export const WaitlistEmailTemplate = async (data: { email: string }) => {
               padding: '0',
               textAlign: 'center' 
             }}>
-              You're on the waitlist!
+              Welcome back!
             </Heading>
             
             <Text style={{ 
@@ -93,7 +93,16 @@ export const WaitlistEmailTemplate = async (data: { email: string }) => {
               color: main,
               margin: '0 0 24px'
             }}>
-              Thank you for joining our waitlist! We're working hard to launch soon and we're excited to have you on board.
+              Welcome back to our waitlist! We're thrilled to have you rejoin us as we prepare for our upcoming launch.
+            </Text>
+            
+            <Text style={{ 
+              fontSize: '16px', 
+              lineHeight: '26px', 
+              color: main,
+              margin: '0 0 24px'
+            }}>
+              Since you were away, we've been making exciting progress on our platform. Your spot has been secured and we'll notify you as soon as access becomes available.
             </Text>
             
             <Text style={{ 
@@ -102,7 +111,7 @@ export const WaitlistEmailTemplate = async (data: { email: string }) => {
               color: main,
               margin: '0 0 32px'
             }}>
-              We'll be in touch when it's your turn to get access to our platform. In the meantime, feel free to check out our website and social media for updates.
+              Thank you for giving us another chance. Stay tuned for updates, and feel free to follow us on social media to see what we've been working on!
             </Text>
             
             <Text style={{ 
@@ -205,4 +214,4 @@ export const WaitlistEmailTemplate = async (data: { email: string }) => {
   );
 };
 
-export default WaitlistEmailTemplate;
+export default ResubscribeEmailTemplate;

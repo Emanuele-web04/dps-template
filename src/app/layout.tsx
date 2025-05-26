@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { eudoxus, editor, inter } from "@/lib/fonts";
+import { eudoxus, editor, inter, geistMono } from "@/lib/fonts";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dpstemplates.com/"),
+  metadataBase: new URL("https://waitlist.dpstemplates.com/"),
   title: "DP's Templates",
   description: "Production-Ready UI Kits for Swift & Web",
   openGraph: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://dpstemplates.com//og.png",
+        url: "https://waitlist.dpstemplates.com//og.png",
         width: 1200,
         height: 630,
         alt: "DP's Templates - Ready-to-Use SwiftUI & Next.js Components",
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${eudoxus.variable} ${editor.variable} ${inter.variable} antialiased`}
+        className={`${eudoxus.variable} ${editor.variable} ${geistMono.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>

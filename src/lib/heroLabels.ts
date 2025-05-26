@@ -1,4 +1,4 @@
-import { HeroLabel } from "@/types/type";
+import { HeroLabel } from "@/types/heroLabel";
 import { TbDownload } from "react-icons/tb";
 import { BiCommand } from "react-icons/bi";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";

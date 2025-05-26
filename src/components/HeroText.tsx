@@ -4,8 +4,8 @@ import { RiNextjsLine } from "react-icons/ri";
 
 const HeroText = () => {
   return (
-    <div className="flex flex-col gap-5 container">
-      <h1 className="font-sans flex flex-col justify-center gap-1 tracking-tighter text-5xl md:text-6xl font-bold text-center">
+    <div className="flex flex-col gap-5 container px-2">
+      <h1 className="font-sans flex flex-col items-center justify-center gap-1 tracking-tighter text-5xl md:text-6xl font-bold text-center">
         <span className="pb-2 black-gradient bg-clip-text flex flex-col sm:flex-row text-transparent">
           Ready To Use <span className="m-0 sm:ml-2.5">Components</span>
         </span>

@@ -12,12 +12,12 @@ const Home = () => {
       <BackgroundGradient />
 
       {/* Navbar */}
-      <div className="z-10 fixed flex items-center justify-between p-1.5 sm:py-2 sm:px-4 mb-3 top-5 left-8 sm:left-1/2 transform -translate-x-1/2 bg-white/80 backdrop-blur-lg ring-1 ring-neutral-100 rounded-xl shadow-lg mx-auto">
+      <div className="z-10 fixed flex items-center justify-between p-2 py-1.5 sm:py-2 sm:px-4 mb-3 top-5 left-1/2 transform -translate-x-1/2 bg-white/80 backdrop-blur-lg ring-1 ring-neutral-100 rounded-lg md:rounded-xl shadow-lg mx-auto">
         <Navbar />
       </div>
 
       {/* Content */}
-      <div className="relative md:top-5 flex flex-col gap-6 justify-center items-center">
+      <div className="p-4 md:p-0 relative md:top-5 flex flex-col gap-6 justify-center items-center">
         <HeroLabels />
         <HeroText />
         <EmailForm />
