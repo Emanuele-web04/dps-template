@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
-import { resend } from "../emails/route";
 import { INSERT, checkIfEmailAlreadyExists } from "@/lib/supabase";
-import WaitlistEmailTemplate from "../../../../emails/WaitlistEmailTemplate";
 import ResubscribeEmailTemplate from "../../../../emails/ResubscribeEmailTemplate";
+import { Resend } from "resend";
 
+const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(req: Request) {
     const { email } = await req.json()
   
