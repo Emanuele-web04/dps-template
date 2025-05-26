@@ -18,7 +18,7 @@ export async function POST(req: Request) {
       await INSERT(email);
   
       const { data, error } = await resend.emails.send({
-        from: 'Emanuele <manu.development.app@gmail.com>',
+        from: 'Emanuele <waitlist.dpstemplates.com>',
         to: [email],
         subject: 'Welcome Back!',
         react: ResubscribeEmailTemplate({ email }),
