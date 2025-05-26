@@ -108,7 +108,7 @@ const EmailForm = () => {
     try {
       buttonRef.current.disabled = true;
 
-      const response = await fetch("/api/emails", {
+      const response = await fetch("/api/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
