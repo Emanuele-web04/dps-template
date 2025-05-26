@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     await INSERT(email);
 
     const { data, error } = await resend.emails.send({
-      from: 'Emanuele <waitlist.dpstemplates.com>',
+      from: 'Emanuele <manu@waitlist.dpstemplates.com>',
       to: [email],
       subject: 'Hello world',
       react: WaitlistEmailTemplate({ email }),
