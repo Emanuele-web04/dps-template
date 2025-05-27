@@ -52,13 +52,13 @@ const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
           description: feedback,
         }),
       });
-    console.log('Feedback response status:', feedbackRes.status);
-    const responseData = await feedbackRes.json();
-    console.log('Feedback response data:', responseData);
-    
-    if (!feedbackRes.ok) {
-      throw new Error(responseData.error || "Failed to submit feedback");
-    }
+      console.log("Feedback response status:", feedbackRes.status);
+      const responseData = await feedbackRes.json();
+      console.log("Feedback response data:", responseData);
+
+      if (!feedbackRes.ok) {
+        throw new Error(responseData.error || "Failed to submit feedback");
+      }
 
       const unsubRes = await fetch("/api/unsubscribe", {
         method: "DELETE",
@@ -222,6 +222,7 @@ const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
               Additional Comments (Optional)
             </p>
             <textarea
+              style={{ fontSize: "16px" }}
               value={feedback}
               onChange={(e) => setFeedback(e.target.value)}
               placeholder="Tell us more about your experience..."
