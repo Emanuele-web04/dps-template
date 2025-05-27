@@ -13,6 +13,12 @@ interface UnsubscribeClientProps {
   id: string;
 }
 
+const LoadingSpinner = () => (
+  <div className="min-h-screen min-w-screen flex bg-black/10 items-center justify-center">
+    <div className="animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent"></div>
+  </div>
+);
+
 const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
   const [isLoading, setIsLoading] = useState(false);
   const [currentStep, setCurrentStep] = useState<
@@ -34,21 +40,47 @@ const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
 
   const handleFeedbackSubmit = async () => {
     setIsLoading(true);
-    // Submit feedback to your API
-    console.log({ reason: selectedReason, feedback, email });
-    const res = await fetch("/api/unsubscribe", {
-      method: "DELETE",
-      body: JSON.stringify({ email: email }),
-    });
-    if (res.ok) {
-      console.log("Unsubscribed succeded");
-      setIsLoading(false);
+    try {
+      const feedbackRes = await fetch("/api/feedback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          selection: selectedReason,
+          description: feedback,
+        }),
+      });
+    console.log('Feedback response status:', feedbackRes.status);
+    const responseData = await feedbackRes.json();
+    console.log('Feedback response data:', responseData);
+    
+    if (!feedbackRes.ok) {
+      throw new Error(responseData.error || "Failed to submit feedback");
+    }
+
+      const unsubRes = await fetch("/api/unsubscribe", {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+      if (!unsubRes.ok) {
+        throw new Error("Failed to unsubscribe");
+      }
       setCurrentStep("success");
+    } catch (error) {
+      console.error("Error:", error);
+      // Handle error (show error message to user)
+    } finally {
+      setIsLoading(false);
     }
   };
 
   const handleResubscribe = async () => {
-    setIsLoading(true)
+    setIsLoading(true);
     const response = await fetch("/api/resubscribe", {
       method: "POST",
       body: JSON.stringify({ email }),
@@ -65,16 +97,19 @@ const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
   };
 
   // Success State
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
   if (currentStep === "success") {
     return (
       <div className="min-h-screen  bg-gray-50 flex items-center justify-center p-6">
-        <div className="w-full p-12 bg-white rounded-2xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
+        <div className="w-full p-6 md:p-12 bg-white rounded-2xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
           <div className="space-y-4">
             <div className="flex flex-col gap-7 w-full justify-center items-center">
               <div className="bg-green-100 rounded-full">
                 <TbMailCheck className="text-3xl m-4 text-green-600" />
               </div>
-              <h1 className="text-3xl font-sans tracking-tight font-semibold text-black">
+              <h1 className="text-2xl md:text-3xl font-sans tracking-tight font-semibold text-black">
                 Unsubscribed Successfully
               </h1>
             </div>
@@ -104,13 +139,13 @@ const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
   if (currentStep == "resubscribed") {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
-        <div className="w-full p-12 bg-white rounded-2xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
+        <div className="w-full p-6 md:p-12 bg-white rounded-2xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
           <div className="space-y-4">
             <div className="flex flex-col gap-7 w-full justify-center items-center">
               <div className="bg-green-100 rounded-full">
                 <TbMailCheck className="text-3xl m-4 text-green-600" />
               </div>
-              <h1 className="text-3xl font-sans tracking-tight font-semibold text-black">
+              <h1 className="text-2xl md:text-3xl font-sans tracking-tight font-semibold text-black">
                 Welcome Back!
               </h1>
             </div>
@@ -135,7 +170,7 @@ const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
   if (currentStep === "feedback") {
     return (
       <div className="h-screen bg-gray-50 flex items-center justify-center p-6">
-        <div className="w-full h-full overflow-y-scroll p-12 bg-white rounded-2xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
+        <div className="w-full h-full overflow-y-scroll p-6 md:p-12 bg-white rounded-2xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
           <div className="space-y-4">
             <div className="flex flex-col gap-7 w-full justify-center items-center">
               <div className="bg-blue-100 rounded-full">
@@ -200,14 +235,14 @@ const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
             <button
               onClick={handleFeedbackSubmit}
               disabled={isLoading || !selectedReason}
-              className="w-full cursor-pointer p-4 bg-gradient-to-b from-neutral-700 via-neutral-800 ring-1 ring-black border border-neutral-700 to-black text-white font-inter rounded-2xl font-semibold hover:bg-gray-800 transition-colors disabled:opacity-50"
+              className="w-full cursor-pointer p-3.5 md:p-4 bg-gradient-to-b from-neutral-700 via-neutral-800 ring-1 ring-gray-700 to-black text-white font-inter rounded-2xl font-semibold hover:bg-gray-800 transition-colors disabled:opacity-50"
             >
               {isLoading ? "Submitting..." : "Submit Feedback"}
             </button>
 
             <button
               onClick={handleSkipFeedback}
-              className="w-full p-4 ring-1 ring-gray-300 text-black font-inter rounded-2xl font-medium hover:bg-gray-50 transition-colors"
+              className="w-full p-3.5 md:p-4 ring-1 ring-gray-300 text-black font-inter rounded-2xl font-medium hover:bg-gray-50 transition-colors"
             >
               Skip Feedback
             </button>
@@ -232,7 +267,7 @@ const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
   // Initial Unsubscribe State
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
-      <div className="w-full p-12 bg-white rounded-3xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
+      <div className="w-full p-6 md:p-12 bg-white rounded-3xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
         {/* Header */}
         <div className="space-y-4">
           <div className="flex flex-col gap-7 w-full justify-center items-center">
@@ -250,7 +285,7 @@ const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
         </div>
 
         {/* Email Display */}
-        <div className="py-3 px-4 bg-gray-50 rounded-2xl ring-1 ring-neutral-300">
+        <div className="py-2.5 md:py-3 px-4 bg-gray-50 rounded-2xl ring-1 ring-neutral-300">
           <p className="text-xs tracking-wider text-gray-500 uppercase mb-1">
             Email Address
           </p>
@@ -264,13 +299,13 @@ const UnsubscribeClient = ({ email, id }: UnsubscribeClientProps) => {
           <button
             onClick={handleUnsubscribe}
             disabled={isLoading}
-            className="w-full cursor-pointer p-4 bg-gradient-to-b from-neutral-700 via-neutral-800 ring-1 ring-black border border-neutral-700 to-black text-white font-inter rounded-2xl font-semibold hover:bg-gray-800 transition-colors disabled:opacity-50"
+            className="w-full cursor-pointer py-3.5 md:py-4 px-4 bg-gradient-to-b from-neutral-700 via-neutral-800 ring-1 ring-gray-700 to-black text-white font-inter rounded-2xl font-semibold hover:bg-gray-800 transition-colors disabled:opacity-50"
           >
             {isLoading ? "Unsubscribing..." : "Confirm Unsubscribe"}
           </button>
 
           <Link href="/">
-            <button className="cursor-pointer w-full p-4 ring-1 ring-gray-300 text-black font-inter rounded-2xl font-semibold hover:bg-gray-50 transition-colors">
+            <button className="cursor-pointer w-full py-3.5 md:py-4 px-4 ring-1 ring-gray-300 text-black font-inter rounded-2xl font-semibold hover:bg-gray-50 transition-colors">
               Keep Subscription
             </button>
           </Link>

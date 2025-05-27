@@ -263,11 +263,13 @@ const EmailForm = () => {
 
               <div className="mb-6 font-inter tracking-tight text-base">
                 <p className="text-gray-700  mb-4">
-                  Thanks for joining my waitlist! I'll keep you updated on our
-                  latest news and announcements.
+                  Thanks for joining my waitlist! I'll keep you updated on when this will be available.
+                </p>
+                <p className="text-gray-700  mb-4">
+                  Check your Inbox (or Spam if you can't see my email).
                 </p>
                 <p className="text-gray-700">
-                  Follow us on social media for more updates:
+                  Follow me on social media for more updates:
                 </p>
               </div>
               <div className="flex w-full justify-between items-end">
@@ -285,7 +287,7 @@ const EmailForm = () => {
 
                   <div className="">
                     <a
-                      href="https://youtube.com/yourchannel"
+                      href="https://www.youtube.com/@emanueledpt"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex flex-col items-center gap-2  rounded-lg hover:bg-gray-100 transition-colors"

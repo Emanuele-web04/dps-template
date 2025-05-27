@@ -1,5 +1,4 @@
 import { unsubscribe } from "@/lib/supabase";
-import { supabase } from "@/utils/supabase/server"
 import { NextResponse } from "next/server"
 
 export async function DELETE(req: Request) {

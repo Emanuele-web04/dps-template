@@ -6,6 +6,7 @@ export const INSERT = async (email: string) => {
     const { data, error } = await supabase
     .from('client_waitlist')
     .insert({ email })
+    .select()
 
     if(error) {
         return console.log(error)
@@ -91,4 +92,24 @@ export const unsubscribe = async (email: string) => {
     } else {
         return NextResponse.json({status: 404})
     }
+}
+
+export const feedback = async (email: string, selection: string, description: string) => {
+    const { data, error } = await supabase
+        .from("feedback")
+        .insert({email, selection, description})
+        .select()
+
+    if (error) {
+        return NextResponse.json(
+            { error: error.message || "Failed to submit feedback" }, 
+            { status: 400 }
+        )
+    }
+
+    // Successful insert
+    return NextResponse.json(
+        { message: "Feedback submitted successfully", data }, 
+        { status: 201 }
+    )
 }

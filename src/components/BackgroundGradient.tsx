@@ -2,7 +2,7 @@ import React from "react";
 
 const BackgroundGradient = () => {
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
       {/* Gradient blob 1 */}
       <div className="absolute -top-40 -left-20 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
       <div className="absolute -bottom-40 -right-20 w-96 h-96 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
