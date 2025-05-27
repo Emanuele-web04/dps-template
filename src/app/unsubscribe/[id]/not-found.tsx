@@ -5,14 +5,14 @@ import { LuMail, LuHouse } from 'react-icons/lu';
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
-      <div className="w-full p-12 bg-white rounded-3xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
+      <div className="w-full p-6 md:p-12 bg-white rounded-3xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
         {/* Header */}
         <div className="space-y-4">
           <div className="flex flex-col gap-7 w-full justify-center items-center">
             <div className="bg-gray-100 rounded-full">
               <LuMail className="text-3xl m-4 text-gray-600" />
             </div>
-            <h1 className="text-3xl font-sans tracking-tight font-semibold text-black">
+            <h1 className="text-2xl md:text-3xl font-sans tracking-tight font-semibold text-black">
               Unsubscribe Link Not Found
             </h1>
           </div>
