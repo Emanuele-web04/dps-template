@@ -1,11 +1,10 @@
 import { DiSwift } from "react-icons/di";
 import { RiNextjsLine } from "react-icons/ri";
-import { LuBadgeAlert, LuLayoutGrid, LuZap } from "react-icons/lu";
+import { LuLayoutGrid, LuZap } from "react-icons/lu";
 import { LuSparkles } from "react-icons/lu";
 import { LuCalendar } from "react-icons/lu";
 import { TbLayoutBoard } from "react-icons/tb";
 import { LuRocket } from "react-icons/lu";
-import { LuBuilding2 } from "react-icons/lu";
 import { LuPackage } from "react-icons/lu";
 import { TbDeviceDesktopExclamation } from "react-icons/tb";
 
@@ -78,7 +77,7 @@ const TemplatesShowcase = () => {
             <div className="icon-text flex-col items-center!">
               <DiSwift className="px-0.5 bg-gradient-to-b from-orange-400 ring-orange-300 to-orange-600 icon" />
               <h3 className="text-xl font-semibold font-sans tracking-tight">
-                iOS Templates
+                SwiftUI Templates
               </h3>
             </div>
           </div>
