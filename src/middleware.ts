@@ -13,7 +13,3 @@ export function middleware(req: NextRequest) {
   return NextResponse.next()
 }
 
-export const config = {
-  // run this middleware for everything except built-in Next.js assets
-  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
-}
