@@ -62,7 +62,7 @@ const WebsiteInProduction = () => {
           Website in Production
         </h2>
 
-        <p className="font-medium text-gray-500 text-center max-w-lg leading-relaxed">
+        <p className="font-medium text-gray-500 text-center text-sm md:text-base max-w-lg leading-relaxed">
           Our team (just me) is hard at work building something amazing. We'll
           be back online soon with a brand new experience!
         </p>
