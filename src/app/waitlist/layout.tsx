@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../../globals.css";
+import "../globals.css";
 import { eudoxus, editor, inter, geistMono } from "@/lib/fonts";
 
 export const metadata: Metadata = {
