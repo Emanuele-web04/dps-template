@@ -36,7 +36,7 @@ const NotFound = () => {
       <div className="absolute top-40 right-32 w-1 h-1 bg-purple-400 rounded-full animate-bounce opacity-40" />
       <div className="absolute bottom-32 left-16 w-3 h-3 bg-indigo-300 rounded-full animate-pulse opacity-50" />
 
-      <div className="w-full flex flex-col space-y-8 items-center justify-center z-10">
+      <div className="w-full flex flex-col space-y-8 items-center justify-center z-10 p-4">
         {/* Icon with hover effect */}
         <div
           className="relative group cursor-pointer"
