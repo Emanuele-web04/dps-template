@@ -1,9 +1,8 @@
-
-
-'use client'
+"use client";
 
 import { HammerAnimation } from "@/components/HammerAnimation";
 import { socials } from "@/lib/socials";
+import Link from "next/link";
 import { BsGear } from "react-icons/bs";
 import { TbTools } from "react-icons/tb";
 
@@ -94,17 +93,22 @@ const WebsiteInProduction = () => {
 
         {/* Back button */}
         <div className="flex flex-col w-full justify-center items-center gap-4">
-          <p className="text-sm text-gray-600 font-medium">In the meanwhile, check me out here!</p>
+          <p className="text-sm text-gray-600 font-medium">
+            In the meanwhile, check me out here!
+          </p>
           <div className="flex gap-4">
             {socials.map((s, i) => {
               const Icon = s.icon;
               return (
-                <div
+                <Link
+                  href={s.link}
+                  target="_blank"
+                  rel={"noreferrer noopener"}
                   key={i}
                   className="p-3 hover:bg-neutral-100 hover:-translate-y-1.5 transition-all cursor-pointer ring-1 ring-neutral-200 rounded-xl"
                 >
                   <Icon className="w-6 h-6" />
-                </div>
+                </Link>
               );
             })}
           </div>
