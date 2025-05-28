@@ -51,6 +51,11 @@
 html {
   scroll-behavior: smooth;
 }
+@keyframes hammerBuild {
+  0% { transform: rotate(-45deg); }
+  50% { transform: rotate(15deg); }
+  100% { transform: rotate(-45deg); }
+}
 
 body {
   background-color: var(--background); /* Fallback color */
