@@ -33,7 +33,7 @@ export default function ItalyClock() {
       <h1 className="text-sm text-gray-600">
         Current time in Italy: <strong>{timeData.timeInItaly}</strong>
       </h1>
-      <div className="flex items-center space-x-3 text-sm text-gray-600 bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200">
+      <div className="flex items-center justify-center space-x-3 text-sm text-gray-600 bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200">
         <div className="flex items-center space-x-1.5">
           {timeData.isSleeping ? (
             <div className="flex items-center space-x-1.5">
@@ -47,7 +47,7 @@ export default function ItalyClock() {
               <span className="rounded-full border-1 border-green-500">
                 <div className="w-2 h-2 m-[1px] rounded-full bg-green-400 animate-pulse" />
               </span>
-              <span className="text-xs md:text-sm">1 developer online</span>
+              <span className="text-xs md:text-sm m-0">1 developer online</span>
             </div>
           )}
         </div>
