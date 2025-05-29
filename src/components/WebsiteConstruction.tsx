@@ -10,7 +10,7 @@ const WebsiteInProduction = () => {
   const progress = 5;
 
   return (
-    <div className="min-h-screen overflow-y-hidden font-inter tracking-tighter flex items-center flex-col justify-center relative overflow-hidden">
+    <div className="min-h-screen font-inter tracking-tighter flex items-center flex-col justify-center relative overflow-hidden">
       {/* Animated background gradient */}
       <div className="absolute inset-0 opacity-20" />
 
@@ -46,7 +46,7 @@ const WebsiteInProduction = () => {
 
         {/* Construction status with animated text */}
         <div className="text-center space-y-">
-          <h1 className="text-5xl md:text-7xl font-sans font-bold bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-600 bg-clip-text text-transparent tracking-tight">
+          <h1 className="text-5xl mb-2 md:text-7xl font-sans font-bold bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-600 bg-clip-text text-transparent tracking-tight">
             Under Construction
           </h1>
           <div className="flex items-center justify-center space-x-2">
