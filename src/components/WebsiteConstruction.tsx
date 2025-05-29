@@ -5,9 +5,10 @@ import { socials } from "@/lib/socials";
 import Link from "next/link";
 import { BsGear } from "react-icons/bs";
 import { TbTools } from "react-icons/tb";
+import ItalyClock from "./CurrentTime";
 
 const WebsiteInProduction = () => {
-  const progress = 5;
+  const progress = 7;
 
   return (
     <div className="min-h-screen font-inter tracking-tighter flex items-center flex-col justify-center relative overflow-hidden">
@@ -80,14 +81,10 @@ const WebsiteInProduction = () => {
         </div>
 
         {/* Construction crew status */}
-        <div className="flex items-center space-x-3 text-sm text-gray-600 bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200">
-          <div className="flex items-center space-x-1.5">
-            <span className="rounded-full border-1 border-green-500">
-              <div className="w-2 h-2 m-[1px] rounded-full bg-green-400  animate-pulse" />
-            </span>
-            <span className="text-xs md:text-sm">1 developer online</span>
-          </div>
+        <div className="">
+         <ItalyClock/>
         </div>
+        
 
         {/* Back button */}
         <div className="flex flex-col max-w-lg w-full justify-center items-center gap-4">
