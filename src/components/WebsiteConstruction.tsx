@@ -90,7 +90,7 @@ const WebsiteInProduction = () => {
         {/* Back button */}
         <div className="flex flex-col max-w-lg w-full justify-center items-center gap-4">
           <Link
-            href={"waitlist.dpstemplates.com"}
+            href={"https://waitlist.dpstemplates.com"}
             rel="noopener noreferrer"
             target="_blank"
             className="cursor-pointer bg-gradient-to-b border-2 border-violet-800/60 max-w-50 py-2.5 from-violet-700 to-indigo-900 p-3 rounded-xl shadow-md shadow-black/70 ring-2 ring-purple-800/80 hover:shadow-lg hover:shadow-black/60 hover:translate-y-[-2px] hover:brightness-110 active:shadow-sm active:translate-y-[1px] active:brightness-90 transition-all duration-200"
