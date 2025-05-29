@@ -240,7 +240,7 @@ export const WaitlistEmailTemplate = async (data: { email: string }) => {
               </Link>
               {' • '}
               <Link
-                href="https://dpstemplates.com/contact"
+                href="mailto:emandipietro@gmail.com"
                 style={{
                   color: secondary,
                   textDecoration: 'underline',

@@ -4,11 +4,11 @@ import { eudoxus, editor, inter, geistMono } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://waitlist.dpstemplates.com/"),
-  title: "DP's Templates – Waitlist",
-  description: "Join the exclusive waitlist for DP's Templates and be the first to get early access to our production-ready UI kits for Swift & Web.",
+  title: "DP's Templates | Waitlist",
+  description: "Join the exclusive waitlist for DP's Templates and be the first to get early access to our production-ready UI kits for SwiftUI & Next.js.",
   openGraph: {
-    title: "DP's Templates Waitlist",
-    description: "Sign up now to secure your spot and receive early access and launch discounts for DP's Templates – the fastest way to ship pixel-perfect interfaces.",
+    title: "DP's Templates | Waitlist",
+    description: "Sign up now to secure your spot and receive early access and launch discounts for DP's Templates - the fastest way to ship pixel-perfect interfaces.",
     type: "website",
     images: [
       {
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DP's Templates Waitlist",
-    description: "Join the exclusive waitlist for DP's Templates – no complex setup, just plug-and-play UI components for SwiftUI and Next.js.",
+    title: "DP's Templates | Waitlist",
+    description: "Join the exclusive waitlist for DP's Templates - no complex setup, just plug-and-play UI components for SwiftUI and Next.js.",
     images: ["https://waitlist.dpstemplates.com/og.png"],
   },
 };
