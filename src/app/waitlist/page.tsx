@@ -5,7 +5,7 @@ import EmailForm from "@/components/JoinWaitlist/EmailForm";
 import Navbar from "@/components/Navbar";
 import ShowcaseImages from "@/components/ShowcaseImages";
 import TemplatesShowcase from "@/components/WhatYoullFind";
-
+import React from "react";
 const Home = () => {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center overflow-y-scroll overflow-x-hidden relative bg-white bg-[url('/mobilegrid.png')] md:bg-[url('/desktopgrid.png')] bg-center bg-no-repeat bg-cover bg-fixed">

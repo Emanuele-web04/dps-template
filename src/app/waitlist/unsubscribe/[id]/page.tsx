@@ -1,6 +1,7 @@
-import UnsubscribeClient from "@/components/UnsubscribeClient";
+import React from "react";
 import { emailFromId } from "@/lib/supabase";
 import { notFound } from "next/navigation";
+import UnsubscribeClient from "@/components/UnsubscribeClient";
 const Unsubscribe = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
   const email = await emailFromId(id);

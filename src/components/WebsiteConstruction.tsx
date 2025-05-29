@@ -58,10 +58,6 @@ const WebsiteInProduction = () => {
           </div>
         </div>
 
-        <h2 className="text-2xl font-medium text-gray-700 tracking-tight text-center">
-          Website in Production
-        </h2>
-
         <p className="font-medium text-gray-500 text-center text-sm md:text-base max-w-lg leading-relaxed">
           Our team (just me) is hard at work building something amazing. We'll
           be back online soon with a brand new experience!
@@ -92,10 +88,22 @@ const WebsiteInProduction = () => {
         </div>
 
         {/* Back button */}
-        <div className="flex flex-col w-full justify-center items-center gap-4">
-          <p className="text-sm text-gray-600 font-medium">
-            In the meanwhile, check me out here!
-          </p>
+        <div className="flex flex-col container w-full justify-center items-center gap-4">
+          <Link
+            href={"waitlist.dpstemplates.com"}
+            className="cursor-pointer bg-gradient-to-b border-2 border-violet-800/60 max-w-50 py-2.5 from-violet-700 to-indigo-900 p-3 rounded-xl shadow-md shadow-black/70 ring-2 ring-purple-800/80 hover:shadow-lg hover:shadow-black/60 hover:translate-y-[-2px] hover:brightness-110 active:shadow-sm active:translate-y-[1px] active:brightness-90 transition-all duration-200"
+          >
+            <p className="font-inter text-sm tracking-tight text-white/90 font-medium whitespace-nowrap">
+              Join the Waitlist!
+            </p>
+          </Link>
+          <div className="flex w-full justify-center gap-3 items-center">
+            <span className="inline-flex w-1/3 h-[1px] bg-neutral-200"></span>
+            <p className="text-sm w-1/2 md:w-fit text-center text-gray-600 font-medium">
+              or check me out here!
+            </p>
+            <span className="inline-flex  w-1/3 h-[1px] bg-neutral-200"></span>
+          </div>
           <div className="flex gap-4">
             {socials.map((s, i) => {
               const Icon = s.icon;
