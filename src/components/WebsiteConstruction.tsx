@@ -39,13 +39,13 @@ const WebsiteInProduction = () => {
         <div className="h-full bg-gradient-to-r from-transparent via-white to-transparent animate-pulse" />
       </div>
 
-      <div className="w-full flex flex-col space-y-8 items-center justify-center z-10 px-4">
+      <div className="w-full flex flex-col space-y-5 md:space-y-8 items-center justify-center z-10 px-4">
         {/* Main construction icon with hover effect */}
 
         <HammerAnimation />
 
         {/* Construction status with animated text */}
-        <div className="text-center space-y-3">
+        <div className="text-center space-y-">
           <h1 className="text-5xl md:text-7xl font-sans font-bold bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-600 bg-clip-text text-transparent tracking-tight">
             Under Construction
           </h1>
@@ -88,7 +88,7 @@ const WebsiteInProduction = () => {
         </div>
 
         {/* Back button */}
-        <div className="flex flex-col container w-full justify-center items-center gap-4">
+        <div className="flex flex-col max-w-lg w-full justify-center items-center gap-4">
           <Link
             href={"waitlist.dpstemplates.com"}
             className="cursor-pointer bg-gradient-to-b border-2 border-violet-800/60 max-w-50 py-2.5 from-violet-700 to-indigo-900 p-3 rounded-xl shadow-md shadow-black/70 ring-2 ring-purple-800/80 hover:shadow-lg hover:shadow-black/60 hover:translate-y-[-2px] hover:brightness-110 active:shadow-sm active:translate-y-[1px] active:brightness-90 transition-all duration-200"
