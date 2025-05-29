@@ -8,20 +8,28 @@ export function middleware(req: NextRequest) {
 
   const isWaitlistHost = host === "waitlist.dpstemplates.com"
 
-  // don’t rewrite Next.js internals or any “file” requests
-  const isNextAsset = url.pathname.startsWith("/_next/")
-  const isPublicAsset = url.pathname.match(/\.(ico|jpg|jpeg|png|svg|css|js)$/)
-  const isFavicon    = url.pathname === "/favicon.ico"
+  // DON’T rewrite any of these:
+  const isNextAsset    = url.pathname.startsWith("/_next/")
+  const isPublicAsset  = url.pathname.match(/\.(ico|jpg|jpeg|png|svg|css|js)$/)
+  const isApiRoute     = url.pathname.startsWith("/api/")
+  const isFavicon      = url.pathname === "/favicon.ico"
 
-  if (isWaitlistHost && !isNextAsset && !isPublicAsset && !isFavicon) {
+  if (
+    isWaitlistHost &&
+    !isNextAsset &&
+    !isPublicAsset &&
+    !isApiRoute &&
+    !isFavicon
+  ) {
+    // only rewrite “page” requests
     url.pathname = `/waitlist${url.pathname}`
     return NextResponse.rewrite(url)
   }
 
+  // everything else (API, assets, other hosts) just passes through
   return NextResponse.next()
 }
 
 export const config = {
-  // run for everything except Next internals
   matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 }
