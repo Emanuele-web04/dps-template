@@ -12,6 +12,7 @@ export function middleware(req: NextRequest) {
   const isNextAsset    = url.pathname.startsWith("/_next/")
   const isPublicAsset  = url.pathname.match(/\.(ico|jpg|jpeg|png|svg|css|js)$/)
   const isApiRoute     = url.pathname.startsWith("/api/")
+  const isUnsubRoute    = url.pathname.startsWith("/unsubscribe/")
   const isFavicon      = url.pathname === "/favicon.ico"
 
   if (
@@ -19,7 +20,8 @@ export function middleware(req: NextRequest) {
     !isNextAsset &&
     !isPublicAsset &&
     !isApiRoute &&
-    !isFavicon
+    !isFavicon &&
+    !isUnsubRoute
   ) {
     // only rewrite “page” requests
     url.pathname = `/waitlist${url.pathname}`
