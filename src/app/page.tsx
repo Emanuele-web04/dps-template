@@ -1,4 +1,4 @@
-import WebsiteInProduction from "@/components/WebsiteConstruction";
+import WebsiteInProduction from "@/components/Construction/WebsiteConstruction";
 import React from "react";
 
 const page = () => {

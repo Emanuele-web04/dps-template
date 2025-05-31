@@ -1,6 +1,6 @@
 "use client";
 
-import { HammerAnimation } from "@/components/HammerAnimation";
+import { HammerAnimation } from "@/components/Construction/HammerAnimation";
 import { socials } from "@/lib/socials";
 import Link from "next/link";
 import { BsGear } from "react-icons/bs";
@@ -8,7 +8,7 @@ import { TbTools } from "react-icons/tb";
 import ItalyClock from "./CurrentTime";
 
 const WebsiteInProduction = () => {
-  const progress = 7;
+  const progress = 8;
 
   return (
     <div className="min-h-screen font-inter tracking-tighter flex items-center flex-col justify-center relative overflow-hidden">
@@ -82,9 +82,8 @@ const WebsiteInProduction = () => {
 
         {/* Construction crew status */}
         <div className="">
-         <ItalyClock/>
+          <ItalyClock />
         </div>
-        
 
         {/* Back button */}
         <div className="flex flex-col max-w-lg w-full justify-center items-center gap-4">

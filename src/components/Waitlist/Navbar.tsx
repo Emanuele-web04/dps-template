@@ -1,7 +1,7 @@
 'use client'
 
+import { navLinks } from "@/types/waitlistNavLinks";
 import Image from "next/image";
-import { navLinks } from "@/types/navLinks";
 import Link from "next/link";
 import { useState } from "react";
 

@@ -1,10 +1,10 @@
-import BackgroundGradient from "@/components/BackgroundGradient";
-import HeroLabels from "@/components/HeroLabels";
-import HeroText from "@/components/HeroText";
+import BackgroundGradient from "@/components/Waitlist/BackgroundGradient";
+import HeroLabels from "@/components/Waitlist/HeroLabels";
+import HeroText from "@/components/Waitlist/HeroText";
 import EmailForm from "@/components/JoinWaitlist/EmailForm";
-import Navbar from "@/components/Navbar";
-import ShowcaseImages from "@/components/ShowcaseImages";
-import TemplatesShowcase from "@/components/WhatYoullFind";
+import Navbar from "@/components/Waitlist/Navbar";
+import ShowcaseImages from "@/components/Waitlist/ShowcaseImages";
+import TemplatesShowcase from "@/components/Waitlist/WhatYoullFind";
 import React from "react";
 const Home = () => {
   return (
