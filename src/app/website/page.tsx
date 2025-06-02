@@ -68,7 +68,7 @@ const page = () => {
               <div className="w-fit lg:w-80">
                 <ToolTipLinkImage />
               </div>
-              <div className="h-full w-fit lg:w-80">
+              <div className="h-full w-full lg:w-80">
                 <BackgroundBeamsWithCollisionDemo />
               </div>
             </div>
