@@ -65,10 +65,10 @@ const page = () => {
               </div>
             </div>
             <div className="relative grid divide-y pr-5 pl-5 lg:pl-0 divide-dashed divide-neutral-800 w-full gap-5">
-              <div className="">
+              <div className="w-fit lg:w-80">
                 <ToolTipLinkImage />
               </div>
-              <div className="h-full w-80">
+              <div className="h-full w-fit lg:w-80">
                 <BackgroundBeamsWithCollisionDemo />
               </div>
             </div>
