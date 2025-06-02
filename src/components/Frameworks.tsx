@@ -9,7 +9,7 @@ const Frameworks = () => {
     <div className="max-w-2xl py-8">
       <div className="relative overflow-hidden">
         <div
-          className={`flex flex-wrap gap-y-3 ${isPaused ? "pause-animation" : ""}`}
+          className={`flex flex-wrap gap-3 ${isPaused ? "pause-animation" : ""}`}
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -20,7 +20,7 @@ const Frameworks = () => {
               return (
                 <div
                   key={i}
-                  className="flex items-center gap-3 text-neutral-500 whitespace-nowrap mx-5"
+                  className="flex items-center gap-4 text-neutral-500 whitespace-nowrap mr-5"
                 >
                   <Icon className="text-3xl" />
                   <p className="font-bold text-sm font-inter tracking-tighter">
