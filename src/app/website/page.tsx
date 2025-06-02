@@ -27,7 +27,7 @@ const page = () => {
       flex justify-start p-6 md:p-12 items-center min-h-screen relative text-white"
     >
       <LightGradient />
-      <div className="z-10 fixed flex w-full items-center justify-between p-6 sm:py-6 sm:px-12 mb-3 top-0 left-1/2 transform -translate-x-1/2 bg-transparent backdrop-blur-lg border-b border-neutral-800 shadow-lg m-auto">
+      <div className="z-100 fixed flex w-full items-center justify-between p-6 sm:py-6 sm:px-12 mb-3 top-0 left-1/2 transform -translate-x-1/2 bg-transparent backdrop-blur-lg border-b border-neutral-800 shadow-lg m-auto">
         <NavbarWebsite/>
       </div>
       <div className="flex flex-col relative top-20 xl:top-0 w-full xl:flex-row justify-between">
@@ -45,7 +45,7 @@ const page = () => {
           <Frameworks />
         </div>
 
-        <div className="flex border-l border-r border-dashed border-neutral-800 gap-5 flex-col">
+        <div className="flex min-h-screen lg:h-full border-l border-r border-dashed border-neutral-800 gap-5 flex-col">
           <div className="relative w-full divide-x divide-dashed divide-neutral-800 grid-cols-1 gap-5 items-start lg:grid lg:grid-cols-2">
             <div className="relative p-5 grid divide-y divide-dashed divide-neutral-800 w-full gap-5">
               <div className="flex items-center border-b pb-5 border-dashed border-neutral-800 gap-5">
