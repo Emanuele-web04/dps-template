@@ -25,7 +25,7 @@ const page = () => {
       <div className="z-100 fixed flex w-full items-center justify-between p-6 sm:py-6 sm:px-12 mb-3 top-0 left-1/2 transform -translate-x-1/2 bg-transparent backdrop-blur-lg border-b border-neutral-800 shadow-lg m-auto">
         <NavbarWebsite />
       </div>
-      <div className="flex orverflow-y-scroll h-full flex-col relative top-20 xl:top-0 w-full max-w-full xl:flex-row justify-between">
+      <div className="flex orverflow-y-scroll h-full flex-col relative mt-20 xl:mt-10 w-full max-w-full xl:flex-row justify-between">
         <div className="flex w-full xl:w-fit flex-col gap-y-5">
           <WhatsNewButton />
           <div className=" w-fit">
