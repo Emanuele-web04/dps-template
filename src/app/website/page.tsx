@@ -1,12 +1,7 @@
 import Frameworks from "@/components/Frameworks";
 import HeroSectionText from "@/components/HeroSectionText";
 import LightGradient from "@/components/LightGradient";
-import { navSocials } from "@/lib/navSocials";
-import { navbarLinks } from "@/lib/navbarLinks";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { FaChevronRight } from "react-icons/fa6";
 import ImagesPeople from "@/components/ui/people-images";
 import IOSToggle from "@/components/ui/ios-toggle";
 import RadioInputs from "@/components/ui/radio-inputs";
@@ -22,7 +17,7 @@ const page = () => {
   return (
     <div
       className="bg-black w-full
-      bg-cover bg-center overflow-x-hidden
+      bg-cover bg-center overflow-x-hidden overflow-y-auto
       bg-[linear-gradient(rgba(0,0,0,1.0),rgba(0,0,0,0.85)),url('/gridd.png')] 
       flex justify-start p-6 md:p-12 items-center min-h-screen relative text-white"
     >
