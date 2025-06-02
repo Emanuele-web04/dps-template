@@ -17,7 +17,7 @@ const HeroSectionText = () => {
         </span>
         <span className="flex items-center gap-x-3">
           beautiful{" "}
-          <span className="border-1 border-dotted relative border-gray-500 bg-neutral-900 backdrop-blur-2xl p-2 pb-3 md:pb-5 pr-3">
+          <span className="border-1 border-dotted relative border-gray-500 bg-neutral-900 backdrop-blur-2xl p-1 md:p-2 pb-2 md:pb-5 pr-2">
             <span className="inline-flex absolute -top-1.5 -left-1.5 w-3 h-3 rounded-full ring-1 ring-neutral-500 bg-black"></span>
             <span className="inline-flex absolute -top-1.5 -right-1.5 w-3 h-3 rounded-full ring-1 ring-neutral-500 bg-black"></span>
             <span className="inline-flex absolute -bottom-1.5 -left-1.5 w-3 h-3 rounded-full ring-1 ring-neutral-500 bg-black"></span>
