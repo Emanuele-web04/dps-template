@@ -45,8 +45,8 @@ const page = () => {
           <Frameworks />
         </div>
 
-        <div className="flex min-h-screen lg:h-full border-l border-r border-dashed border-neutral-800 gap-5 flex-col">
-          <div className="relative w-full divide-x divide-dashed divide-neutral-800 grid-cols-1 gap-5 items-start lg:grid lg:grid-cols-2">
+        <div className="flex  border-l border-r border-dashed border-neutral-800 gap-5 flex-col">
+          <div className="relative min-h-screen lg:h-full w-full divide-x divide-dashed divide-neutral-800 grid-cols-1 gap-5 items-start lg:grid lg:grid-cols-2">
             <div className="relative p-5 grid divide-y divide-dashed divide-neutral-800 w-full gap-5">
               <div className="flex items-center border-b pb-5 border-dashed border-neutral-800 gap-5">
                 <IOSToggle />
@@ -64,7 +64,7 @@ const page = () => {
                 <HoverCard3D />
               </div>
             </div>
-            <div className="relative grid divide-y pr-5 divide-dashed divide-neutral-800 w-full gap-5">
+            <div className="relative grid divide-y pr-5 pl-5 lg:pl-0  divide-dashed divide-neutral-800 w-full gap-5">
               <ToolTipLinkImage />
               <div className="h-full w-80">
                 <BackgroundBeamsWithCollisionDemo />

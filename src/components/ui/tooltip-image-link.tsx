@@ -35,8 +35,8 @@ export default function ToolTipLinkImage() {
           <Image
             src="/khrona-landing.png"
             alt="Khrona Landing"
-            width={150}
-            height={150}
+            width={200}
+            height={200}
             className="w-full h-fit rounded-2xl"
           />
         </div>
