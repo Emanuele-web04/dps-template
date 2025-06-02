@@ -60,7 +60,7 @@ const page = () => {
                   <FlipWordsDemo />
                 </div>
               </div>
-              <div className="flex items-center h-[250px] w-full justify-center bg-neutral-900/50 rounded-2xl ring-1 ring-neutral-800">
+              <div className="lg:flex items-center hidden h-[250px] w-full justify-center bg-neutral-900/50 rounded-2xl ring-1 ring-neutral-800">
                 <HoverCard3D />
               </div>
             </div>
