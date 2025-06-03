@@ -19,13 +19,16 @@ const ImagesPeople = () => {
           >
             {/* Tooltip */}
             <div
-              className={`absolute -top-12 left-1/2 transform font-sans font-bold -translate-x-1/2 bg-neutral-800 border-t-[1px] border-neutral-600 text-white text-sm px-3 py-2 rounded-lg shadow-lg whitespace-nowrap z-10 transition-all duration-200 ${
+              className={`absolute -top-17 left-1/2 transform font-sans font-bold -translate-x-1/2 bg-neutral-800 border-t-[1px] border-neutral-600 text-white text-sm px-3 py-2 rounded-lg shadow-lg whitespace-nowrap z-10 transition-all duration-200 ${
                 hoveredIndex === i
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-2 pointer-events-none"
               }`}
             >
-              {item.name}
+              <div className="flex flex-col items-center">
+                {item.name}
+                <p className="text-xxs font-medium text-neutral-400">{item.role}</p>
+                </div>
               {/* Arrow pointing down */}
               <div className="absolute  top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-6 border-t-6 border-transparent border-t-neutral-800"></div>
             </div>

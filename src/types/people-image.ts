@@ -1,4 +1,5 @@
 type PersonImage = {
     src: string,
-    name: string
+    name: string,
+    role: string
 }
