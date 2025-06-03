@@ -89,7 +89,7 @@ const NavbarWebsite = () => {
 
       {/* Full Screen Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-black min-h-screen min-w-screen backdrop-blur-xl z-40 lg:hidden transition-all duration-500 ease-in-out ${
+        className={`fixed inset-0 bg-black/98 min-h-screen min-w-screen backdrop-blur-2xl z-40 lg:hidden transition-all duration-500 ease-in-out ${
           isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
