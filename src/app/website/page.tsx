@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div
       className="bg-black w-full
-      bg-cover bg-center overflow-x-hidden overflow-y-auto
+      bg-fixed bg-center overflow-x-hidden overflow-y-auto
       bg-[linear-gradient(rgba(0,0,0,1.0),rgba(0,0,0,0.85)),url('/gridd.png')] 
       flex flex-col justify-start p-6 md:p-12 items-center min-h-screen relative text-white"
     >

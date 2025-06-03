@@ -21,7 +21,7 @@ const NavbarWebsite = () => {
   return (
     <>
       {/* Navbar normale */}
-      <div className="flex items-center w-full justify-between">
+      <div className="flex max-w-[1600px] items-center w-full justify-between">
         <div className="flex items-center gap-12">
           <div className="flex items-center gap-3">
             <Image

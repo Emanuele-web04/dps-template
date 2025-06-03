@@ -7,9 +7,10 @@ import {
     LuMessageCircle,
     LuFileText,
   } from "react-icons/lu";
+  import { GrAppleAppStore } from "react-icons/gr";
 
 export const swiftUIBoilerplate: Feature = {
-  icon: [LuZap],
+  icon: [LuZap, GrAppleAppStore],
   title: "SwiftUI Boilerplate",
   description: "Modern views, animations, SwiftData CRUD operations",
 };
