@@ -29,7 +29,7 @@ const NavbarWebsite = () => {
               alt="Logo"
               width={1000}
               height={1000}
-              className="w-6 h-6 md:w-8 z-50 md:h-8 inline-flex rounded-md md:rounded-lg"
+              className="w-7 h-7 md:w-8 z-50 md:h-8 inline-flex rounded-md md:rounded-lg"
             />
             <h6 className="text-2xl hidden md:block font-bold font-inter tracking-tighter">
               DP's Templates
@@ -95,10 +95,10 @@ const NavbarWebsite = () => {
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex flex-col items-start mt-12 md:mt-20 justify-start h-full p-6 md:p-12 text-center">
+        <div className="flex font-inter tracking-tighter flex-col items-start mt-12 md:mt-20 justify-start h-full p-6 md:p-12 text-center">
 
           {/* Navigation Links */}
-          <div className="space-y-4 md:space-y-8 mb-12">
+          <div className="space-y-6 md:space-y-8 mb-12">
             {navbarLinks.map((nav, i) => (
               <div
                 key={i}
@@ -116,7 +116,7 @@ const NavbarWebsite = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex flex-col justify-center items-start space-y-4 md:space-y-8 mb-12">
+          <div className="flex flex-col justify-center items-start space-y-6 md:space-y-8 mb-12">
             {navSocials.map((social, i) => (
               <Link
                 target="_blank"

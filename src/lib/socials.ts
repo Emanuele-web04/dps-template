@@ -7,6 +7,6 @@ import { FaInstagram } from "react-icons/fa";
 export const socials: Social[] = [
     {name: "X", icon: AiOutlineX, link: "https://x.com/emanueledpt"},
     {name: "YouTube", icon: FaYoutube, link: "https://youtube.com/@emanueledpt?si=hKjHNWzpVwRXnmre"},
-    {name: "Intagram", icon: FaInstagram, link: "https://www.instagram.com/emanueledpt?igsh=MWs4emhhN2ZpZzAweQ=="},
+    {name: "Instagram", icon: FaInstagram, link: "https://www.instagram.com/emanueledpt?igsh=MWs4emhhN2ZpZzAweQ=="},
     {name: "TikTok", icon: FaTiktok, link: "https://www.tiktok.com/@emandpt?_t=ZN-8wk6nMY5IYQ&_r=1"},
 ]
