@@ -89,13 +89,13 @@ const NavbarWebsite = () => {
 
       {/* Full Screen Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-black/98 min-h-screen min-w-screen backdrop-blur-2xl z-40 lg:hidden transition-all duration-500 ease-in-out ${
+        className={`fixed inset-0 bg-black/96 min-h-screen min-w-screen backdrop-blur-2xl z-40 lg:hidden transition-all duration-500 ease-in-out ${
           isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex font-inter tracking-tighter flex-col items-start mt-12 md:mt-20 justify-start h-full p-6 md:p-12 text-center">
+        <div className="flex font-inter tracking-tighter flex-col items-start mt-12 justify-start h-full p-6 md:p-12 text-center">
 
           {/* Navigation Links */}
           <div className="space-y-6 md:space-y-8 mb-12">
