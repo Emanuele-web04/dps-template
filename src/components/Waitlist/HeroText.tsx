@@ -1,6 +1,8 @@
 import React from "react";
 import { DiSwift } from "react-icons/di";
 import { RiNextjsLine } from "react-icons/ri";
+import SwiftIcon from "../ui/swift-icon";
+import NextIcon from "../ui/next-icon";
 
 const HeroText = () => {
   return (
@@ -13,16 +15,15 @@ const HeroText = () => {
           <span className="flex gap-2">
             in
             <span className="icon-text">
-              <DiSwift className="px-0.5 sm:px-0 bg-gradient-to-b from-orange-400  ring-orange-300 to-orange-600 icon" />
+              <SwiftIcon />
               SwiftUI
             </span>
             and
           </span>
-          
+
           <span className="flex gap-2">
-           
             <span className="icon-text">
-              <RiNextjsLine className="px-0.5 sm:px-1.5 bg-gradient-to-b from-neutral-600  ring-neutral-400 to-neutral-900 icon" />
+              <NextIcon />
               Next.js
             </span>
           </span>

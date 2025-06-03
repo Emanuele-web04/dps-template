@@ -42,6 +42,22 @@
   .error-message {
     @apply absolute top-15 text-red-700/80 bg-red-100/50 p-1.5 font-inter tracking-tight font-medium rounded-md w-fit text-xs mt-2 ml-2
   }
+
+  .title {
+    @apply font-sans font-bold tracking-tighter text-3xl sm:text-5xl md:text-6xl
+  }
+
+  .h3-title {
+    @apply font-semibold font-inter tracking-tighter text-xl md:text-2xl
+  }
+
+  .h6-title {
+    @apply font-bold font-inter tracking-tighter text-lg md:text-xl
+  }
+
+  .rounded-icon {
+    @apply rounded-full p-3 bg-gradient-to-b from-neutral-700 to-neutral-900 w-12 h-12 flex items-center justify-center ring-1 ring-neutral-500
+  }
 }
 
 @utility text-xxs {

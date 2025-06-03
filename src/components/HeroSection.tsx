@@ -13,7 +13,7 @@ import Frameworks from "./Frameworks";
 
 const HeroSection = () => {
   return (
-    <div className="flex orverflow-y-scroll h-full flex-col relative mt-20 xl:mt-10 w-full max-w-full xl:flex-row justify-between">
+    <div className="flex orverflow-y-scroll h-full flex-col relative mt-20 w-full max-w-full xl:flex-row justify-between">
       <div className="flex w-full xl:w-fit flex-col gap-y-5">
         <WhatsNewButton />
         <div className=" w-fit">

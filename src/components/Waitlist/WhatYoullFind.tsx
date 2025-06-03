@@ -1,63 +1,13 @@
+import { iosFeatures, nextjsFeatures } from "@/lib/features";
 import { DiSwift } from "react-icons/di";
 import { RiNextjsLine } from "react-icons/ri";
-import { LuLayoutGrid, LuZap } from "react-icons/lu";
-import { LuSparkles } from "react-icons/lu";
-import { LuCalendar } from "react-icons/lu";
-import { TbLayoutBoard } from "react-icons/tb";
-import { LuRocket } from "react-icons/lu";
-import { LuPackage } from "react-icons/lu";
-import { TbDeviceDesktopExclamation } from "react-icons/tb";
 
 const TemplatesShowcase = () => {
-  const iosFeatures = [
-    {
-      icon: <LuZap className="w-5 h-5" />,
-      title: "SwiftUI Boilerplate",
-      description: "Modern views, animations, SwiftData CRUD operations",
-    },
-    {
-      icon: <TbLayoutBoard className="w-5 h-5" />,
-      title: "UI Components",
-      description: "Modal sheets, transitions, onboarding carousels",
-    },
-    {
-      icon: <LuSparkles className="w-5 h-5" />,
-      title: "Glassmorphism Kit",
-      description: "Cards, toggles, tab bars, buttons with modern styling",
-    },
-    {
-      icon: <LuCalendar className="w-5 h-5" />,
-      title: "Advanced Views",
-      description: "Calendar views, progress rings, rating components",
-    },
-  ];
-
-  const nextjsFeatures = [
-    {
-      icon: <LuPackage className="w-5 h-5" />,
-      title: "Component Packs",
-      description: "Hero sections, pricing cards, testimonials, forms",
-    },
-    {
-      icon: <LuRocket className="w-5 h-5" />,
-      title: "Landing Templates",
-      description: "AI tools, mobile apps, portfolios",
-    },
-    {
-      icon: <LuLayoutGrid className="w-5 h-5" />,
-      title: "UI Library",
-      description: "Buttons, toggles, inputs, dropdowns",
-    },
-
-    {
-      icon: <TbDeviceDesktopExclamation className="w-5 h-5" />,
-      title: "System Pages",
-      description: "Waitlist, unsubscribe, not-found, error pages",
-    },
-  ];
-
   return (
-    <div className="z-1 container min-h-screen flex-col flex justify-center items-center w-full px-4 py-16"  id="templates">
+    <div
+      className="z-1 container min-h-screen flex-col flex justify-center items-center w-full px-4 py-16"
+      id="templates"
+    >
       <div className="text-center flex flex-col gap-2 mb-7">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight ">
           <span className="black-gradient font-sans bg-clip-text text-transparent">
@@ -83,26 +33,29 @@ const TemplatesShowcase = () => {
           </div>
 
           <div className="space-y-4">
-            {iosFeatures.map((feature, index) => (
-              <div
-                key={index}
-                className="group p-4 rounded-2xl ring-1 ring-gray-200 hover:ring-orange-300 transition-all duration-200 hover:shadow-sm bg-white/30 backdrop-blur-xl"
-              >
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-orange-50 text-orange-600 group-hover:bg-orange-100 transition-colors">
-                    {feature.icon}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold tracking-tight font-inter text-gray-900 ">
-                      {feature.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 font-inter tracking-tight leading-relaxed">
-                      {feature.description}
-                    </p>
+            {iosFeatures.map((feature, index) => {
+              const Icon = feature.icon[0];
+              return (
+                <div
+                  key={index}
+                  className="group p-4 rounded-2xl ring-1 ring-gray-200 hover:ring-orange-300 transition-all duration-200 hover:shadow-sm bg-white/30 backdrop-blur-xl"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 rounded-lg bg-orange-50 text-orange-600 group-hover:bg-orange-100 transition-colors">
+                      <Icon className="w-5 h-5" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold tracking-tight font-inter text-gray-900 ">
+                        {feature.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 font-inter tracking-tight leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -118,26 +71,29 @@ const TemplatesShowcase = () => {
           </div>
 
           <div className="space-y-4">
-            {nextjsFeatures.map((feature, index) => (
-              <div
-                key={index}
-                className="group p-4 rounded-2xl ring-1 ring-gray-200 hover:ring-neutral-400 transition-all duration-200 hover:shadow-sm bg-white/30 backdrop-blur-xl"
-              >
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-neutral-50 text-neutral-700 group-hover:bg-neutral-100 transition-colors">
-                    {feature.icon}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold tracking-tight font-inter text-gray-900 ">
-                      {feature.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 tracking-tight font-inter leading-relaxed">
-                      {feature.description}
-                    </p>
+            {nextjsFeatures.map((feature, index) => {
+              const Icon = feature.icon[0];
+              return (
+                <div
+                  key={index}
+                  className="group p-4 rounded-2xl ring-1 ring-gray-200 hover:ring-neutral-400 transition-all duration-200 hover:shadow-sm bg-white/30 backdrop-blur-xl"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 rounded-lg bg-neutral-50 text-neutral-700 group-hover:bg-neutral-100 transition-colors">
+                      <Icon className="w-5 h-5" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold tracking-tight font-inter text-gray-900 ">
+                        {feature.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 tracking-tight font-inter leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
