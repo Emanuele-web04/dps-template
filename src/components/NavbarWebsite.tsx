@@ -95,7 +95,7 @@ const NavbarWebsite = () => {
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex flex-col items-start mt-10 md:mt-20 justify-start h-full p-6 md:p-12 text-center">
+        <div className="flex flex-col items-start mt-12 md:mt-20 justify-start h-full p-6 md:p-12 text-center">
 
           {/* Navigation Links */}
           <div className="space-y-4 md:space-y-8 mb-12">
@@ -103,7 +103,7 @@ const NavbarWebsite = () => {
               <div
                 key={i}
                 onClick={closeMenu}
-                className="flex items-center justify-start text-left hover:text-white cursor-pointer transition-all text-white gap-3 font-inter tracking-tight font-medium text-lg md:text-2xl"
+                className="flex items-center justify-start text-left hover:text-white cursor-pointer transition-all text-white gap-3 font-inter tracking-tight font-medium text-2xl"
               >
                 {nav.name}
                 {nav.name === "SwiftUI" && (
