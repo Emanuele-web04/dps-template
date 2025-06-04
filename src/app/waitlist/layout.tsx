@@ -33,7 +33,7 @@ export default function WaitlistLayout({
   return (
     <html lang="en">
       <body
-        className={`${eudoxus.variable} ${editor.variable} ${geistMono.variable} antialiased`}>
+        className={`${eudoxus.variable} ${editor.variable} ${geistMono.variable} ${inter.variable} antialiased`}>
         {children}
       </body>
     </html>
