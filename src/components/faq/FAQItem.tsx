@@ -15,7 +15,7 @@ const FAQItem = ({ question, answer }: FAQ) => {
       className="flex flex-col min-w-[360px] @min-xs:min-w-md sm:min-w-2xl md:min-w-4xl lg:min-w-5xl items-center justify-center pb-4 w-full"
       onClick={handleOpening}
     >
-      <div className="flex flex-col px-2 sm:px-4 md:px-6 lg:px-8 max-w-xs! @min-xs:max-w-sm! sm:max-w-xl md:max-w-3xl lg:max-w-4xl w-full items-center justify-between">
+      <div className="flex flex-col gap-3 px-4 sm:px-4 md:px-6 lg:px-8 max-w-xs! @min-xs:max-w-sm! sm:max-w-xl md:max-w-3xl lg:max-w-4xl w-full items-center justify-between">
         <div className="w-full flex justify-start items-center">
           <h6 className="text-sm sm:text-base md:text-lg font-inter w-full text-left tracking-tight font-semibold">
             {question}
