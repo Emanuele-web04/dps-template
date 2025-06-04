@@ -83,4 +83,5 @@ export const editor = localFont({
 export const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: 'swap'
 });

@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${eudoxus.variable} ${editor.variable} ${geistMono.variable} ${inter.variable} antialiased`}
+        className={`${eudoxus.variable} ${editor.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { navbarLinks } from "@/lib/navbarLinks";
 import { TbMenu, TbX } from "react-icons/tb";
+import LogoTitle from "./LogoTitle";
 
 const NavbarWebsite = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,25 +24,14 @@ const NavbarWebsite = () => {
       {/* Navbar normale */}
       <div className="flex max-w-[1600px] items-center w-full justify-between">
         <div className="flex items-center gap-12">
-          <div className="flex items-center gap-3">
-            <Image
-              src={"/navLogo.png"}
-              alt="Logo"
-              width={1000}
-              height={1000}
-              className="w-7 h-7 md:w-8 z-50 md:h-8 inline-flex rounded-md md:rounded-lg"
-            />
-            <h6 className="text-2xl hidden md:block font-bold font-inter tracking-tighter">
-              DP's Templates
-            </h6>
-          </div>
+          <LogoTitle visible={false}/>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex gap-5">
             {navbarLinks.map((nav, i) => (
               <div
                 key={i}
-                className="flex items-center hover:text-white cursor-pointer transition-all text-neutral-400 gap-2 font-inter tracking-tight font-semibold text-sm"
+                className="flex items-center nav-p"
               >
                 {nav.name}
                 {nav.name == "SwiftUI" && (
