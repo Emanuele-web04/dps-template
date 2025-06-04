@@ -47,7 +47,7 @@ export const NEXTJS_FAQS: FAQ[] = [
     {
       question: "Are SwiftUI source files included?",
       answer:
-        "Yes. You'll receive a complete Xcode project containing all SwiftUI view files, so you can integrate, customize, and extend the UI for your iOS, iPadOS, and macOS projects."
+        "Yes. You'll receive a complete Xcode project containing all SwiftUI view files, so you can integrate, customize, and extend the UI for your iOS projects."
     },
     {
       question: "What minimum iOS version does the SwiftUI template support?",
