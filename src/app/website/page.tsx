@@ -3,6 +3,7 @@ import React from "react";
 import NavbarWebsite from "@/components/NavbarWebsite";
 import HeroSection from "@/components/HeroSection";
 import WhatYoullFind from "@/components/WhatYoullFind";
+import FAQSection from "@/components/faq/FAQSection";
 
 const page = () => {
   return (
@@ -18,6 +19,7 @@ const page = () => {
       </div>
       <HeroSection />
       <WhatYoullFind />
+      <FAQSection/>
     </div>
   );
 };

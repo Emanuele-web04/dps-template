@@ -8,7 +8,7 @@ import { TbTools } from "react-icons/tb";
 import ItalyClock from "./CurrentTime";
 
 const WebsiteInProduction = () => {
-  const progress = 10;
+  const progress = 12;
 
   return (
     <div className="min-h-screen font-inter tracking-tighter flex items-center flex-col justify-center relative overflow-hidden">

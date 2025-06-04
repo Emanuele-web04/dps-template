@@ -14,10 +14,10 @@ import SwiftUIViews from "./ui/swiftui-templates/swiftui-views";
 
 const WhatYoullFind = () => {
   return (
-    <div className="min-h-screen mt-60 max-w-7xl flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center gap-2 mb-7">
+    <div className="section-container">
+      <div className="text-section">
         <h1 className="title">What You'll Find</h1>
-        <p className="text-neutral-300 text-center max-w-2xl mx-auto">
+        <p className="p-section">
           Production-ready templates and components to accelerate your
           development workflow for your apps and saas
         </p>

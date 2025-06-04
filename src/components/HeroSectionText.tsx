@@ -22,7 +22,7 @@ const HeroSectionText = () => {
             <span className="inline-flex absolute -top-1.5 -right-1.5 w-3 h-3 rounded-full ring-1 ring-neutral-500 bg-black"></span>
             <span className="inline-flex absolute -bottom-1.5 -left-1.5 w-3 h-3 rounded-full ring-1 ring-neutral-500 bg-black"></span>
             <span className="inline-flex absolute -bottom-1.5 -right-1.5 w-3 h-3 rounded-full ring-1 ring-neutral-500 bg-black"></span>
-            <span className="italic font-editor font-light! pr-1">components</span>
+            <span className="italic font-editor font-light! pr-0.5 md:pr-1">components</span>
           </span>
         </span>
       </h1>

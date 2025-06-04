@@ -47,6 +47,18 @@
     @apply font-sans font-bold tracking-tighter text-3xl sm:text-5xl md:text-6xl
   }
 
+  .p-section {
+    @apply text-neutral-300 text-center max-w-2xl mx-auto
+  }
+
+  .text-section {
+    @apply flex flex-col items-center gap-2 mb-7
+  }
+
+  .section-container {
+    @apply min-h-screen mt-60 max-w-4xl flex flex-col items-center justify-center
+  }
+
   .h3-title {
     @apply font-semibold font-inter tracking-tighter text-xl md:text-2xl
   }
