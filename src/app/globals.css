@@ -14,73 +14,77 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --breakpoint-xs: 24rem;
+}
+
 @layer {
   .font-italic {
-    @apply font-editor italic font-normal tracking-normal text-neutral-950
+    @apply font-editor italic font-normal tracking-normal text-neutral-950;
   }
 
   .black-gradient {
-    @apply bg-gradient-to-b  from-neutral-500 via-neutral-800 to-neutral-950
+    @apply bg-gradient-to-b  from-neutral-500 via-neutral-800 to-neutral-950;
   }
 
   .icon {
-    @apply ring-1 sm:ring-3 rounded-md sm:rounded-xl text-white text-3xl md:text-5xl
+    @apply ring-1 sm:ring-3 rounded-md sm:rounded-xl text-white text-3xl md:text-5xl;
   }
 
   .icon-text {
-    @apply flex items-center sm:items-end gap-3 px-2
+    @apply flex items-center sm:items-end gap-3 px-2;
   }
 
   .image-card-smaller {
-    @apply w-[180px] h-[180px] lg:w-[250px] lg:h-[250px] rounded-2xl lg:rounded-3xl 
+    @apply w-[180px] h-[180px] lg:w-[250px] lg:h-[250px] rounded-2xl lg:rounded-3xl;
   }
 
   .image-card-larger {
-    @apply w-[220px] h-[220px] lg:w-[300px] lg:h-[300px] rounded-3xl lg:rounded-4xl 
+    @apply w-[220px] h-[220px] lg:w-[300px] lg:h-[300px] rounded-3xl lg:rounded-4xl;
   }
 
   .error-message {
-    @apply absolute top-15 text-red-700/80 bg-red-100/50 p-1.5 font-inter tracking-tight font-medium rounded-md w-fit text-xs mt-2 ml-2
+    @apply absolute top-15 text-red-700/80 bg-red-100/50 p-1.5 font-inter tracking-tight font-medium rounded-md w-fit text-xs mt-2 ml-2;
   }
 
   .title {
-    @apply font-sans font-bold tracking-tighter text-3xl sm:text-5xl md:text-6xl
+    @apply font-sans font-bold tracking-tighter text-3xl sm:text-5xl md:text-6xl;
   }
 
   .p-section {
-    @apply text-neutral-300 text-center max-w-2xl mx-auto
+    @apply text-neutral-300 text-center max-w-2xl mx-auto;
   }
 
   .text-section {
-    @apply flex flex-col items-center gap-2 mb-7
+    @apply flex flex-col items-center gap-2 mb-7;
   }
 
   .section-container {
-    @apply min-h-screen mt-60 max-w-4xl flex flex-col items-center justify-center
+    @apply min-h-screen mt-60 max-w-4xl flex flex-col items-center justify-center;
   }
 
   .h3-title {
-    @apply font-semibold font-inter tracking-tighter text-xl md:text-2xl
+    @apply font-semibold font-inter tracking-tighter text-xl md:text-2xl;
   }
 
   .h6-title {
-    @apply font-bold font-inter tracking-tighter text-lg md:text-xl
+    @apply font-bold font-inter tracking-tighter text-lg md:text-xl;
   }
 
   .rounded-icon {
-    @apply rounded-full p-4 bg-gradient-to-b from-neutral-700 to-neutral-900 w-12 h-12 flex items-center justify-center ring-1 ring-neutral-500
+    @apply rounded-full p-4 bg-gradient-to-b from-neutral-700 to-neutral-900 w-12 h-12 flex items-center justify-center ring-1 ring-neutral-500;
   }
 
   .card-component {
-    @apply bg-neutral-900 ring-1 backdrop-blur-2xl ring-neutral-600 rounded-2xl
+    @apply bg-neutral-900 ring-1 backdrop-blur-2xl ring-neutral-600 rounded-2xl;
   }
 
   .p-card {
-    @apply text-neutral-400 text-center text-sm leading-relaxed max-w-sm
+    @apply text-neutral-400 text-center text-sm leading-relaxed max-w-sm;
   }
 
   .bento-grid {
-    @apply grid grid-cols-12 min-h-80 w-full gap-4
+    @apply grid grid-cols-12 min-h-80 w-full gap-4;
   }
 }
 
@@ -93,9 +97,15 @@ html {
 }
 
 @keyframes hammerBuild {
-  0% { transform: rotate(-45deg); }
-  50% { transform: rotate(15deg); }
-  100% { transform: rotate(-45deg); }
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
 }
 
 body {
