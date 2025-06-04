@@ -4,7 +4,7 @@ import FAQItem from "./FAQItem";
 
 const FAQSection = () => {
   return (
-    <div className="section-container max-w-[300px]! xs:max-w-sm! sm:max-w-xl! md:max-w-3xl! lg:max-w-4xl!">
+    <div className="section-container max-w-xs! xs:max-w-sm! sm:max-w-xl! md:max-w-3xl! lg:max-w-4xl!">
       <div className="text-section">
         <h1 className="title">FAQ</h1>
         <p className="p-section">Everything you need to know.</p>
