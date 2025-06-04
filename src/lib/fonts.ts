@@ -80,8 +80,29 @@ export const editor = localFont({
     display: 'swap',
 })
 
-export const inter = Inter({
+export const inter = localFont({
   variable: "--font-inter",
-  subsets: ["latin"],
-  display: 'swap'
+  src: [
+    {
+      path: '../fonts/InterVariable.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/InterVariable.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/InterVariable.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/InterVariable.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
 });
