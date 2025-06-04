@@ -9,7 +9,7 @@ interface LinkProps {
 
 const FooterLink = ({link, text, linkText}: LinkProps) => {
   return (
-    <p className="text-xs md:text-sm text-neutral-500">
+    <p className="tracking-tight font-inter text-sm text-neutral-500">
       {text}{" "}
       <Link
         target="_blank"
