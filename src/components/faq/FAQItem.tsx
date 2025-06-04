@@ -17,7 +17,7 @@ const FAQItem = ({ question, answer }: FAQ) => {
     >
       <div className="flex flex-col px-4 md:px-6 lg:px-8 max-w-xs xs:max-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-4xl w-full items-center justify-between">
         <div className="w-full flex justify-start items-center">
-          <h6 className="text-sm mr-3 sm:text-base md:text-lg font-inter w-full text-left tracking-tight font-semibold">
+          <h6 className="text-sm pr-3 sm:text-base md:text-lg font-inter w-full text-left tracking-tight font-semibold">
             {question}
           </h6>
           <div
