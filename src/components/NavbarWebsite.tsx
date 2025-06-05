@@ -3,7 +3,6 @@
 import { navSocials } from "@/lib/navSocials";
 import Link from "next/link";
 import React, { useState } from "react";
-import Image from "next/image";
 import { navbarLinks } from "@/lib/navbarLinks";
 import { TbMenu, TbX } from "react-icons/tb";
 import LogoTitle from "./LogoTitle";
@@ -54,14 +53,14 @@ const NavbarWebsite = () => {
               key={i}
               className={`${social.name == "YouTube" ? "text-2xl" : "text-xl"}`}
             >
-              <p className="text-neutral-400 transition-all hover:text-white cursor-pointer text-sm font-semibold font-inter tracking-tighter">
+              <p className="nav-p">
                 {social.name}
               </p>
             </Link>
           ))}
           <a
             href="mailto:emandipietro@gmail.com"
-            className="bg-white text-black font-inter text-sm font-semibold px-3 py-1.5 cursor-pointer rounded-lg"
+            className="bg-white text-black font-inter text-sm tracking-tight font-semibold px-3 py-1.5 cursor-pointer rounded-full"
           >
             Contact
           </a>
@@ -125,7 +124,7 @@ const NavbarWebsite = () => {
           <a
             href="mailto:emandipietro@gmail.com"
             onClick={closeMenu}
-            className="bg-white text-black font-inter text-base md:text-lg font-semibold px-4 py-2 rounded-lg transition-all hover:bg-neutral-200"
+            className="bg-white text-black font-inter text-base md:text-lg font-medium px-4 py-2 rounded-lg transition-all hover:bg-neutral-200"
           >
             Contact
           </a>

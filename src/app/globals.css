@@ -16,8 +16,8 @@
 
 @theme {
   --font-inter: InterVariable;
-  --default-font-feature-settings: "cv11";
-  --font-inter--font-feature-settings: "cv11";
+  --default-font-feature-settings: "cv11", "cv06";
+  --font-inter--font-feature-settings: "cv11", "cv06";
 }
 
 @theme {
@@ -94,7 +94,11 @@
   }
 
   .nav-p {
-    @apply hover:text-white cursor-pointer transition-all text-neutral-400 gap-2 font-inter tracking-tight font-semibold text-sm
+    @apply hover:text-white cursor-pointer transition-all text-neutral-400 gap-2 font-inter tracking-tight font-medium text-sm
+  }
+
+  .footer-p {
+    @apply tracking-tight font-inter text-sm text-neutral-500
   }
 }
 

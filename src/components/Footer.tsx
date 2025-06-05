@@ -5,29 +5,35 @@ import FooterLink from "./ui/footer-link";
 import Link from "next/link";
 import { navbarLinks } from "@/lib/navbarLinks";
 import { navSocials } from "@/lib/navSocials";
+import Copyright from "./ui/copyright";
 
 const Footer = () => {
   return (
-    <div className="bg-transparent w-full mt-20 px-6 py-12 md:px-12 md:py-20 border-t border-neutral-800 backdrop-blur-2xl">
+    <div className="bg-transparent w-full h-full mt-20 px-6 py-12 md:px-12 md:py-20 border-t border-neutral-800 backdrop-blur-2xl">
       <div className="w-full h-full flex md:flex-row flex-col justify-between">
-        <div className="flex flex-col gap-8">
-          <LogoTitle visible={true} />
-          <div className="flex flex-col gap-4">
-            <FooterLink
-              text="A product by"
-              link={portfolio}
-              linkText="Emanuele Di Pietro"
-            />
-            <FooterLink
-              text="Building in public"
-              link={twitter}
-              linkText="@emanueledpt"
-            />
-            <FooterLink
-              text="Documenting my journey on"
-              link={youtube}
-              linkText="YouTube"
-            />
+        <div className="flex flex-col  justify-between">
+          <div className="flex flex-col gap-4 h-full">
+            <LogoTitle visible={true} />
+            <div className="flex flex-col gap-2">
+              <FooterLink
+                text="A product by"
+                link={portfolio}
+                linkText="Emanuele Di Pietro"
+              />
+              <FooterLink
+                text="Building in public"
+                link={twitter}
+                linkText="@emanueledpt"
+              />
+              <FooterLink
+                text="Documenting my journey on"
+                link={youtube}
+                linkText="YouTube"
+              />
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <Copyright />
           </div>
         </div>
         <div className="grid grid-cols-2 mt-10 md:mt-0 gap-10">
@@ -35,7 +41,9 @@ const Footer = () => {
             {navbarLinks.map((link, i) => (
               <div key={i} className="">
                 <Link target="_blank" rel="noopener norefferer" href={link.to}>
-                  <p className="nav-p text-neutral-500! font-normal!">{link.name}</p>
+                  <p className="nav-p text-neutral-500! font-normal!">
+                    {link.name}
+                  </p>
                 </Link>
               </div>
             ))}
@@ -44,7 +52,9 @@ const Footer = () => {
               rel="noopener norefferer"
               href={"https://waitlist.dpstemplates.com"}
             >
-              <p className="nav-p text-neutral-500! font-normal!">News Letter</p>
+              <p className="nav-p text-neutral-500! font-normal!">
+                News Letter
+              </p>
             </Link>
           </div>
           <div className="flex flex-col col-span-1 gap-4 h-full">
@@ -55,11 +65,16 @@ const Footer = () => {
                   rel="noopener norefferer"
                   href={link.link}
                 >
-                  <p className="nav-p text-neutral-500! font-normal!">{link.name}</p>
+                  <p className="nav-p text-neutral-500! font-normal!">
+                    {link.name}
+                  </p>
                 </Link>
               </div>
             ))}
           </div>
+        </div>
+        <div className="block mt-10 md:hidden">
+          <Copyright />
         </div>
       </div>
     </div>
