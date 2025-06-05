@@ -60,7 +60,7 @@ const SimpleTable = () => {
               </tr>
             </thead>
 
-            <tbody className="divide-y divide-neutral-100 dark:divide-neutral-700/60">
+            <tbody className="divide-y font-inter tracking-tight divide-neutral-100 dark:divide-neutral-700/60">
               {users.map((user, i) => (
                 <tr
                   key={i}

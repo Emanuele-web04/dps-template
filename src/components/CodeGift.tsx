@@ -105,11 +105,11 @@ export default function CodeGift() {
       <div className="text-section mb-8">
         <span className="relative">
           <span className="absolute -top-5 rotate-30 -right-7 bg-gradient-to-br from-sky-50 via-sky-100 to-sky-400 backdrop-blur-2xl ring-2 ring-sky-500 rounded-full">
-            <LuGift className="text-2xl text-sky-500 m-2" />
+            <LuGift className="text-lg md:text-2xl text-sky-500 m-2" />
           </span>
           <h1 className="title">A little gift for you!</h1>
         </span>
-        <p className=" p-section mt-2">
+        <p className="p-section mt-2 font-inter">
           Here's a quick snippet showing a table with users name, role and
           status, full responsive, with light and dark mode.
         </p>
