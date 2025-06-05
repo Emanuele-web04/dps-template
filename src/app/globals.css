@@ -86,7 +86,7 @@
   }
 
   .p-card {
-    @apply text-neutral-400 text-center text-sm leading-relaxed max-w-sm;
+    @apply text-neutral-400 font-inter tracking-tight text-center text-sm leading-relaxed max-w-sm;
   }
 
   .bento-grid {
