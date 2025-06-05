@@ -46,7 +46,7 @@ const SimpleTable = () => {
       <div className="backdrop-blur-2xl rounded-2xl shadow-lg border border-neutral-200/60 bg-white/80 overflow-hidden dark:border-neutral-700/60 dark:bg-neutral-900/80">
         <div className="overflow-x-auto">
           <table className="min-w-full">
-            <thead className="bg-neutral-50/80 dark:bg-neutral-800/80 border-b border-neutral-200 dark:border-neutral-700">
+            <thead className="bg-neutral-50/80 font-inter tracking-tight dark:bg-neutral-800/80 border-b border-neutral-200 dark:border-neutral-700">
               <tr>
                 <th className="text-left p-3 sm:p-4 font-semibold text-neutral-800 dark:text-neutral-200 text-sm sm:text-base tracking-wide">
                   Name
