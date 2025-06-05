@@ -24,6 +24,33 @@
   --breakpoint-xs: 24rem;
 }
 
+/* 2a. WebKit-based browsers (Chrome, Safari, Edge) */
+.code-scrollbar::-webkit-scrollbar {
+  width: 8px;               /* width of vertical scrollbar */
+  height: 8px;              /* height of horizontal scrollbar */
+}
+
+.code-scrollbar::-webkit-scrollbar-track {
+  background: #212121;      /* track color (e.g. Tailwind’s gray-800) */
+}
+
+.code-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #555555; /* thumb color (e.g. Tailwind’s gray-600) */
+  border-radius: 4px;        /* round the corners */
+  border: 2px solid #1f2937; /* give it a little border so thumb doesn’t flush-edge */
+}
+
+.code-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280; /* lighten on hover (e.g. Tailwind’s gray-500) */
+}
+
+/* 2b. Firefox */
+.code-scrollbar {
+  scrollbar-width: thin;                     /* “auto” | “thin” | “none” */
+  scrollbar-color: #555555 #212121;          /* thumb track */
+}
+
+
 @layer {
   .font-italic {
     @apply font-editor italic font-normal tracking-normal text-neutral-950;

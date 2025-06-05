@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import WhatYoullFind from "@/components/WhatYoullFind";
 import FAQSection from "@/components/faq/FAQSection";
 import Footer from "@/components/Footer";
+import CodeGift from "@/components/CodeGift";
 
 const page = () => {
   return (
@@ -18,6 +19,7 @@ const page = () => {
       <div className="flex flex-col min-h-screen">
         <main className="flex-1 flex flex-col justify-start p-6 md:p-12 items-center">
           <HeroSection />
+          <CodeGift/>
           <WhatYoullFind />
           <FAQSection />
         </main>
