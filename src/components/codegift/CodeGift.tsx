@@ -1,4 +1,4 @@
-import CodeBlock from "@/components/Codeblock";
+import CodeBlock from "@/components/codegift/Codeblock";
 import SimpleTable from "./SimpleTable";
 import { LuGift } from "react-icons/lu";
 

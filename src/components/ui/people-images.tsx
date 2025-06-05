@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { images } from "@/lib/images";
+import { people } from "@/lib/images";
 
 const ImagesPeople = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -10,7 +10,7 @@ const ImagesPeople = () => {
   return (
     <div className="">
       <div className="flex -space-x-3 relative">
-        {images.map((item, i) => (
+        {people.slice(0, 5).map((item, i) => (
           <div
             key={i}
             className="relative"
