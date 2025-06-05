@@ -31,7 +31,7 @@ const NavbarWebsite = () => {
             {navbarLinks.map((nav, i) => (
               <div
                 key={i}
-                className="flex items-center nav-p"
+                className="flex font-inter items-center nav-p"
               >
                 {nav.name}
                 {nav.name == "SwiftUI" && (
