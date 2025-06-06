@@ -3,7 +3,7 @@ import React from "react";
 const HeroSectionText = () => {
   return (
     <div className="w-fit">
-      <h1 className=" w-fit flex flex-col gap-2 sm:gap-5 title">
+      <h1 className=" w-fit flex flex-col gap-1 sm:gap-5 title">
         <span>Enhance your </span>
         <span>
           <span className="bg-gradient-to-b pr-0.5 bg-clip-text text-transparent from-orange-300 via-orange-400 to-orange-600">
