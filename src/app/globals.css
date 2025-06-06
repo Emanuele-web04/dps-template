@@ -81,7 +81,7 @@
   }
 
   .title {
-    @apply font-sans font-bold tracking-tighter text-3xl sm:text-5xl md:text-6xl;
+    @apply font-sans font-bold tracking-tighter text-3.5xl sm:text-5xl md:text-6xl;
   }
 
   .p-section {
@@ -131,6 +131,10 @@
 
 @utility text-xxs {
   font-size: 10px;
+}
+
+@utility text-3.5xl {
+  font-size: 34px
 }
 
 html {
