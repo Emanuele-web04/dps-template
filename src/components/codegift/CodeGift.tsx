@@ -66,7 +66,7 @@ export default function CodeGift() {
                     {isActive && (
                       <motion.div
                         layoutId="underline"
-                        className="absolute bottom-0 left-0 h-[0.3px] bg-white w-full"
+                        className="absolute hidden md:block bottom-0 left-0 h-[0.3px] bg-white w-full"
                       />
                     )}
                   </motion.button>
