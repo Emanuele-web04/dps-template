@@ -57,7 +57,7 @@ export default function CodeGift() {
                     className={`
                       relative cursor-pointer text-xs md:text-sm font-mono transition-colors 
                       ${isActive
-                        ? "text-white pb-1"
+                        ? "text-white pb-0 md:pb-1"
                         : "text-gray-400 hover:text-gray-200"}
                     `}
                   >
