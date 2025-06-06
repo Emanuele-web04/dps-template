@@ -14,7 +14,7 @@ export const NEXTJS_FAQS: FAQ[] = [
     {
       question: "What version of Tailwind CSS is supported?",
       answer:
-        "This template uses Tailwind CSS v3.x. We include a preconfigured tailwind.config.js so you can easily adjust colors, spacing, and typography to match your brand."
+        "This template uses Tailwind CSS v4.x."
     },
     {
       question: "Can I customize the React/Tailwind components?",
@@ -52,7 +52,7 @@ export const NEXTJS_FAQS: FAQ[] = [
     {
       question: "What minimum iOS version does the SwiftUI template support?",
       answer:
-        "The SwiftUI template targets iOS 15.0 and later, ensuring access to modern SwiftUI APIs like async/await, improved List APIs, and built-in support for dark mode."
+        "The SwiftUI template targets iOS 17.0 and later, ensuring access to modern SwiftUI APIs like async/await, improved List APIs, and built-in support for dark mode."
     },
     {
       question: "Can I customize the SwiftUI components?",
