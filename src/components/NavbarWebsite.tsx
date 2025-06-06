@@ -21,7 +21,7 @@ const NavbarWebsite = () => {
   return (
     <>
       {/* Navbar normale */}
-      <div className="flex max-w-[1600px] items-center w-full justify-between">
+      <div className="flex mx-auto max-w-[1600px] items-center w-full justify-between">
         <div className="flex items-center gap-12">
           <LogoTitle visible={false}/>
 
