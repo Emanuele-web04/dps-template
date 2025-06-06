@@ -1,10 +1,10 @@
 import LightGradient from "@/components/LightGradient";
 import React from "react";
 import NavbarWebsite from "@/components/NavbarWebsite";
-import HeroSection from "@/components/HeroSection";
-import WhatYoullFind from "@/components/WhatYoullFind";
+import HeroSection from "@/components/landing/HeroSection";
+import WhatYoullFind from "@/components/landing/WhatYoullFind";
 import FAQSection from "@/components/faq/FAQSection";
-import Footer from "@/components/Footer";
+import Footer from "@/components/landing/Footer";
 import CodeGift from "@/components/codegift/CodeGift";
 
 const page = () => {

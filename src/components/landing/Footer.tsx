@@ -1,11 +1,11 @@
 import React from "react";
-import LogoTitle from "./LogoTitle";
+import LogoTitle from "../LogoTitle";
 import { portfolio, twitter, youtube } from "@/lib/footerSocial";
-import FooterLink from "./ui/footer-link";
+import FooterLink from "../ui/footer-link";
 import Link from "next/link";
 import { navbarLinks } from "@/lib/navbarLinks";
 import { navSocials } from "@/lib/navSocials";
-import Copyright from "./ui/copyright";
+import Copyright from "../ui/copyright";
 
 const Footer = () => {
   return (

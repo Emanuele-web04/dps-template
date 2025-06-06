@@ -1,3 +1,5 @@
+import { PersonImage } from "@/types/people-image";
+
 export const people: PersonImage[] = [
     {
       src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

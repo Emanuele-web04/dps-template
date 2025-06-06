@@ -1,20 +1,20 @@
 import React from "react";
-import NextIcon from "./ui/next-icon";
+import NextIcon from "../ui/next-icon";
 import { componentPacks, nextjsFeatures } from "@/lib/features";
-import ComponentsPack from "./ui/nextjs-templates/components-pack";
-import LandingTemplates from "./ui/nextjs-templates/landing-templates";
-import UiLibrary from "./ui/nextjs-templates/ui-library";
-import SystemPages from "./ui/nextjs-templates/system-pages";
-import IconTitleTemplates from "./ui/icon-title-templates";
-import SwiftIcon from "./ui/swift-icon";
-import SwiftUIBoilerplate from "./ui/swiftui-templates/swiftui-boilerplate";
-import SwiftUIKit from "./ui/swiftui-templates/swiftui-kit";
-import SwiftUIComponents from "./ui/swiftui-templates/swiftui-components";
-import SwiftUIViews from "./ui/swiftui-templates/swiftui-views";
+import ComponentsPack from "../ui/nextjs-templates/components-pack";
+import LandingTemplates from "../ui/nextjs-templates/landing-templates";
+import UiLibrary from "../ui/nextjs-templates/ui-library";
+import SystemPages from "../ui/nextjs-templates/system-pages";
+import IconTitleTemplates from "../ui/icon-title-templates";
+import SwiftIcon from "../ui/swift-icon";
+import SwiftUIBoilerplate from "../ui/swiftui-templates/swiftui-boilerplate";
+import SwiftUIKit from "../ui/swiftui-templates/swiftui-kit";
+import SwiftUIComponents from "../ui/swiftui-templates/swiftui-components";
+import SwiftUIViews from "../ui/swiftui-templates/swiftui-views";
 
 const WhatYoullFind = () => {
   return (
-    <div className="section-container">
+    <div className="section-container fade-in-up">
       <div className="text-section">
         <h1 className="title">What You'll Find</h1>
         <p className="p-section">

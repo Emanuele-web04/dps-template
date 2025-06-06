@@ -9,11 +9,11 @@ import ToolTipLinkImage from "@/components/ui/tooltip-image-link";
 import BackgroundBeamsWithCollisionDemo from "@/components/BackgroundBeams";
 import WhatsNewButton from "@/components/WhatsNewButton";
 import Buttons from "@/components/Buttons";
-import Frameworks from "./Frameworks";
+import Frameworks from "../Frameworks";
 
 const HeroSection = () => {
   return (
-    <div className="flex max-w-[1600px] orverflow-y-scroll h-full flex-col relative mt-20 w-full xl:flex-row justify-between">
+    <div className="flex fade-in-up max-w-[1600px] orverflow-y-scroll h-full flex-col relative mt-20 w-full xl:flex-row justify-between">
       <div className="flex w-full xl:w-fit flex-col gap-y-5">
         <WhatsNewButton />
         <div className=" w-fit">
