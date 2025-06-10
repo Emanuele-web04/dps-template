@@ -24,19 +24,27 @@
   --breakpoint-xs: 24rem;
 }
 
+/* 1) Define in :root (light) and override on html[data-theme="dark"] */
 :root {
   --scrollbar-track: #f8f8f8;
   --scrollbar-thumb: #cacaca;
   --scrollbar-thumb-hover: #6b7280;
 }
 
-/* Dark theme (using your data-attribute or `.dark` class) */
-:where([data-theme="dark"], .dark) {
+html[data-theme="dark"] {
   --scrollbar-track: #212121;
   --scrollbar-thumb: #888888;
   --scrollbar-thumb-hover: #aaaaaa;
 }
 
+/* 2) Apply to your scroll container */
+.code-scrollbar {
+  /* For Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* 3) WebKit */
 .code-scrollbar::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -49,6 +57,7 @@
 .code-scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-thumb);
   border-radius: 4px;
+  /* border the same color as track to give a padding effect */
   border: 2px solid var(--scrollbar-track);
 }
 
@@ -56,11 +65,6 @@
   background-color: var(--scrollbar-thumb-hover);
 }
 
-/* Firefox */
-.code-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-}
 
 @layer {
   .font-italic {
