@@ -54,7 +54,7 @@ export default function HoverCard3D() {
 
       <div
         ref={cardRef}
-        className="relative flex items-center h-[250px] w-full justify-center bg-neutral-900/80 backdrop-blur-sm rounded-2xl ring-1 ring-neutral-700/50 cursor-pointer overflow-hidden"
+        className="relative flex items-center h-[250px] w-full justify-center bg-neutral-100 dark:bg-neutral-900/80 backdrop-blur-sm rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-700/50 cursor-pointer overflow-hidden"
         style={cardStyle}
         onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
@@ -79,12 +79,12 @@ export default function HoverCard3D() {
           }}
         />
 
-        <h1 className="relative z-10 w-full text-center text-4xl font-bold tracking-tight text-white">
+        <h1 className="relative z-10 w-full text-center text-4xl font-bold tracking-tight text-black dark:text-white">
           <span
-            className={`transition-all flex flex-col duration-300 ${isHovered ? "text-transparent bg-clip-text bg-gradient-to-r from-neutral-400 via-white to-neutral-400" : ""}`}
+            className={`transition-all flex flex-col duration-300 ${isHovered ? "text-transparent bg-clip-text bg-gradient-to-r from-black via-neutral-300 to-black dark:from-neutral-400 dark:via-white dark:to-neutral-400" : ""}`}
           >
             Hover me!
-            <p className="text-sm font-normal text-neutral-400">And play with the mouse!</p>
+            <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400">And play with the mouse!</p>
           </span>
         </h1>
 

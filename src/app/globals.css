@@ -1,5 +1,5 @@
-
 @import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root {
   --background: #000000;
@@ -24,32 +24,43 @@
   --breakpoint-xs: 24rem;
 }
 
-/* 2a. WebKit-based browsers (Chrome, Safari, Edge) */
+:root {
+  --scrollbar-track: #f8f8f8;
+  --scrollbar-thumb: #cacaca;
+  --scrollbar-thumb-hover: #6b7280;
+}
+
+/* Dark theme (using your data-attribute or `.dark` class) */
+:where([data-theme="dark"], .dark) {
+  --scrollbar-track: #212121;
+  --scrollbar-thumb: #888888;
+  --scrollbar-thumb-hover: #aaaaaa;
+}
+
 .code-scrollbar::-webkit-scrollbar {
-  width: 8px;               /* width of vertical scrollbar */
-  height: 8px;              /* height of horizontal scrollbar */
+  width: 8px;
+  height: 8px;
 }
 
 .code-scrollbar::-webkit-scrollbar-track {
-  background: #212121;      /* track color (e.g. Tailwind’s gray-800) */
+  background: var(--scrollbar-track);
 }
 
 .code-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #555555; /* thumb color (e.g. Tailwind’s gray-600) */
-  border-radius: 4px;        /* round the corners */
-  border: 2px solid #1f2937; /* give it a little border so thumb doesn’t flush-edge */
+  background-color: var(--scrollbar-thumb);
+  border-radius: 4px;
+  border: 2px solid var(--scrollbar-track);
 }
 
 .code-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: #6b7280; /* lighten on hover (e.g. Tailwind’s gray-500) */
+  background-color: var(--scrollbar-thumb-hover);
 }
 
-/* 2b. Firefox */
+/* Firefox */
 .code-scrollbar {
-  scrollbar-width: thin;                     /* “auto” | “thin” | “none” */
-  scrollbar-color: #555555 #212121;          /* thumb track */
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
-
 
 @layer {
   .font-italic {
@@ -85,7 +96,7 @@
   }
 
   .p-section {
-    @apply text-neutral-300 text-center max-w-2xl mx-auto;
+    @apply text-neutral-600 tracking-tight font-inter dark:text-neutral-300 text-center max-w-2xl mx-auto;
   }
 
   .text-section {
@@ -105,15 +116,16 @@
   }
 
   .rounded-icon {
-    @apply rounded-full p-4 bg-gradient-to-b from-neutral-700 to-neutral-900 w-12 h-12 flex items-center justify-center ring-1 ring-neutral-500;
+    @apply rounded-full p-4 bg-gradient-to-b from-neutral-200 to-neutral-100  dark:from-neutral-700 dark:to-neutral-900 w-12 h-12 flex items-center justify-center ring-1 ring-neutral-300 dark:ring-neutral-500;
   }
 
   .card-component {
-    @apply bg-neutral-900 ring-1 backdrop-blur-2xl ring-neutral-600 rounded-2xl;
+    @apply bg-neutral-50 dark:bg-neutral-900 ring-1 backdrop-blur-2xl ring-neutral-200 dark:ring-neutral-600 rounded-2xl;
+    @apply hover:bg-gradient-to-t hover:from-neutral-100 hover:to-neutral-200 dark:hover:from-neutral-800 dark:hover:to-neutral-900;
   }
 
   .p-card {
-    @apply text-neutral-400 font-inter tracking-tight text-center text-sm leading-relaxed max-w-sm;
+    @apply dark:text-neutral-400 text-neutral-600 font-inter tracking-tight text-center text-sm leading-relaxed max-w-sm;
   }
 
   .bento-grid {
@@ -121,11 +133,24 @@
   }
 
   .nav-p {
-    @apply hover:text-white cursor-pointer transition-all text-neutral-400 gap-2 font-inter tracking-tight font-medium text-sm
+    @apply hover:text-black dark:hover:text-white cursor-pointer transition-all text-neutral-600 dark:text-neutral-400 gap-2 font-inter tracking-tight font-medium text-sm;
   }
 
   .footer-p {
-    @apply tracking-tight font-inter text-sm text-neutral-500
+    @apply tracking-tight font-inter text-sm text-neutral-500;
+  }
+
+  .navbar-style {
+    @apply z-100 fixed flex w-full items-center justify-between p-6 py-4 sm:py-6 sm:px-12 mb-3 top-0 left-1/2 transform -translate-x-1/2 bg-transparent backdrop-blur-lg border-b border-neutral-200 dark:border-neutral-800 dark:shadow-lg m-auto;
+  }
+
+  .swift-orange-icon {
+    @apply rounded-full p-4 bg-gradient-to-b text-black dark:text-white from-orange-300 to-orange-200 dark:from-orange-700 dark:to-orange-900 w-12 h-12 flex items-center justify-center ring-1 ring-orange-400/50 dark:ring-orange-600;
+  }
+
+  .orange-card {
+    @apply bg-orange-400/10 dark:bg-orange-900/70 ring-1 backdrop-blur-2xl ring-orange-200 dark:ring-orange-800 rounded-2xl;
+    @apply hover:bg-gradient-to-t dark:hover:bg-orange-800 dark:hover:bg-gradient-to-b hover:from-orange-300/50 hover:to-orange-400/50 dark:hover:from-orange-950 dark:hover:to-orange-900/80;
   }
 }
 
@@ -134,7 +159,7 @@
 }
 
 @utility text-3.5xl {
-  font-size: 34px
+  font-size: 34px;
 }
 
 html {

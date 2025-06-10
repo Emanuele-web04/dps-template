@@ -2,7 +2,7 @@
 "use client";
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import {oneDark} from "react-syntax-highlighter/dist/esm/styles/prism";
+import { oneDark, oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { LuCopy, LuCheck } from "react-icons/lu";
 import { useState } from "react";
 
@@ -17,24 +17,42 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
 
   if (match) {
     return (
-      <div className="flex flex-col w-full max-h-120 justify-end overflow-clip">
-    
-      <SyntaxHighlighter
-        language={match[1]}
-        style={oneDark}
-        customStyle={{
-          fontFamily: "var(--font-geist-mono), monospace",
-          margin: 0,
-          padding: "1rem",
-          borderRadius: "0 0 0.75rem 0.75rem", // Solo gli angoli inferiori
-          backgroundColor: "#000000"
-        }}
-        className="rounded-lg font-mono"
-        codeTagProps={{ style: { all: "unset" } }}
-      >
-        {children.trim()}
-      </SyntaxHighlighter>
-    </div>
+      <>
+        <div className="hidden dark:flex flex-col w-full max-h-120 justify-end overflow-clip ">
+          <SyntaxHighlighter
+            language={match[1]}
+            style={oneDark}
+            customStyle={{
+              fontFamily: "var(--font-geist-mono), monospace",
+              margin: 0,
+              padding: "1rem",
+              borderRadius: "0 0 0.75rem 0.75rem", // Solo gli angoli inferiori
+              backgroundColor: "#000000",
+            }}
+            className="rounded-lg font-mono"
+            codeTagProps={{ style: { all: "unset" } }}
+          >
+            {children.trim()}
+          </SyntaxHighlighter>
+        </div>
+        <div className="dark:hidden flex flex-col w-full max-h-120 justify-end overflow-clip ">
+          <SyntaxHighlighter
+            language={match[1]}
+            style={oneLight}
+            customStyle={{
+              fontFamily: "var(--font-geist-mono), monospace",
+              margin: 0,
+              padding: "1rem",
+              borderRadius: "0 0 0.75rem 0.75rem", // Solo gli angoli inferiori
+              backgroundColor: "#ffffff"
+            }}
+            className="rounded-lg font-mono"
+            codeTagProps={{ style: { all: "unset" } }}
+          >
+            {children.trim()}
+          </SyntaxHighlighter>
+        </div>
+      </>
     );
   }
 

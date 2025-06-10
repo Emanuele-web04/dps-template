@@ -13,8 +13,7 @@ const SwiftUIBoilerplate = () => {
       className={cn(
         "w-full h-full p-4 flex items-center group cursor-pointer",
         "hover:translate-y-[-3px] hover:shadow-xl hover:shadow-black/10",
-        "hover:bg-gradient-to-r transition-all duration-300 ease-out",
-        "bg-orange-900/70 ring-1 backdrop-blur-2xl ring-orange-800 rounded-2xl hover:from-orange-800 hover:to-orange-900/50"
+        "orange-card "
       )}
     >
       <div className="flex flex-col w-full gap-4 items-start">
@@ -22,23 +21,25 @@ const SwiftUIBoilerplate = () => {
           <div
             className={cn(
               "group-hover:scale-110 group-hover:shadow-md transition-all duration-300 ease-out",
-              "rounded-full p-4 bg-gradient-to-b from-orange-700 to-orange-900 w-12 h-12 flex items-center justify-center ring-1 ring-orange-600"
+              "swift-orange-icon"
             )}
           >
             <Bolt className="w-5 h-5 transition-colors duration-300" />
           </div>
-          <span className="inline-flex h-px w-full bg-gradient-to-r from-transparent via-neutral-300 to-neutral-200"></span>
+          <span className="inline-flex h-px w-full bg-gradient-to-r from-transparent via-neutral-800 to-neutral-900 dark:via-neutral-300 dark:to-neutral-200"></span>
           <div
             className={cn(
               "group-hover:scale-110 group-hover:shadow-md transition-all duration-300 ease-out",
-              "rounded-full p-4 bg-gradient-to-b from-orange-700 to-orange-900 w-12 h-12 flex items-center justify-center ring-1 ring-orange-600"
+              "swift-orange-icon"
             )}
           >
             <AppStore className="w-6 h-6 transition-colors duration-300" />
           </div>
         </div>
         <div className="flex flex-col gap-1 items-start">
-          <h6 className="h6-title transition-colors w-full text-center sm:text-left duration-200">{title}</h6>
+          <h6 className="h6-title transition-colors w-full text-center sm:text-left duration-200">
+            {title}
+          </h6>
           <p className="p-card md:text-left! transition-colors duration-200">
             {description}
           </p>

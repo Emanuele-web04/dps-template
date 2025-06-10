@@ -20,10 +20,10 @@ const Frameworks = () => {
               return (
                 <div
                   key={i}
-                  className="flex items-center gap-4 text-neutral-500 whitespace-nowrap mr-5"
+                  className="flex items-center gap-4 text-neutral-400 dark:text-neutral-500 whitespace-nowrap mr-5"
                 >
                   <Icon className="text-3xl" />
-                  <p className="font-bold text-sm font-inter tracking-tighter">
+                  <p className="font-semibold text-sm font-inter tracking-tighter">
                     {f.name}
                   </p>
                 </div>

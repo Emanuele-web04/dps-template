@@ -19,16 +19,16 @@ const ComponentsPack = () => {
   };
 
   return (
-    <div className="col-span-12 md:col-span-5 p-8 flex flex-col justify-between items-center min-h-80 card-component group cursor-pointer hover:translate-y-[-3px] hover:shadow-xl hover:shadow-black/10 hover:bg-gradient-to-r hover:from-neutral-800 hover:to-neutral-900/50 transition-all duration-300 ease-out">
+    <div className="col-span-12 md:col-span-5 p-8 flex flex-col justify-between items-center min-h-80 card-component group cursor-pointer hover:translate-y-[-3px] hover:shadow-xl hover:shadow-black/10 hover:bg-gradient-to-r hover:from-neutral-100 hover:to-neutral-200 dark:hover:from-neutral-800 dark:hover:to-neutral-900 transition-all duration-300 ease-out">
       {/* Contenitore per icone in cerchio */}
       <div className="relative w-40 h-40 mt-4 flex items-center justify-center">
         {/* Cerchio di sfondo sottile */}
-        <div className="absolute inset-0 rounded-full border border-neutral-700/30 group-hover:border-neutral-600/50 transition-colors duration-300"></div>
+        <div className="absolute inset-0 rounded-full border border-neutral-300/70 dark:border-neutral-700/30 group-hover:border-neutral-600/50 transition-colors duration-300"></div>
 
         {/* Icona centrale con effetto glow */}
         <div className="relative z-10">
           <div className="rounded-icon group-hover:scale-110 group-hover:shadow-md transition-all duration-300 ease-out">
-            <CenterIcon className="w-10 h-10 text-white transition-colors duration-300" />
+            <CenterIcon className="w-10 h-10 text-black dark:text-white transition-colors duration-300" />
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const ComponentsPack = () => {
             style={getCircularPosition(idx, ringIcons.length)}
           >
             <div className="rounded-icon group-hover:shadow-md transition-all duration-300 ease-out">
-              <IconComponent className="w-5 h-5 text-white transition-colors duration-300" />
+              <IconComponent className="w-5 h-5 text-black dark:text-white transition-colors duration-300" />
             </div>
           </div>
         ))}
@@ -65,9 +65,7 @@ const ComponentsPack = () => {
       {/* Titolo e descrizione */}
       <div className="flex flex-col items-center mt-8">
         <h6 className="h6-title transition-colors duration-200">{title}</h6>
-        <p className="p-card transition-colors duration-200">
-          {description}
-        </p>
+        <p className="p-card transition-colors duration-200">{description}</p>
       </div>
     </div>
   );

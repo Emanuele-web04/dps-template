@@ -16,7 +16,7 @@ const FAQSection = () => {
         ))}
       </div>
       <h6 className="h6-title mt-12">SwiftUI FAQ</h6>
-      <div className="w-full items-center border-l pt-4 border-r border-dashed border-orange-900 flex flex-col gap-4 divide-y divide-orange-900 divide-dashed">
+      <div className="w-full items-center border-l pt-4 border-r border-dashed border-orange-700 dark:border-orange-900 flex flex-col gap-4 divide-y divide-orange-700 dark:divide-orange-900 divide-dashed">
         {SWIFTUI_FAQS.map((faq, i) => (
           <FAQItem key={i} question={faq.question} answer={faq.answer} />
         ))}

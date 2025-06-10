@@ -34,7 +34,7 @@ const SimpleTable = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="backdrop-blur-2xl rounded-2xl shadow-lg border border-neutral-200/60 bg-white/80 overflow-hidden dark:border-neutral-700/60 dark:bg-neutral-900/80">
+      <div className="backdrop-blur-2xl rounded-2xl shadow-lg border border-neutral-200/60 bg-white overflow-hidden dark:border-neutral-700/60 dark:bg-neutral-900/80">
         <div className="overflow-x-auto">
           <table className="min-w-full">
             <thead className="bg-neutral-50/80 font-inter tracking-tight dark:bg-neutral-800/80 border-b border-neutral-200 dark:border-neutral-700">
@@ -55,15 +55,15 @@ const SimpleTable = () => {
               {people.map((user, i) => (
                 <tr
                   key={i}
-                  className="hover:bg-neutral-50/60 cursor-pointer transition-all duration-200 dark:hover:bg-neutral-800/40"
+                  className="hover:bg-neutral-100 cursor-pointer transition-all duration-200 dark:hover:bg-neutral-800/40"
                 >
-                  <td className="p-3 sm:p-4 font-medium text-neutral-900 dark:text-neutral-100 text-sm sm:text-base whitespace-nowrap">
-                    <div className="flex gap-2 items-center">
+                  <td className="font-medium text-neutral-900 dark:text-neutral-100 text-sm sm:text-base whitespace-nowrap">
+                    <div className="p-3 sm:p-4  flex gap-2 items-center">
                       <Image width={80} height={80} src={user.src} alt={user.name} className="rounded-full w-5 h-5 md:w-6 md:h-6 object-cover"/>
                       {user.name}
                     </div>
                   </td>
-                  <td className="p-3 sm:p-4  hidden md:block text-neutral-600 dark:text-neutral-400 text-sm sm:text-base whitespace-nowrap">
+                  <td className="p-3 sm:p-4 hidden md:block text-neutral-600 dark:text-neutral-400 text-sm sm:text-base whitespace-nowrap">
                     {user.role}
                   </td>
                   <td className="p-3 sm:p-4 text-sm sm:text-base">

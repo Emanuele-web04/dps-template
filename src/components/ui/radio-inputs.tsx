@@ -13,14 +13,14 @@ const RadioInputs = () => {
         key={option}
         className={`
           flex w-fit items-center p-3 py-2 rounded-xl cursor-pointer
-          ring-1 ring-neutral-600
+          ring-1 ring-gray-300 dark:ring-neutral-600
       
           /* transizioni su colore e box-shadow */
           transition-colors duration-200 ease-in-out
       
           ${selected === option
-            ? "bg-neutral-900/70"           /* sfondo in stato selezionato */
-            : "hover:bg-neutral-900/70"}    /* sfondo al passaggio */
+            ? "bg-gray-100/70 dark:bg-neutral-900/70"           /* sfondo in stato selezionato */
+            : "hover:bg-gray-100/70 dark:hover:bg-neutral-900/70"}   
         `}
       >
         <input
@@ -32,11 +32,11 @@ const RadioInputs = () => {
         />
         <div className="flex items-center gap-2">
           {selected === option ? (
-            <IoIosRadioButtonOn />
+            <IoIosRadioButtonOn className="text-gray-700 dark:text-white" />
           ) : (
-            <IoIosRadioButtonOff />
+            <IoIosRadioButtonOff className="text-gray-700 dark:text-white" />
           )}
-          <span className="font-inter text-sm tracking-tight text-white">
+          <span className="font-inter text-sm tracking-tight text-gray-900 dark:text-white">
             {option}
           </span>
         </div>

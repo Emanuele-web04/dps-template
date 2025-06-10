@@ -43,7 +43,7 @@ export default function CodeGift() {
         </div>
 
         {/* Right: Code panel with tabs and animated transitions */}
-        <div className="max-w-full rounded-xl ring-1 max-h-130 ring-neutral-800 overflow-clip flex flex-col code-scrollbar col-span-1 bg-neutral-900">
+        <div className="max-w-full rounded-xl ring-1 max-h-130 ring-neutral-100 dark:ring-neutral-800 overflow-clip flex flex-col code-scrollbar col-span-1 bg-neutral-50 dark:bg-neutral-900">
           {/* Tab bar */}
           <div className="flex w-full px-4 py-3 justify-between items-center">
             <div className="relative flex gap-4">
@@ -57,8 +57,8 @@ export default function CodeGift() {
                     className={`
                       relative cursor-pointer text-xs md:text-sm font-mono transition-colors 
                       ${isActive
-                        ? "text-white pb-0 md:pb-1"
-                        : "text-gray-400 hover:text-gray-200"}
+                        ? "text-black dark:text-white pb-0 md:pb-1"
+                        : "text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"}
                     `}
                   >
                     {cg.filename}.{cg.language}
@@ -66,7 +66,7 @@ export default function CodeGift() {
                     {isActive && (
                       <motion.div
                         layoutId="underline"
-                        className="absolute hidden md:block bottom-0 left-0 h-[0.3px] bg-white w-full"
+                        className="absolute hidden md:block bottom-0 left-0 h-[0.3px] bg-black dark:bg-white w-full"
                       />
                     )}
                   </motion.button>
