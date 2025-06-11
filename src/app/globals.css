@@ -121,11 +121,11 @@ html[data-theme="dark"] {
   }
 
   .h3-title {
-    @apply font-semibold font-inter tracking-tighter text-xl md:text-2xl;
+    @apply font-semibold font-inter tracking-tight text-xl md:text-2xl;
   }
 
   .h6-title {
-    @apply font-bold font-inter tracking-tighter text-lg md:text-xl;
+    @apply font-bold font-inter tracking-tight text-lg md:text-xl;
   }
 
   .rounded-icon {
