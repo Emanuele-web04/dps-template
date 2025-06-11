@@ -29,11 +29,11 @@ const Template = () => {
   return (
     <div className="fade-in-up min-h-screen xl:max-w-7xl mx-auto p-6! md:p-12!">
       <div className="relative mx-auto">
-        <div className="flex mt-12! square-grid px-0.5! w-full gap-x-10 justify-between items-end">
+        <div className="flex mt-6 md:mt-12! square-grid px-0.5! w-full gap-x-10 justify-between items-end">
           <SquareGrid />
           <div className="flex z-20 flex-col w-full items-start justify-start">
             <h1 className="title-font grid-title mx-0!">AI Saas Template</h1>
-            <p className="my-4 mx-0 text-sm max-w-2xl md:text-base text-left font-normal text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            <p className="my-4 mx-0 font-inter text-sm max-w-2xl md:text-base text-left font-normal text-neutral-600 dark:text-neutral-300 leading-relaxed">
               Modern and minimalist templates for building your next product.
               Built with React, Next.js, Tailwind CSS, Framer Motion and
               TypeScript.
