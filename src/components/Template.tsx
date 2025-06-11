@@ -53,7 +53,7 @@ const Template = () => {
                 })}
               </div>
               <div className="flex flex-col md:flex-row justify-end items-center gap-y-4 md:gap-2">
-                <button className="w-full md:w-fit px-6 py-3 md:py-2.5 hover:bg-neutral-50 cursor-pointer font-inter text-sm font-medium tracking-tight ring-1 dark:ring-neutral-600 ring-neutral-200 shadow-md rounded-xl text-primary bg-white dark:bg-neutral-900">
+                <button className="w-full md:w-fit px-6 py-3 md:py-2.5 dark:hover:bg-neutral-950 hover:bg-neutral-50 cursor-pointer font-inter text-sm font-medium tracking-tight ring-1 dark:ring-neutral-600 ring-neutral-200 shadow-md rounded-xl text-primary bg-white dark:bg-neutral-900">
                   Live Preview
                 </button>
                 <AddToCart price={price} />
