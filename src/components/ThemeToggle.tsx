@@ -75,7 +75,7 @@ const ThemeToggle = () => {
   return (
     <div className="flex relative" ref={dropdownRef}>
       {/* Mobile Layout - 3 inline buttons with desktop styling */}
-      <div className="flex lg:hidden cursor-pointer items-center gap-1 bg-white dark:bg-neutral-900 rounded-xl p-1  ">
+      <div className="flex lg:hidden cursor-pointer items-center gap-4 rounded-xl p-1  ">
         {themes.map((themeOption, i) => {
           const ThemeIcon = themeOption.icon;
           const isSelected = currentTheme === themeOption;
@@ -85,8 +85,9 @@ const ThemeToggle = () => {
               key={i}
               onClick={() => handleThemeChange(themeOption)}
               className={cn(
-                "flex items-center nav-p hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-lg px-1.5 py-0.5",
-                isSelected ? "text-black! dark:text-white!" : ""
+                "flex items-center nav-p rounded-lg p-2",
+                isSelected ? "text-black! dark:text-white!" : "",
+                isSelected ? "p-2 ring-1 ring-neutral-200 dark:ring-neutral-600 rounded-md" : ""
               )}
               aria-label={`${themeOption.themeName} mode`}
             >
@@ -132,12 +133,12 @@ const ThemeToggle = () => {
                   <p>{themeOption.themeName}</p>
                 </div>
 
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-0.5">
                   {themeOption.shortcutIcons.map((icon, i) => {
                     const Icon = icon;
                     return <Icon key={i} className="w-3 h-3" />;
                   })}
-                  <p className="text-sm font-light">{themeOption.key}</p>
+                  <p className="text-xs font-light">{themeOption.key}</p>
                   {isSelected && <LuCheck className="w-4 h-4" />}
                 </div>
               </button>
