@@ -45,7 +45,7 @@ const Template = () => {
                   return (
                     <div
                       key={i}
-                      className="bg-white dark:bg-neutral-900 rounded-full ring-1 dark:ring-neutral-600 ring-neutral-100"
+                      className="text-primary dark:bg-neutral-900 rounded-full ring-1 dark:ring-neutral-600 ring-neutral-100"
                     >
                       <Icon className="md:m-2.5 md:w-5 md:h-5 m-2 w-4 h-4" />
                     </div>
