@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import { eudoxus, editor, inter, geistMono } from "@/lib/fonts";
+import NavbarWebsite from "@/components/NavbarWebsite";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dpstemplates.com/"),
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body
         className={`${eudoxus.variable} ${editor.variable} ${geistMono.variable} ${inter.variable} antialiased`}
       >
+        <NavbarWebsite size="small" />
         {children}
       </body>
     </html>

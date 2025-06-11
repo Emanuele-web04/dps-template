@@ -1,4 +1,5 @@
 import React from "react";
+import Dots from "../ui/dots";
 
 const HeroSectionText = () => {
   return (
@@ -18,11 +19,10 @@ const HeroSectionText = () => {
         <span className="flex items-center gap-x-3">
           beautiful{" "}
           <span className="border-1 border-dotted relative border-gray-400 dark:border-gray-500 bg-gray-100 dark:bg-neutral-900 backdrop-blur-2xl p-1 md:p-2 pb-3 md:pb-5">
-            <span className="inline-flex absolute -top-1.5 -left-1.5 w-3 h-3 rounded-full ring-1 ring-gray-400 dark:ring-neutral-500 bg-white dark:bg-black border border-gray-300 dark:border-transparent"></span>
-            <span className="inline-flex absolute -top-1.5 -right-1.5 w-3 h-3 rounded-full ring-1 ring-gray-400 dark:ring-neutral-500 bg-white dark:bg-black border border-gray-300 dark:border-transparent"></span>
-            <span className="inline-flex absolute -bottom-1.5 -left-1.5 w-3 h-3 rounded-full ring-1 ring-gray-400 dark:ring-neutral-500 bg-white dark:bg-black border border-gray-300 dark:border-transparent"></span>
-            <span className="inline-flex absolute -bottom-1.5 -right-1.5 w-3 h-3 rounded-full ring-1 ring-gray-400 dark:ring-neutral-500 bg-white dark:bg-black border border-gray-300 dark:border-transparent"></span>
-            <span className="italic font-editor font-light! pr-0.5 md:pr-1">components</span>
+            <Dots />
+            <span className="italic font-editor font-light! pr-0.5 md:pr-1">
+              components
+            </span>
           </span>
         </span>
       </h1>

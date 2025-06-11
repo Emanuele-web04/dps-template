@@ -2,15 +2,33 @@
 
 import { navSocials } from "@/lib/navSocials";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { navbarLinks } from "@/lib/navbarLinks";
 import { TbMenu, TbX } from "react-icons/tb";
 import LogoTitle from "./LogoTitle";
 import ThemeToggle from "./ThemeToggle";
-import { PiOption } from "react-icons/pi";
-import { BsShift } from "react-icons/bs";
+import { cn } from "@/lib/cn";
 
-const NavbarWebsite = () => {
+const NavbarWebsite = ({ size = "normal" }: { size?: "normal" | "small" }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (size === "small") {
+      const handleScroll = () => {
+        // toggle when window.scrollY > 50px (adjust as needed)
+        setScrolled(window.scrollY > 80);
+      };
+
+      // add listener
+      window.addEventListener("scroll", handleScroll);
+      // initialize in case we're already down the page
+      handleScroll();
+
+      // clean up
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -22,11 +40,23 @@ const NavbarWebsite = () => {
   };
 
   return (
-    <>
+    <nav
+      className={`
+        navbar-style 
+        py-4! 
+        transition-all
+        ${scrolled 
+          ? "border-b! dark:border-neutral-600! border-gray-200!" 
+          : "border-0!"
+        }
+      `}
+    >
       {/* Navbar normale */}
-      <div className="flex mx-auto max-w-[1600px] items-center w-full justify-between">
+      <div
+        className={cn("navbar-container", size === "small" ? "max-w-7xl!" : "")}
+      >
         <div className="flex items-center gap-12">
-          <LogoTitle visible={false} />
+          <LogoTitle size={size} visible={false} />
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex gap-5">
@@ -121,7 +151,6 @@ const NavbarWebsite = () => {
           {/* Theme Toggle for Mobile */}
           <div className="mb-8 flex">
             <ThemeToggle />
-           
           </div>
 
           {/* Contact Button */}
@@ -134,7 +163,7 @@ const NavbarWebsite = () => {
           </a>
         </div>
       </div>
-    </>
+    </nav>
   );
 };
 

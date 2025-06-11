@@ -5,11 +5,14 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 import { IoIosMailOpen } from "react-icons/io";
 import { IoIosAlert } from "react-icons/io";
+import Button3D from "../ui/button-3d";
 
 const EmailForm = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [status, setStatus] = useState<"idle" | "success" | "error" | "exists">("idle");
+  const [status, setStatus] = useState<"idle" | "success" | "error" | "exists">(
+    "idle"
+  );
   const [validation, setValidation] = useState(false);
   const [showValidationError, setShowValidationError] = useState(false);
   const [validationMessage, setValidationMessage] = useState("");
@@ -125,7 +128,7 @@ const EmailForm = () => {
         setValidation(false);
         setTouched(false);
       } else if (response.status == 409) {
-        setStatus("exists")
+        setStatus("exists");
       } else {
         setStatus("error");
       }
@@ -201,37 +204,29 @@ const EmailForm = () => {
           className="w-fit sm:w-[300px] text-sm md:text-base font-sans tracking-tight px-3 text-left text-gray-800 placeholder-gray-400 focus:outline-none overflow-hidden text-ellipsis"
           disabled={isSubmitting}
         />
-        <button
+        <Button3D
           ref={buttonRef}
-          id="join"
-          onClick={postEmail}
+          id={"join"}
+          onclick={postEmail}
           disabled={isSubmitting || disabled}
-          className="cursor-pointer bg-gradient-to-b border-2 border-neutral-800/60 w-fit py-2.5 from-neutral-700 to-black p-3 rounded-xl shadow-md shadow-black/70 ring-2 ring-neutral-800/80 hover:shadow-lg hover:shadow-black/60 hover:translate-y-[-2px] hover:brightness-110 active:shadow-sm active:translate-y-[1px] active:brightness-90 transition-all duration-200"
-        >
-          <p className="font-inter text-xs sm:text-sm tracking-tight text-white/90 font-medium whitespace-nowrap">
-            {isSubmitting ? "Submitting..." : "Join the Waitlist"}
-          </p>
-        </button>
+          content={isSubmitting ? "Submitting..." : "Join the Waitlist"}
+        />
       </div>
 
       {/* Validation error message */}
       {showValidationError && touched && (
-        <p className="error-message">
-          {validationMessage}
-        </p>
+        <p className="error-message">{validationMessage}</p>
       )}
 
       {/* Error message */}
       {status === "error" && (
-        <p className="error-message">
-          Something went wrong. Please try again.
-        </p>
+        <p className="error-message">Something went wrong. Please try again.</p>
       )}
 
       {/* Error message */}
       {status === "exists" && (
         <p className="error-message flex gap-2 items-center">
-            <IoIosAlert className="text-base"/>
+          <IoIosAlert className="text-base" />
           This email has already been used. Please use another one.
         </p>
       )}
@@ -263,7 +258,8 @@ const EmailForm = () => {
 
               <div className="mb-6 font-inter tracking-tight text-base">
                 <p className="text-gray-700  mb-4">
-                  Thanks for joining my waitlist! I'll keep you updated on when this will be available.
+                  Thanks for joining my waitlist! I'll keep you updated on when
+                  this will be available.
                 </p>
                 <p className="text-gray-700  mb-4">
                   Check your Inbox (or Spam if you can't see my email).

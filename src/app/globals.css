@@ -95,8 +95,12 @@ html[data-theme="dark"] {
     @apply absolute top-15 text-red-700/80 bg-red-100/50 p-1.5 font-inter tracking-tight font-medium rounded-md w-fit text-xs mt-2 ml-2;
   }
 
+  .title-font {
+    @apply font-sans font-bold tracking-tighter;
+  }
+
   .title {
-    @apply font-sans font-bold tracking-tighter text-3.5xl sm:text-5xl md:text-6xl;
+    @apply text-3.5xl sm:text-5xl md:text-6xl;
   }
 
   .p-section {
@@ -129,7 +133,7 @@ html[data-theme="dark"] {
   }
 
   .p-card {
-    @apply dark:text-neutral-400 text-neutral-600 font-inter tracking-tight text-center text-sm leading-relaxed max-w-sm;
+    @apply dark:text-neutral-400 text-neutral-600 font-inter tracking-tight text-center text-sm max-w-sm;
   }
 
   .bento-grid {
@@ -145,7 +149,7 @@ html[data-theme="dark"] {
   }
 
   .navbar-style {
-    @apply z-100 fixed flex w-full items-center justify-between p-6 py-4 sm:py-6 sm:px-12 mb-3 top-0 left-1/2 transform -translate-x-1/2 bg-transparent backdrop-blur-lg border-b border-neutral-200 dark:border-neutral-800 dark:shadow-lg m-auto;
+    @apply z-100 fixed flex w-full items-center justify-between p-6 py-4 sm:py-6 sm:px-12 mb-3 top-0 left-1/2 transform -translate-x-1/2 bg-transparent backdrop-blur-3xl border-b border-neutral-200 dark:border-neutral-800 dark:shadow-lg m-auto;
   }
 
   .swift-orange-icon {
@@ -155,6 +159,26 @@ html[data-theme="dark"] {
   .orange-card {
     @apply bg-orange-400/10 dark:bg-orange-900/70 ring-1 backdrop-blur-2xl ring-orange-200 dark:ring-orange-800 rounded-2xl;
     @apply hover:bg-gradient-to-t dark:hover:bg-orange-800 dark:hover:bg-gradient-to-b hover:from-orange-300/50 hover:to-orange-400/50 dark:hover:from-orange-950 dark:hover:to-orange-900/80;
+  }
+
+  .square-grid {
+    @apply relative mt-25 h-full mx-auto w-full overflow-hidden px-4 pt-10 pb-4 sm:px-6 md:pt-10 md:pb-20 lg:px-8;
+  }
+
+  .bg-clean {
+    @apply bg-white dark:bg-black w-full bg-fixed bg-center overflow-x-hidden overflow-y-auto min-h-screen relative text-white;
+  }
+
+  .grid-title {
+    @apply mx-auto text-left bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-800 bg-clip-text text-transparent dark:from-neutral-200 dark:via-neutral-100 dark:to-white text-3xl md:text-4xl lg:text-4xl md:leading-tight pt-4 pr-0.5;
+  }
+
+  .navbar-container {
+    @apply flex mx-auto max-w-[1600px] items-center w-full justify-between
+  }
+
+  .text-primary {
+    @apply text-black dark:text-white
   }
 }
 

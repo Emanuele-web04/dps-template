@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="w-full h-full flex md:flex-row flex-col justify-between">
         <div className="flex flex-col  justify-between">
           <div className="flex flex-col gap-4 h-full">
-            <LogoTitle visible={true} />
+            <LogoTitle visible={true} size={"normal"} />
             <div className="flex flex-col gap-2">
               <FooterLink
                 text="A product by"

@@ -4,7 +4,7 @@ import HeroGridTemplateSection from "@/components/HeroGridTemplateSection";
 
 const page = () => {
   return (
-    <div className="bg-white dark:bg-black w-full bg-fixed bg-center overflow-x-hidden overflow-y-auto min-h-screen relative text-white">
+    <div className="bg-clean">
       <div className="navbar-style">
         <NavbarWebsite />
       </div>
