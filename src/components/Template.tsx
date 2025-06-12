@@ -29,7 +29,7 @@ const Template = () => {
   return (
     <div className="fade-in-up min-h-screen xl:max-w-7xl mx-auto p-6! md:p-12!">
       <div className="relative mx-auto">
-        <div className="flex mt-6 md:mt-12! square-grid px-0.5! w-full gap-x-10 justify-between items-end">
+        <div className="flex mt-5! md:mt-12! square-grid px-0.5! w-full gap-x-10 justify-between items-end">
           <SquareGrid />
           <div className="flex z-20 flex-col w-full items-start justify-start">
             <h1 className="title-font grid-title mx-0!">AI Saas Template</h1>
