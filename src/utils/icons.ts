@@ -1,7 +1,7 @@
 // Lucide Icons
 import {
   LuCheck, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
-  LuSparkles, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope
+  LuSparkles, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown
 } from "react-icons/lu";
 
 // Tabler Icons
@@ -47,7 +47,7 @@ import { BiCommand, BiLogoTypescript } from "react-icons/bi";
 export {
   // Lucide
   LuCheck, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
-  LuSparkles, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope,
+  LuSparkles, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown,
   // Tabler
   TbMenu, TbX, TbTools, TbHammer, TbMailCheck, TbArrowRightToArc, TbMessageCircle,
   TbLayoutBoard, TbDeviceDesktopExclamation, TbDownload, TbSparklesTabler, TbBrandFramerMotion,

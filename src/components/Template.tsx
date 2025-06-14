@@ -10,22 +10,12 @@ import {
 import Image from "next/image";
 import { cn } from "@/lib/cn";
 import Dots from "./ui/dots";
-import Footer from "./landing/Footer";
+import { placeholders } from "@/lib/templates";
 
 const Template = () => {
   const icons = [RiNextjsFill, FaReact, SiTailwindcss, TbBrandFramerMotion];
   const price = 49;
 
-  function rangeTo() {
-    const images: string[] = [];
-    for (let i = 0; i < 4; i++) {
-      images.push("/khrona-landing.png");
-    }
-
-    return images;
-  }
-
-  const images = rangeTo();
   return (
     <div className="fade-in-up min-h-screen xl:max-w-7xl mx-auto p-6! md:p-12!">
       <div className="relative mx-auto">
@@ -52,17 +42,22 @@ const Template = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col md:flex-row justify-end items-center gap-y-4 md:gap-2">
+              <div className="flex relative flex-col md:flex-row justify-end items-start gap-y-4 md:gap-2">
                 <button className="w-full md:w-fit px-6 py-3 md:py-2.5 dark:hover:bg-neutral-950 hover:bg-neutral-50 cursor-pointer font-inter text-sm font-medium tracking-tight ring-1 dark:ring-neutral-600 ring-neutral-200 shadow-md rounded-xl text-primary bg-white dark:bg-neutral-900">
                   Live Preview
                 </button>
-                <AddToCart price={price} />
+                <div className="flex w-full md:w-fit relative flex-col">
+                  <AddToCart price={price} />
+                  <p className="md:absolute flex gap-1 justify-center w-full md:w-fit top-0 mt-4 md:mt-0 md:top-12 text-xs mx-auto md:text-sm text-primary font-inter">
+                    or get this with <strong>bundle</strong>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="grid md:p-8 mt-10 grid-cols-1 md:grid-cols-2 w-full gap-2">
-          {images.map((img, i) => {
+          {placeholders.map((img, i) => {
             const even = i % 2 === 0;
             const top = i < 2;
             return (

@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     const { data, error } = await resend.emails.send({
       from: "Emanuele | DP's Templates <hello@waitlist.dpstemplates.com>",
       to: [email],
-      subject: 'Hello world',
+      subject: 'Welcome!',
       react: WaitlistEmailTemplate({ email }),
     });
 

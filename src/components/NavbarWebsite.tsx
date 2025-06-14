@@ -11,6 +11,7 @@ import { cn } from "@/lib/cn";
 
 const NavbarWebsite = ({ size = "normal" }: { size?: "normal" | "small" }) => {
   const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     if (size === "small") {
@@ -29,7 +30,21 @@ const NavbarWebsite = ({ size = "normal" }: { size?: "normal" | "small" }) => {
     }
   }, []);
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // Effect per bloccare/sbloccare lo scroll del body
+  useEffect(() => {
+    if (isMenuOpen) {
+      // Blocca lo scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      // Sblocca lo scroll
+      document.body.style.overflow = "unset";
+    }
+
+    // Cleanup function per assicurarsi che lo scroll sia sempre sbloccato quando il componente viene smontato
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMenuOpen]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -43,17 +58,18 @@ const NavbarWebsite = ({ size = "normal" }: { size?: "normal" | "small" }) => {
     <nav
       className={`
         navbar-style 
-        ${size === "small" ? "py-4!": "border-b! dark:border-neutral-800! border-gray-200!"} 
+        ${size === "small" ? "py-4" : "border-b dark:border-neutral-800 border-gray-200"} 
         transition-all
-        ${scrolled && size === "small"
-          ? "border-b! dark:border-neutral-800! border-gray-200!" 
-          : "border-0!"
+        ${
+          scrolled && size === "small"
+            ? "border-b! dark:border-neutral-800 border-gray-200"
+            : "border-0!"
         }
       `}
     >
       {/* Navbar normale */}
       <div
-        className={cn("navbar-container", size === "small" ? "max-w-7xl!" : "")}
+        className={cn("navbar-container", size === "small" ? "max-w-7xl" : "")}
       >
         <div className="flex items-center gap-12">
           <LogoTitle size={size} visible={false} />
@@ -113,7 +129,7 @@ const NavbarWebsite = ({ size = "normal" }: { size?: "normal" | "small" }) => {
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex font-inter tracking-tighter flex-col items-start mt-12 justify-start h-full p-6 md:p-12 text-center">
+        <div className="flex font-inter tracking-tighter flex-col items-start mt-12 justify-start h-full p-6 md:p-12 text-center overflow-y-auto">
           {/* Navigation Links */}
           <div className="space-y-6 md:space-y-8 mb-12">
             {navbarLinks.map((nav, i) => (
