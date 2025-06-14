@@ -7,7 +7,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const DropdownMobile = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const handleOpening = () => {
     setOpen((prev) => !prev);
@@ -36,7 +36,7 @@ const DropdownMobile = () => {
         <div className="flex divide-y items-start divide-neutral-200 flex-col">
           {templates.map((t, i) => (
             <Link key={i} className="w-full text-left" href={`/templates/${t.slug}`}>
-              <p className="hover:text-black p-2 dark:hover:text-white dark:text-neutral-300 text-neutral-800 text-sm">
+              <p className="font-inter tracking-tight hover:text-black p-2 dark:hover:text-white dark:text-neutral-300 text-neutral-800 text-sm">
                 {t.title}
               </p>
             </Link>
