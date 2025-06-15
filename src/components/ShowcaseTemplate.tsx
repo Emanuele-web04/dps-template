@@ -18,7 +18,7 @@ const ShowcaseTemplate = ({
   return (
     <Link
       href={`/templates/${slug}`}
-      className="flex flex-col fade-in-up gap-y-6 col-span-7 hover:-translate-y-3 transition-all ease-in-out hover:shadow-lg hover:scale-105 rounded-3xl lg:p-4 "
+      className="flex flex-col fade-in-up gap-y-6 col-span-7 hover:-translate-y-3 transition-all ease-in-out hover:shadow-lg hover:scale-[101%] rounded-3xl lg:p-4 "
     >
       <div className="w-full flex justify-between">
         <div className="flex gap-y-2 flex-col">

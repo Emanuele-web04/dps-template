@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/cn";
+import Link from "next/link";
 const LogoTitle = ({visible = false, size="normal"}: {visible: boolean, size: "small" | "normal"}) => {
 
     const imageSize = () => {
@@ -13,7 +14,7 @@ const LogoTitle = ({visible = false, size="normal"}: {visible: boolean, size: "s
     }
 
   return (
-    <div className="flex items-center gap-3">
+    <Link href={"/website"} className="flex items-center gap-3">
       <Image
         src={"/logo-black.png"}
         alt="Logo"
@@ -37,7 +38,7 @@ const LogoTitle = ({visible = false, size="normal"}: {visible: boolean, size: "s
       <h6 className={`${size === "normal" ? "text-2xl" : "text-lg"} ${visible ? "block" : "hidden"} text-black dark:text-white md:block font-bold font-inter tracking-tighter`}>
         DP's Templates
       </h6>
-    </div>
+    </Link>
   );
 };
 

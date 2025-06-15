@@ -170,7 +170,7 @@ html[data-theme="dark"] {
   }
 
   .square-grid {
-    @apply relative mt-15 md:mt-25 h-full mx-auto w-full md:overflow-hidden px-6 pt-10 pb-4 sm:px-12 md:pt-10 md:pb-20 lg:px-8;
+    @apply relative mt-15 md:mt-25 h-full mx-auto w-full lg:overflow-hidden px-6 pt-10 pb-4 sm:px-12 md:pt-10 md:pb-20 lg:px-8;
   }
 
   .bg-clean {

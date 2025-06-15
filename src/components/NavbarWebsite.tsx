@@ -77,14 +77,18 @@ const NavbarWebsite = ({ size = "normal" }: { size?: "normal" | "small" }) => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex gap-5">
             {navbarLinks.map((nav, i) => (
-              <div key={i} className="flex font-inter items-center nav-p">
+              <Link
+                href={nav.to}
+                key={i}
+                className="flex font-inter items-center nav-p"
+              >
                 {nav.name}
                 {nav.name == "SwiftUI" && (
                   <p className="font-mono text-xs text-orange-500 px-1.5 py-0.5 border border-orange-500 rounded-lg">
                     iOS
                   </p>
                 )}
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -133,7 +137,8 @@ const NavbarWebsite = ({ size = "normal" }: { size?: "normal" | "small" }) => {
           {/* Navigation Links */}
           <div className="space-y-6 md:space-y-8 mb-12">
             {navbarLinks.map((nav, i) => (
-              <div
+              <Link
+                href={nav.to}
                 key={i}
                 onClick={closeMenu}
                 className="flex items-center justify-start text-left hover:text-black dark:hover:text-white cursor-pointer transition-all text-neutral-700 dark:text-white gap-3 font-inter tracking-tight font-medium text-xl"
@@ -144,7 +149,7 @@ const NavbarWebsite = ({ size = "normal" }: { size?: "normal" | "small" }) => {
                     iOS
                   </p>
                 )}
-              </div>
+              </Link>
             ))}
           </div>
 

@@ -28,7 +28,7 @@ export const templates: TemplateType[] = [
     },
     {
     title: "Minimal Portfolio", 
-    desc: "Every AI SaaS template is a multi-page template focused on AI applications offering SaaS solutions.", 
+    desc: "A clean and minimal portfolio template designed for creative professionals and developers to showcase their work.", 
     images: placeholders, 
     stack: aiSaaSIcons, 
     slug:"minimal-portfolio", 
@@ -39,7 +39,7 @@ export const templates: TemplateType[] = [
     },
     {
     title: "Product Landing Page", 
-    desc: "Every AI SaaS template is a multi-page template focused on AI applications offering SaaS solutions.", 
+    desc: "A conversion-focused landing page template optimized for product launches and marketing campaigns.", 
     images: placeholders, 
     stack: aiSaaSIcons, 
     slug:"product-landing-page", 
@@ -50,7 +50,7 @@ export const templates: TemplateType[] = [
     },
     {
     title: "App Landing Page", 
-    desc: "Every AI SaaS template is a multi-page template focused on AI applications offering SaaS solutions.", 
+    desc: "A modern mobile-first landing page template perfect for mobile apps and software applications.", 
     images: placeholders, 
     stack: aiSaaSIcons, 
     slug:"app-landing-page", 
