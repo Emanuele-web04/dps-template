@@ -21,11 +21,11 @@ const Page = () => {
           <DropdownMobileComponent />
         </HeroGridTemplateSection>
 
-        <div className="max-w-7xl px-6 sm:px-12 grid md:mt-0 mt-8 items-start lg:grid-cols-11">
+        <div className="max-w-7xl px-6 sm:px-12 grid mt-8 items-start lg:grid-cols-11">
           {/* Sidebar */}
           <Aside />
           {/* Main content */}
-          <div className="col-span-1 lg:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="col-span-1 lg:col-span-9 mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {components.map((c, i) => (
               <ShowcaseComponent key={i} {...c} />
             ))}

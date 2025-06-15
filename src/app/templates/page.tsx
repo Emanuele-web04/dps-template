@@ -23,7 +23,7 @@ const Page = () => {
           <Aside />
 
           {/* Main content */}
-          <div className="col-span-1 lg:col-span-10 flex flex-col  gap-y-12">
+          <div className="col-span-1 lg:col-span-10 flex flex-col gap-y-12">
             {templates.map((t, i) => (
               <ShowcaseTemplate key={i} {...t} />
             ))}
