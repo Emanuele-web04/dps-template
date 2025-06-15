@@ -23,7 +23,7 @@ export const components: ComponentType[] = [
     slug:"hero-sections", 
     longDesc: "Ciao", 
     ogImage: "", 
-    price: 49,
+    price: 12,
     },
     {
     title: "Navbars", 
