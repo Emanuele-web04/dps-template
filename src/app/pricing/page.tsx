@@ -1,8 +1,13 @@
-import PricingPage from "@/components/PricingPage";
-import React from "react";
+import React, { Suspense } from "react";
+import PricingPageClient from "@/components/pricing/PricingPageClient";
+import PricingPageLoading from "@/components/pricing/PricingPageLoading";
 
-const page = () => {
-  return <PricingPage/>;
+const PricingPage: React.FC = () => {
+  return (
+    <Suspense fallback={<PricingPageLoading />}>
+      <PricingPageClient />
+    </Suspense>
+  );
 };
 
-export default page;
+export default PricingPage;
