@@ -31,7 +31,7 @@ const SegmentedPicker: React.FC<SegmentedPickerProps> = ({
   return (
     <div
       className={cn(
-        "relative inline-flex bg-white shadow-md dark:bg-neutral-900 ring-neutral-200 dark:ring-neutral-800 ring-1 rounded-xl p-1",
+        "relative inline-flex font-inter tracking-tight bg-white shadow-md dark:bg-neutral-900 ring-neutral-200 dark:ring-neutral-800 ring-1 rounded-xl p-1",
         className
       )}
     >
