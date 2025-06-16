@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback, useMemo } from "react";
+import React from "react";
 import { cn } from "@/lib/cn";
 
 export interface SegmentedOption {
@@ -22,20 +22,11 @@ const SegmentedPicker: React.FC<SegmentedPickerProps> = ({
   onChange,
   className,
 }) => {
-  // Memoize the selected index for indicator positioning
-  const selectedIndex = useMemo(
-    () => options.findIndex((option) => option.value === value),
-    [options, value]
-  );
-
-  // Simple change handler
-  const handleOptionChange = useCallback(
-    (newValue: string) => {
-      if (newValue === value) return;
-      onChange(newValue);
-    },
-    [value, onChange]
-  );
+  // Simple change handler - no callback needed
+  const handleOptionChange = (newValue: string) => {
+    if (newValue === value) return;
+    onChange(newValue);
+  };
 
   return (
     <div

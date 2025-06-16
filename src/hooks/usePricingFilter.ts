@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Pricing } from "@/types/pricing";
 import { allNextPricing } from "@/lib/nextjs-pricing/pricings";
@@ -22,31 +22,25 @@ const usePricingFilter = () => {
     return filter && ["nextjs", "swiftui", "all"].includes(filter) ? filter : "all";
   });
 
-  // Memoize the pricing data to prevent unnecessary recalculations
-  const pricingData = useMemo<PricingData>(() => ({
+  // Simple pricing data - no need to memoize static data
+  const pricingData: PricingData = {
     nextjs: allNextPricing,
     swiftui: allSwiftPricing,
     all: [...allNextPricing, ...allSwiftPricing]
-  }), []);
+  };
 
-  // Memoize the current filtered data
-  const filteredPricing = useMemo(() => 
-    pricingData[activeFilter], 
-    [pricingData, activeFilter]
-  );
+  // Get filtered pricing - simple lookup, no memoization needed
+  const filteredPricing = pricingData[activeFilter];
 
-  // Update URL when filter changes
-  const updateURL = useCallback((filter: PricingFilter) => {
+  // Simple filter change handler - no callback needed
+  const handleFilterChange = (filter: PricingFilter) => {
+    setActiveFilter(filter);
+    
+    // Update URL
     const params = new URLSearchParams(searchParams.toString());
     params.set("filter", filter);
     router.push(`?${params.toString()}`, { scroll: false });
-  }, [router, searchParams]);
-
-  // Optimized filter change handler
-  const handleFilterChange = useCallback((filter: PricingFilter) => {
-    setActiveFilter(filter);
-    updateURL(filter);
-  }, [updateURL]);
+  };
 
   // Sync with URL changes (for browser back/forward)
   useEffect(() => {
@@ -56,10 +50,10 @@ const usePricingFilter = () => {
     }
   }, [searchParams, activeFilter]);
 
-  // Get the appropriate variant for the current filter
-  const getVariant = useCallback((filter: PricingFilter) => {
+  // Simple variant getter - no callback needed
+  const getVariant = (filter: PricingFilter) => {
     return filter === "swiftui" ? "orange" : "neutral";
-  }, []);
+  };
 
   return {
     activeFilter,
