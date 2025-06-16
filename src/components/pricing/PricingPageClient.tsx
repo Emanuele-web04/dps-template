@@ -49,12 +49,6 @@ const PricingPageClient: React.FC = () => {
 
         {/* Pricing Content */}
         <div className="flex font-inter text-primary tracking-tight flex-col gap-3">
-          <h3 className="h6-title text-center">
-            {activeFilter === "nextjs" && "Next.js Pricings"}
-            {activeFilter === "swiftui" && "SwiftUI Pricings"}
-            {activeFilter === "all" && "All Pricings"}
-          </h3>
-
           <PricingContent
             pricings={filteredPricing}
             variant={getVariant(activeFilter)}
