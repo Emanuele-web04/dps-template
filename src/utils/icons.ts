@@ -1,13 +1,13 @@
 // Lucide Icons
 import {
   LuCheck, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
-  LuSparkles, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown
+  LuSparkles, LuCirclePlus, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown
 } from "react-icons/lu";
 
 // Tabler Icons
 import {
-  TbMenu, TbX, TbTools, TbHammer, TbMailCheck, TbArrowRightToArc, TbMessageCircle,
-  TbLayoutBoard, TbDeviceDesktopExclamation, TbDownload, TbSparkles as TbSparklesTabler, TbBrandFramerMotion
+  TbMenu, TbCirclePlusFilled, TbCircleCheckFilled, TbX, TbTools, TbHammer, TbMailCheck, TbArrowRightToArc, TbMessageCircle,
+  TbLayoutBoard, TbArrowMerge, TbDeviceDesktopExclamation, TbDownload, TbSparkles as TbSparklesTabler, TbBrandFramerMotion
 } from "react-icons/tb";
 
 // Bootstrap Icons
@@ -43,14 +43,17 @@ import { SiTailwindcss, SiLucide } from "react-icons/si";
 // Boxicons
 import { BiCommand, BiLogoTypescript } from "react-icons/bi";
 
+//Ci
+import { CiCirclePlus } from "react-icons/ci";
+
 // Export all icons
 export {
   // Lucide
-  LuCheck, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
-  LuSparkles, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown,
+  LuCheck, LuCirclePlus, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
+  LuSparkles, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown,
   // Tabler
-  TbMenu, TbX, TbTools, TbHammer, TbMailCheck, TbArrowRightToArc, TbMessageCircle,
-  TbLayoutBoard, TbDeviceDesktopExclamation, TbDownload, TbSparklesTabler, TbBrandFramerMotion,
+  TbMenu, TbCirclePlusFilled, TbCircleCheckFilled, TbX, TbTools, TbHammer, TbMailCheck, TbArrowRightToArc, TbMessageCircle,
+  TbLayoutBoard, TbDeviceDesktopExclamation, TbArrowMerge, TbDownload, TbSparklesTabler, TbBrandFramerMotion,
   // Bootstrap
   BsGear, BsTwitterX, BsShift, BsArrowLeft,
   // FontAwesome
@@ -72,5 +75,7 @@ export {
   // Simple
   SiTailwindcss, SiLucide,
   // Boxicons
-  BiCommand, BiLogoTypescript
+  BiCommand, BiLogoTypescript,
+  // Ci
+  CiCirclePlus
 }; 

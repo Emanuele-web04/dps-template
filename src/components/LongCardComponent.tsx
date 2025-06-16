@@ -13,7 +13,7 @@ const LongCardComponent = ({
   variant = "neutral",
 }: LongCardProps) => {
   const Icon = icon[0];
-
+  
   const getVariantClasses = (variant: string) => {
     switch (variant) {
       case "orange":
@@ -36,10 +36,10 @@ const LongCardComponent = ({
   return (
     <div
       className={cn(
-        "w-full h-full p-4 flex items-center group cursor-pointer",
-        "hover:translate-y-[-3px] hover:shadow-xl hover:shadow-black/10",
-        "hover:bg-gradient-to-r transition-all duration-300 ease-out",
-        getVariantClasses(variant)
+      "w-full h-full p-4 flex items-center group cursor-pointer",
+      "hover:translate-y-[-3px] hover:shadow-xl hover:shadow-black/10",
+      "hover:bg-gradient-to-r transition-all duration-300 ease-out",
+      getVariantClasses(variant)
       )}
     >
       <div className="flex gap-4 items-center">

@@ -9,10 +9,11 @@ interface ButtonProps {
   onclick: () => void;
   disabled: boolean;
   content: string;
-  padding?: string
+  padding?: string;
+  fontSize?: string
 }
 
-const Button3D = ({ ref, id, onclick, disabled, content, padding="py-2.5 p-3" }: ButtonProps) => {
+const Button3D = ({ ref, id, onclick, disabled, content, padding="py-2.5 p-3", fontSize="font-medium" }: ButtonProps) => {
   return (
     <button
       ref={ref}
@@ -48,10 +49,12 @@ const Button3D = ({ ref, id, onclick, disabled, content, padding="py-2.5 p-3" }:
       )}
     >
       <p
-        className="font-inter text-sm sm:text-sm tracking-tight 
-                   text-white/95 
-                   dark:text-neutral-800 
-                   font-medium whitespace-nowrap"
+        className={cn("font-inter text-sm sm:text-sm tracking-tight", 
+                   "text-white/95" ,
+                   "dark:text-neutral-800", 
+                   " whitespace-nowrap",
+                   fontSize
+                   )}
       >
         {content}
       </p>
