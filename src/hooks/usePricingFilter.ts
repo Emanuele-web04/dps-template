@@ -3,6 +3,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Pricing } from "@/types/pricing";
 import { allNextPricing } from "@/lib/nextjs-pricing/pricings";
 import { allSwiftPricing } from "@/lib/swiftui-pricing/swift-pricing";
+import { allPricing } from "@/lib/all-pricing";
 
 export type PricingFilter = "nextjs" | "swiftui" | "all";
 
@@ -26,7 +27,7 @@ const usePricingFilter = () => {
   const pricingData: PricingData = {
     nextjs: allNextPricing,
     swiftui: allSwiftPricing,
-    all: [...allNextPricing, ...allSwiftPricing]
+    all: allPricing
   };
 
   // Get filtered pricing - simple lookup, no memoization needed

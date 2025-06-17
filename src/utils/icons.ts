@@ -32,7 +32,7 @@ import { PiOption } from "react-icons/pi";
 import { AiOutlineX, AiOutlineYoutube } from "react-icons/ai";
 
 // Heroicons
-import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import { HiOutlineRocketLaunch, HiOutlineArrowRight } from "react-icons/hi2";
 
 // Grommet Icons
 import { GrAppleAppStore, GrSwift } from "react-icons/gr";
@@ -45,6 +45,7 @@ import { BiCommand, BiLogoTypescript } from "react-icons/bi";
 
 //Ci
 import { CiCirclePlus } from "react-icons/ci";
+import { HiOutlineArrowSmRight } from "react-icons/hi";
 
 // Export all icons
 export {
@@ -69,7 +70,7 @@ export {
   // Ant Design
   AiOutlineX, AiOutlineYoutube,
   // Heroicons
-  HiOutlineRocketLaunch,
+  HiOutlineRocketLaunch, HiOutlineArrowSmRight,
   // Grommet
   GrAppleAppStore, GrSwift,
   // Simple

@@ -2,12 +2,12 @@ import { Pricing } from "@/types/pricing"
 import { LuPackage, TbArrowMerge, TbLayoutBoard } from "@/utils/icons"
 
 const featuresComponents = [
-    "Access to 30+ components, ready to use.",
-    "Lifetime access to future components too.",
-    "Copy and Paste reade-to-use code for your apps.",
-    "Comments integrated with the code, so it is easy to understand and navigate.",
-    "Copy code to paste into AI code editors to improve and personalize your work.",
-    "Usable for personal and commercial use.",
+    "Access to 30+ iOS-ready SwiftUI components",
+    "Lifetime access to all future component updates",
+    "Copy-paste ready code with no configuration needed",
+    "Well-documented with inline comments for easy understanding",
+    "Perfect for AI code editors to enhance and customize",
+    "Unlimited personal and commercial use included"
 ]
 
 export const componentsPricing: Pricing = {
@@ -19,14 +19,13 @@ export const componentsPricing: Pricing = {
 }
 
 const featuresTemplates = [
-    "Access to 2+ boilerplates, ready to use.",
-    "Lifetime access to future boilerplates too.",
-    "Copy and Paste reade-to-use code.",
-    "Zip folder to donwload with the source code.",
-    "Ready-to-distribution code.",
-    "Documented code: comments integrated with the code, so it is easy to understand and navigate.",
-    "Copy code to paste into AI code editors to improve and personalize your work.",
-    "Usable for personal and commercial use.",
+    "Access to 2+ complete, App Store-ready boilerplates",
+    "Lifetime access to all future boilerplate updates",
+    "Full Xcode project with complete iOS app structure",
+    "App Store-ready code with Apple's best practices",
+    "Comprehensive documentation and deployment guides",
+    "Unlimited personal and commercial use included",
+    "Easy customization with modular SwiftUI architecture"
 ]
 
 export const templatesPricing: Pricing = {
@@ -37,14 +36,14 @@ export const templatesPricing: Pricing = {
     price: 89
 }
 
-const swiftuiAll = "Lifetime access to all."
+const swiftuiAll = "Complete access to everything - the ultimate value"
 
 export const swiftuiPricing: Pricing = {
     title: "All",
     features: [swiftuiAll], 
     desc: "One time payment", 
     icon: TbArrowMerge,
-    price: 189
+    price: 129
 }
 
 export const allSwiftPricing: Pricing[] = [

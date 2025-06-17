@@ -1,14 +1,13 @@
 import { Pricing } from "@/types/pricing"
 import { LuPackage, TbArrowMerge, TbLayoutBoard } from "@/utils/icons"
 
-
 const featuresComponents = [
-    "Access to 40+ components, ready to use.",
-    "Lifetime access to future components too.",
-    "Copy and Paste reade-to-use code.",
-    "Comments integrated with the code, so it is easy to understand and navigate.",
-    "Copy code to paste into AI code editors to improve and personalize your work.",
-    "Usable for personal and commercial use.",
+    "Access to 40+ production-ready components",
+    "Lifetime access to all future updates",
+    "Copy-paste ready code with no setup required",
+    "Well-documented with inline comments for easy navigation",
+    "Perfect for AI code editors to enhance and customize",
+    "Unlimited personal and commercial use included"
 ]
 
 export const componentsPricing: Pricing = {
@@ -20,14 +19,13 @@ export const componentsPricing: Pricing = {
 }
 
 const featuresTemplates = [
-    "Access to 4+ templates, ready to use.",
-    "Lifetime access to future templates too.",
-    "Copy and Paste reade-to-use code.",
-    "Zip folder to donwload with the source code.",
-    "Documented code: comments integrated with the code, so it is easy to understand and navigate.",
-    "Copy code to paste into AI code editors to improve and personalize your work.",
-    "Usable for personal and commercial use.",
-    "Simple ReadMe to introducing you to the codebase.",
+    "Access to 4+ complete, production-ready templates",
+    "Lifetime access to all future template updates",
+    "Full source code with complete project structure",
+    "Production-ready codebase with best practices",
+    "Comprehensive documentation and setup guides",
+    "Unlimited personal and commercial use included",
+    "Easy customization with modular architecture"
 ]
 
 export const templatesPricing: Pricing = {
@@ -38,14 +36,14 @@ export const templatesPricing: Pricing = {
     price: 89
 }
 
-const nextjsAll = "Lifetime access to all."
+const nextjsAll = "Complete access to everything - the ultimate value"
 
 export const nextjsPricing: Pricing = {
     title: "All",
     features: [nextjsAll], 
     desc: "One time payment", 
     icon: TbArrowMerge,
-    price: 189,
+    price: 129,
     extra: ["Everything in Components Bundle"]
 }
 

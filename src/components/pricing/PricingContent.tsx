@@ -4,6 +4,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Pricing } from "@/types/pricing";
 import PricingCard from "./PricingCard";
+import { cn } from "@/lib/cn";
 
 interface PricingContentProps {
   pricings: Pricing[];
@@ -27,7 +28,10 @@ const PricingContent: React.FC<PricingContentProps> = ({
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 w-full"
+        className={cn(
+          " gap-3 w-full",
+          filter === "all" ? "flex flex-1 justify-center min-w-lg" : "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
+        )}
       >
         {pricings.map((pricing, i) => (
           <motion.div
@@ -42,7 +46,7 @@ const PricingContent: React.FC<PricingContentProps> = ({
             }}
             className="h-full"
           >
-            <PricingCard pricing={pricing} variant={variant} index={i} />
+            <PricingCard pricing={pricing} variant={variant} filter={filter} />
           </motion.div>
         ))}
       </motion.div>
