@@ -6,6 +6,7 @@ import SegmentedPicker, {
 } from "@/components/ui/segmented-picker";
 import PricingContent from "@/components/pricing/PricingContent";
 import usePricingFilter, { PricingFilter } from "@/hooks/usePricingFilter";
+import LightGradient from "../LightGradient";
 
 const PricingPageClient: React.FC = () => {
   const { activeFilter, filteredPricing, handleFilterChange, getVariant } =
@@ -24,7 +25,8 @@ const PricingPageClient: React.FC = () => {
   };
 
   return (
-    <div className="bg-clean min-h-screen font-inter tracking-tight flex flex-col items-center justify-center mx-auto sm:p-12 p-6 w-full">
+    <div className="bg-clean min-h-screen relative font-inter tracking-tight flex flex-col items-center justify-center mx-auto sm:p-12 p-6 w-full">
+      <LightGradient />
       <div className="flex flex-col mt-10 max-w-7xl gap-12">
         {/* Header */}
         <div className="flex flex-col w-full text-center gap-8">
