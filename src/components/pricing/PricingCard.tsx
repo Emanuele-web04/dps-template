@@ -86,7 +86,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             </p>
           </div>
         </div>
-        <div className="flex items-center w-full justify-between text-white dark:text-black md:p-4 md:py-2.5 px-3 py-1.5 bg-gradient-to-b from-neutral-900 to-neutral-800 dark:from-white dark:to-neutral-300 dark:ring-neutral-800 ring-1 ring-neutral-700 rounded-xl">
+        <div className="flex items-center w-full justify-between text-white dark:text-black p-4 py-2.5 bg-gradient-to-b from-neutral-900 to-neutral-800 dark:from-white dark:to-neutral-300 dark:ring-neutral-800 ring-1 ring-neutral-700 rounded-xl">
           <p className="font-inter tracking-tight font-medium text-sm md:text-base">Get Access Now</p>
           <HiOutlineArrowSmRight className="w-5 h-5"/>
         </div>
