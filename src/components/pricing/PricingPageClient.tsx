@@ -27,7 +27,7 @@ const PricingPageClient: React.FC = () => {
   return (
     <div className="bg-clean min-h-screen relative font-inter tracking-tight flex flex-col items-center justify-center mx-auto sm:p-12 p-6 w-full">
       <LightGradient />
-      <div className="flex flex-col mt-10 max-w-7xl gap-12">
+      <div className="flex flex-col mt-4 md:mt-10 max-w-7xl gap-12">
         {/* Header */}
         <div className="flex flex-col w-full text-center gap-8">
           <div>
