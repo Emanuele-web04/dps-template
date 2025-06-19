@@ -1,6 +1,7 @@
 import Code from "@/components/Code";
 import CodeWrapper from "@/components/CodeWrapper";
 import SidebarComponent from "@/components/SidebarComponent";
+import SubComponentLayout from "@/components/SubComponentLayout";
 import AddToCart from "@/components/ui/add-to-cart";
 import SquareGrid from "@/components/ui/square-grid";
 import StackIcons from "@/components/ui/stack-icons";
@@ -37,7 +38,7 @@ export default async function Page({
 
   return (
     <div className="bg-clean fade-in-up text-primary font-inter tracking-tight min-h-screen w-full sm:p-12 max-w-screen-xl mx-auto p-6">
-      <div className="relative flex w-full mx-auto">
+      <div className="relative md:flex w-full mx-auto ">
         <SidebarComponent components={components} />
         <div className="relative flex-1">
           <div className="flex mt-6! square-grid h-fit! px-0.5! w-full gap-10 justify-between items-end">
@@ -64,24 +65,41 @@ export default async function Page({
           </div>
 
           {/* Installation code */}
-          <div className="flex flex-col mt-10">
+          <div className="flex flex-col mt-4">
             <h2 id="installation" className="scroll-mt-[100px] h2-title">
               Installation
             </h2>
-            <p className="p-card text-left!">
-              Quick guide to setup the component
+            <p className="p-style my-2">Quick guide to setup the component</p>
+            <p className="p-style">
+              <code>1.</code> Copy and paste this into the terminal to install
+              the required dependencies.
             </p>
-            <CodeWrapper Icon={LuTerminal} code={installation} path="Terminal" language="language-bash"/>
-            <CodeWrapper Icon={BiLogoTypescript} code={utils} path="lib/utils.ts" color="#FF738A" language="language-ts"/>
-
+            <CodeWrapper
+              Icon={LuTerminal}
+              code={installation}
+              path="Terminal"
+              language="language-bash"
+            />
+            <p className="p-style">
+              <code>2.</code> Create{" "}
+              <code className="text-sm code-tag text-primary">/lib</code>{" "}
+              folder, then create the file{" "}
+              <code className="text-sm code-tag text-primary">utils.ts</code>.
+              Copy and paste this inside of it.
+            </p>
+            <CodeWrapper
+              Icon={BiLogoTypescript}
+              code={utils}
+              path="lib/utils.ts"
+              color="#FF738A"
+              language="language-ts"
+            />
             {/* Single Components array */}
-            <div className="flex flex-col gap-y-4">
+            {/*<div className="flex flex-col mt-6 gap-y-8">
               {components.map((c, i) => (
-                <div key={i} id={`component-${i}`}>
-                  <h3>{c.title}</h3>
-                </div>
+                <SubComponentLayout key={i} {...c}/>
               ))}
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>

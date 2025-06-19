@@ -17,7 +17,8 @@ export type ComponentType = {
 export type SingleComponent = {
     title: string
     desc: string
-    npm: string
+    npm?: string
     code: string
+    slug: string
     preview: () => React.JSX.Element
 }

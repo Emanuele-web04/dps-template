@@ -1,8 +1,10 @@
 // Lucide Icons
 import {
-  LuCheck, LuTerminal, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
+  LuCheck, LuCodeXml, LuTerminal, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
   LuSparkles, LuCirclePlus, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown
 } from "react-icons/lu";
+
+import { PiLaptop } from "react-icons/pi";
 
 // Tabler Icons
 import {
@@ -50,7 +52,7 @@ import { HiOutlineArrowSmRight } from "react-icons/hi";
 // Export all icons
 export {
   // Lucide
-  LuCheck, LuTerminal, LuCirclePlus, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
+  LuCheck, LuCodeXml, LuTerminal, LuCirclePlus, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
   LuSparkles, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown,
   // Tabler
   TbMenu, TbCirclePlusFilled, TbCircleCheckFilled, TbX, TbTools, TbHammer, TbMailCheck, TbArrowRightToArc, TbMessageCircle,
@@ -77,6 +79,8 @@ export {
   SiTailwindcss, SiLucide,
   // Boxicons
   BiCommand, BiLogoTypescript,
+
+  PiLaptop,
   // Ci
   CiCirclePlus
 }; 

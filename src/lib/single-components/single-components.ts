@@ -3,10 +3,10 @@ import { SingleComponent } from "@/types/component";
 import { fullTableCode } from "../code-gifts";
 
 const singleComponent: SingleComponent = {
-    title: "Hero section + blurred navbar",
+    title: "Hero section - Blurred navbar",
     desc: "Hero section with navbar that has a backdrop blur",
-    npm: `npm i react-icons`,
     code: fullTableCode,
+    slug: "hero-section-blurred-navbar",
     preview: KhronaHero
 }
 

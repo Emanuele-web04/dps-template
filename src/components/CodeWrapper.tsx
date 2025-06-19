@@ -18,12 +18,12 @@ const CodeWrapper = ({
   code,
 }: Props) => {
   return (
-    <div className="code-wrapper">
-      <div className="flex p-2 text-neutral-400 dark:text-neutral-600 items-center gap-x-1">
+    <div className="code-wrapper w-full my-2 overflow-x-auto">
+      <div className="flex p-2 text-neutral-500 items-center gap-x-1">
         <Icon />
-        <p className=" font-mono text-sm">{path}</p>
+        <p className="font-mono text-sm">{path}</p>
       </div>
-      <CopyCode code={code} language={language} color={color}/>
+      <CopyCode code={code} language={language} color={color} />
     </div>
   );
 };

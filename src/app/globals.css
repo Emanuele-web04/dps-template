@@ -93,6 +93,10 @@ html[data-theme="dark"] {
 }
 
 @layer {
+  .code-tag {
+    @apply rounded-lg font-mono bg-neutral-50 dark:bg-neutral-900 dark:ring-neutral-800 px-1.5 mx-1 leading-relaxed relative my-6 py-0.5 ring-1 ring-neutral-200
+  }
+
   .code-wrapper {
     @apply flex flex-col p-1 bg-neutral-50 dark:bg-neutral-950 rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-900
   }
@@ -222,6 +226,14 @@ html[data-theme="dark"] {
   .aside-text {
     @apply font-inter tracking-tight font-semibold text-sm;
   }
+
+  .p-style {
+    @apply font-inter mt-2 text-sm md:text-base text-neutral-800 dark:text-neutral-200 tracking-tight
+  }
+
+  .sidebar-text {
+    @apply hover:text-black dark:hover:text-white cursor-pointer transition-all text-neutral-600 dark:text-neutral-400 gap-2 font-inter tracking-tight font-medium text-base data-checked:text-sky-500 data-checked:font-semibold data-checked:text-[17px]
+  } 
 }
 
 @utility text-xxs {
