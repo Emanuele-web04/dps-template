@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
+@custom-variant data-checked (&[data-active]);
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -70,7 +70,33 @@ html[data-theme="dark"] {
   background-color: var(--scrollbar-thumb-hover);
 }
 
+.styled-scrollbar {
+  scrollbar-width:thin;
+  scrollbar-color: #eaeaea transparent;
+  scrollbar-gutter: stable;
+}
+
+/* Target the npm command specifically */
+.language-bash .token.function {
+  color: #61dafb !important; /* Light blue for npm */
+}
+
+/* Target package names */
+.language-bash .token.string,
+.language-bash .token.argument {
+  color: #98d982 !important; /* Green for package names */
+}
+
+/* Target the 'i' flag */
+.language-bash .token.parameter {
+  color: #ffd700 !important; /* Gold for flags */
+}
+
 @layer {
+  .code-wrapper {
+    @apply flex flex-col p-1 bg-neutral-50 dark:bg-neutral-950 rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-900
+  }
+
   .minimal-button {
     @apply dark:hover:bg-neutral-950 hover:bg-neutral-50 cursor-pointer font-inter text-sm font-medium tracking-tight ring-1 dark:ring-neutral-600 ring-neutral-200 shadow-md rounded-xl bg-white dark:bg-neutral-900;
   }
@@ -121,6 +147,10 @@ html[data-theme="dark"] {
 
   .section-container {
     @apply min-h-screen mt-60 max-w-4xl flex flex-col items-center justify-center;
+  }
+
+  .h2-title {
+    @apply font-semibold font-inter tracking-tight text-2xl md:text-3xl;
   }
 
   .h3-title {

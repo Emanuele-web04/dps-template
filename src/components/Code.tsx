@@ -1,16 +1,15 @@
 // components/CodeBlock.tsx
-
-
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { oneDark, oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { oneDark, oneLight, nightOwl } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 interface CodeBlockProps {
   children: string;
   className?: string;
+  color?: string
 }
 
 // Controlla se è un blocco di codice (pre) o codice inline
-export default function CodeBlock({ children, className }: CodeBlockProps) {
+export default function Code({ children, className, color="#3CEC85" }: CodeBlockProps) {
   const match = /language-(\w+)/.exec(className || ""); // Estrai il linguaggio
 
   if (match) {
@@ -18,34 +17,34 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
       <>
         <div className="hidden dark:flex flex-col w-full max-h-120 justify-end overflow-clip ">
           <SyntaxHighlighter
+            showLineNumbers={className !== "language-bash" ? true : false}
             language={match[1]}
-            style={oneDark}
+            style={nightOwl}
             customStyle={{
               fontFamily: "var(--font-geist-mono), monospace",
               margin: 0,
-              padding: "1rem",
-              borderRadius: "0 0 0.75rem 0.75rem", // Solo gli angoli inferiori
-              backgroundColor: "#000000",
+              backgroundColor: "#0f0f0f",
+              fontSize: "0.90rem"
             }}
-            className="rounded-lg font-mono"
-            codeTagProps={{ style: { all: "unset" } }}
+            className="font-mono"
+            codeTagProps={{ style: { all: "unset", color: color } }}
           >
             {children.trim()}
           </SyntaxHighlighter>
         </div>
         <div className="dark:hidden flex flex-col w-full max-h-120 justify-end overflow-clip ">
           <SyntaxHighlighter
+            showLineNumbers={className !== "language-bash" ? true : false}
             language={match[1]}
             style={oneLight}
             customStyle={{
               fontFamily: "var(--font-geist-mono), monospace",
               margin: 0,
-              padding: "1rem",
-              borderRadius: "0 0 0.75rem 0.75rem", // Solo gli angoli inferiori
-              backgroundColor: "#ffffff"
+              backgroundColor: "#ffffff",
+              fontSize: "0.9rem"
             }}
-            className="rounded-lg font-mono"
-            codeTagProps={{ style: { all: "unset" } }}
+            className="font-mono"
+            codeTagProps={{ style: { all: "unset", color:"#0bac4e" } }}
           >
             {children.trim()}
           </SyntaxHighlighter>

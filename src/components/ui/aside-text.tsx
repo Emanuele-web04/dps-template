@@ -32,7 +32,7 @@ const AsideText = (props: AsideTextProps) => {
         ))
         :
         array.map((t, i) => (
-          <Link key={i} href={`/templates/${t.slug}`}>
+          <Link key={i} href={`/components-pack/${t.slug}`}>
             <p className="aside-text font-normal! cursor-pointer ml-0 transition-all hover:ml-2 hover:text-black dark:hover:text-white dark:text-neutral-300 text-neutral-800">
               {t.title}
             </p>

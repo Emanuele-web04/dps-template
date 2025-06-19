@@ -1,5 +1,6 @@
 import { ComponentType } from "@/types/component";
 import { BiLogoTypescript, FaReact, RiNextjsFill, SiTailwindcss, TbBrandFramerMotion } from "@/utils/icons";
+import { singleComponents } from "./single-components/single-components";
 
 function rangeTo() {
     const images: string[] = [];
@@ -14,6 +15,15 @@ export const placeholders = rangeTo();
 
 const iconsStack = [RiNextjsFill, FaReact, SiTailwindcss, TbBrandFramerMotion, BiLogoTypescript];
 
+const utils = `
+import { ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+ 
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+`
+
 export const components: ComponentType[] = [
     {
     title: "Hero Sections", 
@@ -24,6 +34,9 @@ export const components: ComponentType[] = [
     longDesc: "Ciao", 
     ogImage: "", 
     price: 12,
+    installation: "npm i react-icons tailwind-merge",
+    utils: utils,
+    components: singleComponents
     },
     {
     title: "Navbars", 
@@ -33,7 +46,10 @@ export const components: ComponentType[] = [
     slug:"navbars", 
     longDesc: "Ciao", 
     ogImage: "", 
-    price: 49
+    price: 49,
+    components: singleComponents,
+    installation: "npm i react-icons",
+    utils: utils,
     },
     {
     title: "Cards", 
@@ -43,7 +59,10 @@ export const components: ComponentType[] = [
     slug:"cards", 
     longDesc: "Ciao", 
     ogImage: "", 
-    price: 49
+    price: 49,
+    components: singleComponents,
+    installation: "npm i react-icons",
+    utils: utils,
     },
     {
     title: "Buttons", 
@@ -53,7 +72,10 @@ export const components: ComponentType[] = [
     slug:"buttons", 
     longDesc: "Ciao", 
     ogImage: "", 
-    price: 49
+    price: 49,
+    components: singleComponents,
+    installation: "npm i react-icons",
+    utils: utils,
     },
     {
     title: "Dropdown", 
@@ -63,7 +85,10 @@ export const components: ComponentType[] = [
     slug:"dropdown", 
     longDesc: "Ciao", 
     ogImage: "", 
-    price: 49
+    price: 49,
+    components: singleComponents,
+    installation: "npm i react-icons",
+    utils: utils,
     },
     {
     title: "Forms", 
@@ -73,7 +98,10 @@ export const components: ComponentType[] = [
     slug:"forms", 
     longDesc: "Ciao", 
     ogImage: "", 
-    price: 49
+    price: 49,
+    components: singleComponents,
+    installation: "npm i react-icons",
+    utils: utils,
     },
     {
     title: "Signup/Login", 
@@ -83,7 +111,10 @@ export const components: ComponentType[] = [
     slug:"signup-login", 
     longDesc: "Ciao", 
     ogImage: "", 
-    price: 49
+    price: 49,
+    components: singleComponents,
+    installation: "npm i react-icons",
+    utils: utils,
     },
     {
     title: "Pricing Sections", 
@@ -93,7 +124,10 @@ export const components: ComponentType[] = [
     slug:"pricing-sections", 
     longDesc: "Ciao", 
     ogImage: "", 
-    price: 49
+    price: 49,
+    components: singleComponents,
+    installation: "npm i react-icons",
+    utils: utils,
     },
     {
     title: "Bento Grids", 
@@ -103,7 +137,10 @@ export const components: ComponentType[] = [
     slug:"bento-grids", 
     longDesc: "Ciao", 
     ogImage: "", 
-    price: 49
+    price: 49,
+    components: singleComponents,
+    installation: "npm i react-icons",
+    utils: utils,
     },
     {
     title: "Labels", 
@@ -113,11 +150,14 @@ export const components: ComponentType[] = [
     slug:"labels", 
     longDesc: "Ciao", 
     ogImage: "", 
-    price: 49
+    price: 49,
+    components: singleComponents,
+    installation: "npm i react-icons",
+    utils: utils,
     },
 ]
 
-export function getAllComponentSlugsSync(): string[] {
+export async function getAllComponentSlugs(): Promise<string[]> {
   return components.map(c => c.slug)
 }
 

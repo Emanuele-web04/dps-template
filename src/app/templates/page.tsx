@@ -3,7 +3,6 @@ import { templates } from "@/lib/templates";
 import ShowcaseTemplate from "@/components/ShowcaseTemplate";
 import DropdownMobile from "@/components/DropdownMobile";
 import Aside from "@/components/Aside";
-import Link from "next/link";
 
 const Page = () => {
   return (
