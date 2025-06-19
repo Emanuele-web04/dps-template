@@ -38,9 +38,10 @@ export default async function Page({
 
   return (
     <div className="bg-clean fade-in-up text-primary font-inter tracking-tight min-h-screen w-full sm:p-12 max-w-screen-xl mx-auto p-6">
-      <div className="relative md:flex w-full mx-auto ">
+      <div className="relative md:flex w-full mx-auto">
         <SidebarComponent components={components} />
-        <div className="relative flex-1">
+        {/* Add flex-1 and min-w-0 to the main content container */}
+        <div className="relative flex-1 min-w-0">
           <div className="flex mt-6! square-grid h-fit! px-0.5! w-full gap-10 justify-between items-end">
             <SquareGrid />
             <div className="flex z-20 text-left flex-col w-full items-start justify-start">
@@ -74,12 +75,15 @@ export default async function Page({
               <code>1.</code> Copy and paste this into the terminal to install
               the required dependencies.
             </p>
-            <CodeWrapper
-              Icon={LuTerminal}
-              code={installation}
-              path="Terminal"
-              language="language-bash"
-            />
+            {/* Add w-0 flex-1 to CodeWrapper containers */}
+            <div className="flex-1">
+              <CodeWrapper
+                Icon={LuTerminal}
+                code={installation}
+                path="Terminal"
+                language="language-bash"
+              />
+            </div>
             <p className="p-style">
               <code>2.</code> Create{" "}
               <code className="text-sm code-tag text-primary">/lib</code>{" "}
@@ -87,19 +91,21 @@ export default async function Page({
               <code className="text-sm code-tag text-primary">utils.ts</code>.
               Copy and paste this inside of it.
             </p>
-            <CodeWrapper
-              Icon={BiLogoTypescript}
-              code={utils}
-              path="lib/utils.ts"
-              color="#FF738A"
-              language="language-ts"
-            />
+            <div className="flex-1">
+              <CodeWrapper
+                Icon={BiLogoTypescript}
+                code={utils}
+                path="lib/utils.ts"
+                color="#FF738A"
+                language="language-ts"
+              />
+            </div>
             {/* Single Components array */}
-            {/*<div className="flex flex-col mt-6 gap-y-8">
+            <div className="flex flex-col mt-6 gap-y-8">
               {components.map((c, i) => (
-                <SubComponentLayout key={i} {...c}/>
+                <SubComponentLayout key={i} {...c} />
               ))}
-            </div>*/}
+            </div>
           </div>
         </div>
       </div>

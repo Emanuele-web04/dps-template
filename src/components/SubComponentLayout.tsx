@@ -2,11 +2,12 @@
 
 import { cn } from "@/lib/cn";
 import { SingleComponent } from "@/types/component";
-import { LuCodeXml, PiLaptop } from "@/utils/icons";
+import { BiLogoTypescript, LuCodeXml, PiLaptop } from "@/utils/icons";
 import React, { useState } from "react";
 import { IconType } from "react-icons";
 import Code from "./Code";
 import KhronaHero from "./hero-sections/KhronaHero";
+import CodeBlock from "./codegift/Codeblock";
 
 type ButtonSubComponent = {
   Icon: IconType;
@@ -46,8 +47,8 @@ const SubComponentLayout = ({
                 key={i}
                 onClick={() => handleSelection(b.id)}
                 className={cn(
-                  "flex items-center gap-x-1 ring-1 ring-neutral-200 rounded-xl transition-all cursor-pointer px-4 py-1.5 ",
-                  selection === b.id ? "bg-neutral-100" : ""
+                  "flex items-center gap-x-1 ring-1 dark:ring-neutral-800 ring-neutral-200 rounded-xl transition-all cursor-pointer px-4 py-1.5 ",
+                  selection === b.id ? "bg-neutral-100 dark:bg-neutral-900" : ""
                 )}
               >
                 <Icon />
@@ -57,13 +58,23 @@ const SubComponentLayout = ({
           })}
         </div>
         {selection === "preview" ? (
-          <div className="bg-neutral-100 ring-1 ring-neutral-200">
+          <div className="bg-neutral-100 dark:bg-neutral-900 ring-1 dark:ring-neutral-800 ring-neutral-200">
             <div className="ring-1 bg-white ring-neutral-200 rounded-3xl m-2">
               {preview()}
             </div>
           </div>
         ) : (
-          <KhronaHero />
+          <div className=" ring-neutral-100 p-1 dark:ring-neutral-800 overflow-x-auto  flex flex-col">
+            <div className="code-wrapper w-full  overflow-clip ">
+              <div className="flex p-2 text-neutral-500 items-center gap-x-1">
+                <BiLogoTypescript />
+                <p className="font-mono text-sm">hero-section.tsx</p>
+              </div>
+              <div className="overflow-x-auto rounded-2xl ring-1 ring-neutral-800 code-scrollbar flex-1 min-h-0">
+                <CodeBlock className="language-tsx">{code}</CodeBlock>
+              </div>
+            </div>
+          </div>
         )}
       </div>
     </div>
