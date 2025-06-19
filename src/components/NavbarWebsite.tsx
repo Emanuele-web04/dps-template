@@ -58,7 +58,7 @@ const NavbarWebsite = ({ size = "normal" }: { size?: "normal" | "small" }) => {
     <nav
       className={`
         navbar-style 
-        ${size === "small" ? "py-4" : "border-b dark:border-neutral-800 border-gray-200"} 
+        ${size === "small" ? "py-4" : "border-b! dark:border-neutral-800 border-gray-200"} 
         transition-all
         ${
           scrolled && size === "small"

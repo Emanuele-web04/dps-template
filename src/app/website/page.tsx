@@ -14,7 +14,7 @@ const page = () => {
       <NavbarWebsite size="normal" />
       {/* Main content wrapper */}
       <div className="flex flex-col min-h-screen">
-        <main className="flex-1 flex flex-col justify-start p-6 md:p-12 items-center">
+        <main className="flex-1 flex flex-col justify-start p-6 sm:p-12 items-center">
           <HeroSection />
           <CodeGift />
           <WhatYoullFind />
