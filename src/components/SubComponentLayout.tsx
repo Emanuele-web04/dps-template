@@ -2,12 +2,17 @@
 
 import { cn } from "@/lib/cn";
 import { SingleComponent } from "@/types/component";
-import { BiLogoTypescript, LuCodeXml, PiLaptop } from "@/utils/icons";
+import {
+  BiLogoTypescript,
+  LuCheck,
+  LuCodeXml,
+  LuCopy,
+  PiLaptop,
+} from "@/utils/icons";
 import React, { useState } from "react";
 import { IconType } from "react-icons";
-import Code from "./Code";
-import KhronaHero from "./hero-sections/KhronaHero";
 import CodeBlock from "./codegift/Codeblock";
+import { useCopyToCLipboard } from "@/hooks/useCopyToClipboard";
 
 type ButtonSubComponent = {
   Icon: IconType;
@@ -33,6 +38,8 @@ const SubComponentLayout = ({
   const handleSelection = (id: string) => {
     setSelection(id);
   };
+
+  const { copy, handleCopy } = useCopyToCLipboard();
 
   return (
     <div id={`component`} className="flex flex-col gap-y-2">
@@ -65,10 +72,28 @@ const SubComponentLayout = ({
           </div>
         ) : (
           <div className=" ring-neutral-100 p-1 dark:ring-neutral-800 overflow-x-auto  flex flex-col">
-            <div className="code-wrapper w-full  overflow-clip ">
-              <div className="flex p-2 text-neutral-500 items-center gap-x-1">
-                <BiLogoTypescript />
-                <p className="font-mono text-sm">hero-section.tsx</p>
+            <div className="code-wrapper w-full overflow-clip">
+              <div className="flex w-full justify-between items-center">
+                <div className="flex p-2  text-neutral-500 items-center gap-x-1">
+                  <BiLogoTypescript />
+                  <p className="font-mono text-sm">hero-section.tsx</p>
+                </div>
+                <button
+                  onClick={() => handleCopy(code)}
+                  className="text-neutral-500 transition-all px-3 font-medium cursor-pointer focus:outline-none"
+                >
+                  {copy ? (
+                    <div className="flex items-center text-sm gap-x-2">
+                      <LuCheck />
+                      <p className="">Copied!</p>
+                    </div>
+                  ) : (
+                    <div className="flex items-center text-sm gap-x-2">
+                      <LuCopy />
+                      <p>Copy</p>
+                    </div>
+                  )}
+                </button>
               </div>
               <div className="overflow-x-auto rounded-2xl ring-1 ring-neutral-800 code-scrollbar flex-1 min-h-0">
                 <CodeBlock className="language-tsx">{code}</CodeBlock>
