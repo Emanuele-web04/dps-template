@@ -1,9 +1,10 @@
 import { ComponentType } from "@/types/component";
 import Image from "next/image";
 import StackIcons from "./ui/stack-icons";
-const ShowcaseComponent = ({ title, desc, price, stack }: ComponentType) => {
+import Link from "next/link";
+const ShowcaseComponent = ({ title, desc, price, stack , slug}: ComponentType) => {
   return (
-    <div className="p-1.5 rounded-2xl ring-1 ring-neutral-200 dark:bg-neutral-950 dark:ring-neutral-800 bg-neutral-100">
+    <Link href={`/components-pack/${slug}`} className="p-1.5 rounded-2xl ring-1 ring-neutral-200 dark:bg-neutral-950 dark:ring-neutral-800 bg-neutral-100">
       <div className="col-span-1 group cursor-pointer font-inter tracking-tight hover:bg-neutral-100 bg-neutral-50 dark:hover:bg-neutral-950 dark:bg-neutral-900 overflow-clip rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-800">
         <div className="overflow-clip">
           <Image
@@ -30,7 +31,7 @@ const ShowcaseComponent = ({ title, desc, price, stack }: ComponentType) => {
           <StackIcons stack={stack} />
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

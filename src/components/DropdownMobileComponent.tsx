@@ -42,7 +42,7 @@ const DropdownMobileComponent = () => {
             <Link
               key={i}
               className="w-full text-left"
-              href={`/templates/${c.slug}`}
+              href={`/components-pack/${c.slug}`}
             >
               <p className="font-inter tracking-tight hover:text-black p-2 dark:hover:text-white dark:text-neutral-300 text-neutral-800 text-sm">
                 {c.title}
