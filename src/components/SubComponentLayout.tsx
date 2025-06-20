@@ -4,6 +4,7 @@ import { cn } from "@/lib/cn";
 import { SingleComponent } from "@/types/component";
 import {
   BiLogoTypescript,
+  FaReact,
   LuCheck,
   LuCodeXml,
   LuCopy,
@@ -42,11 +43,11 @@ const SubComponentLayout = ({
   const { copy, handleCopy } = useCopyToCLipboard();
 
   return (
-    <div id={`component`} className="flex flex-col gap-y-2">
-      <h6 className="h6-title">{title}</h6>
+    <div id={`${slug}`} className="flex scroll-mt-[100px] flex-col gap-y-2">
+      <h3 className="h3-title">{title}</h3>
       <p className="p-style mt-0!">{desc}</p>
       <div className="flex flex-col gap-y-4">
-        <div className="flex items-center gap-x-2">
+        <div className="flex items-center mt-2 gap-x-2">
           {buttons.map((b, i) => {
             const Icon = b.Icon;
             return (
@@ -65,7 +66,7 @@ const SubComponentLayout = ({
           })}
         </div>
         {selection === "preview" ? (
-          <div className="bg-neutral-100 dark:bg-neutral-900 ring-1 dark:ring-neutral-800 ring-neutral-200">
+          <div className="bg-neutral-100 dark:bg-neutral-900 ring-1 dark:ring-neutral-700 ring-neutral-200">
             <div className="ring-1 bg-white ring-neutral-200 rounded-3xl m-2">
               {preview()}
             </div>
@@ -75,7 +76,7 @@ const SubComponentLayout = ({
             <div className="code-wrapper w-full overflow-clip">
               <div className="flex w-full justify-between items-center">
                 <div className="flex p-2  text-neutral-500 items-center gap-x-1">
-                  <BiLogoTypescript />
+                  <FaReact />
                   <p className="font-mono text-sm">hero-section.tsx</p>
                 </div>
                 <button
@@ -95,7 +96,7 @@ const SubComponentLayout = ({
                   )}
                 </button>
               </div>
-              <div className="overflow-x-auto rounded-2xl ring-1 ring-neutral-800 code-scrollbar flex-1 min-h-0">
+              <div className="overflow-x-auto rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-800 code-scrollbar flex-1 min-h-0">
                 <CodeBlock className="language-tsx">{code}</CodeBlock>
               </div>
             </div>

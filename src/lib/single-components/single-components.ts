@@ -2,20 +2,39 @@ import KhronaHero from "@/components/hero-sections/KhronaHero";
 import { SingleComponent } from "@/types/component";
 import { fullTableCode } from "../code-gifts";
 
-const singleComponent: SingleComponent = {
-    title: "Hero section - Blurred navbar",
-    desc: "Hero section with navbar that has a backdrop blur",
+const futureHeroSection: SingleComponent = {
+    title: "Futuristic Hero Section",
+    desc: "Hero section with a touch of futuristic gradient",
     code: fullTableCode,
-    slug: "hero-section-blurred-navbar",
+    slug: "futuristic-hero-section",
+    preview: KhronaHero
+}
+const gradientHeroSection: SingleComponent = {
+    title: "Gradient Hero Section",
+    desc: "Hero section with a beautiful gradient background",
+    code: fullTableCode,
+    slug: "gradient-hero-section",
+    preview: KhronaHero
+}
+const productHeroSection: SingleComponent = {
+    title: "Product Hero Section",
+    desc: "Hero section displaying a product",
+    code: fullTableCode,
+    slug: "product-hero-section",
+    preview: KhronaHero
+}
+const minimalHeroSection: SingleComponent = {
+    title: "Minimal Hero Section",
+    desc: "Minimal hero section with a touch of color",
+    code: fullTableCode,
+    slug: "minimal-hero-section",
     preview: KhronaHero
 }
 
 export const singleComponents: SingleComponent[] = [
-    singleComponent,
-    singleComponent,
-    singleComponent,
-    singleComponent,
-    singleComponent,
-    singleComponent,
+    gradientHeroSection,
+    futureHeroSection,
+    minimalHeroSection,
+    productHeroSection
 ]
 

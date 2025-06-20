@@ -5,7 +5,7 @@ import { useTheme } from "@/hooks/useTheme";
 import { Theme } from "@/types/theme";
 import { themes } from "@/lib/themes";
 import { cn } from "@/lib/cn";
-import { LuCheck, LuMonitor, LuMoon, LuSun } from "react-icons/lu";
+import { LuCheck } from "react-icons/lu";
 import useKeyboardShortcut from "@/hooks/useKeyboardShortcut";
 
 const ThemeToggle = () => {

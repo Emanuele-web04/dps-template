@@ -49,10 +49,10 @@ export default function SidebarComponent({ components }: SidebarProps) {
   };
 
   return (
-    <div className="sticky top-25 pt-10 self-start hidden h-[calc(100vh-121px)] md:w-[240px] lg:w-[284px] md:flex md:shrink-0 md:flex-col md:justify-between">
+    <div className="sticky top-25 self-start hidden h-[calc(100vh-121px)] md:w-[240px] lg:w-[284px] md:flex md:shrink-0 md:flex-col md:justify-between">
       <div className="overflow-hidden relative">
         <div className="styled-scrollbar flex h-[calc(100vh-260px)] flex-col overflow-y-scroll pb-4 pr-2 dark:text-white">
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-4">
             <p className="font-semibold">Getting Started</p>
             <Link
               href="#installation"
@@ -65,9 +65,9 @@ export default function SidebarComponent({ components }: SidebarProps) {
             {components.map((c, i) => (
               <Link
                 key={i}
-                href={`#component-${i}`}
-                onClick={() => handleLinkClick(`component-${i}`)}
-                data-active={active === `component-${i}` ? true : undefined}
+                href={`#${c.slug}`}
+                onClick={() => handleLinkClick(`${c.slug}`)}
+                data-active={active === `${c.slug}` ? true : undefined}
                 className="sidebar-text"
               >
                 {c.title}

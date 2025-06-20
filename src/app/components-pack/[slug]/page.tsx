@@ -1,4 +1,3 @@
-import Code from "@/components/Code";
 import CodeWrapper from "@/components/CodeWrapper";
 import SidebarComponent from "@/components/SidebarComponent";
 import SubComponentLayout from "@/components/SubComponentLayout";

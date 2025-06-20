@@ -143,8 +143,8 @@ export const components: ComponentType[] = [
     utils: utils,
     },
     {
-    title: "Labels", 
-    desc: "Flexible label and badge components for status indicators, categories, and information display with various styles.", 
+    title: "Badges", 
+    desc: "Flexible badges and labels components for status indicators, categories, and information display with various styles.", 
     image: "/khrona-landing.png", 
     stack: iconsStack, 
     slug:"labels", 
