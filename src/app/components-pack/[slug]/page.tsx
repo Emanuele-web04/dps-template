@@ -14,6 +14,47 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const component = await getComponentBySlug(slug);
+  if (!component) return notFound();
+
+  const { title, desc, components } = component;
+
+  // Create a list of component names for better SEO
+  const componentsList = components.map((c) => c.title).join(", ");
+  const extendedDescription = `${desc} Includes ${componentsList}. Production-ready components with copy-paste code, TypeScript support, and full customization.`;
+
+  return {
+    title: `${title} | DP's Templates`,
+    description: extendedDescription,
+    openGraph: {
+      title: `${title} - Ready-to-Use React Components`,
+      description: extendedDescription,
+      type: "website",
+      images: [
+        {
+          url: "https://dpstemplates.com/placeholder.png",
+          width: 1200,
+          height: 630,
+          alt: `${title} - React Components Collection`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} - DP's Templates`,
+      description: extendedDescription,
+      images: ["https://dpstemplates.com/placeholder.png"],
+    },
+    keywords: `${title.toLowerCase()}, react components, nextjs, typescript, tailwindcss, ui components, ${componentsList.toLowerCase()}, copy paste components`,
+  };
+}
+
 export default async function Page({
   params,
 }: {
