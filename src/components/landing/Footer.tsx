@@ -1,5 +1,5 @@
 import React from "react";
-import LogoTitle from "../LogoTitle";
+import LogoTitle from "../shared/LogoTitle";
 import { portfolio, twitter, youtube } from "@/lib/footerSocial";
 import FooterLink from "../ui/footer-link";
 import Link from "next/link";
@@ -41,9 +41,7 @@ const Footer = () => {
             {navbarLinks.map((link, i) => (
               <div key={i} className="">
                 <Link target="_blank" rel="noopener norefferer" href={link.to}>
-                  <p className="nav-p font-normal!">
-                    {link.name}
-                  </p>
+                  <p className="nav-p font-normal!">{link.name}</p>
                 </Link>
               </div>
             ))}
@@ -52,9 +50,7 @@ const Footer = () => {
               rel="noopener norefferer"
               href={"https://waitlist.dpstemplates.com"}
             >
-              <p className="nav-p font-normal!">
-                News Letter
-              </p>
+              <p className="nav-p font-normal!">News Letter</p>
             </Link>
           </div>
           <div className="flex flex-col col-span-1 gap-4 h-full">
@@ -65,9 +61,7 @@ const Footer = () => {
                   rel="noopener norefferer"
                   href={link.link}
                 >
-                  <p className="nav-p font-normal!">
-                    {link.name}
-                  </p>
+                  <p className="nav-p font-normal!">{link.name}</p>
                 </Link>
               </div>
             ))}

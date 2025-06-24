@@ -1,8 +1,8 @@
-import HeroGridTemplateSection from "@/components/HeroGridTemplateSection";
-import Aside from "@/components/Aside";
+import HeroGridTemplateSection from "@/components/showcase/HeroGridTemplateSection";
+import Aside from "@/components/shared/Aside";
 import { components } from "@/lib/components";
-import ShowcaseComponent from "@/components/ShowcaseComponent";
-import DropdownMobileComponent from "@/components/DropdownMobileComponent";
+import ShowcaseComponent from "@/components/showcase/ShowcaseComponent";
+import DropdownMobileComponent from "@/components/showcase/DropdownMobileComponent";
 
 const Page = () => {
   return (

@@ -3,13 +3,13 @@ import React from "react";
 import ImagesPeople from "@/components/ui/people-images";
 import IOSToggle from "@/components/ui/ios-toggle";
 import RadioInputs from "@/components/ui/radio-inputs";
-import FlipWordsDemo from "@/components/FlipWords";
+import FlipWordsDemo from "@/components/shared/FlipWords";
 import HoverCard3D from "@/components/ui/hover-3d";
 import ToolTipLinkImage from "@/components/ui/tooltip-image-link";
-import BackgroundBeamsWithCollisionDemo from "@/components/BackgroundBeams";
-import WhatsNewButton from "@/components/WhatsNewButton";
-import Buttons from "@/components/Buttons";
-import Frameworks from "../Frameworks";
+import BackgroundBeamsWithCollisionDemo from "@/components/effects/BackgroundBeams";
+import WhatsNewButton from "@/components/shared/WhatsNewButton";
+import Buttons from "@/components/shared/Buttons";
+import Frameworks from "../shared/Frameworks";
 
 const HeroSection = () => {
   return (

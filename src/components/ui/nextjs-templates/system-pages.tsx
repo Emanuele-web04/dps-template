@@ -1,5 +1,5 @@
 import React from "react";
-import LongCardComponent from "../../LongCardComponent";
+import LongCardComponent from "../../shared/LongCardComponent";
 import { systemPages } from "@/lib/features";
 
 const SystemPages = () => {

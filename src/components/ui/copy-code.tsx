@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Code from "../Code";
+import Code from "../shared/Code";
 import { TbCircleCheckFilled } from "@/utils/icons";
 import { cn } from "@/lib/cn";
 import { useCopyToCLipboard } from "@/hooks/useCopyToClipboard";
@@ -15,7 +15,7 @@ const CopyCode = ({
   language: string;
   color?: string;
 }) => {
-  const { copy, handleCopy } = useCopyToCLipboard()
+  const { copy, handleCopy } = useCopyToCLipboard();
 
   return (
     <div className="relative">
@@ -32,7 +32,7 @@ const CopyCode = ({
           <p className="text-white font-medium dark:text-black">Copied!</p>
         </div>
       </div>
-      <div 
+      <div
         className=" rounded-xl ring-1 max-h-130 ring-neutral-200 dark:ring-neutral-800 overflow-hidden flex flex-col bg-neutral-50 dark:bg-neutral-900 cursor-pointer"
         onClick={() => handleCopy(code)}
       >

@@ -1,6 +1,6 @@
-import { cn } from "@/lib/cn"
-import clsx from "clsx"
-import Dots from "./ui/dots"
+import { cn } from "@/lib/cn";
+import clsx from "clsx";
+import Dots from "../ui/dots";
 
 const features = [
   {
@@ -20,8 +20,7 @@ const features = [
   },
   {
     title: "Mobile Responsive",
-    description:
-      "Ensures optimal viewing across all devices and screen sizes.",
+    description: "Ensures optimal viewing across all devices and screen sizes.",
   },
   {
     title: "TypeScript",
@@ -33,11 +32,11 @@ const features = [
     description:
       "Deploy to Vercel, Netlify, or your favorite host in one click.",
   },
-]
+];
 
 export default function FeaturesSection() {
-  const cols = 2
-  const rows = Math.ceil(features.length / cols)
+  const cols = 2;
+  const rows = Math.ceil(features.length / cols);
 
   return (
     <div className="flex lg:flex-row flex-col items-start mt-20 justify-between w-full">
@@ -54,8 +53,8 @@ export default function FeaturesSection() {
           "
         >
           {features.map((feat, idx) => {
-            const isRightEdge = idx % cols === cols - 1
-            const isBottomEdge = idx >= (rows - 1) * cols
+            const isRightEdge = idx % cols === cols - 1;
+            const isBottomEdge = idx >= (rows - 1) * cols;
 
             return (
               <div
@@ -70,17 +69,13 @@ export default function FeaturesSection() {
                   }
                 )}
               >
-                <h3 className="h6-title text-primary text-lg!">
-                  {feat.title}
-                </h3>
-                <p className="p-card text-left!">
-                  {feat.description}
-                </p>
+                <h3 className="h6-title text-primary text-lg!">{feat.title}</h3>
+                <p className="p-card text-left!">{feat.description}</p>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import HeroGridTemplateSection from "@/components/HeroGridTemplateSection";
+import HeroGridTemplateSection from "@/components/showcase/HeroGridTemplateSection";
 import { templates } from "@/lib/templates";
-import ShowcaseTemplate from "@/components/ShowcaseTemplate";
-import DropdownMobile from "@/components/DropdownMobile";
-import Aside from "@/components/Aside";
+import ShowcaseTemplate from "@/components/showcase/ShowcaseTemplate";
+import DropdownMobile from "@/components/showcase/DropdownMobile";
+import Aside from "@/components/shared/Aside";
 
 const Page = () => {
   return (
@@ -14,7 +14,7 @@ const Page = () => {
             "Modern and minimalist templates for building your next product. Built with React, Next.js, Tailwind CSS, Framer Motion and TypeScript."
           }
         >
-          <DropdownMobile/>
+          <DropdownMobile />
         </HeroGridTemplateSection>
 
         <div className="max-w-7xl px-6 sm:px-12 grid md:mt-0 mt-8 items-start lg:grid-cols-12">

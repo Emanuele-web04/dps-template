@@ -12,7 +12,7 @@ import {
 } from "@/utils/icons";
 import React, { useState } from "react";
 import { IconType } from "react-icons";
-import CodeBlock from "./codegift/Codeblock";
+import CodeBlock from "../codegift/Codeblock";
 import { useCopyToCLipboard } from "@/hooks/useCopyToClipboard";
 
 type ButtonSubComponent = {

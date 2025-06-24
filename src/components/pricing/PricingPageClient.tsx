@@ -6,7 +6,7 @@ import SegmentedPicker, {
 } from "@/components/ui/segmented-picker";
 import PricingContent from "@/components/pricing/PricingContent";
 import usePricingFilter, { PricingFilter } from "@/hooks/usePricingFilter";
-import LightGradient from "../LightGradient";
+import LightGradient from "../effects/LightGradient";
 
 const PricingPageClient: React.FC = () => {
   const { activeFilter, filteredPricing, handleFilterChange, getVariant } =

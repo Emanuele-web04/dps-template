@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { navbarLinks } from "@/lib/navbarLinks";
 import { TbMenu, TbX } from "react-icons/tb";
-import LogoTitle from "./LogoTitle";
+import LogoTitle from "../shared/LogoTitle";
 import ThemeToggle from "./ThemeToggle";
 import { cn } from "@/lib/cn";
 

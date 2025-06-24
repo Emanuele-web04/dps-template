@@ -1,4 +1,4 @@
-import TemplatePage from "@/components/TemplatePage";
+import TemplatePage from "@/components/templates/TemplatePage";
 import { getTemplateBySlug, getAllSlugs } from "@/lib/templates";
 import { notFound } from "next/navigation";
 

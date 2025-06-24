@@ -1,4 +1,4 @@
-import LongCardComponent from "@/components/LongCardComponent";
+import LongCardComponent from "@/components/shared/LongCardComponent";
 import { cn } from "@/lib/cn";
 import { swiftUIBoilerplate } from "@/lib/features";
 import React from "react";

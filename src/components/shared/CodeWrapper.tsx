@@ -1,6 +1,6 @@
 import React from "react";
 import { IconType } from "react-icons";
-import CopyCode from "./ui/copy-code";
+import CopyCode from "../ui/copy-code";
 
 interface Props {
   Icon: IconType;

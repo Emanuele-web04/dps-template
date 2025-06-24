@@ -1,12 +1,12 @@
-import SquareGrid from "./ui/square-grid";
+import SquareGrid from "../ui/square-grid";
 
 const HeroGridTemplateSection = ({
-  title, 
+  title,
   text,
   children,
 }: {
-  title: string, 
-  text: string,
+  title: string;
+  text: string;
   children?: React.ReactNode;
 }) => {
   return (

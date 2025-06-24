@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import { eudoxus, editor, inter, geistMono } from "@/lib/fonts";
 import ThemeProvider from "@/provider/ThemeProvider";
-import NavbarWebsite from "@/components/NavbarWebsite";
+import NavbarWebsite from "@/components/layout/NavbarWebsite";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {

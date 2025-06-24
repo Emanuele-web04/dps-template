@@ -3,7 +3,7 @@ import AddToCart from "@/components/ui/add-to-cart";
 import { cn } from "@/lib/cn";
 import Image from "next/image";
 import { TemplateType } from "@/types/template";
-import StackIcons from "./ui/stack-icons";
+import StackIcons from "../ui/stack-icons";
 import Link from "next/link";
 
 const ShowcaseTemplate = ({
@@ -56,7 +56,11 @@ const ShowcaseTemplate = ({
           />
         ))}
       </div>
-      <AddToCart price={price} text="Buy now" padding="py-1.5 w-full! md:hidden block" />
+      <AddToCart
+        price={price}
+        text="Buy now"
+        padding="py-1.5 w-full! md:hidden block"
+      />
     </Link>
   );
 };

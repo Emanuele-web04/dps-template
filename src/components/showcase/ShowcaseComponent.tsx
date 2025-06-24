@@ -1,12 +1,21 @@
 import { ComponentType } from "@/types/component";
 import Image from "next/image";
-import StackIcons from "./ui/stack-icons";
+import StackIcons from "../ui/stack-icons";
 import Link from "next/link";
-const ShowcaseComponent = ({ title, desc, price, stack , slug, components}: ComponentType) => {
-
-  const count = components.length
+const ShowcaseComponent = ({
+  title,
+  desc,
+  price,
+  stack,
+  slug,
+  components,
+}: ComponentType) => {
+  const count = components.length;
   return (
-    <Link href={`/components-pack/${slug}`} className="p-1.5 rounded-2xl ring-1 ring-neutral-200 dark:bg-neutral-950 dark:ring-neutral-800 bg-neutral-100">
+    <Link
+      href={`/components-pack/${slug}`}
+      className="p-1.5 rounded-2xl ring-1 ring-neutral-200 dark:bg-neutral-950 dark:ring-neutral-800 bg-neutral-100"
+    >
       <div className="col-span-1 h-full group cursor-pointer font-inter tracking-tight hover:bg-neutral-100 bg-neutral-50 dark:hover:bg-neutral-950 dark:bg-neutral-900 overflow-clip rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-800">
         <div className="overflow-clip">
           <Image
