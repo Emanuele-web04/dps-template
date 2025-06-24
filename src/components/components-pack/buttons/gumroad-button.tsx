@@ -10,6 +10,7 @@ export default function GumroadButton() {
         "hover:bg-gray-50",
         "text-gray-900 font-medium",
         "px-4 py-2 sm:px-6 sm:py-3",
+        "rounded-lg sm:rounded-xl",
         "border-2 border-black",
         "hover:border-gray-800",
         "transition-all duration-200",

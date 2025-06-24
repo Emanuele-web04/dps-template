@@ -10,7 +10,7 @@ export default function SoftButton() {
         "bg-gradient-to-b from-blue-500 to-blue-600",
         "hover:from-blue-600 hover:to-blue-700",
         "text-white font-semibold text-base sm:text-lg",
-        "px-6 py-3 sm:px-8 sm:py-4 rounded-full",
+        "px-6 py-3 sm:px-8 sm:py-4 rounded-2xl sm:rounded-full",
         "flex items-center justify-center",
         "transition-all duration-300",
         "focus:outline-none",

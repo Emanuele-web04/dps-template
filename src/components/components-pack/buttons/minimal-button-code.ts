@@ -13,7 +13,7 @@ export default function MinimalButton() {
         "px-4 py-2 sm:px-6 sm:py-3",
         "ring-1 ring-neutral-300 dark:ring-neutral-600",
         "shadow-md shadow-black/10 dark:shadow-black/20",
-        "rounded-2xl",
+        "rounded-xl sm:rounded-2xl",
         "flex items-center gap-x-1 sm:gap-x-2",
         "transition-all duration-200",
         "focus:outline-none",

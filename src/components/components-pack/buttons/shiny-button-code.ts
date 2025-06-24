@@ -11,7 +11,7 @@ export default function ShinyButton() {
         "bg-gradient-to-r from-pink-200 via-cyan-200 to-purple-300",
         "hover:from-pink-300 hover:via-cyan-300 hover:to-purple-400",
         "text-black font-semibold text-lg sm:text-xl",
-        "px-4 py-2 sm:px-6 sm:py-3 rounded-2xl",
+        "px-4 py-2 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl",
         "flex items-center gap-2 sm:gap-3",
         "transition-all duration-300",
         "border border-white/50",

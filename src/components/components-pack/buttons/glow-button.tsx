@@ -11,7 +11,7 @@ export default function GlowButton() {
         "bg-violet-800",
         "hover:bg-violet-700",
         "text-white text-xs sm:text-sm font-semibold",
-        "rounded-xl",
+        "rounded-lg sm:rounded-xl",
         "flex items-center gap-1 sm:gap-2",
         "transition-all duration-300",
         "shadow-[0_0_30px_rgba(147,51,234,0.6)]",
@@ -28,7 +28,7 @@ export default function GlowButton() {
 
       {/* Plus icon with background */}
       <div className="flex px-2 sm:px-3 py-1.5 sm:py-2 items-center gap-x-1 sm:gap-x-2">
-        <div className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-lg bg-white/45 backdrop-blur-sm">
+        <div className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-md sm:rounded-lg bg-white/45 backdrop-blur-sm">
           <LuPlus className="w-3 h-3 sm:w-4 sm:h-4 text-violet-800" />
         </div>
 
