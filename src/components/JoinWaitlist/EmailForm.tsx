@@ -5,7 +5,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 import { IoIosMailOpen } from "react-icons/io";
 import { IoIosAlert } from "react-icons/io";
-import Button3D from "../ui/button-3d";
+import Button3D from "../ui/neumorphism-button/button-3d";
 
 const EmailForm = () => {
   const [email, setEmail] = useState("");

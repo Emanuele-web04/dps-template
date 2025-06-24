@@ -1,5 +1,5 @@
 import React from "react";
-import AddToCart from "@/components/ui/add-to-cart";
+import AddToCart from "@/components/ui/neumorphism-button/add-to-cart";
 import { cn } from "@/lib/cn";
 import Image from "next/image";
 import { TemplateType } from "@/types/template";

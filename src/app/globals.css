@@ -98,7 +98,7 @@ html[data-theme="dark"] {
   }
 
   .code-wrapper {
-    @apply flex flex-col p-1 bg-neutral-50 dark:bg-neutral-950 rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-900
+    @apply flex flex-col p-1 bg-neutral-50 dark:bg-neutral-950 rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-800
   }
 
   .minimal-button {

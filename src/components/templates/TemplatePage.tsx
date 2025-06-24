@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/cn";
 import { TemplateType } from "@/types/template";
-import AddToCart from "../ui/add-to-cart";
+import AddToCart from "../ui/neumorphism-button/add-to-cart";
 import SquareGrid from "../ui/square-grid";
 import FeaturesSection from "./TemplateFeatureSection";
 import StackIcons from "../ui/stack-icons";

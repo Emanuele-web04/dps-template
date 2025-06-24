@@ -1,5 +1,5 @@
 import React from "react";
-import Dots from "../ui/dots";
+import Dots from "../ui/main-hero/dots";
 
 const HeroSectionText = () => {
   return (

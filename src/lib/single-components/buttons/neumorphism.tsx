@@ -14,7 +14,7 @@ const NeumorphismButton = () => {
         "border-neutral-800/60 ",
         "dark:border-neutral-300",
         "py-2.5 p-3",
-        "rounded-xl w-fit",
+        "rounded-2xl w-fit",
         "shadow-md",
         "shadow-black/70",
         "dark:shadow-gray-400/50",
@@ -34,9 +34,9 @@ const NeumorphismButton = () => {
       )}
     >
       <p
-        className={cn("font-inter font-medium text-sm sm:text-sm tracking-tight", 
+        className={cn("font-inter font-semibold text-lg tracking-tight", 
                    "text-white/95" ,
-                   "dark:text-neutral-800", 
+                   "dark:text-black", 
                    " whitespace-nowrap",
                    )}
       >

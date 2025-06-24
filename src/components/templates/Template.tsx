@@ -1,6 +1,6 @@
 import React from "react";
 import SquareGrid from "@/components/ui/square-grid";
-import AddToCart from "@/components/ui/add-to-cart";
+import AddToCart from "@/components/ui/neumorphism-button/add-to-cart";
 import {
   RiNextjsFill,
   FaReact,
@@ -9,7 +9,7 @@ import {
 } from "@/utils/icons";
 import Image from "next/image";
 import { cn } from "@/lib/cn";
-import Dots from "@/components/ui/dots";
+import Dots from "@/components/ui/main-hero/dots";
 import { placeholders } from "@/lib/templates";
 
 const Template = () => {

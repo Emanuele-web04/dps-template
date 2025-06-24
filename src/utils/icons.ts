@@ -1,10 +1,11 @@
 // Lucide Icons
 import {
   LuCheck, LuCodeXml, LuTerminal, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
-  LuSparkles, LuCirclePlus, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown
+  LuSparkles, LuCirclePlus, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown,
+  LuLink2, LuSend
 } from "react-icons/lu";
 
-import { PiLaptop } from "react-icons/pi";
+import { PiLaptop, PiPaperPlaneTiltFill, PiPlusThin } from "react-icons/pi";
 
 // Tabler Icons
 import {
@@ -52,8 +53,8 @@ import { HiOutlineArrowSmRight } from "react-icons/hi";
 // Export all icons
 export {
   // Lucide
-  LuCheck, LuCodeXml, LuTerminal, LuCirclePlus, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
-  LuSparkles, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown,
+  LuCheck, LuLink2, LuCodeXml, LuTerminal, LuCirclePlus, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
+  LuSparkles, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown, LuSend,
   // Tabler
   TbMenu, TbCirclePlusFilled, TbCircleCheckFilled, TbX, TbTools, TbHammer, TbMailCheck, TbArrowRightToArc, TbMessageCircle,
   TbLayoutBoard, TbDeviceDesktopExclamation, TbArrowMerge, TbDownload, TbSparklesTabler, TbBrandFramerMotion,
@@ -68,7 +69,7 @@ export {
   // Remix
   RiNextjsLine, RiNextjsFill,
   // Phosphor
-  PiOption,
+  PiOption, PiPlusThin, PiPaperPlaneTiltFill,
   // Ant Design
   AiOutlineX, AiOutlineYoutube,
   // Heroicons

@@ -14,6 +14,7 @@ import React, { useState } from "react";
 import { IconType } from "react-icons";
 import CodeBlock from "../codegift/Codeblock";
 import { useCopyToCLipboard } from "@/hooks/useCopyToClipboard";
+import Plus from "../ui/main-hero/plus";
 
 type ButtonSubComponent = {
   Icon: IconType;
@@ -43,7 +44,7 @@ const SubComponentLayout = ({
   const { copy, handleCopy } = useCopyToCLipboard();
 
   return (
-    <div id={`${slug}`} className="flex scroll-mt-[100px] flex-col gap-y-2">
+    <div id={`${slug}`} className="flex scroll-mt-[100px] flex-col gap-y-1 md:gap-y-2">
       <h3 className="h3-title">{title}</h3>
       <p className="p-style mt-0!">{desc}</p>
       <div className="flex flex-col gap-y-4">
@@ -55,7 +56,7 @@ const SubComponentLayout = ({
                 key={i}
                 onClick={() => handleSelection(b.id)}
                 className={cn(
-                  "flex items-center gap-x-1 ring-1 dark:ring-neutral-800 ring-neutral-200 rounded-xl transition-all cursor-pointer px-4 py-1.5 ",
+                  "flex items-center gap-x-1 ring-1 dark:ring-neutral-800 ring-neutral-200 rounded-xl transition-all cursor-pointer px-4 py-1.5 md:text-base text-sm",
                   selection === b.id ? "bg-neutral-100 dark:bg-neutral-900" : ""
                 )}
               >
@@ -66,8 +67,9 @@ const SubComponentLayout = ({
           })}
         </div>
         {selection === "preview" ? (
-          <div className="bg-neutral-100 dark:bg-neutral-900 w-full flex justify-center ring-1 dark:ring-neutral-700 ring-neutral-200">
-            <div className="ring-1 bg-white ring-neutral-200 w-fit h-fit p-2  rounded-3xl m-2">
+          <div className="bg-neutral-100 relative dark:bg-neutral-900 w-full flex justify-center border border-dashed dark:border-neutral-700 border-neutral-200">
+            <Plus />
+            <div className="bg-white dark:bg-neutral-800 p-2 rounded-md w-fit h-fit  m-2">
               {React.createElement(preview)}
             </div>
           </div>
@@ -96,7 +98,7 @@ const SubComponentLayout = ({
                   )}
                 </button>
               </div>
-              <div className="overflow-x-auto rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-800 code-scrollbar flex-1 min-h-0">
+              <div className="overflow-x-auto w-full rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-800 code-scrollbar flex-1 min-h-0">
                 <CodeBlock className="language-tsx">{code}</CodeBlock>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import CodeWrapper from "@/components/shared/CodeWrapper";
 import SidebarComponent from "@/components/layout/SidebarComponent";
 import SubComponentLayout from "@/components/shared/SubComponentLayout";
-import AddToCart from "@/components/ui/add-to-cart";
+import AddToCart from "@/components/ui/neumorphism-button/add-to-cart";
 import SquareGrid from "@/components/ui/square-grid";
 import StackIcons from "@/components/ui/stack-icons";
 import { getAllComponentSlugs, getComponentBySlug } from "@/lib/components";

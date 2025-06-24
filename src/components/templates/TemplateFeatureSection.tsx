@@ -1,6 +1,6 @@
 import { cn } from "@/lib/cn";
 import clsx from "clsx";
-import Dots from "../ui/dots";
+import Dots from "../ui/main-hero/dots";
 
 const features = [
   {

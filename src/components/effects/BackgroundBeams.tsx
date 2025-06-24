@@ -1,5 +1,5 @@
 import React from "react";
-import { BackgroundBeamsWithCollision } from "@/components/ui/beackground-beams";
+import { BackgroundBeamsWithCollision } from "@/components/ui/main-hero/beackground-beams";
 
 export default function BackgroundBeamsWithCollisionDemo() {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { DiSwift } from "react-icons/di";
 import { RiNextjsLine } from "react-icons/ri";
-import SwiftIcon from "../ui/swift-icon";
-import NextIcon from "../ui/next-icon";
+import SwiftIcon from "../ui/icons/swift-icon";
+import NextIcon from "../ui/icons/next-icon";
 
 const HeroText = () => {
   return (

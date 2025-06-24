@@ -16,7 +16,7 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
   if (match) {
     return (
       <>
-        <div className="hidden dark:flex w-full max-h-120 justify-end  overflow-x-auto">
+        <div className="hidden dark:flex min-w-full max-h-120 justify-end  overflow-x-auto">
           <SyntaxHighlighter
             language={match[1]}
             style={nightOwl}
@@ -28,7 +28,7 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
               backgroundColor: "#0f0f0f",
               fontSize: "0.9rem"
             }}
-            className="rounded-lg font-mono"
+            className="rounded-lg w-full font-mono"
             codeTagProps={{ style: { all: "unset" } }}
           >
             {children.trim()}
