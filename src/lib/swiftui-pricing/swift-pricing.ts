@@ -12,10 +12,11 @@ const featuresComponents = [
 
 export const componentsPricing: Pricing = {
     title: "Components Bundle",
-    features: featuresComponents, 
-    desc: "One time payment", 
+    features: featuresComponents,
+    desc: "One time payment",
     icon: LuPackage,
-    price: 59
+    price: 59,
+    discountPrice: 0
 }
 
 const featuresTemplates = [
@@ -30,20 +31,22 @@ const featuresTemplates = [
 
 export const templatesPricing: Pricing = {
     title: "Boilerplates Bundle",
-    features: featuresTemplates, 
-    desc: "One time payment", 
+    features: featuresTemplates,
+    desc: "One time payment",
     icon: TbLayoutBoard,
-    price: 89
+    price: 89,
+    discountPrice: 0
 }
 
 const swiftuiAll = "Complete access to everything - the ultimate value"
 
 export const swiftuiPricing: Pricing = {
     title: "All",
-    features: [swiftuiAll], 
-    desc: "One time payment", 
+    features: [swiftuiAll],
+    desc: "One time payment",
     icon: TbArrowMerge,
-    price: 129
+    price: 129,
+    discountPrice: 148
 }
 
 export const allSwiftPricing: Pricing[] = [

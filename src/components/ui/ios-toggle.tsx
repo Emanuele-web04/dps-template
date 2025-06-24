@@ -9,8 +9,10 @@ interface ToggleProps {
   size?: "sm" | "md" | "lg"
 }
 
-export default function IOSToggle({ defaultChecked = true, onChange, disabled = false, size = "md" }: ToggleProps) {
-  const [isChecked, setIsChecked] = useState(defaultChecked)
+export default function IOSToggle() {
+  const props: ToggleProps = {}
+  const { defaultChecked = true, onChange, disabled = false, size = "md" } = props
+    const [isChecked, setIsChecked] = useState(defaultChecked)
 
   const handleToggle = () => {
     if (disabled) return

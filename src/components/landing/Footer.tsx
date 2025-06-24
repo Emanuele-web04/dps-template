@@ -9,7 +9,7 @@ import Copyright from "../ui/copyright";
 
 const Footer = () => {
   return (
-    <div className="bg-transparent w-full h-full mt-20 px-6 py-12 md:px-12 md:py-20 border-t border-neutral-200 dark:border-neutral-800 backdrop-blur-2xl">
+    <div className="bg-transparent w-full h-full mt-20 px-6 py-12 md:px-12 max-w-[1600px] mx-auto md:py-20 border-t border-neutral-200 dark:border-neutral-800 backdrop-blur-2xl">
       <div className="w-full h-full flex md:flex-row flex-col justify-between">
         <div className="flex flex-col  justify-between">
           <div className="flex flex-col gap-4 h-full">

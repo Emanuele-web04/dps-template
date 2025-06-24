@@ -24,7 +24,7 @@ export const templates: TemplateType[] = [
     longDesc: "Ciao", 
     ogImage: "", 
     preview: "https://khrona-website.vercel.app/",
-    price: 49
+    price: 39
     },
     {
     title: "Minimal Portfolio", 
@@ -35,7 +35,7 @@ export const templates: TemplateType[] = [
     longDesc: "Ciao", 
     ogImage: "", 
     preview: "https://khrona-website.vercel.app/",
-    price: 49
+    price: 35
     },
     {
     title: "Product Landing Page", 
@@ -46,7 +46,7 @@ export const templates: TemplateType[] = [
     longDesc: "Ciao", 
     ogImage: "", 
     preview: "https://khrona-website.vercel.app/",
-    price: 49
+    price: 35
     },
     {
     title: "App Landing Page", 
@@ -57,7 +57,7 @@ export const templates: TemplateType[] = [
     longDesc: "Ciao", 
     ogImage: "", 
     preview: "https://khrona-website.vercel.app/",
-    price: 49
+    price: 39
     },
 ]
 

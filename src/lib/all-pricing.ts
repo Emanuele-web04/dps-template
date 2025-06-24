@@ -8,10 +8,11 @@ const featuresTemplates = [
 
 export const templatesPricing: Pricing = {
     title: "All Bundle",
-    features: featuresTemplates, 
-    desc: "One time payment", 
+    features: featuresTemplates,
+    desc: "One time payment",
     icon: LuLayoutGrid,
-    price: 199
+    price: 199,
+    discountPrice: 0
 }
 
 export const allPricing: Pricing[] = [

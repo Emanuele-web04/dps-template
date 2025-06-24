@@ -1,3 +1,4 @@
+import React from "react";
 import { IconType } from "react-icons"
 
 export type ComponentType = {
@@ -20,5 +21,5 @@ export type SingleComponent = {
     npm?: string
     code: string
     slug: string
-    preview: () => React.JSX.Element
+    preview: React.ComponentType
 }

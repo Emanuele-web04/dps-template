@@ -1,6 +1,6 @@
 import KhronaHero from "@/components/hero-sections/KhronaHero";
 import { SingleComponent } from "@/types/component";
-import { fullTableCode } from "../code-gifts";
+import { fullTableCode } from "../../code-gifts";
 
 const futureHeroSection: SingleComponent = {
     title: "Futuristic Hero Section",
@@ -31,7 +31,7 @@ const minimalHeroSection: SingleComponent = {
     preview: KhronaHero
 }
 
-export const singleComponents: SingleComponent[] = [
+export const heroComponents: SingleComponent[] = [
     gradientHeroSection,
     futureHeroSection,
     minimalHeroSection,

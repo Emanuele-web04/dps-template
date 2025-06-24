@@ -66,9 +66,9 @@ const SubComponentLayout = ({
           })}
         </div>
         {selection === "preview" ? (
-          <div className="bg-neutral-100 dark:bg-neutral-900 ring-1 dark:ring-neutral-700 ring-neutral-200">
-            <div className="ring-1 bg-white ring-neutral-200 rounded-3xl m-2">
-              {preview()}
+          <div className="bg-neutral-100 dark:bg-neutral-900 w-full flex justify-center ring-1 dark:ring-neutral-700 ring-neutral-200">
+            <div className="ring-1 bg-white ring-neutral-200 w-fit h-fit p-2  rounded-3xl m-2">
+              {React.createElement(preview)}
             </div>
           </div>
         ) : (
@@ -77,7 +77,7 @@ const SubComponentLayout = ({
               <div className="flex w-full justify-between items-center">
                 <div className="flex p-2  text-neutral-500 items-center gap-x-1">
                   <FaReact />
-                  <p className="font-mono text-sm">hero-section.tsx</p>
+                  <p className="font-mono text-sm">{slug}.tsx</p>
                 </div>
                 <button
                   onClick={() => handleCopy(code)}

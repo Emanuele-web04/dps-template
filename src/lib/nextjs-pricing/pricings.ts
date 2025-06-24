@@ -1,5 +1,7 @@
 import { Pricing } from "@/types/pricing"
 import { LuPackage, TbArrowMerge, TbLayoutBoard } from "@/utils/icons"
+import { templates } from "../templates"
+import { components } from "../components"
 
 const featuresComponents = [
     "Access to 40+ production-ready components",
@@ -9,13 +11,15 @@ const featuresComponents = [
     "Perfect for AI code editors to enhance and customize",
     "Unlimited personal and commercial use included"
 ]
-
+const componentsFullPrice = components.map((template => template.price))
+const cTotal = componentsFullPrice.reduce((sum, price) => sum + price, 0)
 export const componentsPricing: Pricing = {
     title: "Components Bundle",
-    features: featuresComponents, 
-    desc: "One time payment", 
+    features: featuresComponents,
+    desc: "One time payment",
     icon: LuPackage,
-    price: 59
+    price: 59,
+    discountPrice: cTotal
 }
 
 const featuresTemplates = [
@@ -28,23 +32,29 @@ const featuresTemplates = [
     "Easy customization with modular architecture"
 ]
 
+const templatesFullPrice = templates.map((template => template.price))
+const totalPrice = templatesFullPrice.reduce((sum, price) => sum + price, 0)
+
+
 export const templatesPricing: Pricing = {
     title: "Templates Bundle",
-    features: featuresTemplates, 
-    desc: "One time payment", 
+    features: featuresTemplates,
+    desc: "One time payment",
     icon: TbLayoutBoard,
-    price: 89
+    price: 89,
+    discountPrice: totalPrice
 }
 
 const nextjsAll = "Complete access to everything - the ultimate value"
 
 export const nextjsPricing: Pricing = {
     title: "All",
-    features: [nextjsAll], 
-    desc: "One time payment", 
+    features: [nextjsAll],
+    desc: "One time payment",
     icon: TbArrowMerge,
     price: 129,
-    extra: ["Everything in Components Bundle"]
+    extra: ["Everything in Components Bundle"],
+    discountPrice: 148
 }
 
 export const allNextPricing: Pricing[] = [

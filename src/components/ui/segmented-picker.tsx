@@ -57,13 +57,13 @@ const SegmentedPicker: React.FC<SegmentedPickerProps> = ({
     <div
       ref={containerRef}
       className={cn(
-        "relative inline-flex font-inter tracking-tight bg-white shadow-md dark:bg-neutral-900 ring-neutral-200 dark:ring-neutral-800 ring-1 rounded-full p-1",
+        "relative shadow-[inset_0_4px_10px_-9px_rgba(0,0,0,1)] dark:shadow-[inset_0_4px_10px_-8px_rgba(255,255,255,1)] inline-flex font-inter tracking-tight bg-neutral-100 dark:bg-neutral-900 ring-neutral-200 dark:ring-neutral-800 ring-1 rounded-full p-1",
         className
       )}
     >
       {/* Animated background indicator */}
       <div
-        className="absolute top-1 bottom-1 bg-neutral-100 dark:bg-neutral-800 rounded-full transition-all duration-300 ease-out shadow-sm z-0"
+        className="absolute top-1 bottom-1 bg-white dark:bg-neutral-700 rounded-full transition-all duration-300 ease-out shadow-sm z-0"
         style={{
           width: `${indicatorStyle.width}px`,
           left: `${indicatorStyle.left}px`,
@@ -78,8 +78,8 @@ const SegmentedPicker: React.FC<SegmentedPickerProps> = ({
           className={cn(
             "relative z-10 cursor-pointer flex-1 w-20 h-8 text-center md:text-base text-sm font-medium rounded-full transition-colors duration-200",
             option.value === value
-              ? "text-gray-900 dark:text-white"
-              : "text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
+              ? "text-neutral-900 dark:text-white"
+              : "text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200"
           )}
         >
           {option.label}

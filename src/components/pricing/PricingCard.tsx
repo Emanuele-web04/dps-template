@@ -4,6 +4,7 @@ import React from "react";
 import { Pricing } from "@/types/pricing";
 import {
   HiOutlineArrowSmRight,
+  LuCheck,
   LuCirclePlus,
   TbCircleCheckFilled,
   TbCirclePlusFilled,
@@ -48,9 +49,9 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
     return {
       outerCard:
-        "ring-neutral-200 dark:ring-neutral-800 bg-neutral-50 dark:bg-neutral-900/50",
+        "ring-neutral-200 dark:ring-neutral-800 bg-neutral-50 dark:bg-neutral-900/50 overflow-clip",
       inverseOuterCard:
-        "dark:ring-neutral-200 ring-neutral-800 dark:bg-neutral-100 bg-neutral-950",
+        "ring-neutral-200 dark:ring-neutral-800 bg-neutral-50 dark:bg-neutral-900/50 ",
       innerCard:
         "hover:bg-neutral-100 dark:hover:bg-neutral-950 bg-neutral-50 dark:bg-neutral-900 ring-neutral-200 dark:ring-neutral-800",
       contentCard:
@@ -66,7 +67,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
       divider: "bg-neutral-500",
       dividerIcon: "text-neutral-500",
       checkIcon: "text-sky-500 dark:text-sky-400",
-      textColor: `${isAll ? "text-neutral-300 dark:text-neutral-800" : "text-neutral-800 dark:text-neutral-300"}`,
+      textColor: "text-neutral-800 dark:text-neutral-300",
       descColor: "text-neutral-600 dark:text-neutral-400",
     };
   };
@@ -75,10 +76,38 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
   return (
     <div
-      className={`p-2 col-span-1 rounded-3xl ring-1 ${isAll ? `${colors.inverseOuterCard}` : `${colors.outerCard}`}  h-full ${filter === "all" ? "md:min-w-md sm:min-w-sm min-w-xs" : ""} flex flex-col`}
+      className={`p-2 col-span-1 rounded-3xl ring-1 z-50 ${colors.outerCard} relative h-full ${filter === "all" ? "md:min-w-md sm:min-w-sm min-w-xs" : ""} flex flex-col`}
     >
+      {isAll && (
+        <div className="-z-1">
+          {/* Pink Blur */}
+          <span
+            className="absolute bottom-0 left-4 w-32 h-35 animate-pulse bg-pink-500 opacity-40 blur-3xl rounded-full pointer-events-none"
+            style={{ zIndex: 1 }}
+          />
+          {/* Yellow Blur */}
+          <span
+            className="absolute -bottom-4 right-0 w-36 h-35 animate-pulse bg-amber-500 opacity-40 blur-3xl rounded-full pointer-events-none"
+            style={{ zIndex: 1 }}
+          />
+          {/* Green Blur */}
+          <span
+            className="absolute bottom-0 right-1/3 w-28 h-30 animate-pulse bg-green-500 opacity-40 blur-3xl rounded-full pointer-events-none"
+            style={{ zIndex: 1 }}
+          />
+          <span
+            className="absolute bottom-0 right-1/2 w-28 h-25 animate-pulse bg-sky-500 opacity-40 blur-3xl rounded-full pointer-events-none"
+            style={{ zIndex: 1 }}
+          />
+          <span
+            className="absolute top-0 left-0 w-30 h-40 animate-pulse bg-neutral-800 dark:bg-neutral-300 opacity-40 blur-3xl rounded-full pointer-events-none"
+            style={{ zIndex: 1 }}
+          />
+        </div>
+      )}
+
       <div
-        className={`flex p-3 md:p-4 ${isAll ? `${colors.inverseContentCard}` : `${colors.contentCard}`} shadow-md shadow-black/5 rounded-2xl flex-col gap-y-6 items-start flex-shrink-0`}
+        className={`flex p-3 md:p-4 ${colors.contentCard} shadow-md shadow-black/5 rounded-2xl flex-col gap-y-6 items-start flex-shrink-0`}
       >
         <div className="flex flex-col items-start w-full justify-between">
           {/* <div className={`ring-1 rounded-lg ${colors.iconContainer}`}>
@@ -87,7 +116,6 @@ const PricingCard: React.FC<PricingCardProps> = ({
           <h6
             className={cn(
               "h6-title",
-              isAll ? "text-white dark:text-black" : ""
             )}
           >
             {title}
@@ -99,14 +127,13 @@ const PricingCard: React.FC<PricingCardProps> = ({
             <p
               className={cn(
                 "text-5xl md:text-6xl font-inter font-bold",
-                isAll ? "text-white dark:text-black" : "text-primary"
               )}
             >{`$${pricing.price}`}</p>
-            {isAll && (
+            
               <p className="text-neutral-400 line-through ml-2 font-semibold relative bottom-1 text-2xl">
-                $148
+                ${pricing.discountPrice}
               </p>
-            )}
+         
           </div>
           <p
             className={`${colors.descColor} text-sm font-inter relative bottom-2 tracking-tight`}
@@ -114,7 +141,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             {pricing.desc}
           </p>
         </div>
-        <div className={cn(isAll ? colors.inverseButton : colors.button)}>
+        <div className={cn(colors.button)}>
           <p className="font-inter tracking-tight font-medium text-sm md:text-base">
             Get Access Now
           </p>
@@ -126,13 +153,12 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <p className="text-neutral-500">Features</p>
         {pricing.features.map((feature, i) => (
           <div key={i} className="flex items-start gap-x-3">
-            <TbCircleCheckFilled
-              className={`w-4 h-4 ${colors.checkIcon} relative top-0.5 flex-shrink-0`}
+            <LuCheck
+              className={`w-4 h-4  relative top-1 flex-shrink-0`}
             />
             <p
               className={cn(
                 "text-sm md:text-base flex-1 text-left font-medium",
-                isAll ? "text-white dark:text-black" : "text-primary"
               )}
             >
               {feature}
@@ -160,7 +186,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             <p
               className={cn(
                 "text-sm flex-1 text-left font-medium",
-                isAll ? "text-white dark:text-black" : "text-primary"
+               
               )}
             >
               <>
@@ -175,7 +201,6 @@ const PricingCard: React.FC<PricingCardProps> = ({
             <p
               className={cn(
                 "text-sm flex-1 text-left font-medium",
-                isAll ? "text-white dark:text-black" : "text-primary"
               )}
             >
               <>
