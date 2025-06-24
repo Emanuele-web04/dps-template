@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Button3D from "./neumorphism-button/button-3d";
+import Button3D from "./button-3d";
 
 const BuyPrice = ({
   text = "Add to Cart",
