@@ -9,7 +9,7 @@ import {
   TbCircleCheckFilled,
   TbCirclePlusFilled,
 } from "@/utils/icons";
-import BuyPrice from "@/components/ui/buy-price";
+import BuyPrice from "@/components/ui/neumorphism-button/buy-price";
 import { cn } from "@/lib/cn";
 
 interface PricingCardProps {
@@ -113,27 +113,18 @@ const PricingCard: React.FC<PricingCardProps> = ({
           {/* <div className={`ring-1 rounded-lg ${colors.iconContainer}`}>
             <Icon className="w-4 h-4 m-2" />
           </div> */}
-          <h6
-            className={cn(
-              "h6-title",
-            )}
-          >
-            {title}
-          </h6>
+          <h6 className={cn("h6-title")}>{title}</h6>
           <p className={`${colors.textColor} font-medium`}>Lifetime Access</p>
         </div>
         <div className="flex w-full justify-between items-end">
           <div className="flex items-end">
             <p
-              className={cn(
-                "text-5xl md:text-6xl font-inter font-bold",
-              )}
+              className={cn("text-5xl md:text-6xl font-inter font-bold")}
             >{`$${pricing.price}`}</p>
-            
-              <p className="text-neutral-400 line-through ml-2 font-semibold relative bottom-1 text-2xl">
-                ${pricing.discountPrice}
-              </p>
-         
+
+            <p className="text-neutral-400 line-through ml-2 font-semibold relative bottom-1 text-2xl">
+              ${pricing.discountPrice}
+            </p>
           </div>
           <p
             className={`${colors.descColor} text-sm font-inter relative bottom-2 tracking-tight`}
@@ -153,12 +144,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <p className="text-neutral-500">Features</p>
         {pricing.features.map((feature, i) => (
           <div key={i} className="flex items-start gap-x-3">
-            <LuCheck
-              className={`w-4 h-4  relative top-1 flex-shrink-0`}
-            />
+            <LuCheck className={`w-4 h-4  relative top-1 flex-shrink-0`} />
             <p
               className={cn(
-                "text-sm md:text-base flex-1 text-left font-medium",
+                "text-sm md:text-base flex-1 text-left font-medium"
               )}
             >
               {feature}
@@ -183,12 +172,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             <TbCirclePlusFilled
               className={`w-4 h-4 ${colors.checkIcon} relative top-0.5 flex-shrink-0`}
             />
-            <p
-              className={cn(
-                "text-sm flex-1 text-left font-medium",
-               
-              )}
-            >
+            <p className={cn("text-sm flex-1 text-left font-medium")}>
               <>
                 Everything in <strong>Components Bundle</strong>
               </>
@@ -198,11 +182,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             <TbCirclePlusFilled
               className={`w-4 h-4 ${colors.checkIcon} relative top-0.5 flex-shrink-0`}
             />
-            <p
-              className={cn(
-                "text-sm flex-1 text-left font-medium",
-              )}
-            >
+            <p className={cn("text-sm flex-1 text-left font-medium")}>
               <>
                 Everything in <strong>Templates Bundle</strong>
               </>
