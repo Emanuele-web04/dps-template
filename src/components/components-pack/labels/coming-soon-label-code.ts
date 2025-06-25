@@ -26,7 +26,7 @@ const ComingSoonLabel = ({
       >
         <path d="M4.5 16.5c-1.5 1.5-1.5 3.5 0 5s3.5 1.5 5 0L12 19l2.5 2.5c1.5 1.5 3.5 1.5 5 0s1.5-3.5 0-5L17 14l2.5-2.5c1.5-1.5 1.5-3.5 0-5s-3.5-1.5-5 0L12 9 9.5 6.5c-1.5-1.5-3.5-1.5-5 0s-1.5 3.5 0 5L7 14z"/>
       </svg>
-      <span className="font-medium text-xs sm:text-sm truncate max-w-[120px] sm:max-w-none">{title}</span>
+      <span className="font-medium text-xs sm:text-sm">{title}</span>
       <div className="inline-flex items-center gap-1 sm:gap-1.5 rounded-full bg-white/20 backdrop-blur-sm m-0.5 sm:m-1 p-1.5 sm:p-2">
         <span className="text-[10px] sm:text-xs font-semibold whitespace-nowrap">{subtitle}</span>
         <svg
