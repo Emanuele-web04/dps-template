@@ -1,8 +1,8 @@
 // Lucide Icons
 import {
-  LuCheck, LuCodeXml, LuTerminal, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
+  LuCheck, LuStar, LuCodeXml, LuTerminal, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
   LuSparkles, LuCirclePlus, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown,
-  LuLink2, LuSend
+  LuLink2, LuSend, LuFilter
 } from "react-icons/lu";
 
 import { PiLaptop, PiPaperPlaneTiltFill, PiPlusThin } from "react-icons/pi";
@@ -41,7 +41,7 @@ import { HiOutlineRocketLaunch, HiOutlineArrowRight } from "react-icons/hi2";
 import { GrAppleAppStore, GrSwift } from "react-icons/gr";
 
 // Simple Icons
-import { SiTailwindcss, SiLucide } from "react-icons/si";
+import { SiTailwindcss, SiLucide, SiBitcoinsv } from "react-icons/si";
 
 // Boxicons
 import { BiCommand, BiLogoTypescript } from "react-icons/bi";
@@ -53,8 +53,8 @@ import { HiOutlineArrowSmRight } from "react-icons/hi";
 // Export all icons
 export {
   // Lucide
-  LuCheck, LuLink2, LuCodeXml, LuTerminal, LuCirclePlus, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
-  LuSparkles, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown, LuSend,
+  LuCheck, LuStar, LuLink2, LuCodeXml, LuTerminal, LuCirclePlus, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
+  LuSparkles, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown, LuSend, LuFilter,
   // Tabler
   TbMenu, TbCirclePlusFilled, TbCircleCheckFilled, TbX, TbTools, TbHammer, TbMailCheck, TbArrowRightToArc, TbMessageCircle,
   TbLayoutBoard, TbDeviceDesktopExclamation, TbArrowMerge, TbDownload, TbSparklesTabler, TbBrandFramerMotion,
@@ -77,7 +77,7 @@ export {
   // Grommet
   GrAppleAppStore, GrSwift,
   // Simple
-  SiTailwindcss, SiLucide,
+  SiTailwindcss, SiLucide, SiBitcoinsv,
   // Boxicons
   BiCommand, BiLogoTypescript,
 

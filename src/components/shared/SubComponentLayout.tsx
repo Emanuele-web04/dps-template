@@ -98,7 +98,7 @@ const SubComponentLayout = ({
                   )}
                 </button>
               </div>
-              <div className="overflow-x-auto w-full rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-800 code-scrollbar flex-1 min-h-0">
+              <div className="overflow-auto w-full rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-800 code-scrollbar flex-1 min-h-0">
                 <CodeBlock className="language-tsx">{code}</CodeBlock>
               </div>
             </div>

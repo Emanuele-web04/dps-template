@@ -1,8 +1,11 @@
 // components/CodeBlock.tsx
 
-
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { nightOwl, oneDark, oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+import {
+  nightOwl,
+  oneDark,
+  oneLight,
+} from "react-syntax-highlighter/dist/esm/styles/prism";
 
 interface CodeBlockProps {
   children: string;
@@ -16,7 +19,7 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
   if (match) {
     return (
       <>
-        <div className="hidden dark:flex min-w-full max-h-120 justify-end  overflow-x-auto">
+        <div className="hidden dark:flex w-full">
           <SyntaxHighlighter
             language={match[1]}
             style={nightOwl}
@@ -26,7 +29,9 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
               padding: "1rem",
               borderRadius: "0 0 0.75rem 0.75rem", // Solo gli angoli inferiori
               backgroundColor: "#0f0f0f",
-              fontSize: "0.9rem"
+              fontSize: "0.9rem",
+              maxHeight: "30rem",
+              overflow: "auto",
             }}
             className="rounded-lg w-full font-mono"
             codeTagProps={{ style: { all: "unset" } }}
@@ -34,7 +39,7 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
             {children.trim()}
           </SyntaxHighlighter>
         </div>
-        <div className="dark:hidden w-full max-h-120 justify-end overflow-clip">
+        <div className="dark:hidden w-full">
           <SyntaxHighlighter
             language={match[1]}
             style={oneLight}
@@ -43,7 +48,9 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
               margin: 0,
               padding: "1rem",
               borderRadius: "0 0 0.75rem 0.75rem", // Solo gli angoli inferiori
-              backgroundColor: "#ffffff"
+              backgroundColor: "#ffffff",
+              maxHeight: "30rem",
+              overflow: "auto",
             }}
             className="rounded-lg font-mono"
             codeTagProps={{ style: { all: "unset" } }}

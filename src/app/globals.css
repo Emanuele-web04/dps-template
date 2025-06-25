@@ -232,7 +232,7 @@ html[data-theme="dark"] {
   }
 
   .sidebar-text {
-    @apply hover:text-black dark:hover:text-white cursor-pointer transition-all text-neutral-600 dark:text-neutral-400 gap-2 font-inter tracking-tight font-medium text-base data-checked:text-sky-500 data-checked:font-semibold data-checked:text-[17px]
+    @apply hover:text-black dark:hover:text-white cursor-pointer transition-all text-neutral-600 dark:text-neutral-400 gap-2 font-inter tracking-tight  text-sm data-checked:text-sky-500 data-checked:font-medium data-checked:text-base
   } 
 }
 
