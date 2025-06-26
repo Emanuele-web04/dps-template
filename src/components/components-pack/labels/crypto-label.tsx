@@ -14,7 +14,7 @@ const CryptoLabel = ({
   const isPositive = percentage >= 0;
 
   return (
-    <div className="inline-flex items-center dark:bg-neutral-900 gap-2 rounded-xl ring-1 ring-neutral-300 dark:ring-neutral-700 px-3 py-2 text-sm font-medium text-foreground shadow-sm">
+    <div className="inline-flex items-center  bg-white dark:bg-neutral-900 gap-2 rounded-xl ring-1 ring-neutral-300 dark:ring-neutral-700 px-3 py-2 text-sm font-medium text-foreground shadow-sm">
       <div
         className={`w-0 h-0 ${
           isPositive

@@ -29,7 +29,7 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
               padding: "1rem",
               borderRadius: "0 0 0.75rem 0.75rem", // Solo gli angoli inferiori
               backgroundColor: "#0f0f0f",
-              fontSize: "0.9rem",
+              fontSize: "0.85rem",
               maxHeight: "30rem",
               overflow: "auto",
             }}
@@ -50,6 +50,7 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
               borderRadius: "0 0 0.75rem 0.75rem", // Solo gli angoli inferiori
               backgroundColor: "#ffffff",
               maxHeight: "30rem",
+              fontSize: "0.85rem",
               overflow: "auto",
             }}
             className="rounded-lg font-mono"

@@ -8,6 +8,7 @@ import { getAllComponentSlugs, getComponentBySlug } from "@/lib/components";
 import { BiLogoTypescript, LuTerminal } from "@/utils/icons";
 import { notFound } from "next/navigation";
 import React from "react";
+import Aside from "@/components/shared/Aside";
 
 export async function generateStaticParams() {
   const slugs = await getAllComponentSlugs();

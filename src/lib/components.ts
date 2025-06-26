@@ -57,7 +57,7 @@ export const components: ComponentType[] = [
     ogImage: "", 
     price: 6,
     components: navbarComponents,
-    installation: "npm i react-icons",
+    installation: "npm i motion clsx tailwind-merge react-icons",
     utils: utils,
     },
     {
@@ -70,7 +70,7 @@ export const components: ComponentType[] = [
     ogImage: "", 
     price: 14,
     components: cardComponents,
-    installation: "npm i react-icons",
+    installation: "npm i clsx tailwind-merge react-icons",
     utils: utils,
     },
     {
@@ -83,7 +83,7 @@ export const components: ComponentType[] = [
     ogImage: "", 
     price: 8,
     components: buttonComponents,
-    installation: "npm i react-icons",
+    installation: "npm i clsx tailwind-merge react-icons",
     utils: utils,
     },
     {
@@ -96,7 +96,7 @@ export const components: ComponentType[] = [
     ogImage: "", 
     price: 6,
     components: dropdownComponents,
-    installation: "npm i react-icons",
+    installation: "npm i clsx tailwind-merge react-icons",
     utils: utils,
     },
     {
@@ -109,7 +109,7 @@ export const components: ComponentType[] = [
     ogImage: "", 
     price: 6,
     components: formComponents,
-    installation: "npm i react-icons",
+    installation: "npm i clsx tailwind-merge react-icons",
     utils: utils,
     },
     {
@@ -122,7 +122,7 @@ export const components: ComponentType[] = [
     ogImage: "", 
     price: 8,
     components: loginComponents,
-    installation: "npm i react-icons",
+    installation: "npm i clsx tailwind-merge react-icons",
     utils: utils,
     },
     {
@@ -135,7 +135,7 @@ export const components: ComponentType[] = [
     ogImage: "", 
     price: 10,
     components: pricingComponents,
-    installation: "npm i react-icons",
+    installation: "npm i clsx tailwind-merge react-icons",
     utils: utils,
     },
     {
@@ -148,7 +148,7 @@ export const components: ComponentType[] = [
     ogImage: "", 
     price: 8,
     components: bentoComponents,
-    installation: "npm i react-icons",
+    installation: "npm i clsx tailwind-merge react-icons",
     utils: utils,
     },
     {
@@ -161,7 +161,7 @@ export const components: ComponentType[] = [
     ogImage: "", 
     price: 8,
     components: badgeComponents,
-    installation: "npm i react-icons",
+    installation: "npm i clsx tailwind-merge react-icons",
     utils: utils,
     },
 ]
