@@ -14,6 +14,8 @@ import OnlineStatusBadge from "@/components/components-pack/labels/online-status
 import { onlineStatusBadgeCode } from "@/components/components-pack/labels/online-status-badge-code";
 import FilterChip from "@/components/components-pack/labels/profile-chip";
 import { filterChipCode } from "@/components/components-pack/labels/profile-chip-code";
+import FrameLabel from "@/components/components-pack/labels/frame-label";
+import { frameLabelCode } from "@/components/components-pack/labels/frame-label-code";
 
 const statusBadge: SingleComponent = {
     title: "Status Badge",
@@ -57,12 +59,20 @@ const filterChip: SingleComponent = {
     slug: "filter-chip",
     preview: FilterChip
 }
+const frameLabel: SingleComponent = {
+    title: "Frame Label",
+    desc: "Elegant label with corner dots and dotted border, perfect for highlighting content",
+    code: frameLabelCode,
+    slug: "frame-label",
+    preview: FrameLabel
+}
 
 // Export all button components in a single array
 export const badgeComponents: SingleComponent[] = [
     filterChip,
     statusBadge,
     onlineStatusBadge,
+    frameLabel,
     cryptoLabel,
     softLabel,
     comingSoonLabel,
