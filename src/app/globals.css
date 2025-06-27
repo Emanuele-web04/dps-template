@@ -234,6 +234,10 @@ html[data-theme="dark"] {
   .sidebar-text {
     @apply hover:text-black dark:hover:text-white cursor-pointer transition-all text-neutral-600 dark:text-neutral-400 gap-2 font-inter tracking-tight  text-sm data-checked:text-sky-500 data-checked:font-medium data-checked:text-base
   } 
+
+  .inner-shadow {
+    @apply shadow-[inset_0_0_12px_4px_rgba(255,255,255,1)] dark:shadow-[inset_0_0_12px_4px_rgba(255,255,255,0.1)]
+  }
 }
 
 @utility text-xxs {

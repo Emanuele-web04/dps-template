@@ -1,27 +1,32 @@
+import ElevatedLogin from "@/components/components-pack/login/elevated-login";
+import { elevatedLoginCode } from "@/components/components-pack/login/elevated-login-code";
+import MinimalLogin from "@/components/components-pack/login/minimal-login";
+import { minimalLoginCode } from "@/components/components-pack/login/minimal-login-code";
 import KhronaHero from "@/components/hero-sections/KhronaHero";
 import { SingleComponent } from "@/types/component";
 import { fullTableCode } from "../../code-gifts";
+import TravelLogin from "@/components/components-pack/login/travel-login";
 
 const elevatedLogin: SingleComponent = {
     title: "Elevated Login",
     desc: "Elevate Login with Google, X and Apple",
-    code: fullTableCode,
+    code: elevatedLoginCode,
     slug: "elevated-login",
-    preview: KhronaHero
+    preview: ElevatedLogin
 }
 const minimalLogin: SingleComponent = {
     title: "Minimal Login",
     desc: "Minimal Login with different sign-ins",
-    code: fullTableCode,
+    code: minimalLoginCode,
     slug: "minimal-login",
-    preview: KhronaHero
+    preview: MinimalLogin
 }
 const imageLogin: SingleComponent = {
     title: "Image Login",
     desc: "Login with side image",
     code: fullTableCode,
     slug: "image-login",
-    preview: KhronaHero
+    preview: TravelLogin
 }
 
 
