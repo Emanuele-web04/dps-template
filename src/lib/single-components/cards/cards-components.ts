@@ -11,6 +11,7 @@ import BlurCard from "@/components/components-pack/cards/blur-card";
 import ToolsCard from "@/components/components-pack/cards/gradient-card";
 import SearchCard from "@/components/components-pack/cards/search-card";
 import NotificationCard from "@/components/components-pack/cards/notification-card";
+import VideoCard from "@/components/components-pack/cards/video-card";
 import { tooltipImageLinkCode } from "@/components/components-pack/cards/tooltip-image-link-code";
 import { peopleImagesCode } from "@/components/components-pack/cards/people-images-code";
 import { deleteAccountCode } from "@/components/components-pack/cards/delete-account-code";
@@ -22,6 +23,7 @@ import { blurCardCode } from "@/components/components-pack/cards/blur-card-code"
 import { toolsCardCode } from "@/components/components-pack/cards/gradient-card-code";
 import { searchCardCode } from "@/components/components-pack/cards/search-card-code";
 import { notificationCardCode } from "@/components/components-pack/cards/notification-card-code";
+import { videoCardCode } from "@/components/components-pack/cards/video-card-code";
 import Hover3dCardComponent from "@/components/components-pack/cards/hover3d-card";
 
 const deleteAccountCard: SingleComponent = {
@@ -30,6 +32,13 @@ const deleteAccountCard: SingleComponent = {
     code: deleteAccountCode,
     slug: "delete-account-card",
     preview: DeleteAccountCard
+}
+const videoCard: SingleComponent = {
+    title: "Reel Style Card",
+    desc: "Reel-style card with author info, background image, and content preview - perfect for video content and blogs",
+    code: videoCardCode,
+    slug: "reel-style-card",
+    preview: VideoCard
 }
 const creatorCard: SingleComponent = {
     title: "Creator Card",
@@ -111,6 +120,7 @@ export const cardComponents: SingleComponent[] = [
     deleteAccountCard,
     minimalBusinessCard,
     creatorCard,
+    videoCard,
     messageCard,
     tooltipImageLink,
     peopleImages,
