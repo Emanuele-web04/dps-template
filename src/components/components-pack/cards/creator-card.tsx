@@ -11,7 +11,7 @@ const CreatorCard = () => {
   return (
     <div className="md:w-[320px] w-[280px] bg-white dark:bg-neutral-900 rounded-3xl overflow-hidden shadow-sm">
       {/* Card Content Container */}
-      <div className="p-2 flex flex-col w-full gap-y-8">
+      <div className="p-2 flex flex-col w-full md:gap-y-8 gap-y-3">
         {/* Background Image */}
         <div className="relative h-[140px] w-full rounded-2xl overflow-hidden mb-5">
           <Image
@@ -24,10 +24,10 @@ const CreatorCard = () => {
         </div>
 
         {/* Profile Content */}
-        <div className="relative w-full px-4">
+        <div className="relative w-full md:px-4 px-2">
           {/* Profile Image */}
-          <div className="absolute px-4 -top-20 left-0">
-            <div className="h-[74px] w-[74px] rounded-full overflow-hidden ring-1 ring-white backdrop-blur-2xl dark:ring-neutral-900 bg-pink-100">
+          <div className="absolute px-4 md:-top-20 -top-15 left-0">
+            <div className="md:h-[74px] md:w-[74px] h-[50px] w-[50px] rounded-full overflow-hidden ring-1 ring-white backdrop-blur-2xl dark:ring-neutral-900 bg-pink-100">
               <Image
                 src={person.src}
                 alt={person.name}

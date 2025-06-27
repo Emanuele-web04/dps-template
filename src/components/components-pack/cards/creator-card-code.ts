@@ -24,10 +24,10 @@ const CreatorCard = () => {
         </div>
 
         {/* Profile Content */}
-        <div className="relative w-full px-4">
+        <div className="relative w-full md:px-4 px-2">
           {/* Profile Image */}
           <div className="absolute px-4 -top-20 left-0">
-            <div className="h-[74px] w-[74px] rounded-full overflow-hidden ring-1 ring-white backdrop-blur-2xl dark:ring-neutral-900 bg-pink-100">
+            <div className="md:h-[74px] md:w-[74px] h-[50px] w-[50px] rounded-full overflow-hidden ring-1 ring-white backdrop-blur-2xl dark:ring-neutral-900 bg-pink-100">
               <Image
                 src={person.src}
                 alt={person.name}

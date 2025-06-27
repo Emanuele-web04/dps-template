@@ -10,23 +10,28 @@ type ColorOption = {
 
 const colors: ColorOption[] = [
   {
-    color: "bg-gradient-to-r from-violet-300 to-violet-400 hover:from-violet-400 hover:to-violet-500",
+    color:
+      "bg-gradient-to-r from-violet-300 to-violet-400 hover:from-violet-400 hover:to-violet-500",
     name: "violet",
   },
   {
-    color: "bg-gradient-to-r from-red-300 to-red-400 hover:from-red-400 hover:to-red-500",
+    color:
+      "bg-gradient-to-r from-red-300 to-red-400 hover:from-red-400 hover:to-red-500",
     name: "red",
   },
   {
-    color: "bg-gradient-to-r from-sky-300 to-sky-400 hover:from-sky-400 hover:to-sky-500",
+    color:
+      "bg-gradient-to-r from-sky-300 to-sky-400 hover:from-sky-400 hover:to-sky-500",
     name: "sky",
   },
   {
-    color: "bg-gradient-to-r from-emerald-300 to-emerald-400 hover:from-emerald-400 hover:to-emerald-500",
+    color:
+      "bg-gradient-to-r from-emerald-300 to-emerald-400 hover:from-emerald-400 hover:to-emerald-500",
     name: "emerald",
   },
   {
-    color: "bg-gradient-to-r from-orange-300 to-orange-400 hover:from-orange-400 hover:to-orange-500",
+    color:
+      "bg-gradient-to-r from-orange-300 to-orange-400 hover:from-orange-400 hover:to-orange-500",
     name: "orange",
   },
 ];
@@ -68,9 +73,9 @@ const DeleteAccountCard = () => {
           Are you sure you want to delete your account?
         </p>
         <div className="flex space-x-2 font-medium w-full mt-2">
-                      <button
-              type="button"
-              className="w-full cursor-pointer text-center bg-gray-100 dark:bg-neutral-700 py-2 rounded-lg text-gray-600 dark:text-neutral-300 hover:bg-gray-200 dark:hover:bg-neutral-600 hover:scale-95 transition-all text-sm duration-300"
+          <button
+            type="button"
+            className="w-full cursor-pointer text-center bg-gray-100 dark:bg-neutral-700 py-2 rounded-lg text-gray-600 dark:text-neutral-300 hover:bg-gray-200 dark:hover:bg-neutral-600 hover:scale-95 transition-all text-sm duration-300"
           >
             Cancel
           </button>

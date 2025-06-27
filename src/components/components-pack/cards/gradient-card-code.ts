@@ -1,54 +1,54 @@
 export const toolsCardCode = `"use client";
 
-import { FaReact } from "react-icons/fa6";
-import { SiTailwindcss } from "react-icons/si";
-import { DiSwift } from "react-icons/di";
-import { RiNextjsFill } from "react-icons/ri";
-import { TbSparklesTabler } from "react-icons/tb";
+import { BiLogoTypescript, FaReact } from "@/utils/icons";
+import { SiTailwindcss } from "@/utils/icons";
+import { DiSwift } from "@/utils/icons";
+import { RiNextjsFill } from "@/utils/icons";
 
 const ToolsCard = () => {
   return (
-    <div className="relative w-[320px] h-[400px] mx-auto">
-      <div className="relative w-full h-full rounded-3xl overflow-hidden bg-gray-900 dark:bg-gray-100 border border-gray-800 dark:border-gray-200">
-        
+    <div className="relative w-[280px] h-[320px] mx-auto">
+      <div className="relative w-full h-full rounded-3xl overflow-hidden bg-gradient-to-b from-neutral-200/20 via-white to-neutral-200/20 dark:bg-gradient-to-b dark:from-neutral-950 dark:via-neutral-900 dark:to-neutral-950 shadow-[inset_0_0_12px_4px_rgba(255,255,255,1)] dark:shadow-[inset_0_0_12px_2px_rgba(255,255,255,0.1)]">
         {/* Tools Icons */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <div className="flex items-center justify-center gap-3">
-            {/* Adobe Illustrator */}
-            <div className="w-14 h-14 bg-gray-800 dark:bg-gray-200 rounded-2xl flex items-center justify-center border border-gray-700 dark:border-gray-300">
-              <span className="text-orange-500 dark:text-orange-600 font-bold text-lg">AI</span>
-            </div>
-            
-            {/* CleanMyMac */}
-            <div className="w-14 h-14 bg-gray-800 dark:bg-gray-200 rounded-2xl flex items-center justify-center border border-gray-700 dark:border-gray-300">
-              <div className="w-7 h-7 bg-gray-600 dark:bg-gray-500 rounded-lg flex items-center justify-center">
-                <div className="w-3 h-3 bg-white dark:bg-gray-100 rounded-sm"></div>
+        <div className="flex flex-col h-full">
+          <div className="flex justify-center items-center h-full">
+            <div className="flex items-center justify-center gap-3">
+              {/* Adobe Illustrator */}
+              <div className="w-8 h-8 bg-neutral-200 dark:bg-neutral-950 rounded-full flex items-center justify-center shadow-[inset_0_0_12px_2px_rgba(255,255,255,1)] dark:shadow-[inset_0_0_12px_2px_rgba(255,255,255,0.2)]">
+                <BiLogoTypescript className="w-4 h-4 text-sky-600" />
+              </div>
+
+              {/* CleanMyMac */}
+              <div className="w-10 h-10 bg-neutral-200 dark:bg-neutral-950 rounded-full flex items-center justify-center shadow-[inset_0_0_12px_2px_rgba(255,255,255,1)] dark:shadow-[inset_0_0_12px_2px_rgba(255,255,255,0.2)]">
+                <RiNextjsFill className="w-5 h-5 text-black dark:text-white" />
+              </div>
+
+              {/* Swift */}
+              <div className="w-12 h-12 bg-neutral-200 dark:bg-neutral-950 rounded-full flex items-center justify-center shadow-[inset_0_0_12px_2px_rgba(255,255,255,1)] dark:shadow-[inset_0_0_12px_2px_rgba(255,255,255,0.2)]">
+                <DiSwift className="w-7 h-7 text-orange-600 " />
+              </div>
+
+              {/* React */}
+              <div className="w-10 h-10 bg-neutral-200 dark:bg-neutral-950 rounded-full flex items-center justify-center shadow-[inset_0_0_12px_2px_rgba(255,255,255,1)] dark:shadow-[inset_0_0_12px_2px_rgba(255,255,255,0.2)]">
+                <FaReact className="w-5 h-5 text-cyan-500" />
+              </div>
+
+              {/* Sparkles */}
+              <div className="w-8 h-8 bg-neutral-200 dark:bg-neutral-950 rounded-full flex items-center justify-center shadow-[inset_0_0_12px_2px_rgba(255,255,255,1)] dark:shadow-[inset_0_0_12px_2px_rgba(255,255,255,0.2)]">
+                <SiTailwindcss className="w-4 h-4 text-blue-600" />
               </div>
             </div>
-            
-            {/* Swift */}
-            <div className="w-14 h-14 bg-gray-800 dark:bg-gray-200 rounded-2xl flex items-center justify-center border border-gray-700 dark:border-gray-300">
-              <DiSwift className="w-7 h-7 text-orange-400 dark:text-orange-500" />
-            </div>
-            
-            {/* React */}
-            <div className="w-14 h-14 bg-gray-800 dark:bg-gray-200 rounded-2xl flex items-center justify-center border border-gray-700 dark:border-gray-300">
-              <FaReact className="w-7 h-7 text-blue-400 dark:text-blue-500" />
-            </div>
-            
-            {/* Sparkles */}
-            <div className="w-14 h-14 bg-gray-800 dark:bg-gray-200 rounded-2xl flex items-center justify-center border border-gray-700 dark:border-gray-300">
-              <TbSparklesTabler className="w-7 h-7 text-purple-400 dark:text-purple-500" />
-            </div>
           </div>
-        </div>
 
-        {/* Title and Description */}
-        <div className="absolute bottom-16 left-6 right-6">
-          <h2 className="text-white dark:text-gray-900 text-2xl font-bold mb-3">Damn good card</h2>
-          <p className="text-gray-400 dark:text-gray-600 text-sm leading-relaxed">
-            A card that showcases a set of tools that you use to create your product.
-          </p>
+          {/* Title and Description */}
+          <div className="flex flex-1 flex-col px-6 pb-6">
+            <h2 className="text-neutral-900 dark:text-white text-full font-bold ">
+              Tool Gradient Card
+            </h2>
+            <p className="text-neutral-600 dark:text-neutral-400 text-xs">
+              A card that showcases a set of tools with nice gradients.
+            </p>
+          </div>
         </div>
       </div>
     </div>

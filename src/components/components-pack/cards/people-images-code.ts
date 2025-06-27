@@ -2,40 +2,7 @@ export const peopleImagesCode = `"use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-
-// People data - you can customize this array
-const people = [
-  {
-    src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    name: "Sarah Chen",
-    role: "Senior Designer",
-    status: "Active",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    name: "Marcus Rodriguez",
-    role: "Lead Developer",
-    status: "Away",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    name: "Emma Thompson",
-    role: "Product Manager",
-    status: "Offline",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    name: "David Kim",
-    role: "Frontend Developer",
-    status: "Busy",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    name: "Lisa Zhang",
-    role: "UX Researcher",
-    status: "Active",
-  },
-];
+import { people } from "@/lib/images";
 
 const PeopleImages = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -47,14 +14,14 @@ const PeopleImages = () => {
 
   const handleMouseEnter = (index: number) => {
     // Only set hover on desktop (devices with fine pointer)
-    if (window.matchMedia('(hover: hover)').matches) {
+    if (window.matchMedia("(hover: hover)").matches) {
       setHoveredIndex(index);
     }
   };
 
   const handleMouseLeave = () => {
     // Only clear hover on desktop
-    if (window.matchMedia('(hover: hover)').matches) {
+    if (window.matchMedia("(hover: hover)").matches) {
       setHoveredIndex(null);
     }
   };
@@ -65,15 +32,15 @@ const PeopleImages = () => {
       if (
         containerRef.current &&
         !containerRef.current.contains(event.target as Node) &&
-        !window.matchMedia('(hover: hover)').matches
+        !window.matchMedia("(hover: hover)").matches
       ) {
         setHoveredIndex(null);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -99,8 +66,10 @@ const PeopleImages = () => {
             >
               <div className="flex flex-col items-center">
                 {item.name}
-                <p className="text-xxs font-medium text-neutral-400">{item.role}</p>
-                </div>
+                <p className="text-xxs font-medium text-neutral-400">
+                  {item.role}
+                </p>
+              </div>
               {/* Arrow pointing down */}
               <div className="absolute  top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-6 border-t-6 border-transparent border-t-white dark:border-t-neutral-800"></div>
             </div>

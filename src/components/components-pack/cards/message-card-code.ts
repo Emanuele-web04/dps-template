@@ -1,6 +1,6 @@
 export const messageCardCode = `"use client";
 
-import { TbMessageCircle } from "react-icons/tb";
+import { TbMessageCircle } from "@/utils/icons";
 
 const MessageCard = () => {
   return (

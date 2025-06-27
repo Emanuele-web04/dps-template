@@ -1,98 +1,114 @@
 export const notificationCardCode = `"use client";
 
-import { BsGear, BsPerson, BsThreeDots } from "react-icons/bs";
-import { LuTarget, LuMessageSquare } from "lucide-react";
+import { IoSettingsOutline } from "react-icons/io5";
+import { HiOutlineUser } from "react-icons/hi2";
+import { HiOutlineChatBubbleLeftRight } from "react-icons/hi2";
+import { HiOutlineEllipsisHorizontal } from "react-icons/hi2";
+import { HiOutlineChevronRight } from "react-icons/hi2";
+import { LuTarget } from "react-icons/lu";
+import { RiUser6Line } from "react-icons/ri";
 
-const NotificationCard = () => {
+export default function NotificationsCard() {
+  const notifications = [
+    {
+      id: 1,
+      icon: <RiUser6Line className="sm:w-5 sm:h-5 w-4 h-4 text-blue-500" />,
+      title: "New Lead Generated",
+      description: "John Smith submitted web form",
+      time: "10 minutes ago",
+      hasMenu: false,
+      hasArrow: false,
+      hasDot: false,
+    },
+    {
+      id: 2,
+      icon: <LuTarget className="sm:w-5 sm:h-5 w-4 h-4 text-yellow-500" />,
+      title: "Campaign Milestone",
+      description: "Black Friday campaign hit 150% target",
+      time: "3 days ago",
+      hasMenu: true,
+      hasArrow: true,
+      hasDot: true,
+    },
+    {
+      id: 3,
+      icon: (
+        <HiOutlineChatBubbleLeftRight className="sm:w-5 sm:h-5 w-4 h-4 text-purple-500" />
+      ),
+      title: "Live Chat Interaction",
+      description: "John Smith submitted web form",
+      time: "4 days ago",
+      hasMenu: false,
+      hasArrow: false,
+      hasDot: false,
+    },
+  ];
+
   return (
-    <div className="relative w-[320px] h-[400px] mx-auto">
-      <div className="relative w-full h-full rounded-3xl overflow-hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6">
-        
+    <div className="w-full max-w-md mx-auto">
+      <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg p-4 space-y-2">
         {/* Header */}
-        <div className="flex items-center justify-between mb-6">
-          <h3 className="text-xl font-semibold text-neutral-900 dark:text-white">
+        <div className="flex items-center border-b border-neutral-200 dark:border-neutral-700 pb-1 border-dashed justify-between mb-4">
+          <h2 className="font-medium text-neutral-800 dark:text-white sm:text-base text-sm">
             Notifications
-          </h3>
-          <button className="p-1.5 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">
-            <BsGear className="w-5 h-5 text-neutral-500 dark:text-neutral-400" />
+          </h2>
+          <button className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors">
+            <IoSettingsOutline className="md:w-5 md:h-5 w-4 h-4 text-gray-500 dark:text-gray-400" />
           </button>
         </div>
 
-        {/* Notification Items */}
-        <div className="space-y-4 mb-6">
-          {/* New Lead Generated */}
-          <div className="flex items-start gap-3">
-            <div className="flex-shrink-0 w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center relative">
-              <BsPerson className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-500 rounded-full border-2 border-white dark:border-neutral-900"></div>
-            </div>
-            <div className="flex-1 min-w-0">
-              <h4 className="text-sm font-medium text-neutral-900 dark:text-white mb-1">
-                New Lead Generated
-              </h4>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-1">
-                John Smith submitted web form
-              </p>
-              <span className="text-xs text-neutral-500 dark:text-neutral-500">
-                10 minutes ago
-              </span>
-            </div>
-          </div>
-
-          {/* Campaign Milestone */}
-          <div className="flex items-start gap-3">
-            <div className="flex-shrink-0 w-10 h-10 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center relative">
-              <LuTarget className="w-5 h-5 text-orange-600 dark:text-orange-400" />
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-orange-500 rounded-full"></div>
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <h4 className="text-sm font-medium text-neutral-900 dark:text-white mb-1">
-                    Campaign Milestone
-                  </h4>
-                  <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-1">
-                    Black Friday campaign hit 150% target
-                  </p>
-                  <span className="text-xs text-neutral-500 dark:text-neutral-500">
-                    3 days ago
-                  </span>
+        {/* Notifications List */}
+        <div className="space-y-6">
+          {notifications.map((notification, index) => (
+            <div key={notification.id}>
+              <div className="flex items-start sm:px-2 px-1 gap-4 p-1 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-xl transition-colors">
+                {/* Icon */}
+                <div className="flex-shrink-0 sm:w-10 sm:h-10 w-8 h-8 bg-white shadow-md dark:bg-gray-700 rounded-full flex items-center justify-center">
+                  {notification.icon}
                 </div>
-                <button className="ml-2 p-1 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded transition-colors">
-                  <BsThreeDots className="w-4 h-4 text-neutral-400 dark:text-neutral-500" />
-                </button>
+
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="flex-1 -space-y-1">
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-medium text-gray-900 dark:text-white text-xs sm:text-base">
+                          {notification.title}
+                        </h3>
+                        {notification.hasDot && (
+                          <div className="w-2 h-2 bg-yellow-500 rounded-full flex-shrink-0"></div>
+                        )}
+                      </div>
+                      <p className="text-gray-600 dark:text-gray-400 sm:text-sm text-xs mt-1">
+                        {notification.description}
+                      </p>
+                      <p className="text-gray-400 dark:text-gray-500 sm:text-xs text-xxs mt-2">
+                        {notification.time}
+                      </p>
+                    </div>
+
+                    {/* Actions */}
+                    <div className="flex items-center gap-1 flex-shrink-0">
+                      {notification.hasMenu && (
+                        <button className="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors">
+                          <HiOutlineEllipsisHorizontal className="w-4 h-4 text-gray-400 dark:text-gray-500" />
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Live Chat Interaction */}
-          <div className="flex items-start gap-3">
-            <div className="flex-shrink-0 w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center">
-              <LuMessageSquare className="w-5 h-5 text-purple-600 dark:text-purple-400" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <h4 className="text-sm font-medium text-neutral-900 dark:text-white mb-1">
-                Live Chat Interaction
-              </h4>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-1">
-                John Smith submitted web form
-              </p>
-              <span className="text-xs text-neutral-500 dark:text-neutral-500">
-                4 days ago
-              </span>
-            </div>
-          </div>
+          ))}
         </div>
 
         {/* Archive All Button */}
-        <div className="absolute bottom-6 left-6 right-6">
-          <button className="w-full py-3 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white border border-neutral-200 dark:border-neutral-700 rounded-xl hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">
+        <div className="pt-4 mt-2">
+          <button className="w-full py-1.5 px-4 ring-1 shadow-sm ring-neutral-200 dark:ring-neutral-700 text-neutral-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700/50 rounded-lg text-xs md:text-sm transition-colors font-medium">
             Archive All
           </button>
         </div>
       </div>
     </div>
   );
-};
-
-export default NotificationCard;`; 
+}`; 
