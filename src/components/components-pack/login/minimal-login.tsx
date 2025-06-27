@@ -13,8 +13,8 @@ export default function MinimalLogin() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="flex items-center justify-center md:p-4 p-2">
-      <div className="lg:w-lg sm:w-[400px] xs:w-xs w-2xs">
+    <div className="flex w-full items-center justify-center md:p-4 p-2">
+      <div className="lg:max-w-md sm:max-w-sm w-full">
         {/* Main Card */}
         <div className="bg-white dark:bg-gradient-to-b dark:from-neutral-900 dark:to-neutral-950 rounded-2xl p-4 md:p-8 shadow-lg border border-neutral-200 dark:border-neutral-700/50">
           {/* Logo */}
@@ -84,7 +84,7 @@ export default function MinimalLogin() {
               <span className="w-full border-t border-neutral-200 dark:border-neutral-600/50" />
             </div>
             <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-white dark:bg-neutral-800 px-3 text-neutral-500 dark:text-neutral-300">
+              <span className="bg-white dark:bg-neutral-900 px-3 text-neutral-500 dark:text-neutral-300">
                 OR
               </span>
             </div>

@@ -17,10 +17,10 @@ export default function TravelLogin() {
   const profileImages = people.slice(0, 4);
 
   return (
-    <div className="w-full md:min-h-screen font-sans flex !p-0 bg-neutral-100 dark:bg-neutral-900 !m-0 !rounded-none overflow-hidden">
+    <div className="w-full mx-auto md:min-h-screen font-sans flex !p-0 bg-neutral-100 dark:bg-neutral-900 !m-0 !rounded-none overflow-hidden">
       {/* Left Side - Login Form */}
-      <div className="w-2xs sm:w-sm md:w-[400px] lg:w-1/2 lg:min-h-screen flex flex-col justify-center bg-neutral-100 dark:bg-neutral-900 p-4 sm:p-4 lg:p-8 xl:p-12">
-        <div className="mx-auto w-full">
+      <div className="w-full lg:w-1/2 lg:min-h-screen flex flex-col justify-center bg-neutral-100 dark:bg-neutral-900 p-4 sm:p-4 lg:p-8 xl:p-12">
+        <div className="mx-auto sm:max-w-md w-full">
           {/* Logo */}
           <div className="relative w-full block lg:hidden mb-5 h-40 rounded-3xl overflow-hidden">
             <Image
@@ -167,14 +167,14 @@ export default function TravelLogin() {
 
             {/* Social Login */}
             <div className="flex justify-start space-x-4 pb-2">
-              <button className="sm:w-12 sm:h-12 w-6 h-6 rounded-full bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-neutral-700 transition-colors shadow-sm">
-                <FaGoogle className="w-5 h-5 text-black dark:text-white" />
+              <button className="sm:w-12 sm:h-12 w-8 h-8 rounded-full bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-neutral-700 transition-colors shadow-sm">
+                <FaGoogle className="w-4 h-4 text-black dark:text-white" />
               </button>
-              <button className="sm:w-12 sm:h-12 w-6 h-6 rounded-full bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-neutral-700 transition-colors shadow-sm">
-                <FaApple className="w-5 h-5 text-black dark:text-white" />
+              <button className="sm:w-12 sm:h-12 w-8 h-8 rounded-full bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-neutral-700 transition-colors shadow-sm">
+                <FaApple className="w-4 h-4 text-black dark:text-white" />
               </button>
-              <button className="sm:w-12 sm:h-12 w-6 h-6 rounded-full bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-neutral-700 transition-colors shadow-sm">
-                <FaFacebookF className="w-5 h-5 text-black dark:text-white" />
+              <button className="sm:w-12 sm:h-12 w-8 h-8 rounded-full bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-neutral-700 transition-colors shadow-sm">
+                <FaFacebookF className="w-4 h-4 text-black dark:text-white" />
               </button>
             </div>
           </div>
@@ -188,7 +188,7 @@ export default function TravelLogin() {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=1200&fit=crop')`,
         }}
       >
-        <div className="absolute inset-0 dark:bg-black/30 rounded-3xl" />
+        <div className="absolute inset-0 rounded-3xl" />
         <div className="relative flex flex-col justify-center items-start px-6 text-white w-full max-w-lg ml-auto">
           {/* Welcome Text */}
           <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 leading-tight bg-gradient-to-r from-white via-blue-100 to-white dark:from-gray-100 dark:via-blue-200 dark:to-gray-100 bg-clip-text text-transparent">

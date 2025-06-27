@@ -11,8 +11,8 @@ export default function ElevatedLogin() {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="flex items-center justify-center">
-      <div className="lg:w-lg sm:w-[400px] xs:w-xs w-2xs">
+    <div className="flex w-full items-center justify-center">
+      <div className="lg:max-w-md sm:max-w-sm w-full">
         {/* Main Card */}
         <div className="bg-gradient-to-t from-neutral-100 to-neutral-50 dark:from-neutral-900 shadow-[inset_0_0_12px_4px_rgba(0,0,0,0.05)] dark:shadow-[inset_0_0_12px_1px_rgba(255,255,255,0.1)] dark:to-neutral-800 rounded-2xl p-4 md:p-8 border border-neutral-200/50 dark:border-neutral-800/50">
           {/* Decorative dots and logo area */}

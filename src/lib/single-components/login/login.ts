@@ -6,6 +6,8 @@ import KhronaHero from "@/components/hero-sections/KhronaHero";
 import { SingleComponent } from "@/types/component";
 import { fullTableCode } from "../../code-gifts";
 import TravelLogin from "@/components/components-pack/login/travel-login";
+import AddClientForm from "@/components/components-pack/forms/client-form";
+import { clientFormCode } from "@/components/components-pack/forms/client-form-code";
 
 const elevatedLogin: SingleComponent = {
     title: "Elevated Login",
@@ -28,6 +30,7 @@ const imageLogin: SingleComponent = {
     slug: "image-login",
     preview: TravelLogin
 }
+
 
 
 export const loginComponents: SingleComponent[] = [
