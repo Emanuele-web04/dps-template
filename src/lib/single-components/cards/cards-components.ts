@@ -1,34 +1,50 @@
 import KhronaHero from "@/components/hero-sections/KhronaHero";
 import { SingleComponent } from "@/types/component";
 import { fullTableCode } from "../../code-gifts";
+import ToolTipImageLink from "@/components/components-pack/cards/tooltip-image-link";
+import PeopleImages from "@/components/components-pack/cards/people-images";
+import DeleteAccountCard from "@/components/components-pack/cards/delete-account";
+import MinimalBusinessCard from "@/components/components-pack/cards/minimal-business-card";
+import CreatorCard from "@/components/components-pack/cards/creator-card";
+import MessageCard from "@/components/components-pack/cards/message-card";
+import BlurCard from "@/components/components-pack/cards/blur-card";
+import { tooltipImageLinkCode } from "@/components/components-pack/cards/tooltip-image-link-code";
+import { peopleImagesCode } from "@/components/components-pack/cards/people-images-code";
+import { deleteAccountCode } from "@/components/components-pack/cards/delete-account-code";
+import { minimalBusinessCardCode } from "@/components/components-pack/cards/minimal-business-card-code";
+import { creatorCardCode } from "@/components/components-pack/cards/creator-card-code";
+import { hover3dCode } from "@/components/components-pack/cards/hover-3d-code";
+import { messageCardCode } from "@/components/components-pack/cards/message-card-code";
+import { blurCardCode } from "@/components/components-pack/cards/blur-card-code";
+import Hover3dCardComponent from "@/components/components-pack/cards/hover3d-card";
 
 const deleteAccountCard: SingleComponent = {
     title: "Delete Account Card",
-    desc: "Delete account minimal card ",
-    code: fullTableCode,
+    desc: "Interactive delete account modal with customizable color themes",
+    code: deleteAccountCode,
     slug: "delete-account-card",
-    preview: KhronaHero
+    preview: DeleteAccountCard
 }
 const creatorCard: SingleComponent = {
     title: "Creator Card",
-    desc: "Creator card for social media",
-    code: fullTableCode,
+    desc: "Modern creator profile card with stats and contact button",
+    code: creatorCardCode,
     slug: "creator-card",
-    preview: KhronaHero
+    preview: CreatorCard
 }
 const minimalBusinessCard: SingleComponent = {
     title: "Minimal Business Card",
-    desc: "Minimal Business card with socials",
-    code: fullTableCode,
+    desc: "Clean business card with profile info and social media links",
+    code: minimalBusinessCardCode,
     slug: "minimal-business-card",
-    preview: KhronaHero
+    preview: MinimalBusinessCard
 }
 const messageCard: SingleComponent = {
     title: "Message Card",
-    desc: "Message card for chat app",
-    code: fullTableCode,
+    desc: "Clean message notification card with action buttons",
+    code: messageCardCode,
     slug: "message-card",
-    preview: KhronaHero
+    preview: MessageCard
 }
 const gradientCard: SingleComponent = {
     title: "Gradient Card",
@@ -39,10 +55,10 @@ const gradientCard: SingleComponent = {
 }
 const hover3dCard: SingleComponent = {
     title: "Hover 3d Card",
-    desc: "Hover 3d Card to play with the mouse",
-    code: fullTableCode,
+    desc: "Interactive 3D hover card with mouse tracking and visual effects",
+    code: hover3dCode,
     slug: "hover-3d-card",
-    preview: KhronaHero
+    preview: Hover3dCardComponent
 }
 const searchCard: SingleComponent = {
     title: "Search Card",
@@ -59,15 +75,43 @@ const notificationCard: SingleComponent = {
     preview: KhronaHero
 }
 
+// New Components - Tooltip and People Images
+const tooltipImageLink: SingleComponent = {
+    title: "Tooltip Image Link",
+    desc: "Interactive image card with hover tooltip, link preview, and copy functionality",
+    code: tooltipImageLinkCode,
+    slug: "tooltip-image-link",
+    preview: ToolTipImageLink
+}
+
+const peopleImages: SingleComponent = {
+    title: "Tooltip Team People",
+    desc: "Overlapping profile images with hover tooltips showing names and roles",
+    code: peopleImagesCode,
+    slug: "tooltip-team-people",
+    preview: PeopleImages
+}
+
+const blurCard: SingleComponent = {
+    title: "Blur Card",
+    desc: "Beautiful blur card with mountain background and location info",
+    code: blurCardCode,
+    slug: "blur-card",
+    preview: BlurCard
+}
+
 
 export const cardComponents: SingleComponent[] = [
     deleteAccountCard,
-    creatorCard,
     minimalBusinessCard,
+    creatorCard,
     messageCard,
+    tooltipImageLink,
+    peopleImages,
     gradientCard,
     hover3dCard,
     searchCard,
-    notificationCard
+    notificationCard,
+    blurCard
 ]
 

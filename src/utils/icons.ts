@@ -1,11 +1,11 @@
 // Lucide Icons
 import {
-  LuCheck, LuStar, LuCodeXml, LuTerminal, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
+  LuCheck, LuStar, LuBookmark, LuCodeXml, LuTerminal, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
   LuSparkles, LuCirclePlus, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown,
-  LuLink2, LuSend, LuFilter
+  LuLink2, LuSend, LuFilter, LuNavigation
 } from "react-icons/lu";
 
-import { PiLaptop, PiPaperPlaneTiltFill, PiPlusThin } from "react-icons/pi";
+import { PiLaptop, PiNavigationArrowFill, PiPaperPlaneTiltFill, PiPlusThin } from "react-icons/pi";
 
 // Tabler Icons
 import {
@@ -53,8 +53,8 @@ import { HiOutlineArrowSmRight } from "react-icons/hi";
 // Export all icons
 export {
   // Lucide
-  LuCheck, LuStar, LuLink2, LuCodeXml, LuTerminal, LuCirclePlus, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
-  LuSparkles, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown, LuSend, LuFilter,
+  LuCheck, LuStar, LuBookmark, LuLink2, LuCodeXml, LuTerminal, LuCirclePlus, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
+  LuSparkles, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown, LuSend, LuFilter, LuNavigation,
   // Tabler
   TbMenu, TbCirclePlusFilled, TbCircleCheckFilled, TbX, TbTools, TbHammer, TbMailCheck, TbArrowRightToArc, TbMessageCircle,
   TbLayoutBoard, TbDeviceDesktopExclamation, TbArrowMerge, TbDownload, TbSparklesTabler, TbBrandFramerMotion,
@@ -64,12 +64,12 @@ export {
   FaYoutube, FaInstagram, FaTiktok, FaChevronRight, FaReact,
   // Ionicons
   IoIosMailOpen, IoIosAlert, IoIosRadioButtonOff, IoIosRadioButtonOn,
-  // Devicons
+  // Devicons   
   DiSwift,
   // Remix
   RiNextjsLine, RiNextjsFill,
   // Phosphor
-  PiOption, PiPlusThin, PiPaperPlaneTiltFill,
+  PiOption, PiPlusThin, PiPaperPlaneTiltFill, PiNavigationArrowFill,
   // Ant Design
   AiOutlineX, AiOutlineYoutube,
   // Heroicons

@@ -31,9 +31,9 @@ const FilterChip = ({
 
       <button
         onClick={onClose}
-        className="hover:bg-neutral-100 dark:hover:bg-neutral-700 cursor-pointer rounded-lg transition-colors"
+        className="hover:bg-neutral-100 mr-3 dark:hover:bg-neutral-700 cursor-pointer rounded-full transition-colors"
       >
-        <TbX className="w-4 h-4 mr-3 text-neutral-400 dark:text-neutral-500" />
+        <TbX className="w-4 h-4  text-neutral-400 dark:text-neutral-500" />
       </button>
     </div>
   );
