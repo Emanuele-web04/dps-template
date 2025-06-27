@@ -17,7 +17,7 @@ export default function TravelLogin() {
   const profileImages = people.slice(0, 4);
 
   return (
-    <div className="w-full  mx-auto md:min-h-screen font-sans flex !p-0 bg-neutral-100 dark:bg-neutral-900 !m-0 !rounded-none overflow-hidden">
+    <div className="w-full mx-auto md:min-h-screen font-sans flex !p-0 bg-neutral-100 dark:bg-neutral-900 !m-0 !rounded-none overflow-hidden">
       {/* Left Side - Login Form */}
       <div className="w-full lg:w-1/2 lg:min-h-screen flex flex-col justify-center bg-neutral-100 dark:bg-neutral-900 p-4 sm:p-4 lg:p-8 xl:p-12">
         <div className="mx-auto sm:max-w-md w-full">
