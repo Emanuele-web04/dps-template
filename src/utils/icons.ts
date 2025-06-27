@@ -2,7 +2,7 @@
 import {
   LuCheck, LuStar, LuBookmark, LuCodeXml, LuTerminal, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
   LuSparkles, LuCirclePlus, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown,
-  LuLink2, LuSend, LuFilter, LuNavigation
+  LuLink2, LuFile, LuSend, LuFilter, LuNavigation, LuSearch, LuArrowRight, LuTarget, LuMessageSquare
 } from "react-icons/lu";
 
 import { PiLaptop, PiNavigationArrowFill, PiPaperPlaneTiltFill, PiPlusThin } from "react-icons/pi";
@@ -26,7 +26,7 @@ import { IoIosMailOpen, IoIosAlert, IoIosRadioButtonOff, IoIosRadioButtonOn } fr
 import { DiSwift } from "react-icons/di";
 
 // Remix Icons
-import { RiNextjsLine, RiNextjsFill } from "react-icons/ri";
+import { RiNextjsLine, RiNextjsFill, RiUser6Line } from "react-icons/ri";
 
 // Phosphor Icons
 import { PiOption } from "react-icons/pi";
@@ -54,7 +54,7 @@ import { HiOutlineArrowSmRight } from "react-icons/hi";
 export {
   // Lucide
   LuCheck, LuStar, LuBookmark, LuLink2, LuCodeXml, LuTerminal, LuCirclePlus, LuCopy, LuGift, LuMail, LuMinus, LuPlus, LuMonitor, LuMoon, LuSun, LuLink,
-  LuSparkles, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown, LuSend, LuFilter, LuNavigation,
+  LuSparkles, LuFile, LuCircleCheck, LuLayoutGrid, LuZap, LuCalendar, LuRocket, LuPackage, LuTelescope, LuChevronDown, LuSend, LuFilter, LuNavigation, LuSearch, LuArrowRight, LuTarget, LuMessageSquare,
   // Tabler
   TbMenu, TbCirclePlusFilled, TbCircleCheckFilled, TbX, TbTools, TbHammer, TbMailCheck, TbArrowRightToArc, TbMessageCircle,
   TbLayoutBoard, TbDeviceDesktopExclamation, TbArrowMerge, TbDownload, TbSparklesTabler, TbBrandFramerMotion,
@@ -67,7 +67,7 @@ export {
   // Devicons   
   DiSwift,
   // Remix
-  RiNextjsLine, RiNextjsFill,
+  RiNextjsLine, RiNextjsFill, RiUser6Line,
   // Phosphor
   PiOption, PiPlusThin, PiPaperPlaneTiltFill, PiNavigationArrowFill,
   // Ant Design

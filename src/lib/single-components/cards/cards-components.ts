@@ -8,6 +8,9 @@ import MinimalBusinessCard from "@/components/components-pack/cards/minimal-busi
 import CreatorCard from "@/components/components-pack/cards/creator-card";
 import MessageCard from "@/components/components-pack/cards/message-card";
 import BlurCard from "@/components/components-pack/cards/blur-card";
+import ToolsCard from "@/components/components-pack/cards/gradient-card";
+import SearchCard from "@/components/components-pack/cards/search-card";
+import NotificationCard from "@/components/components-pack/cards/notification-card";
 import { tooltipImageLinkCode } from "@/components/components-pack/cards/tooltip-image-link-code";
 import { peopleImagesCode } from "@/components/components-pack/cards/people-images-code";
 import { deleteAccountCode } from "@/components/components-pack/cards/delete-account-code";
@@ -16,6 +19,9 @@ import { creatorCardCode } from "@/components/components-pack/cards/creator-card
 import { hover3dCode } from "@/components/components-pack/cards/hover-3d-code";
 import { messageCardCode } from "@/components/components-pack/cards/message-card-code";
 import { blurCardCode } from "@/components/components-pack/cards/blur-card-code";
+import { toolsCardCode } from "@/components/components-pack/cards/gradient-card-code";
+import { searchCardCode } from "@/components/components-pack/cards/search-card-code";
+import { notificationCardCode } from "@/components/components-pack/cards/notification-card-code";
 import Hover3dCardComponent from "@/components/components-pack/cards/hover3d-card";
 
 const deleteAccountCard: SingleComponent = {
@@ -46,12 +52,12 @@ const messageCard: SingleComponent = {
     slug: "message-card",
     preview: MessageCard
 }
-const gradientCard: SingleComponent = {
+const toolsCard: SingleComponent = {
     title: "Gradient Card",
-    desc: "Gradient info card",
-    code: fullTableCode,
-    slug: "gradient-card",
-    preview: KhronaHero
+    desc: "Gradient showcase card with dark/light mode support and technology icons",
+    code: toolsCardCode,
+    slug: "tools-card",
+    preview: ToolsCard
 }
 const hover3dCard: SingleComponent = {
     title: "Hover 3d Card",
@@ -62,17 +68,17 @@ const hover3dCard: SingleComponent = {
 }
 const searchCard: SingleComponent = {
     title: "Search Card",
-    desc: "Search card with suggestions and settings",
-    code: fullTableCode,
+    desc: "Interactive search card with recent searches and quick actions",
+    code: searchCardCode,
     slug: "search-card",
-    preview: KhronaHero
+    preview: SearchCard
 }
 const notificationCard: SingleComponent = {
     title: "Notification Card",
-    desc: "Modern notification card",
-    code: fullTableCode,
-    slug: "search-card",
-    preview: KhronaHero
+    desc: "Clean notification card with unread indicators and action buttons",
+    code: notificationCardCode,
+    slug: "notification-card",
+    preview: NotificationCard
 }
 
 // New Components - Tooltip and People Images
@@ -108,7 +114,7 @@ export const cardComponents: SingleComponent[] = [
     messageCard,
     tooltipImageLink,
     peopleImages,
-    gradientCard,
+    toolsCard,
     hover3dCard,
     searchCard,
     notificationCard,
