@@ -86,7 +86,7 @@ export default function GradientHero() {
             alt="Gradient Hero"
             width={1000}
             height={1000}
-            className="w-full h-full mt-20 object-cover "
+            className="w-full h-full mt-10 object-cover "
           />
         </div>
       </div>
