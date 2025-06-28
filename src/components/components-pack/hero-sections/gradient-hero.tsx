@@ -20,7 +20,7 @@ export default function GradientHero() {
     <div className="p-2 md:p-4 bg-white">
       <div className="relative font-sans min-h-screen overflow-hidden rounded-2xl bg-gradient-to-b from-orange-200 via-rose-200 to-pink-200">
         <div className="absolute inset-0 bg-[url('/desktopgrid.png')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] md:bg-[url('/mobilegrid.png')]"></div>
-        <div className="relative z-10">
+        <div className="relative z-10 max-w-7xl mx-auto ">
           {/* Navigation Header */}
           <nav className="flex justify-center pt-6 px-4">
             <div className="bg-black rounded-full p-1 flex items-center justify-between w-full max-w-md">

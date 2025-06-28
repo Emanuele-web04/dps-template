@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../globals.css";
+import "../../globals.css";
 import { eudoxus, editor, inter, geistMono } from "@/lib/fonts";
 import NavbarWebsite from "@/components/layout/NavbarWebsite";
 import Footer from "@/components/landing/Footer";

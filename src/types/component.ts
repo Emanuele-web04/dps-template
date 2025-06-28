@@ -22,4 +22,5 @@ export type SingleComponent = {
     code: string
     slug: string
     preview: React.ComponentType
+    realPreview?: React.ComponentType // For isolated preview pages
 }

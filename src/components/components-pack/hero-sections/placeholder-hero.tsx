@@ -1,9 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const PlaceholderHero = () => {
+interface PlaceholderHeroProps {
+  slug?: string;
+}
+
+const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
   return (
     <div className="relative block md:grid md:min-h-screen w-full grid-cols-[1fr_2.5rem_auto_2.5rem_1fr] grid-rows-[1fr_1px_auto_1px_1fr] bg-white [--pattern-fg:var(--color-neutral-950)]/5 dark:bg-neutral-950 dark:[--pattern-fg:var(--color-white)]/10">
       <div className="col-start-3 row-start-3 flex max-w-lg flex-col bg-neutral-100 md:p-2 dark:bg-white/10">
@@ -36,7 +41,7 @@ const PlaceholderHero = () => {
                   className="h-[1lh] w-5.5 shrink-0"
                   viewBox="0 0 22 22"
                   fill="none"
-                  stroke-linecap="square"
+                  strokeLinecap="square"
                 >
                   <circle cx="11" cy="11" r="11" className="fill-sky-400/25" />
                   <circle
@@ -62,7 +67,7 @@ const PlaceholderHero = () => {
                   className="h-[1lh] w-5.5 shrink-0"
                   viewBox="0 0 22 22"
                   fill="none"
-                  stroke-linecap="square"
+                  strokeLinecap="square"
                 >
                   <circle cx="11" cy="11" r="11" className="fill-sky-400/25" />
                   <circle
@@ -88,7 +93,7 @@ const PlaceholderHero = () => {
                   className="h-[1lh] w-5.5 shrink-0"
                   viewBox="0 0 22 22"
                   fill="none"
-                  stroke-linecap="square"
+                  strokeLinecap="square"
                 >
                   <circle cx="11" cy="11" r="11" className="fill-sky-400/25" />
                   <circle
@@ -114,7 +119,7 @@ const PlaceholderHero = () => {
                   className="h-[1lh] w-5.5 shrink-0"
                   viewBox="0 0 22 22"
                   fill="none"
-                  stroke-linecap="square"
+                  strokeLinecap="square"
                 >
                   <circle cx="11" cy="11" r="11" className="fill-sky-400/25" />
                   <circle
@@ -141,12 +146,18 @@ const PlaceholderHero = () => {
           <hr className="my-6 w-full border-(--pattern-fg)" />
           <p className="mb-3">Ready to see the hero sections in action?</p>
           <p className="font-semibold">
-            <a
-              href="#"
-              className="text-neutral-950 underline decoration-sky-400 underline-offset-3 hover:decoration-2 dark:text-white"
-            >
-              See Preview &rarr;
-            </a>
+            {slug ? (
+              <Link
+                href={`/components-pack/previews/hero-sections/${slug}`}
+                className="text-neutral-950 underline decoration-sky-400 underline-offset-3 hover:decoration-2 dark:text-white"
+              >
+                See Preview &rarr;
+              </Link>
+            ) : (
+              <span className="text-neutral-500 cursor-not-allowed">
+                No preview available
+              </span>
+            )}
           </p>
         </div>
       </div>
