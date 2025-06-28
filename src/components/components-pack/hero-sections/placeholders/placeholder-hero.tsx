@@ -11,7 +11,7 @@ interface PlaceholderHeroProps {
 const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
   return (
     <div className="relative block md:grid md:min-h-screen w-full grid-cols-[1fr_2.5rem_auto_2.5rem_1fr] grid-rows-[1fr_1px_auto_1px_1fr] bg-white [--pattern-fg:var(--color-neutral-950)]/5 dark:bg-neutral-950 dark:[--pattern-fg:var(--color-white)]/10">
-      <div className="col-start-3 row-start-3 flex max-w-lg flex-col bg-neutral-100 md:p-2 dark:bg-white/10">
+      <div className="col-start-3 row-start-3 flex max-w-lg flex-col bg-neutral-100 md:p-2 dark:bg-neutral-900/50">
         <div className="rounded-xl leading-normal bg-white px-6 py-10 md:p-10 text-sm/7 text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300">
           <div className="flex items-center mb-11.5 gap-x-3">
             <Image

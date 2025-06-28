@@ -67,7 +67,7 @@ const SubComponentLayout = ({
           })}
         </div>
         {selection === "preview" ? (
-          <div className="bg-neutral-100 relative dark:bg-neutral-900/50 w-full flex justify-center border border-dashed dark:border-neutral-700 border-neutral-200">
+          <div className="bg-neutral-100/50 relative dark:bg-neutral-900/50 w-full flex justify-center border border-dashed dark:border-neutral-700 border-neutral-200">
             <Plus />
             <div className=" p-2 rounded-md w-full flex justify-center mx-auto h-fit  m-2">
               {React.createElement(preview)}

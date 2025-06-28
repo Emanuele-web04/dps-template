@@ -18,7 +18,7 @@ import Image from "next/image";
 export default function GradientHero() {
   return (
     <div className="p-2 md:p-4 bg-white">
-      <div className="relative font-sans min-h-screen overflow-hidden rounded-2xl bg-gradient-to-b from-orange-200 via-rose-200 to-pink-200">
+      <div className="relative font-sans overflow-hidden rounded-2xl bg-gradient-to-b from-orange-200 via-rose-200 to-pink-200">
         <div className="absolute inset-0 bg-[url('/mobilegrid.png')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] md:bg-[url('/mobilegrid.png')]"></div>
         <div className="relative z-10 max-w-7xl mx-auto ">
           {/* Navigation Header */}
