@@ -92,7 +92,7 @@ const ModernBento = () => {
             height={512}
             src="https://img.icons8.com/nolan/512/E090F0/05BDF5/cursor-ai.png"
             alt="chatgpt"
-            className="rounded-xl object-contain  xs:w-1/2 flex justify-between mx-auto p-15 opacity-50 md:w-full flex-1"
+            className="rounded-xl object-contain flex justify-between mx-auto p-15 opacity-50 w-full flex-1"
           />
           <div className="flex flex-col w-full justify-center text-center mt-4 mb-2 -space-y-1">
             <h3 className="font-semibold text-black">AI-native apps</h3>
