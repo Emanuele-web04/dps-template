@@ -2,7 +2,7 @@ import KhronaHero from "@/components/hero-sections/KhronaHero";
 import { SingleComponent } from "@/types/component";
 import { fullTableCode } from "../../code-gifts";
 import GradientHero from "@/components/components-pack/hero-sections/gradient-hero";
-import PlaceholderHero from "@/components/components-pack/hero-sections/placeholder-hero";
+import PlaceholderHero from "@/components/components-pack/hero-sections/placeholders/placeholder-hero";
 import { FuturisticHeroPreview, ProductHeroPreview, MinimalHeroPreview, GradientHeroPreview } from "@/components/components-pack/hero-sections/placeholders/placeholders";
 
 // Component wrappers to pass slug props

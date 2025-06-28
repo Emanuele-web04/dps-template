@@ -19,7 +19,7 @@ export default function GradientHero() {
   return (
     <div className="p-2 md:p-4 bg-white">
       <div className="relative font-sans min-h-screen overflow-hidden rounded-2xl bg-gradient-to-b from-orange-200 via-rose-200 to-pink-200">
-        <div className="absolute inset-0 bg-[url('/desktopgrid.png')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] md:bg-[url('/mobilegrid.png')]"></div>
+        <div className="absolute inset-0 bg-[url('/mobilegrid.png')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] md:bg-[url('/mobilegrid.png')]"></div>
         <div className="relative z-10 max-w-7xl mx-auto ">
           {/* Navigation Header */}
           <nav className="flex justify-center pt-6 px-4">
@@ -46,7 +46,7 @@ export default function GradientHero() {
             {/* Badge */}
             <div className="mb-8 flex items-center space-x-2 rounded-full border border-pink-200/50 bg-white/50 px-4 py-2 backdrop-blur-sm">
               <div className="h-2 w-2 animate-pulse rounded-full bg-pink-400"></div>
-              <span className="text-sm text-gray-700">
+              <span className="md:text-sm text-xs text-gray-700">
                 24K+ Boosted brands this month
               </span>
               <FiChevronRight className="h-4 w-4 text-gray-500" />
@@ -60,7 +60,7 @@ export default function GradientHero() {
             </h1>
 
             {/* Subheading */}
-            <p className="max-w-2xl text-base text-gray-600 md:text-lg mb-8">
+            <p className="max-w-xl text-sm text-gray-600 md:text-lg mb-8">
               AI-powered platform helping small brands predict, track,
               <br />
               and improve social media post performance
@@ -68,10 +68,10 @@ export default function GradientHero() {
 
             {/* CTA Button */}
             <div className="flex flex-col items-center">
-              <button className="text-gray-900 px-8 py-4 rounded-full text-lg font-medium shadow-md hover:shadow-lg transition-shadow border border-gray-200 bg-white/80 backdrop-blur-sm">
+              <button className="text-gray-900 md:px-6 md:py-3 px-4 py-2 rounded-full md:text-base text-sm font-medium hover:shadow-lg transition-shadow  bg-white/80 backdrop-blur-3xl">
                 Give It a Boost
               </button>
-              <span className="text-gray-500 text-sm mt-2">
+              <span className="text-gray-500 md:text-sm text-xs mt-2">
                 Start 7-day Free Trial
               </span>
             </div>
@@ -87,14 +87,6 @@ export default function GradientHero() {
             {/* Brand Logos */}
           </div>
         </div>
-      </div>
-      <div className="flex flex-wrap items-center justify-center mt-4 space-x-8 lg:space-x-12 opacity-50">
-        <span className="font-semibold text-gray-600">HUES</span>
-        <span className="font-semibold text-gray-600">Blossom</span>
-        <span className="font-semibold text-gray-600">Luminous</span>
-        <span className="font-semibold text-gray-600">Penta</span>
-        <span className="font-semibold text-gray-600">Proline</span>
-        <span className="font-semibold text-gray-600">Sitemark</span>
       </div>
     </div>
   );
