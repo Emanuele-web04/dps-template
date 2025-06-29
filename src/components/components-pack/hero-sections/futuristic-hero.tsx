@@ -131,7 +131,7 @@ export default function FuturisticHero() {
 
         {/* Main Heading */}
         <div className="text-center  mb-8">
-          <h1 className="font-inter tracking-tighter bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent text-5xl md:text-6xl lg:text-7xl font-semibold text-black leading-tight mb-4">
+          <h1 className="font-inter tracking-tighter bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent text-5xl md:text-6xl lg:text-7xl font-semibold  leading-tight mb-4">
             A ticket system
             <br />
             acting like an{" "}

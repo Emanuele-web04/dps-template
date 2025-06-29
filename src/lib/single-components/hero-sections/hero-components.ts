@@ -26,25 +26,17 @@ const gradientHeroSection: SingleComponent = {
 }
 const productHeroSection: SingleComponent = {
     title: "Product Hero Section",
-    desc: "Hero section displaying a product",
+    desc: "Hero section for a life tracking app with app download CTA",
     code: fullTableCode,
     slug: "product-hero-section",
     preview: ProductHeroPreview,
     realPreview: KhronaHero
 }
-const minimalHeroSection: SingleComponent = {
-    title: "Minimal Hero Section",
-    desc: "Minimal hero section with a touch of color",
-    code: fullTableCode,
-    slug: "minimal-hero-section",
-    preview: MinimalHeroPreview,
-    realPreview: KhronaHero
-}
+
 
 export const heroComponents: SingleComponent[] = [
     gradientHeroSection,
     futureHeroSection,
-    minimalHeroSection,
     productHeroSection
 ]
 

@@ -18,9 +18,15 @@ export const navlinks: NavLink[] = [
 
 const KhronaHero = () => {
   return (
-    <main className="text-zinc-900 font-sans relative flex flex-col w-full max-w-full">
+    <main className="text-zinc-900 font-inter tracking-tight min-h-screen relative flex flex-col w-full justify-center max-w-full"
+    style={{
+      backgroundImage: 'radial-gradient(circle at 0.5px 0.5px, rgba(6,182,212,0.2) 0.6px, transparent 0)',
+       backgroundSize: "8px 8px",
+        backgroundRepeat: "repeat"
+}}
+    >
       {/* Fixed bar at bottom — kept as is */}
-      <div className="z-10 absolute flex items-center justify-between px-4 py-3 bottom-5 left-1/2 transform -translate-x-1/2 bg-neutral-100/10 backdrop-blur-lg ring-1 ring-neutral-200 rounded-xl shadow-lg max-w-md w-[90%] mx-auto">
+      <div className="z-10 fixed bottom-0 flex items-center justify-between px-4 py-3 bottom-5 left-1/2 transform -translate-x-1/2 bg-neutral-100/10 backdrop-blur-lg ring-1 ring-neutral-200 rounded-xl shadow-lg max-w-md w-[90%] mx-auto">
         <Link href={"#home"} className="flex items-center space-x-2">
           <Image
             alt="logo"
@@ -61,21 +67,21 @@ const KhronaHero = () => {
               />
               <h6 className="font-bold text-lg tracking-wider">Khrona</h6>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight flex flex-col -gap-y-2 leading-tight">
-              <span className="text-gradient">Track your life.</span>{" "}
-              <span className="text-gradient">Understand your</span>{" "}
-              <span className="text-gradient">days.</span>
+            <h1 className="text-4xl lg:text-5xl font-inter md:text-left text-center w-full font-black tracking-tight flex flex-col -gap-y-2 leading-tight">
+              <span className="bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent">Track your life.</span>{" "}
+              <span className="bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent">Understand your</span>{" "}
+              <span className="bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent">days.</span>
             </h1>
-            <p className="text-base text-gray-600 tracking-tight leading-relaxed max-w-xl">
+            <p className="md:text-base text-sm text-neutral-600 md:text-left text-center tracking-tight leading-relaxed max-w-xl">
               Track your days, mood, goals, and reflections — all in one place.
               Khrona helps you uncover patterns, build self-awareness, and stay
               aligned with what truly matters. Gain clarity, one day at a time.
             </p>
-            <div className="flex flex-col gap-3 sm:flex-row w-full">
+            <div className="flex flex-col px-8 md:px-0 gap-3 sm:flex-row w-full">
               <Link
                 target="_blank"
                 href="https://apps.apple.com/app/khrona-get-your-life-together/id6744410827"
-                className="group flex items-center gap-2 bg-zinc-900 text-white px-5 py-3 rounded-xl hover:bg-zinc-800 transition-all duration-300 justify-center"
+                className="group flex items-center gap-2 bg-zinc-900 text-white px-5 py-3 rounded-xl ring-1 ring-black hover:bg-zinc-800 transition-all duration-300 justify-center"
               >
                 <FaApple className="w-5 h-5" />
                 <span>Download Now</span>
