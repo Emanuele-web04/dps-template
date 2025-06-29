@@ -202,7 +202,14 @@ const PricingCard = ({ plan }: { plan: PricingPlan }) => {
       className="flex flex-col font-sans h-full w-full p-2 transition-all duration-300"
       style={cardStyles}
     >
-      <div className={cn("flex flex-col p-4 rounded-2xl ring-1 ", isDark ? "bg-neutral-800 ring-neutral-700" : "bg-neutral-100 ring-neutral-200")}>
+      <div
+        className={cn(
+          "flex flex-col p-4 rounded-2xl ring-1 ",
+          isDark
+            ? "bg-neutral-800 ring-neutral-700"
+            : "bg-neutral-100 ring-neutral-200"
+        )}
+      >
         <div className="flex items-center justify-between mb-4">
           <div className="flex flex-col items-start gap-4">
             <div className={`text-3xl ${isDark ? "text-white" : "text-black"}`}>
@@ -236,7 +243,12 @@ const PricingCard = ({ plan }: { plan: PricingPlan }) => {
           {plan.idealFor}
         </div>
 
-        <div className={cn("space-y-3 divide-y", isDark ? "divide-neutral-700" : "divide-neutral-200")}>
+        <div
+          className={cn(
+            "space-y-3 divide-y",
+            isDark ? "divide-neutral-700" : "divide-neutral-200"
+          )}
+        >
           {plan.features.map((feature, index) => (
             <FeatureItem
               key={index}
@@ -246,9 +258,8 @@ const PricingCard = ({ plan }: { plan: PricingPlan }) => {
             />
           ))}
         </div>
-
       </div>
-        <div className="flex-grow"></div>
+      <div className="flex-grow"></div>
       {plan.bottomToggle && (
         <div className="mt-6 px-4">
           <ToggleSwitch
@@ -261,7 +272,7 @@ const PricingCard = ({ plan }: { plan: PricingPlan }) => {
       )}
 
       <div className="mt-4 p-4">
-        <div className="flex items-end justify-between">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="text-left">
             <p
               className={`text-3xl font-bold ${isDark ? "text-white" : "text-black"}`}
@@ -274,8 +285,10 @@ const PricingCard = ({ plan }: { plan: PricingPlan }) => {
               </span>
             </p>
           </div>
-          <div className="text-right flex flex-col items-center">
-            <Button theme={plan.theme}>{plan.primaryButton}</Button>
+          <div className="flex w-full flex-col items-center sm:w-auto sm:items-end">
+            <Button theme={plan.theme} className="w-full sm:w-auto">
+              {plan.primaryButton}
+            </Button>
             {plan.secondaryButton && (
               <button
                 className={`mt-2 text-sm ${isDark ? "text-neutral-500" : "text-neutral-400"} hover:underline`}
