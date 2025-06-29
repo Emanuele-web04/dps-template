@@ -33,7 +33,7 @@ export default function ClientForm() {
   };
 
   return (
-    <div className="w-full flex-1 flex items-center justify-center transition-colors duration-300">
+    <div className="w-full max-w-xl flex-1 flex items-center justify-center transition-colors duration-300">
       <div className="w-full lg:max-w-4xl bg-white dark:bg-neutral-800 rounded-3xl shadow-2xl p-6 sm:p-8 transition-colors duration-300">
         {/* Header */}
         <div className="flex flex-1 items-center w-full justify-between mb-8">

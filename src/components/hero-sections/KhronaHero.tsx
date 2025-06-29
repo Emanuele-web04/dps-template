@@ -26,7 +26,7 @@ const KhronaHero = () => {
 }}
     >
       {/* Fixed bar at bottom — kept as is */}
-      <div className="z-10 fixed bottom-0 flex items-center justify-between px-4 py-3 bottom-5 left-1/2 transform -translate-x-1/2 bg-neutral-100/10 backdrop-blur-lg ring-1 ring-neutral-200 rounded-xl shadow-lg max-w-md w-[90%] mx-auto">
+      <div className="z-10 fixed flex items-center justify-between px-4 py-3 bottom-5 left-1/2 transform -translate-x-1/2 bg-neutral-100/10 backdrop-blur-lg ring-1 ring-neutral-200 rounded-xl shadow-lg max-w-md w-[90%] mx-auto">
         <Link href={"#home"} className="flex items-center space-x-2">
           <Image
             alt="logo"

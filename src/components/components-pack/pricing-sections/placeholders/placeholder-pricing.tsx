@@ -4,11 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-interface PlaceholderHeroProps {
+interface PlaceholderPricingProps {
   slug?: string;
 }
 
-const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
+const PlaceholderPricing = ({ slug }: PlaceholderPricingProps) => {
   return (
     <div className="relative block md:grid md:min-h-screen w-full grid-cols-[1fr_2.5rem_auto_2.5rem_1fr] grid-rows-[1fr_1px_auto_1px_1fr] bg-white [--pattern-fg:var(--color-neutral-950)]/5 dark:bg-neutral-950 dark:[--pattern-fg:var(--color-white)]/10">
       <div className="col-start-3 row-start-3 flex max-w-lg flex-col bg-neutral-100 md:p-2 dark:bg-neutral-900/50">
@@ -28,12 +28,12 @@ const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
               className=" w-6 h-6 not-dark:hidden"
               alt="DPS Template"
             />
-            <h1 className="text-lg font-medium">Hero Section</h1>
+            <h1 className="text-lg font-medium">Pricing Section</h1>
           </div>
           <div className="space-y-6">
             <p className="leading-normal">
-              For viewing the full hero section click on See Preview to see it
-              in action.
+              For viewing the full pricing section click on See Preview to see
+              it in action.
             </p>
             <ul className="space-y-3">
               <li className="flex">
@@ -56,9 +56,9 @@ const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
                   />
                 </svg>
                 <p className="ml-3">
-                  Responsive design with
+                  Multiple tiers like
                   <code className="font-mono ml-1 font-medium text-neutral-950 dark:text-white">
-                    Tailwind CSS
+                    Free, Pro, & Enterprise
                   </code>
                 </p>
               </li>
@@ -82,9 +82,9 @@ const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
                   />
                 </svg>
                 <p className="ml-3">
-                  Dark mode support with{" "}
+                  Highlighting a{" "}
                   <code className="font-mono ml-1 font-medium text-neutral-950 dark:text-white">
-                    theme switching
+                    featured plan
                   </code>
                 </p>
               </li>
@@ -107,12 +107,7 @@ const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
                     className="stroke-sky-800 dark:stroke-sky-300"
                   />
                 </svg>
-                <p className="ml-3">
-                  Beautiful icons with
-                  <code className="font-mono ml-1 font-medium text-neutral-950 dark:text-white">
-                    React Icons
-                  </code>
-                </p>
+                <p className="ml-3">Clear feature comparison between plans</p>
               </li>
               <li className="flex">
                 <svg
@@ -133,22 +128,20 @@ const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
                     className="stroke-sky-800 dark:stroke-sky-300"
                   />
                 </svg>
-                <p className="ml-3">
-                  Copy-paste ready components with instant preview
-                </p>
+                <p className="ml-3">Responsive design for all devices</p>
               </li>
             </ul>
             <p>
-              Perfect for building landing pages, showcasing products, or
-              creating stunning first impressions.
+              Perfect for SaaS, service-based businesses, or any project with
+              tiered offerings.
             </p>
           </div>
           <hr className="my-6 w-full border-(--pattern-fg)" />
-          <p className="mb-3">Ready to see the hero sections in action?</p>
+          <p className="mb-3">Ready to see the pricing sections in action?</p>
           <p className="font-semibold">
             {slug ? (
               <Link
-                href={`/components-pack/previews/hero-sections/${slug}`}
+                href={`/components-pack/previews/pricings/${slug}`}
                 className="text-neutral-950 underline decoration-sky-400 underline-offset-3 hover:decoration-2 dark:text-white"
               >
                 See Preview &rarr;
@@ -169,4 +162,4 @@ const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
   );
 };
 
-export default PlaceholderHero;
+export default PlaceholderPricing;

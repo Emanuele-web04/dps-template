@@ -48,7 +48,7 @@ import { BiCommand, BiLogoTypescript } from "react-icons/bi";
 
 //Ci
 import { CiCirclePlus } from "react-icons/ci";
-import { HiOutlineArrowSmRight } from "react-icons/hi";
+import { HiBadgeCheck, HiOutlineArrowSmRight } from "react-icons/hi";
 
 // Export all icons
 export {
@@ -73,7 +73,7 @@ export {
   // Ant Design
   AiOutlineX, AiOutlineYoutube,
   // Heroicons
-  HiOutlineRocketLaunch, HiOutlineArrowSmRight,
+  HiOutlineRocketLaunch, HiOutlineArrowSmRight, HiBadgeCheck,
   // Grommet
   GrAppleAppStore, GrSwift,
   // Simple

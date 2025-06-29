@@ -49,7 +49,7 @@ export default function FullNavGlass() {
   };
 
   return (
-    <div className="w-ful">
+    <div className="w-full">
       {/* Desktop Navbar - Glassmorphism */}
       <nav className="hidden lg:flex items-center justify-between w-full h-20 px-8 bg-black/80 dark:bg-neutral-800/50 backdrop-blur-2xl border-b border-neutral-800/50 sticky top-0 z-50">
         <DevStudioLogoInverted />

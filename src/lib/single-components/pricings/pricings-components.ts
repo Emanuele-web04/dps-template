@@ -1,33 +1,42 @@
-import KhronaHero from "@/components/hero-sections/KhronaHero";
 import { SingleComponent } from "@/types/component";
-import { fullTableCode } from "../../code-gifts";
+import MinimalPricing from "@/components/components-pack/pricing-sections/minimal-pricing";
+import { minimalPricingCode } from "@/components/components-pack/pricing-sections/minimal-pricing-code";
+import { MinimalPricingPreview, ThreeDPricingPreview, SoftPricingPreview } from "@/components/components-pack/pricing-sections/placeholders/placeholders";
+import CRMPricingSection from "@/components/components-pack/pricing-sections/3d-pricing";
+import { threeDPricingCode } from "@/components/components-pack/pricing-sections/3d-pricing-code";
+import SoftPricingSection from "@/components/components-pack/pricing-sections/soft-pricing";
+import { softPricingCode } from "@/components/components-pack/pricing-sections/soft-pricing-code";
 
-const pricingBanner: SingleComponent = {
-    title: "Banner Pricing",
-    desc: "Pricing with banner on top",
-    code: fullTableCode,
-    slug: "pricing-banner",
-    preview: KhronaHero
-}
 const minimalPricing: SingleComponent = {
     title: "Minimal Pricing",
-    desc: "Minimal Pricing with black and white contrast",
-    code: fullTableCode,
-    slug: "full-navbar-glass",
-    preview: KhronaHero
-}
-const shadowPricings: SingleComponent = {
-    title: "Shadow Pricings",
-    desc: "Shadow Pricings in dark mode",
-    code: fullTableCode,
-    slug: "floating-navbar",
-    preview: KhronaHero
+    desc: "A minimal pricing section with a featured plan.",
+    code: minimalPricingCode,
+    slug: "minimal-pricing",
+    preview: MinimalPricingPreview,
+    realPreview: MinimalPricing
 }
 
+const threeDPricing: SingleComponent = {
+    title: "3D Pricing Style",
+    desc: "A pricing section with a 3D, tactile feel.",
+    code: threeDPricingCode,
+    slug: "3d-pricing",
+    preview: ThreeDPricingPreview,
+    realPreview: CRMPricingSection
+}
+
+const softPricing: SingleComponent = {
+    title: "Soft Pricing",
+    desc: "A soft, modern pricing section with light and dark themes.",
+    code: softPricingCode,
+    slug: "soft-pricing",
+    preview: SoftPricingPreview,
+    realPreview: SoftPricingSection
+}
 
 export const pricingComponents: SingleComponent[] = [
-    pricingBanner,
     minimalPricing,
-    shadowPricings
+    threeDPricing,
+    softPricing
 ]
 
