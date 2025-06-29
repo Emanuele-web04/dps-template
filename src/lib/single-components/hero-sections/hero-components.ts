@@ -4,6 +4,7 @@ import { fullTableCode } from "../../code-gifts";
 import GradientHero from "@/components/components-pack/hero-sections/gradient-hero";
 import PlaceholderHero from "@/components/components-pack/hero-sections/placeholders/placeholder-hero";
 import { FuturisticHeroPreview, ProductHeroPreview, MinimalHeroPreview, GradientHeroPreview } from "@/components/components-pack/hero-sections/placeholders/placeholders";
+import FuturisticHero from "@/components/components-pack/hero-sections/futuristic-hero";
 
 // Component wrappers to pass slug props
 
@@ -13,7 +14,7 @@ const futureHeroSection: SingleComponent = {
     code: fullTableCode,
     slug: "futuristic-hero-section",
     preview: FuturisticHeroPreview,
-    realPreview: KhronaHero
+    realPreview: FuturisticHero
 }
 const gradientHeroSection: SingleComponent = {
     title: "Gradient Hero Section",

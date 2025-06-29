@@ -32,8 +32,7 @@ const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
           </div>
           <div className="space-y-6">
             <p className="leading-normal">
-              A collection of modern hero sections for React and Next.js,
-              including support for things like:
+              For viewing the full hero section click on See Preview to see it in action.
             </p>
             <ul className="space-y-3">
               <li className="flex">
