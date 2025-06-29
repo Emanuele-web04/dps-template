@@ -165,7 +165,7 @@ const PricingCard = ({ plan }: { plan: PricingPlan }) => {
 
   return (
     <Card featured={plan.featured}>
-      <div className="p-6 fade-in-up h-full flex flex-col">
+      <div className="p-6 font-inter fade-in-up h-full flex flex-col">
         {/* Header */}
         <div className="mb-8">
           <h3 className={`text-2xl font-bold mb-2 ${isDark ? "text-white" : "text-neutral-900"}`}>{plan.name}</h3>
