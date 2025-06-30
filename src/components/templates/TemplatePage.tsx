@@ -66,7 +66,7 @@ const TemplatePage = ({
           ))}
         </div>
         <FeaturesSection />
-        <ContactCTACard />
+        <ContactCTACard variant="website" />
       </div>
     </div>
   );

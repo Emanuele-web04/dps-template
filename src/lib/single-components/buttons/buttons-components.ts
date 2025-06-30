@@ -16,6 +16,8 @@ import SoftButton from "@/components/components-pack/buttons/soft-button";
 import { softButtonCode } from "@/components/components-pack/buttons/soft-button-code";
 import SegmentedPickerComponent from "@/components/components-pack/buttons/segmented-picker";
 import { segmentedPickerCode } from "@/components/components-pack/buttons/segmented-picker-code";
+import ContactCTAButton from "@/components/components-pack/buttons/contact-cta-button";
+import { contactCTAButtonCode } from "@/components/components-pack/buttons/contact-cta-button-code";
   
   const toggleButton: SingleComponent = {
     title: "iOS Style Toggle",
@@ -73,6 +75,13 @@ const segmentedPicker: SingleComponent = {
     slug: "segmented-picker",
     preview: SegmentedPickerComponent
 }
+const contactCTAButton: SingleComponent = {
+    title: "Contact CTA Button",
+    desc: "Contact call-to-action button with gradient effects and glow",
+    code: contactCTAButtonCode,
+    slug: "contact-cta-button",
+    preview: ContactCTAButton
+}
 
 
 // Export all button components in a single array
@@ -82,8 +91,9 @@ export const buttonComponents: SingleComponent[] = [
     minimalButton,
     gumroadButton,
     shinyButton,
+    contactCTAButton,
     softButton,
     neumorphismButtonComponent,
-    segmentedPicker
+    segmentedPicker,
 ]
 

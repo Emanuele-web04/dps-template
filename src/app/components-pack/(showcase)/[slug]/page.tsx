@@ -1,6 +1,7 @@
 import CodeWrapper from "@/components/shared/CodeWrapper";
 import SidebarComponent from "@/components/layout/SidebarComponent";
 import SubComponentLayout from "@/components/shared/SubComponentLayout";
+import MoreComingPlaceholder from "@/components/shared/MoreComingPlaceholder";
 import AddToCart from "@/components/ui/neumorphism-button/add-to-cart";
 import SquareGrid from "@/components/ui/square-grid";
 import StackIcons from "@/components/ui/stack-icons";
@@ -9,6 +10,7 @@ import { BiLogoTypescript, LuTerminal } from "@/utils/icons";
 import { notFound } from "next/navigation";
 import React from "react";
 import Aside from "@/components/shared/Aside";
+import ContactCTACard from "@/components/templates/ContactCTACard";
 
 export async function generateStaticParams() {
   const slugs = await getAllComponentSlugs();
@@ -146,10 +148,12 @@ export default async function Page({
               {components.map((c, i) => (
                 <SubComponentLayout key={i} {...c} />
               ))}
+              <MoreComingPlaceholder />
             </div>
           </div>
         </div>
       </div>
+      <ContactCTACard variant="components" />
     </div>
   );
 }
