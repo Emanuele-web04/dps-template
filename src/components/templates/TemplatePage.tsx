@@ -34,7 +34,7 @@ const TemplatePage = ({
                   href={preview}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full hover:-translate-y-1 transition-all duration-300 md:w-fit px-6 py-3 md:py-2.5 minimal-button text-primary"
+                  className="w-full text-center hover:-translate-y-1 transition-all duration-300 md:w-fit px-6 py-3 md:py-2.5 minimal-button text-primary"
                 >
                   Live Preview
                 </Link>
