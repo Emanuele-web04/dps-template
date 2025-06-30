@@ -17,10 +17,10 @@ export async function generateMetadata({
   if (!template) return notFound();
 
   return {
-    title: template.title,
+    title: template.title + " | DP's Templates",
     description: template.desc,
     openGraph: {
-      title: template.title,
+      title: template.title + " | DP's Templates",
       description: template.desc,
       images: [
         {
@@ -33,7 +33,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: template.title,
+      title: template.title + " | DP's Templates",
       description: template.desc,
       images: [template.ogImage || template.images[0]],
     },

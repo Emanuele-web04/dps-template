@@ -7,8 +7,16 @@ import SquareGrid from "../ui/square-grid";
 import FeaturesSection from "./TemplateFeatureSection";
 import StackIcons from "../ui/stack-icons";
 import Link from "next/link";
+import ContactCTACard from "./ContactCTACard";
 
-const TemplatePage = ({ title, desc, images, stack, price, preview }: TemplateType) => {
+const TemplatePage = ({
+  title,
+  desc,
+  images,
+  stack,
+  price,
+  preview,
+}: TemplateType) => {
   return (
     <div className="fade-in-up min-h-screen xl:max-w-7xl mx-auto p-6! sm:py-6! sm:p-12!">
       <div className="relative mx-auto">
@@ -22,13 +30,21 @@ const TemplatePage = ({ title, desc, images, stack, price, preview }: TemplateTy
             <div className="flex flex-col md:flex-row gap-y-5 w-full justify-between">
               <StackIcons stack={stack} />
               <div className="flex relative flex-col md:flex-row justify-end items-start gap-y-4 md:gap-2">
-                <Link href={preview} target="_blank" rel="noopener noreferrer" className="w-full hover:-translate-y-1 transition-all duration-300 md:w-fit px-6 py-3 md:py-2.5 minimal-button text-primary">
+                <Link
+                  href={preview}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full hover:-translate-y-1 transition-all duration-300 md:w-fit px-6 py-3 md:py-2.5 minimal-button text-primary"
+                >
                   Live Preview
                 </Link>
                 <div className="flex w-full md:w-fit relative flex-col">
                   <AddToCart price={price} />
                   <p className="md:absolute flex gap-1 justify-center w-full md:w-fit top-0 mt-4 md:mt-0 md:top-12 text-xs mx-auto md:text-sm text-primary font-inter">
-                    or get this with <Link className="font-bold" href="/pricing?filter=nextjs">bundle</Link>
+                    or get this with{" "}
+                    <Link className="font-bold" href="/pricing?filter=nextjs">
+                      bundle
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -50,6 +66,7 @@ const TemplatePage = ({ title, desc, images, stack, price, preview }: TemplateTy
           ))}
         </div>
         <FeaturesSection />
+        <ContactCTACard />
       </div>
     </div>
   );
