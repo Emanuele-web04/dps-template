@@ -6,7 +6,7 @@ import Link from "next/link";
 const ContactCTACard = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="relative mt-25 mb-8 grid w-full grid-cols-[1fr_0.75rem_auto_0.75rem_1fr] md:grid-cols-[1fr_2.5rem_auto_2.5rem_1fr] grid-rows-[1fr_1px_auto_1px_1fr] bg-white [--pattern-fg:var(--color-neutral-950)]/5 dark:bg-neutral-950 dark:[--pattern-fg:var(--color-white)]/10">
+      <div className="relative mt-25 font-inter mb-8 grid w-full grid-cols-[1fr_0.75rem_auto_0.75rem_1fr] md:grid-cols-[1fr_2.5rem_auto_2.5rem_1fr] grid-rows-[1fr_1px_auto_1px_1fr] bg-white [--pattern-fg:var(--color-neutral-950)]/5 dark:bg-neutral-950 dark:[--pattern-fg:var(--color-white)]/10">
         <div className="col-start-3 tracking-tight row-start-3 flex max-w-2xl flex-col bg-neutral-100 p-2 dark:bg-neutral-900/50">
           <div className="relative leading-normal bg-white border border-neutral-200 dark:border-neutral-700 p-4 sm:p-6 md:p-10 text-sm/7 text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300">
             <Plus />
