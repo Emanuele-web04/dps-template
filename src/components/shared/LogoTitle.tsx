@@ -19,7 +19,7 @@ const LogoTitle = ({
   };
 
   return (
-    <Link href={"/website"} className="flex items-center gap-3">
+    <Link href={"/website"} className="flex z-50 items-center gap-3">
       <Image
         width={100}
         height={100}
