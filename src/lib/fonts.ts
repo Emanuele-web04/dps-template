@@ -82,27 +82,6 @@ export const editor = localFont({
 
 export const inter = localFont({
   variable: "--font-inter",
-  src: [
-    {
-      path: '../fonts/InterVariable.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../fonts/InterVariable.ttf',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: '../fonts/InterVariable.ttf',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../fonts/InterVariable.ttf',
-      weight: '300',
-      style: 'normal',
-    },
-  ],
+  src: '../fonts/InterVariable.ttf',
   display: 'swap',
 });
