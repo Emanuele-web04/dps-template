@@ -77,14 +77,14 @@ const ContactCTACard = ({
               <Image
                 width={100}
                 height={100}
-                src="/navLogo.webp"
+                src="/navLogo.png"
                 className="w-6 h-6 dark:hidden"
                 alt="DPS Template"
               />
               <Image
                 width={100}
                 height={100}
-                src="/logo-black.webp"
+                src="/logo-black.png"
                 className="w-6 h-6 not-dark:hidden"
                 alt="DPS Template"
               />
@@ -175,4 +175,3 @@ const ContactCTACard = ({
 };
 
 export default ContactCTACard;
- 
