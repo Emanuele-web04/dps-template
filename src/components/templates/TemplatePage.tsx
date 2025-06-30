@@ -62,8 +62,8 @@ const TemplatePage = ({
               alt=""
               width={1000}
               height={1000}
-              priority={i < 2}
-              loading={i < 2 ? undefined : "lazy"}
+              priority={i === 0}
+              loading={i === 0 ? "eager" : "lazy"}
             />
           ))}
         </div>

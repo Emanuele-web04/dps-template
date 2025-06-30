@@ -4,7 +4,7 @@ import { mobileAccordionNavbarCode } from "@/components/components-pack/navbars/
 import FloatingCrestNavbar from "@/components/components-pack/navbars/floating-crest-navbar";
 import { floatingCrestNavbarCode } from "@/components/components-pack/navbars/floating-crest-navbar-code";
 import { fullTableCode } from "../code";
-import KhronaHero from "@/components/hero-sections/KhronaHero";
+
 import SearchNavbar from "@/components/components-pack/navbars/search-navbar";
 import { searchNavbarCode } from "@/components/components-pack/navbars/search-navbar-code";
 

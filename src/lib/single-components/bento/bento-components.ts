@@ -1,4 +1,4 @@
-import KhronaHero from "@/components/hero-sections/KhronaHero";
+
 
 import { SingleComponent } from "@/types/component";
 import { fullTableCode } from "../../code-gifts";

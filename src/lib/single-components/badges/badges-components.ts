@@ -1,7 +1,6 @@
 import React from "react";
 import StatusBadge from "@/components/components-pack/labels/status-badge";
 import { statusBadgeCode } from "@/components/components-pack/labels/status-badge-code";
-import KhronaHero from "@/components/hero-sections/KhronaHero";
 import { SingleComponent } from "@/types/component";
 import { fullTableCode } from "../../code-gifts";
 import SoftLabel from "@/components/components-pack/labels/soft-label";

@@ -1,5 +1,4 @@
 import React from "react";
-import KhronaHero from "@/components/hero-sections/KhronaHero";
 import { SingleComponent } from "@/types/component";
 import { fullTableCode } from "../../code-gifts";
 import NeumorphismButton from "./neumorphism";
