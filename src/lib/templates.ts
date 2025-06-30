@@ -1,5 +1,6 @@
 import { TemplateType } from "@/types/template";
 import { BiLogoTypescript, FaReact, RiNextjsFill, SiTailwindcss, TbBrandFramerMotion } from "@/utils/icons";
+
 function rangeTo() {
     const images: string[] = [];
     for (let i = 0; i < 4; i++) {
@@ -8,6 +9,16 @@ function rangeTo() {
 
     return images;
   }
+
+// Static image arrays for each template
+function getMinimalPortfolioImages() {
+    return [
+        "/templates/minimal-portfolio/hero.png",
+        "/templates/minimal-portfolio/about.png", 
+        "/templates/minimal-portfolio/projects.png",
+        "/templates/minimal-portfolio/work.png"
+    ];
+}
 
 export const placeholders = rangeTo();
 
@@ -29,12 +40,12 @@ export const templates: TemplateType[] = [
     {
     title: "Minimal Portfolio", 
     desc: "A clean and minimal portfolio template designed for creative professionals and developers to showcase their work.", 
-    images: placeholders, 
+    images: getMinimalPortfolioImages(), 
     stack: aiSaaSIcons, 
     slug:"minimal-portfolio", 
     longDesc: "Ciao", 
     ogImage: "", 
-    preview: "https://khrona-website.vercel.app/",
+    preview: "https://minimal-portfolio-dpstemplates.vercel.app/",
     price: 35
     },
     {

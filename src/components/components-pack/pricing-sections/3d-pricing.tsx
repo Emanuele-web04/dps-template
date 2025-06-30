@@ -19,7 +19,7 @@ const pricingPlans: PricingPlan[] = [
     name: "Starter",
     description:
       "Perfect for solopreneurs and small businesses just starting out",
-    monthlyPrice: 190,
+    monthlyPrice: 39,
     icon: <FaRocket className="w-6 h-6" />,
     features: [
       "Up to 500 contacts",
@@ -153,13 +153,17 @@ const PricingCard = ({ plan }: { plan: PricingPlan }) => {
 
   return (
     <div className="relative w-full">
+    {plan.recommended && <span className="z-25 absolute inset-x-0 top-0 block w-3/4 -translate-x-1/2 left-1/2 bg-gradient-to-r from-transparent via-white to-transparent h-0.5"/>}
+    {plan.recommended && <span className="z-25 absolute inset-x-0 top-0 block w-3/4 -translate-x-1/2 left-1/2 bg-gradient-to-r blur-2xl from-transparent via-white to-transparent h-3"/>}
+
       {plan.recommended && <RecommendedBadge />}
       <div
         className={`
-          relative h-full rounded-2xl p-8 transition-all duration-300
+          relative h-full w-full rounded-2xl p-8 transition-all duration-300
           border border-neutral-700 hover:border-neutral-600
           transform hover:scale-[1.02] hover:-translate-y-1 bg-gradient-to-br from-neutral-800 to-neutral-900
           ${plan.recommended ? "ring-1 ring-neutral-600" : ""}
+         
         `}
         style={{
           boxShadow: `
