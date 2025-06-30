@@ -15,7 +15,7 @@ const CreatorCard = () => {
         {/* Background Image */}
         <div className="relative h-[140px] w-full rounded-2xl overflow-hidden mb-5">
           <Image
-            src="/placeholder.png"
+            src="/placeholder.webp"
             alt="Background pattern"
             fill
             className="object-cover"
@@ -60,7 +60,9 @@ const CreatorCard = () => {
                 <span className="w-6 h-6 text-xs flex items-center justify-center bg-blue-500 text-white rounded-full font-bold">
                   <FaReact className="w-4 h-4" />
                 </span>
-                <span className="text-xs pr-2 text-black dark:text-white font-medium">React Expert</span>
+                <span className="text-xs pr-2 text-black dark:text-white font-medium">
+                  React Expert
+                </span>
               </div>
               <span className="text-sm font-medium text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded-full">
                 +6

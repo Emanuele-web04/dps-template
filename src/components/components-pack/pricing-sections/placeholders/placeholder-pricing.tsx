@@ -17,14 +17,14 @@ const PlaceholderPricing = ({ slug }: PlaceholderPricingProps) => {
             <Image
               width={100}
               height={100}
-              src="/navLogo.png"
+              src="/navLogo.webp"
               className="w-6 h-6 dark:hidden"
               alt="DPS Template"
             />
             <Image
               width={100}
               height={100}
-              src="/logo-black.png"
+              src="/logo-black.webp"
               className=" w-6 h-6 not-dark:hidden"
               alt="DPS Template"
             />

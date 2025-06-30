@@ -41,7 +41,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: "https://dpstemplates.com/placeholder.png",
+          url: "https://dpstemplates.com/placeholder.webp",
           width: 1200,
           height: 630,
           alt: `${title} - React Components Collection`,
@@ -52,7 +52,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${title} - DP's Templates`,
       description: extendedDescription,
-      images: ["https://dpstemplates.com/placeholder.png"],
+      images: ["https://dpstemplates.com/placeholder.webp"],
     },
     keywords: `${title.toLowerCase()}, react components, nextjs, typescript, tailwindcss, ui components, ${componentsList.toLowerCase()}, copy paste components`,
   };

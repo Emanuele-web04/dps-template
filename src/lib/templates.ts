@@ -4,7 +4,7 @@ import { BiLogoTypescript, FaReact, RiNextjsFill, SiTailwindcss, TbBrandFramerMo
 function rangeTo() {
     const images: string[] = [];
     for (let i = 0; i < 4; i++) {
-      images.push("/khrona-landing.png");
+      images.push("/placeholder.webp");
     }
 
     return images;
@@ -13,10 +13,10 @@ function rangeTo() {
 // Static image arrays for each template
 function getMinimalPortfolioImages() {
     return [
-        "/templates/minimal-portfolio/hero.png",
-        "/templates/minimal-portfolio/about.png", 
-        "/templates/minimal-portfolio/projects.png",
-        "/templates/minimal-portfolio/work.png"
+        "/templates/minimal-portfolio/home.webp",
+        "/templates/minimal-portfolio/about.webp", 
+        "/templates/minimal-portfolio/projects.webp",
+        "/templates/minimal-portfolio/work.webp"
     ];
 }
 

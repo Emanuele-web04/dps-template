@@ -34,11 +34,11 @@ export default function ToolTipImageLink() {
       >
         <div className="rounded-2xl bg-gray-200 ring-1 ring-neutral-100 dark:bg-neutral-800 cursor-pointer">
           <Image
-            src="/khrona-landing.png"
-            alt="Khrona Landing"
-            width={200}
+            src="/khrona-landing.webp"
+            alt="Preview"
+            className="w-full h-full object-cover rounded-lg"
+            width={300}
             height={200}
-            className="w-full h-fit rounded-2xl"
           />
         </div>
 

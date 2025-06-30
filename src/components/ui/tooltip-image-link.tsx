@@ -2,17 +2,18 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { LuLink, LuCopy, LuCheck } from "react-icons/lu"
+import { LuLink, LuCopy, LuCheck } from "react-icons/lu";
 import Link from "next/link";
 
 export default function ToolTipLinkImage() {
   const [isHovered, setIsHovered] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
-  
+
   // Your link data
   const linkUrl = "https://khrona-website.vercel.app/";
-  const truncatedUrl = linkUrl.length > 30 ? linkUrl.substring(0, 30) + "..." : linkUrl;
-  
+  const truncatedUrl =
+    linkUrl.length > 30 ? linkUrl.substring(0, 30) + "..." : linkUrl;
+
   const handleCopy = async (e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent event bubbling
     try {
@@ -20,24 +21,24 @@ export default function ToolTipLinkImage() {
       setIsCopied(true);
       setTimeout(() => setIsCopied(false), 2000);
     } catch (err) {
-      console.error('Failed to copy: ', err);
+      console.error("Failed to copy: ", err);
     }
   };
 
   return (
     <div className="rounded-2xl pb-5 flex items-center justify-center">
-      <div 
+      <div
         className="relative inline-block"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className="rounded-2xl bg-gray-200 ring-1 ring-neutral-100 dark:bg-neutral-800 cursor-pointer">
           <Image
-            src="/khrona-landing.png"
-            alt="Khrona Landing"
-            width={200}
+            src="/khrona-landing.webp"
+            alt="Preview"
+            className="w-full h-full object-cover rounded-lg"
+            width={300}
             height={200}
-            className="w-full h-fit rounded-2xl"
           />
         </div>
 
@@ -51,23 +52,26 @@ export default function ToolTipLinkImage() {
         >
           {/* Arrow pointing up */}
           <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-b-4 border-transparent border-b-white dark:border-b-gray-900"></div>
-          
+
           <div className="flex items-center gap-1.5 px-2 py-1.5 min-w-0">
             {/* Link Icon */}
             <LuLink className="w-4 h-4 mx-1.5 text-neutral-500 dark:text-neutral-600 flex-shrink-0" />
-            
+
             {/* Truncated URL */}
-            <Link href={linkUrl} className="text-sm hover:text-gray-900 dark:hover:text-white transition-all text-neutral-600 dark:text-neutral-400 underline truncate flex-1 min-w-0">
+            <Link
+              href={linkUrl}
+              className="text-sm hover:text-gray-900 dark:hover:text-white transition-all text-neutral-600 dark:text-neutral-400 underline truncate flex-1 min-w-0"
+            >
               {truncatedUrl}
             </Link>
-            
+
             {/* Copy Button */}
             <button
               onClick={handleCopy}
               className={`p-1.5 cursor-pointer rounded hover:bg-gray-100 dark:hover:bg-neutral-700 transition-colors flex-shrink-0 
                 text-gray-600 dark:text-neutral-400 hover:text-gray-900 dark:hover:text-white
               `}
-              title={isCopied ? 'Copied!' : 'Copy URL'}
+              title={isCopied ? "Copied!" : "Copy URL"}
             >
               {isCopied ? (
                 <LuCheck className="w-4 h-4" />
@@ -80,4 +84,4 @@ export default function ToolTipLinkImage() {
       </div>
     </div>
   );
-};
+}

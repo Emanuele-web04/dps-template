@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://dpstemplates.com/placeholder.png",
+        url: "https://dpstemplates.com/placeholder.webp",
         width: 1200,
         height: 630,
         alt: "DP's Templates - Ready-to-Use SwiftUI & Next.js Components",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "DP's Templates",
     description:
       "Effortlessly integrate a library of ready-to-use SwiftUI views and Next.js UI components with DP's Templates. No complex setup or configuration required - just import and use. Ship pixel-perfect, production-ready interfaces in minutes and skip the boilerplate code. Our comprehensive collection includes buttons, cards, forms, navigation elements, and complete screen templates optimized for both mobile and web. Perfect for indie developers, startups, and design teams looking to accelerate their development workflow. Join our waitlist today for early access and exclusive launch discounts.",
-    images: ["https://dpstemplates.com/placeholder.png"],
+    images: ["https://dpstemplates.com/placeholder.webp"],
   },
 };
 
@@ -39,10 +39,7 @@ export default function RootLayout({
       <body
         className={`${eudoxus.variable} ${editor.variable} ${geistMono.variable} ${inter.variable} antialiased`}
       >
-        
-        <div className="bg-clean min-h-screen w-full">
-          {children}
-        </div>
+        <div className="bg-clean min-h-screen w-full">{children}</div>
       </body>
     </html>
   );

@@ -20,7 +20,7 @@ const ShowcaseComponent = ({
         <div className="overflow-clip">
           <Image
             className="group-hover:scale-120 transition-all"
-            src={"/khrona-landing.png"}
+            src={"/khrona-landing.webp"}
             alt=""
             width={1000}
             height={1000}

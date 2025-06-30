@@ -8,7 +8,7 @@ import TemplatesShowcase from "@/components/Waitlist/WhatYoullFind";
 import React from "react";
 const Home = () => {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center overflow-y-scroll overflow-x-hidden relative bg-white bg-[url('/mobilegrid.png')] md:bg-[url('/desktopgrid.png')] bg-center bg-no-repeat bg-cover bg-fixed">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center overflow-y-scroll overflow-x-hidden relative bg-white bg-[url('/mobilegrid.webp')] md:bg-[url('/desktopgrid.webp')] bg-center bg-no-repeat bg-cover bg-fixed">
       {/* Gradient blobs */}
       <BackgroundGradient />
 
@@ -18,7 +18,10 @@ const Home = () => {
       </div>
 
       {/* Content */}
-      <div className="p-4 min-h-screen md:p-0 relative md:top-5 flex flex-col gap-6 justify-center items-center" id="hero">
+      <div
+        className="p-4 min-h-screen md:p-0 relative md:top-5 flex flex-col gap-6 justify-center items-center"
+        id="hero"
+      >
         <HeroLabels />
         <HeroText />
         <EmailForm />
@@ -26,7 +29,7 @@ const Home = () => {
           <ShowcaseImages />
         </div>
       </div>
-      <TemplatesShowcase/>
+      <TemplatesShowcase />
     </div>
   );
 };

@@ -53,6 +53,8 @@ const ShowcaseTemplate = ({
             alt=""
             width={1000}
             height={1000}
+            priority={i === 0}
+            loading={i === 0 ? undefined : "lazy"}
           />
         ))}
       </div>

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://dpstemplates.com/placeholder.png",
+        url: "https://dpstemplates.com/placeholder.webp",
         width: 1200,
         height: 630,
         alt: "DP's Templates - Pricing & Plans for UI Kits and Components",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "DP's Templates | Pricing & Plans",
     description:
       "Explore our flexible pricing options for premium UI kits, templates, and components. Get access to production-ready Next.js templates starting at $49 and individual UI components from $12. Perfect for indie developers, startups, and design teams looking to accelerate their development workflow with high-quality, customizable solutions.",
-    images: ["https://dpstemplates.com/placeholder.png"],
+    images: ["https://dpstemplates.com/placeholder.webp"],
   },
 };
 

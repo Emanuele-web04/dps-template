@@ -15,7 +15,7 @@ const CreatorCard = () => {
         {/* Background Image */}
         <div className="relative h-[140px] w-full rounded-2xl overflow-hidden mb-5">
           <Image
-            src="/placeholder.png"
+            src="/placeholder.webp"
             alt="Background pattern"
             fill
             className="object-cover"

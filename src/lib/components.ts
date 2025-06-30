@@ -14,7 +14,7 @@ import { bentoComponents } from "./single-components/bento/bento-components";
 function rangeTo() {
     const images: string[] = [];
     for (let i = 0; i < 4; i++) {
-      images.push("/khrona-landing.png");
+      images.push("/khrona-landing.webp");
     }
 
     return images;
@@ -37,7 +37,7 @@ export const components: ComponentType[] = [
     {
     title: "Hero Sections", 
     desc: "A collection of modern and engaging hero section components designed to capture attention and drive conversions.", 
-    image: "/khrona-landing.png", 
+    image: "/khrona-landing.webp", 
     stack: iconsStack, 
     slug:"hero-sections", 
     longDesc: "Ciao", 
@@ -50,7 +50,7 @@ export const components: ComponentType[] = [
     {
     title: "Navbars", 
     desc: "Responsive navigation bar components with mobile menus, theme toggles, and smooth animations for modern websites.", 
-    image: "/khrona-landing.png", 
+    image: "/khrona-landing.webp", 
     stack: iconsStack, 
     slug:"navbars", 
     longDesc: "Ciao", 
@@ -63,7 +63,7 @@ export const components: ComponentType[] = [
     {
     title: "Cards", 
     desc: "Versatile card components for displaying content, products, and information with hover effects and responsive design.", 
-    image: "/khrona-landing.png", 
+    image: "/khrona-landing.webp", 
     stack: iconsStack, 
     slug:"cards", 
     longDesc: "Ciao", 
@@ -76,7 +76,7 @@ export const components: ComponentType[] = [
     {
     title: "Buttons", 
     desc: "A comprehensive button library with various styles, sizes, and states for consistent user interface design.", 
-    image: "/khrona-landing.png", 
+    image: "/khrona-landing.webp", 
     stack: iconsStack, 
     slug:"buttons", 
     longDesc: "Ciao", 
@@ -89,7 +89,7 @@ export const components: ComponentType[] = [
     {
     title: "Dropdown", 
     desc: "Interactive dropdown components with customizable options, animations, and keyboard navigation support.", 
-    image: "/khrona-landing.png", 
+    image: "/khrona-landing.webp", 
     stack: iconsStack, 
     slug:"dropdown", 
     longDesc: "Ciao", 
@@ -102,7 +102,7 @@ export const components: ComponentType[] = [
     {
     title: "Forms", 
     desc: "Complete form components with validation, error handling, and accessibility features for user data collection.", 
-    image: "/khrona-landing.png", 
+    image: "/khrona-landing.webp", 
     stack: iconsStack, 
     slug:"forms", 
     longDesc: "Ciao", 
@@ -115,7 +115,7 @@ export const components: ComponentType[] = [
     {
     title: "Login", 
     desc: "Authentication components including signup, login, and password recovery forms with modern design patterns.", 
-    image: "/khrona-landing.png", 
+    image: "/khrona-landing.webp", 
     stack: iconsStack, 
     slug:"login", 
     longDesc: "Ciao", 
@@ -128,7 +128,7 @@ export const components: ComponentType[] = [
     {
     title: "Pricing Sections", 
     desc: "Professional pricing table components with feature comparisons and call-to-action buttons for SaaS products.", 
-    image: "/khrona-landing.png", 
+    image: "/khrona-landing.webp", 
     stack: iconsStack, 
     slug:"pricing-sections", 
     longDesc: "Ciao", 
@@ -141,7 +141,7 @@ export const components: ComponentType[] = [
     {
     title: "Bento Grids", 
     desc: "Modern bento grid layouts for showcasing content, features, and portfolios with creative visual arrangements.", 
-    image: "/khrona-landing.png", 
+    image: "/khrona-landing.webp", 
     stack: iconsStack, 
     slug:"bento-grids", 
     longDesc: "Ciao", 
@@ -154,7 +154,7 @@ export const components: ComponentType[] = [
     {
     title: "Chips", 
     desc: "Flexible chips, badges and labels components for status indicators, categories, and information display with various styles.", 
-    image: "/khrona-landing.png", 
+    image: "/khrona-landing.webp", 
     stack: iconsStack, 
     slug:"labels", 
     longDesc: "Ciao", 

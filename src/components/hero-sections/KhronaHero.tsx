@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -18,19 +18,21 @@ export const navlinks: NavLink[] = [
 
 const KhronaHero = () => {
   return (
-    <main className="text-zinc-900 font-inter tracking-tight min-h-screen relative flex flex-col w-full justify-center max-w-full"
-    style={{
-      backgroundImage: 'radial-gradient(circle at 0.5px 0.5px, rgba(6,182,212,0.2) 0.6px, transparent 0)',
-       backgroundSize: "8px 8px",
-        backgroundRepeat: "repeat"
-}}
+    <main
+      className="text-zinc-900 font-inter tracking-tight min-h-screen relative flex flex-col w-full justify-center max-w-full"
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 0.5px 0.5px, rgba(6,182,212,0.2) 0.6px, transparent 0)",
+        backgroundSize: "8px 8px",
+        backgroundRepeat: "repeat",
+      }}
     >
       {/* Fixed bar at bottom — kept as is */}
       <div className="z-10 fixed flex items-center justify-between px-4 py-3 bottom-5 left-1/2 transform -translate-x-1/2 bg-neutral-100/10 backdrop-blur-lg ring-1 ring-neutral-200 rounded-xl shadow-lg max-w-md w-[90%] mx-auto">
         <Link href={"#home"} className="flex items-center space-x-2">
           <Image
             alt="logo"
-            src={"/khrona-hero/k3dblack.png"}
+            src={"/khrona-hero/k3dblack.webp"}
             width={100}
             height={100}
             className="w-[20px] h-[20px] rounded-full"
@@ -60,17 +62,24 @@ const KhronaHero = () => {
             <div className="flex items-center gap-2">
               <Image
                 alt="logo"
-                src={"/khrona-hero/k3dblack.png"}
-                width={30}
-                height={30}
-                className="rounded-md"
+                src={"/khrona-hero/k3dblack.webp"}
+                width={300}
+                height={300}
+                className="rounded-md transition-all duration-1000"
+                priority
               />
               <h6 className="font-bold text-lg tracking-wider">Khrona</h6>
             </div>
             <h1 className="text-4xl lg:text-5xl font-inter md:text-left text-center w-full font-black tracking-tight flex flex-col -gap-y-2 leading-tight">
-              <span className="bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent">Track your life.</span>{" "}
-              <span className="bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent">Understand your</span>{" "}
-              <span className="bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent">days.</span>
+              <span className="bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent">
+                Track your life.
+              </span>{" "}
+              <span className="bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent">
+                Understand your
+              </span>{" "}
+              <span className="bg-gradient-to-br from-neutral-950 to-neutral-600 bg-clip-text text-transparent">
+                days.
+              </span>
             </h1>
             <p className="md:text-base text-sm text-neutral-600 md:text-left text-center tracking-tight leading-relaxed max-w-xl">
               Track your days, mood, goals, and reflections — all in one place.
@@ -98,11 +107,12 @@ const KhronaHero = () => {
 
           <div className="w-full md:w-1/3">
             <Image
-              width={1080}
-              height={1080}
-              alt="hero image"
-              src="/khrona-hero/hero-black.png"
-              className="w-full max-w-md mx-auto object-contain"
+              src={"/khrona-hero/hero-black.webp"}
+              alt="Khrona Dashboard"
+              width={1000}
+              height={1000}
+              className="w-full h-auto"
+              priority
             />
           </div>
         </div>

@@ -19,7 +19,7 @@ export default function GradientHero() {
   return (
     <div className="p-2 md:p-4 h-full bg-white">
       <div className="relative font-sans overflow-hidden rounded-2xl bg-gradient-to-b from-orange-200 via-rose-200 to-pink-200">
-        <div className="absolute inset-0 h-full bg-[url('/mobilegrid.png')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] md:bg-[url('/mobilegrid.png')]"></div>
+        <div className="absolute inset-0 h-full bg-[url('/mobilegrid.webp')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] md:bg-[url('/mobilegrid.webp')]"></div>
         <div className="relative z-10 max-w-7xl h-full mx-auto flex flex-col justify-between">
           {/* Top Section: Navigation + Content */}
           <div>
@@ -82,11 +82,12 @@ export default function GradientHero() {
 
           {/* Bottom Section: Hero Image - Flush with bottom */}
           <Image
-            src="/hero-section/dps-hero.png"
-            alt="Gradient Hero"
+            src="/hero-section/dps-hero.webp"
+            alt="DPS Hero"
             width={1000}
             height={1000}
-            className="w-full h-full mt-10 object-cover "
+            className="w-full h-auto"
+            priority
           />
         </div>
       </div>
