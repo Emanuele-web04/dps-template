@@ -14,8 +14,13 @@ const page = () => {
       <NavbarWebsite size="normal" />
       {/* Main content wrapper */}
       <div className="flex flex-col min-h-screen">
-        <main className="flex-1 flex flex-col justify-start p-6 sm:p-12 items-center">
+        {/* Hero Section - Centered in viewport */}
+        <section className="min-h-screen flex items-center justify-center p-6 sm:p-12">
           <HeroSection />
+        </section>
+
+        {/* Other sections */}
+        <main className="flex flex-col p-6 sm:p-12 items-center">
           <CodeGift />
           <WhatYoullFind />
           <FAQSection />
