@@ -23,15 +23,15 @@ const LogoTitle = ({
       <Image
         width={100}
         height={100}
-        src={"/logo-black.png"}
-        className="w-6 h-6 not-dark:hidden"
+        src={"/logo-black.webp"}
+        className="w-6 h-6 rounded-md dark:hidden"
         alt="DPS Template"
       />
       <Image
         width={100}
         height={100}
-        src={"/navLogo.png"}
-        className="w-6 h-6 dark:hidden"
+        src={"/navLogo.webp"}
+        className="w-6 h-6 rounded-md not-dark:hidden"
         alt="DPS Template"
       />
       <h6
