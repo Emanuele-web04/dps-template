@@ -20,6 +20,15 @@ function getMinimalPortfolioImages() {
     ];
 }
 
+function getProductLandingImages() {
+    return [
+        "/templates/product-landing/hero.webp",
+        "/templates/product-landing/cards.webp",
+        "/templates/product-landing/transactions.webp",
+        "/templates/product-landing/ai.webp"
+    ];
+}
+
 export const placeholders = rangeTo();
 
 const aiSaaSIcons = [RiNextjsFill, FaReact, SiTailwindcss, TbBrandFramerMotion, BiLogoTypescript];
@@ -51,12 +60,12 @@ export const templates: TemplateType[] = [
     {
     title: "Product Landing Page", 
     desc: "A conversion-focused landing page template optimized for product launches and marketing campaigns.", 
-    images: placeholders, 
+    images: getProductLandingImages(), 
     stack: aiSaaSIcons, 
     slug:"product-landing-page", 
     longDesc: "Ciao", 
     ogImage: "", 
-    preview: "https://khrona-website.vercel.app/",
+    preview: "https://product-landing-dpstemplates.vercel.app/",
     price: 35
     },
     {
