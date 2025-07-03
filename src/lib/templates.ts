@@ -29,6 +29,15 @@ function getProductLandingImages() {
     ];
 }
 
+function getAISaaSImages() {
+    return [
+        "/templates/ai-saas-template/hero.webp",
+        "/templates/ai-saas-template/data.webp",
+        "/templates/ai-saas-template/world.webp",
+        "/templates/ai-saas-template/pricing.webp"
+    ];
+}
+
 export const placeholders = rangeTo();
 
 const aiSaaSIcons = [RiNextjsFill, FaReact, SiTailwindcss, TbBrandFramerMotion, BiLogoTypescript];
@@ -38,12 +47,12 @@ export const templates: TemplateType[] = [
     {
     title: "AI SaaS Template", 
     desc: "Every AI SaaS template is a multi-page template focused on AI applications offering SaaS solutions.", 
-    images: placeholders, 
+    images: getAISaaSImages(), 
     stack: aiSaaSIcons, 
     slug:"ai-saas-template", 
     longDesc: "Ciao", 
     ogImage: "", 
-    preview: "https://khrona-website.vercel.app/",
+    preview: "https://ai-saas-dpstemplate.vercel.app/",
     price: 39
     },
     {
