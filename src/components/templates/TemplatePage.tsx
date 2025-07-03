@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import { cn } from "@/lib/cn";
 import { TemplateType } from "@/types/template";
 import AddToCart from "../ui/neumorphism-button/add-to-cart";
 import SquareGrid from "../ui/square-grid";
@@ -8,6 +6,7 @@ import FeaturesSection from "./TemplateFeatureSection";
 import StackIcons from "../ui/stack-icons";
 import Link from "next/link";
 import ContactCTACard from "./ContactCTACard";
+import ImageGallery from "./ImageGallery";
 
 const TemplatePage = ({
   title,
@@ -51,22 +50,12 @@ const TemplatePage = ({
             </div>
           </div>
         </div>
-        <div className="grid mt-10 grid-cols-1 md:grid-cols-2 w-full gap-2 p-1 md:p-2 rounded-3xl bg-neutral-200 dark:bg-neutral-800">
-          {images.map((img, i) => (
-            <Image
-              className={cn(
-                "w-full h-full ring-1 shadow-lg dark:ring-neutral-600 ring-neutral-200 rounded-3xl col-span-1 object-contain"
-              )}
-              key={i}
-              src={img}
-              alt=""
-              width={1000}
-              height={1000}
-              priority={i === 0}
-              loading={i === 0 ? "eager" : "lazy"}
-            />
-          ))}
+
+        {/* Image Gallery with Viewer */}
+        <div className="mt-10">
+          <ImageGallery images={images} title={title} />
         </div>
+
         <FeaturesSection />
         <ContactCTACard variant="website" />
       </div>
