@@ -11,9 +11,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
   const component = waitlistComponents.find((c) => c.slug === slug);
 
   if (!component) return notFound();
@@ -38,9 +38,9 @@ export async function generateMetadata({
 export default async function WaitlistPreviewPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
   const component = waitlistComponents.find((c) => c.slug === slug);
 
   if (!component) {
