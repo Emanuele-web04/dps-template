@@ -2,6 +2,7 @@ import { ComponentType } from "@/types/component";
 import Image from "next/image";
 import StackIcons from "../ui/stack-icons";
 import Link from "next/link";
+import React from "react";
 const ShowcaseComponent = ({
   title,
   desc,
@@ -12,6 +13,7 @@ const ShowcaseComponent = ({
   components,
 }: ComponentType) => {
   const count = components.length;
+  const ImageComponent = image;
   return (
     <Link
       href={`/components-pack/${slug}`}
@@ -19,13 +21,9 @@ const ShowcaseComponent = ({
     >
       <div className="col-span-1 h-full group cursor-pointer font-inter tracking-tight hover:bg-neutral-100 bg-neutral-50 dark:hover:bg-neutral-950 dark:bg-neutral-900 overflow-clip rounded-[18px] ring-1 ring-neutral-200 dark:ring-neutral-800">
         <div className="overflow-clip aspect-video bg-white">
-          <Image
-            className="group-hover:scale-120 h-full min-h-[14rem] w-full object-cover transition-all"
-            src={image}
-            alt=""
-            width={1000}
-            height={1000}
-          />
+          <div className="group-hover:scale-120 h-full min-h-[14rem] w-full object-cover transition-all">
+            <ImageComponent />
+          </div>
         </div>
         <div className="flex flex-col text-primary p-4 w-full gap-y-3">
           <div className="flex h-full w-full justify-between items-center">

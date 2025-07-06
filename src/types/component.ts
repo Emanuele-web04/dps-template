@@ -4,7 +4,7 @@ import { IconType } from "react-icons"
 export type ComponentType = {
     title: string
     desc: string
-    image: string
+    image: React.ComponentType
     installation: string
     stack: IconType[]
     slug: string

@@ -12,6 +12,18 @@ import { badgeComponents } from "./single-components/badges/badges-components";
 import { bentoComponents } from "./single-components/bento/bento-components";
 import { systemPagesComponents } from "./single-components/system-pages/system-page-components";
 import { waitlistComponents } from "./single-components/waitlists/waitlist-components";
+import HeroPlaceholder from "@/components/showcase/placeholders/HeroPlaceholder";
+import NavbarsPlaceholder from "@/components/showcase/placeholders/NavbarsPlaceholder";
+import SystemPagesPlaceholder from "@/components/showcase/placeholders/SystemPagesPlaceholder";
+import WaitlistsPlaceholder from "@/components/showcase/placeholders/WaitlistsPlaceholder";
+import CardsPlaceholder from "@/components/showcase/placeholders/CardsPlaceholder";
+import ButtonsPlaceholder from "@/components/showcase/placeholders/ButtonsPlaceholder";
+import DropdownPlaceholder from "@/components/showcase/placeholders/DropdownPlaceholder";
+import FormsPlaceholder from "@/components/showcase/placeholders/FormsPlaceholder";
+import LoginPlaceholder from "@/components/showcase/placeholders/LoginPlaceholder";
+import PricingSectionsPlaceholder from "@/components/showcase/placeholders/PricingSectionsPlaceholder";
+import BentoGridsPlaceholder from "@/components/showcase/placeholders/BentoGridsPlaceholder";
+import ChipsPlaceholder from "@/components/showcase/placeholders/ChipsPlaceholder";
 
 function rangeTo() {
     const images: string[] = [];
@@ -40,7 +52,7 @@ export const components: ComponentType[] = [
     {
     title: "Hero Sections", 
     desc: "A collection of modern and engaging hero section components designed to capture attention and drive conversions.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/heroes.png", 
+    image: HeroPlaceholder, 
     stack: iconsStack, 
     slug:"hero-sections", 
     longDesc: "Ciao", 
@@ -53,7 +65,7 @@ export const components: ComponentType[] = [
     {
     title: "Navbars", 
     desc: "Responsive navigation bar components with mobile menus, theme toggles, and smooth animations for modern websites.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/headers.png", 
+    image: NavbarsPlaceholder, 
     stack: iconsStack2, 
     slug:"navbars", 
     longDesc: "Ciao", 
@@ -66,7 +78,7 @@ export const components: ComponentType[] = [
     {
     title: "System Pages", 
     desc: "A collection of modern and engaging system pages like 404 & Error.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/404-pages.png", 
+    image: SystemPagesPlaceholder, 
     stack: iconsStack2, 
     slug:"system-pages", 
     longDesc: "Ciao", 
@@ -79,7 +91,7 @@ export const components: ComponentType[] = [
     {
     title: "Waitlists", 
     desc: "A collection of modern and engaging waitlist pages with gradient backgrounds and email signup forms.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/newsletter-sections.png", 
+    image: WaitlistsPlaceholder, 
     stack: iconsStack, 
     slug:"waitlists", 
     longDesc: "Ciao", 
@@ -92,7 +104,7 @@ export const components: ComponentType[] = [
     {
     title: "Cards", 
     desc: "Versatile card components for displaying content, products, and information with hover effects and responsive design.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/feeds.png", 
+    image: CardsPlaceholder, 
     stack: iconsStack2, 
     slug:"cards", 
     longDesc: "Ciao", 
@@ -105,7 +117,7 @@ export const components: ComponentType[] = [
     {
     title: "Buttons", 
     desc: "A comprehensive button library with various styles, sizes, and states for consistent user interface design.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/buttons.png", 
+    image: ButtonsPlaceholder, 
     stack: iconsStack2, 
     slug:"buttons", 
     longDesc: "Ciao", 
@@ -118,7 +130,7 @@ export const components: ComponentType[] = [
     {
     title: "Dropdown", 
     desc: "Interactive dropdown components with customizable options, animations, and keyboard navigation support.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/dropdowns.png", 
+    image: DropdownPlaceholder, 
     stack: iconsStack2, 
     slug:"dropdown", 
     longDesc: "Ciao", 
@@ -131,7 +143,7 @@ export const components: ComponentType[] = [
     {
     title: "Forms", 
     desc: "Complete form components with validation, file upload, and accessibility features for user data collection.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/form-layouts.png", 
+    image: FormsPlaceholder, 
     stack: iconsStack2, 
     slug:"forms", 
     longDesc: "Ciao", 
@@ -144,7 +156,7 @@ export const components: ComponentType[] = [
     {
     title: "Login", 
     desc: "Authentication components including signup, login, and password recovery forms with modern design patterns.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/sign-in-forms.png", 
+    image: LoginPlaceholder, 
     stack: iconsStack2, 
     slug:"login", 
     longDesc: "Ciao", 
@@ -157,7 +169,7 @@ export const components: ComponentType[] = [
     {
     title: "Pricing Sections", 
     desc: "Professional pricing table components with feature comparisons and call-to-action buttons for SaaS products.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/pricing.png", 
+    image: PricingSectionsPlaceholder, 
     stack: iconsStack2, 
     slug:"pricing-sections", 
     longDesc: "Ciao", 
@@ -170,7 +182,7 @@ export const components: ComponentType[] = [
     {
     title: "Bento Grids", 
     desc: "Modern bento grid layouts for showcasing content, features, and portfolios with creative visual arrangements.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/bento-grids.png", 
+    image: BentoGridsPlaceholder, 
     stack: iconsStack2, 
     slug:"bento-grids", 
     longDesc: "Ciao", 
@@ -183,7 +195,7 @@ export const components: ComponentType[] = [
     {
     title: "Chips", 
     desc: "Flexible chips, badges and labels components for status indicators, categories, and information display with various styles.", 
-    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/badges.png", 
+    image: ChipsPlaceholder, 
     stack: iconsStack2, 
     slug:"labels", 
     longDesc: "Ciao", 
