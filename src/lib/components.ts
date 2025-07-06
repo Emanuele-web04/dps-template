@@ -10,6 +10,8 @@ import { loginComponents } from "./single-components/login/login";
 import { pricingComponents } from "./single-components/pricings/pricings-components";
 import { badgeComponents } from "./single-components/badges/badges-components";
 import { bentoComponents } from "./single-components/bento/bento-components";
+import { systemPagesComponents } from "./single-components/system-pages/system-page-components";
+import { waitlistComponents } from "./single-components/waitlists/waitlist-components";
 
 function rangeTo() {
     const images: string[] = [];
@@ -23,6 +25,7 @@ function rangeTo() {
 export const placeholders = rangeTo();
 
 const iconsStack = [RiNextjsFill, FaReact, SiTailwindcss, TbBrandFramerMotion, BiLogoTypescript];
+const iconsStack2 = [RiNextjsFill, FaReact, SiTailwindcss, BiLogoTypescript];
 
 const utils = `
 import { ClassValue, clsx } from "clsx";
@@ -37,7 +40,7 @@ export const components: ComponentType[] = [
     {
     title: "Hero Sections", 
     desc: "A collection of modern and engaging hero section components designed to capture attention and drive conversions.", 
-    image: "/khrona-landing.webp", 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/heroes.png", 
     stack: iconsStack, 
     slug:"hero-sections", 
     longDesc: "Ciao", 
@@ -50,8 +53,8 @@ export const components: ComponentType[] = [
     {
     title: "Navbars", 
     desc: "Responsive navigation bar components with mobile menus, theme toggles, and smooth animations for modern websites.", 
-    image: "/khrona-landing.webp", 
-    stack: iconsStack, 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/headers.png", 
+    stack: iconsStack2, 
     slug:"navbars", 
     longDesc: "Ciao", 
     ogImage: "", 
@@ -61,10 +64,36 @@ export const components: ComponentType[] = [
     utils: utils,
     },
     {
+    title: "System Pages", 
+    desc: "A collection of modern and engaging system pages like 404 & Error.", 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/404-pages.png", 
+    stack: iconsStack2, 
+    slug:"system-pages", 
+    longDesc: "Ciao", 
+    ogImage: "", 
+    price: 10,
+    components: systemPagesComponents,
+    installation: "npm i motion clsx tailwind-merge react-icons",
+    utils: utils,
+    },
+    {
+    title: "Waitlists", 
+    desc: "A collection of modern and engaging waitlist pages with gradient backgrounds and email signup forms.", 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/newsletter-sections.png", 
+    stack: iconsStack, 
+    slug:"waitlists", 
+    longDesc: "Ciao", 
+    ogImage: "", 
+    price: 10,
+    components: waitlistComponents,
+    installation: "npm i motion clsx tailwind-merge react-icons",
+    utils: utils,
+    },
+    {
     title: "Cards", 
     desc: "Versatile card components for displaying content, products, and information with hover effects and responsive design.", 
-    image: "/khrona-landing.webp", 
-    stack: iconsStack, 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/feeds.png", 
+    stack: iconsStack2, 
     slug:"cards", 
     longDesc: "Ciao", 
     ogImage: "", 
@@ -76,8 +105,8 @@ export const components: ComponentType[] = [
     {
     title: "Buttons", 
     desc: "A comprehensive button library with various styles, sizes, and states for consistent user interface design.", 
-    image: "/khrona-landing.webp", 
-    stack: iconsStack, 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/buttons.png", 
+    stack: iconsStack2, 
     slug:"buttons", 
     longDesc: "Ciao", 
     ogImage: "", 
@@ -89,8 +118,8 @@ export const components: ComponentType[] = [
     {
     title: "Dropdown", 
     desc: "Interactive dropdown components with customizable options, animations, and keyboard navigation support.", 
-    image: "/khrona-landing.webp", 
-    stack: iconsStack, 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/dropdowns.png", 
+    stack: iconsStack2, 
     slug:"dropdown", 
     longDesc: "Ciao", 
     ogImage: "", 
@@ -101,9 +130,9 @@ export const components: ComponentType[] = [
     },
     {
     title: "Forms", 
-    desc: "Complete form components with validation, error handling, and accessibility features for user data collection.", 
-    image: "/khrona-landing.webp", 
-    stack: iconsStack, 
+    desc: "Complete form components with validation, file upload, and accessibility features for user data collection.", 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/form-layouts.png", 
+    stack: iconsStack2, 
     slug:"forms", 
     longDesc: "Ciao", 
     ogImage: "", 
@@ -115,8 +144,8 @@ export const components: ComponentType[] = [
     {
     title: "Login", 
     desc: "Authentication components including signup, login, and password recovery forms with modern design patterns.", 
-    image: "/khrona-landing.webp", 
-    stack: iconsStack, 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/sign-in-forms.png", 
+    stack: iconsStack2, 
     slug:"login", 
     longDesc: "Ciao", 
     ogImage: "", 
@@ -128,8 +157,8 @@ export const components: ComponentType[] = [
     {
     title: "Pricing Sections", 
     desc: "Professional pricing table components with feature comparisons and call-to-action buttons for SaaS products.", 
-    image: "/khrona-landing.webp", 
-    stack: iconsStack, 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/pricing.png", 
+    stack: iconsStack2, 
     slug:"pricing-sections", 
     longDesc: "Ciao", 
     ogImage: "", 
@@ -141,8 +170,8 @@ export const components: ComponentType[] = [
     {
     title: "Bento Grids", 
     desc: "Modern bento grid layouts for showcasing content, features, and portfolios with creative visual arrangements.", 
-    image: "/khrona-landing.webp", 
-    stack: iconsStack, 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/marketing/bento-grids.png", 
+    stack: iconsStack2, 
     slug:"bento-grids", 
     longDesc: "Ciao", 
     ogImage: "", 
@@ -154,8 +183,8 @@ export const components: ComponentType[] = [
     {
     title: "Chips", 
     desc: "Flexible chips, badges and labels components for status indicators, categories, and information display with various styles.", 
-    image: "/khrona-landing.webp", 
-    stack: iconsStack, 
+    image: "https://tailwindcss.com/plus-assets/img/ui-blocks/application-ui/badges.png", 
+    stack: iconsStack2, 
     slug:"labels", 
     longDesc: "Ciao", 
     ogImage: "", 

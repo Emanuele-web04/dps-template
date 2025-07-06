@@ -1,0 +1,122 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 15s linear infinite;
+  }
+
+  .animate-spin-slow-reverse {
+    animation: spin-reverse 15s linear infinite;
+  }
+
+  .animate-sparkle {
+    animation: sparkle 1.5s infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes sparkle {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+  }
+
+  .grainy::after {
+    animation: grain 8s steps(10) infinite;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    content: "";
+    height: 300%;
+    left: -100%;
+    opacity: 0.1;
+    pointer-events: none;
+    position: absolute;
+    top: -100%;
+    width: 300%;
+    will-change: transform;
+  }
+
+  @keyframes grain {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    10% {
+      transform: translate(-5%, -10%);
+    }
+    20% {
+      transform: translate(-15%, 5%);
+    }
+    30% {
+      transform: translate(7%, -25%);
+    }
+    40% {
+      transform: translate(-5%, 25%);
+    }
+    50% {
+      transform: translate(-15%, 10%);
+    }
+    60% {
+      transform: translate(15%, 0%);
+    }
+    70% {
+      transform: translate(0, 15%);
+    }
+    80% {
+      transform: translate(3%, 35%);
+    }
+    90% {
+      transform: translate(-10%, 10%);
+    }
+  }
+
+  .bg-grain-mash {
+    background-color: #f6f4f1;
+    background-image:
+      radial-gradient(
+        at 15% 20%,
+        rgba(209, 117, 255, 0.45) 0px,
+        transparent 60%
+      ),
+      radial-gradient(
+        at 80% 30%,
+        rgba(255, 175, 105, 0.45) 0px,
+        transparent 60%
+      ),
+      radial-gradient(
+        at 50% 85%,
+        rgba(142, 180, 255, 0.35) 0px,
+        transparent 60%
+      ),
+      repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.08) 0px,
+        rgba(255, 255, 255, 0.08) 8px,
+        rgba(255, 255, 255, 0) 8px,
+        rgba(255, 255, 255, 0) 16px
+      );
+    background-blend-mode: overlay;
+  }
+}

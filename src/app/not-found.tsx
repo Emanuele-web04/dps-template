@@ -23,7 +23,7 @@ const NotFound = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center flex-col justify-center relative overflow-hidden">
+    <div className="min-h-screen grid-bg flex items-center flex-col justify-center relative overflow-hidden">
       {/* Animated background dots */}
       <div
         className="absolute inset-0 opacity-20"

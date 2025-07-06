@@ -238,6 +238,10 @@ html[data-theme="dark"] {
   .inner-shadow {
     @apply shadow-[inset_0_0_12px_4px_rgba(255,255,255,1)] dark:shadow-[inset_0_0_12px_4px_rgba(255,255,255,0.1)]
   }
+
+  .grid-bg {
+    @apply bg-[linear-gradient(rgba(255,255,255,1.0),rgba(255,255,255,0)),url('/gridd.webp')] dark:bg-[linear-gradient(rgba(0,0,0,1.0),rgba(0,0,0,0.85)),url('/gridd.webp')]
+  }
 }
 
 @utility text-xxs {
@@ -312,13 +316,12 @@ html[data-theme="dark"] body {
 
 body {
   background-color: var(--background); /* Fallback color */
-  background-image: url("/desktopgrid.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: var(--foreground);
   overflow-x: hidden;
-  font-family: InterVariable, Helvetica, sans-serif;
+  font-family: var(--font-inter), Helvetica, sans-serif;
   font-feature-settings: "cv11";
 }

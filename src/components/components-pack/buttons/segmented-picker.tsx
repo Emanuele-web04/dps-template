@@ -53,12 +53,12 @@ export default function SegmentedPicker() {
     <div
       ref={containerRef}
       className={cn(
-        "relative shadow-[inset_0_4px_10px_-9px_rgba(0,0,0,1)] dark:shadow-[inset_0_4px_10px_-8px_rgba(255,255,255,1)] inline-flex font-inter tracking-tight bg-neutral-100 dark:bg-neutral-900 ring-neutral-200 dark:ring-neutral-800 ring-1 rounded-full p-0.5 sm:p-1 cursor-pointer"
+        "relative shadow-[inset_0_4px_10px_-9px_rgba(0,0,0,1)] dark:shadow-[inset_0_4px_10px_-8px_rgba(255,255,255,0.6)] inline-flex font-inter tracking-tight bg-neutral-100 dark:bg-neutral-900 ring-neutral-200 dark:ring-neutral-800 ring-1 rounded-full p-0.5 sm:p-1 cursor-pointer"
       )}
     >
       {/* Animated background indicator */}
       <div
-        className="absolute top-0.5 bottom-0.5 sm:top-1 sm:bottom-1 bg-white dark:bg-neutral-700 rounded-full transition-all duration-300 ease-out shadow-sm z-0"
+        className="absolute top-0.5 bottom-0.5 sm:top-1 sm:bottom-1 bg-white dark:bg-neutral-700 rounded-full transition-all duration-300 ease-out shadow-sm dark:shadow-neutral-800/50 z-0"
         style={{
           width: `${indicatorStyle.width}px`,
           left: `${indicatorStyle.left}px`,

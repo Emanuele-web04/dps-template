@@ -117,26 +117,26 @@ const PricingCard: React.FC<PricingCardProps> = ({
           <p className={`${colors.textColor} font-medium`}>Lifetime Access</p>
         </div>
         <div className="flex w-full justify-between items-end">
-          <div className="flex items-end">
-            <p
-              className={cn("text-5xl md:text-6xl font-inter font-bold")}
-            >{`$${pricing.price}`}</p>
+          <p
+            className={cn("text-5xl md:text-6xl font-inter font-bold")}
+          >{`$${pricing.price}`}</p>
 
-            <p className="text-neutral-400 line-through ml-2 font-semibold relative bottom-1 text-2xl">
-              ${pricing.discountPrice}
+          <p className="text-neutral-400 line-through ml-2 font-semibold relative bottom-1 text-2xl">
+            ${pricing.discountPrice}
+          </p>
+        </div>
+        <div className="flex flex-col gap-y-2 w-full">
+          <div className={cn(colors.button)}>
+            <p className="font-inter tracking-tight font-medium text-sm md:text-base">
+              Get Access Now
             </p>
+            <HiOutlineArrowSmRight className="w-5 h-5" />
           </div>
           <p
-            className={`${colors.descColor} text-sm font-inter relative bottom-2 tracking-tight`}
+            className={`${colors.descColor} text-sm font-inter relative tracking-tight w-full text-center`}
           >
             {pricing.desc}
           </p>
-        </div>
-        <div className={cn(colors.button)}>
-          <p className="font-inter tracking-tight font-medium text-sm md:text-base">
-            Get Access Now
-          </p>
-          <HiOutlineArrowSmRight className="w-5 h-5" />
         </div>
       </div>
 
@@ -145,11 +145,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         {pricing.features.map((feature, i) => (
           <div key={i} className="flex items-start gap-x-3">
             <LuCheck className={`w-4 h-4  relative top-1 flex-shrink-0`} />
-            <p
-              className={cn(
-                "text-sm md:text-base flex-1 text-left font-medium"
-              )}
-            >
+            <p className={cn("text-sm flex-1 text-left font-medium")}>
               {feature}
             </p>
           </div>

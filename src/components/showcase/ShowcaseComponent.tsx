@@ -8,19 +8,20 @@ const ShowcaseComponent = ({
   price,
   stack,
   slug,
+  image,
   components,
 }: ComponentType) => {
   const count = components.length;
   return (
     <Link
       href={`/components-pack/${slug}`}
-      className="p-1.5 rounded-2xl ring-1 ring-neutral-200 dark:bg-neutral-950 dark:ring-neutral-800 bg-neutral-100"
+      className="p-1.5 rounded-3xl ring-1 ring-neutral-200 dark:bg-neutral-950 dark:ring-neutral-800 bg-neutral-100"
     >
-      <div className="col-span-1 h-full group cursor-pointer font-inter tracking-tight hover:bg-neutral-100 bg-neutral-50 dark:hover:bg-neutral-950 dark:bg-neutral-900 overflow-clip rounded-2xl ring-1 ring-neutral-200 dark:ring-neutral-800">
-        <div className="overflow-clip">
+      <div className="col-span-1 h-full group cursor-pointer font-inter tracking-tight hover:bg-neutral-100 bg-neutral-50 dark:hover:bg-neutral-950 dark:bg-neutral-900 overflow-clip rounded-[18px] ring-1 ring-neutral-200 dark:ring-neutral-800">
+        <div className="overflow-clip aspect-video bg-white">
           <Image
-            className="group-hover:scale-120 transition-all"
-            src={"/khrona-landing.webp"}
+            className="group-hover:scale-120 h-full min-h-[14rem] w-full object-cover transition-all"
+            src={image}
             alt=""
             width={1000}
             height={1000}
@@ -36,7 +37,7 @@ const ShowcaseComponent = ({
               <p className="font-medium text-lg">${price}</p>
             </div>
           </div>
-          <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+          <p className="text-neutral-600 dark:text-neutral-400 h-full text-sm">
             {desc}
           </p>
           <StackIcons stack={stack} />

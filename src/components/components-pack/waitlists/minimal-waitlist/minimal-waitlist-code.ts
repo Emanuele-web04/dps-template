@@ -1,0 +1,1 @@
+export const minimalWaitlistCode = `/* MinimalWaitlist component (see source) */`; 

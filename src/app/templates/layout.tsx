@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "../globals.css";
-import { eudoxus, editor, inter, geistMono } from "@/lib/fonts";
 import NavbarWebsite from "@/components/layout/NavbarWebsite";
 import Footer from "@/components/landing/Footer";
+import { eudoxus, editor, inter, geistMono } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dpstemplates.com/"),

@@ -15,8 +15,8 @@ function getMinimalPortfolioImages() {
     return [
         "/templates/minimal-portfolio/home.webp",
         "/templates/minimal-portfolio/about.webp", 
+        "/templates/minimal-portfolio/work.webp",
         "/templates/minimal-portfolio/projects.webp",
-        "/templates/minimal-portfolio/work.webp"
     ];
 }
 
@@ -35,6 +35,15 @@ function getAISaaSImages() {
         "/templates/ai-saas-template/data.webp",
         "/templates/ai-saas-template/world.webp",
         "/templates/ai-saas-template/pricing.webp"
+    ];
+}
+
+function getAppLandingImages() {
+    return [
+        "/templates/app-landing/hero.webp",
+        "/templates/app-landing/features.webp",
+        "/templates/app-landing/phone.webp",
+        "/templates/app-landing/protection.webp"
     ];
 }
 
@@ -75,18 +84,18 @@ export const templates: TemplateType[] = [
     longDesc: "Ciao", 
     ogImage: "", 
     preview: "https://product-landing-dpstemplates.vercel.app/",
-    price: 35
+    price: 39
     },
     {
     title: "App Landing Page", 
     desc: "A modern mobile-first landing page template perfect for mobile apps and software applications.", 
-    images: placeholders, 
+    images: getAppLandingImages(), 
     stack: aiSaaSIcons, 
     slug:"app-landing-page", 
-    longDesc: "Ciao", 
+    longDesc: "A modern mobile-first landing page template perfect for mobile apps and software applications.", 
     ogImage: "", 
-    preview: "https://khrona-website.vercel.app/",
-    price: 39
+    preview: "https://app-landing-dpstemplate.vercel.app/",
+    price: 35
     },
 ]
 

@@ -8,10 +8,10 @@ import { TbTools } from "react-icons/tb";
 import ItalyClock from "./CurrentTime";
 
 const WebsiteInProduction = () => {
-  const progress = 35;
+  const progress = 50;
 
   return (
-    <div className="min-h-screen font-inter tracking-tighter flex items-center flex-col justify-center relative overflow-hidden">
+    <div className="min-h-screen grid-bg font-inter tracking-tighter flex items-center flex-col justify-center relative overflow-hidden">
       {/* Animated background gradient */}
       <div className="absolute inset-0 opacity-20" />
 

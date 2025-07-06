@@ -15,6 +15,8 @@ import { IconType } from "react-icons";
 import CodeBlock from "../codegift/Codeblock";
 import { useCopyToCLipboard } from "@/hooks/useCopyToClipboard";
 import Plus from "../ui/main-hero/plus";
+import PricingContent from "../pricing/PricingContent";
+import { allNextPricing } from "@/lib/nextjs-pricing/pricings";
 
 type ButtonSubComponent = {
   Icon: IconType;
@@ -36,6 +38,7 @@ const SubComponentLayout = ({
   desc,
 }: SingleComponent) => {
   const [selection, setSelection] = useState(buttons[0].id);
+  const hasPaid = false;
 
   const handleSelection = (id: string) => {
     setSelection(id);
@@ -44,7 +47,10 @@ const SubComponentLayout = ({
   const { copy, handleCopy } = useCopyToCLipboard();
 
   return (
-    <div id={`${slug}`} className="flex scroll-mt-[100px] flex-col gap-y-1 md:gap-y-2">
+    <div
+      id={`${slug}`}
+      className="flex scroll-mt-[100px] flex-col gap-y-1 md:gap-y-2"
+    >
       <h3 className="h3-title">{title}</h3>
       <p className="p-style mt-0!">{desc}</p>
       <div className="flex flex-col gap-y-4">
@@ -72,6 +78,14 @@ const SubComponentLayout = ({
             <div className=" p-2 rounded-md w-full flex justify-center mx-auto h-fit  m-2">
               {React.createElement(preview)}
             </div>
+          </div>
+        ) : !hasPaid ? (
+          <div className="flex font-inter text-primary tracking-tight flex-col gap-3">
+            <PricingContent
+              pricings={allNextPricing}
+              variant={"neutral"}
+              filter={"nextjs"}
+            />
           </div>
         ) : (
           <div className=" ring-neutral-100 p-1 dark:ring-neutral-800 overflow-x-auto  flex flex-col">

@@ -6,9 +6,15 @@ import React from "react";
 
 interface PlaceholderHeroProps {
   slug?: string;
+  category?: string;
 }
 
-const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
+const PlaceholderHero = ({
+  slug,
+  category = "hero-sections",
+}: PlaceholderHeroProps) => {
+  const categoryTitle =
+    category.charAt(0).toUpperCase() + category.slice(1).replace("-", " ");
   return (
     <div className="relative block md:grid md:min-h-screen w-full grid-cols-[1fr_2.5rem_auto_2.5rem_1fr] grid-rows-[1fr_1px_auto_1px_1fr] bg-white [--pattern-fg:var(--color-neutral-950)]/5 dark:bg-neutral-950 dark:[--pattern-fg:var(--color-white)]/10">
       <div className="col-start-3 row-start-3 flex max-w-lg flex-col bg-neutral-100 md:p-2 dark:bg-neutral-900/50">
@@ -28,12 +34,12 @@ const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
               className=" w-6 h-6 not-dark:hidden"
               alt="DPS Template"
             />
-            <h1 className="text-lg font-medium">Hero Section</h1>
+            <h1 className="text-lg font-medium">{categoryTitle}</h1>
           </div>
           <div className="space-y-6">
             <p className="leading-normal">
-              For viewing the full hero section click on See Preview to see it
-              in action.
+              For viewing the full {categoryTitle.toLowerCase()} click on See
+              Preview to see it in action.
             </p>
             <ul className="space-y-3">
               <li className="flex">
@@ -144,11 +150,13 @@ const PlaceholderHero = ({ slug }: PlaceholderHeroProps) => {
             </p>
           </div>
           <hr className="my-6 w-full border-(--pattern-fg)" />
-          <p className="mb-3">Ready to see the hero sections in action?</p>
+          <p className="mb-3">
+            Ready to see the {categoryTitle.toLowerCase()} in action?
+          </p>
           <p className="font-semibold">
             {slug ? (
               <Link
-                href={`/components-pack/previews/hero-sections/${slug}`}
+                href={`/components-pack/previews/${category}/${slug}`}
                 className="text-neutral-950 underline decoration-sky-400 underline-offset-3 hover:decoration-2 dark:text-white"
               >
                 See Preview &rarr;

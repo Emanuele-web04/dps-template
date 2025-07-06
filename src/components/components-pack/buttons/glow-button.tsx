@@ -8,19 +8,19 @@ export default function GlowButton() {
     <button
       className={cn(
         "relative group",
-        "bg-violet-800 dark:bg-violet-900",
-        "hover:bg-violet-700 dark:hover:bg-violet-800",
+        "bg-violet-700 dark:bg-violet-900",
+        "hover:bg-violet-800 dark:hover:bg-violet-800",
         "text-white text-xs sm:text-sm font-semibold",
         "rounded-lg sm:rounded-xl",
         "flex items-center gap-2 sm:gap-3",
         "transition-all duration-300",
-        "shadow-[0_0_30px_rgba(147,51,234,0.6)] dark:shadow-[0_0_30px_rgba(139,92,246,0.4)]",
+        "shadow-lg shadow-violet-500/50 dark:shadow-violet-500/30",
         "hover:shadow-[0_0_40px_rgba(147,51,234,0.8)] dark:hover:shadow-[0_0_40px_rgba(139,92,246,0.6)]",
         "hover:border-violet-400/50 dark:hover:border-violet-400/30",
-        "ring-1 ring-violet-500 dark:ring-violet-400",
+        "ring-1 ring-violet-500 dark:ring-violet-500",
         "focus:outline-none",
         "active:scale-[0.98] cursor-pointer",
-        "divide-x divide-violet-200 dark:divide-violet-600"
+        "divide-x-[1.5px] divide-violet-500 dark:divide-violet-500"
       )}
     >
       {/* Strong glow effect */}

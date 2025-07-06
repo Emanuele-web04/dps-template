@@ -1,7 +1,7 @@
 import React from "react";
 import { IconType } from "react-icons";
 
-const StackIcons = ({ stack=[] }: { stack: IconType[] }) => {
+const StackIcons = ({ stack = [] }: { stack: IconType[] }) => {
   return (
     <div className="flex -space-x-1.5 md:-space-x-2">
       {stack.map((Icon, i) => (

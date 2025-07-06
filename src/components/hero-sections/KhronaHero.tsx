@@ -32,7 +32,7 @@ const KhronaHero = () => {
         <Link href={"#home"} className="flex items-center space-x-2">
           <Image
             alt="logo"
-            src={"/khrona-hero/k3dblack.webp"}
+            src={"/khrona-hero/k3dblack-min.png"}
             width={100}
             height={100}
             className="w-[20px] h-[20px] rounded-full"
@@ -62,10 +62,10 @@ const KhronaHero = () => {
             <div className="flex items-center gap-2">
               <Image
                 alt="logo"
-                src={"/khrona-hero/k3dblack.webp"}
+                src={"/khrona-hero/k3dblack-min.png"}
                 width={300}
                 height={300}
-                className="rounded-md transition-all duration-1000"
+                className="rounded-md w-8 h-8 transition-all duration-1000"
                 priority
               />
               <h6 className="font-bold text-lg tracking-wider">Khrona</h6>

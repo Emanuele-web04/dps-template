@@ -82,7 +82,7 @@ export default function GradientHero() {
 
           {/* Bottom Section: Hero Image - Flush with bottom */}
           <Image
-            src="/hero-section/dps-hero.webp"
+            src="/hero-section/dps-hero.png"
             alt="DPS Hero"
             width={1000}
             height={1000}

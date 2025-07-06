@@ -34,6 +34,18 @@ const nextConfig: NextConfig = {
           port: "",
           pathname: "/**",
         },
+        {
+          protocol: "https",
+          hostname: "ai-saas-dpstemplate.vercel.app",
+          port: "",
+          pathname: "/**",
+        },
+        {
+          protocol: "https",
+          hostname: "framerusercontent.com",
+          port: "",
+          pathname: "/**",
+        },
     ],
   },
   

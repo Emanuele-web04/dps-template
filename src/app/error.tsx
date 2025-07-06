@@ -18,7 +18,7 @@ export default function Error({
   }, [error])
  
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
+    <div className="min-h-screen grid-bg flex items-center justify-center p-6">
       <div className="w-full p-6 md:p-12 bg-white rounded-3xl ring-1 ring-neutral-300 max-w-xl text-center space-y-8">
         {/* Header */}
         <div className="space-y-4">
