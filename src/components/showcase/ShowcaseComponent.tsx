@@ -21,7 +21,7 @@ const ShowcaseComponent = ({
     >
       <div className="col-span-1 h-full group cursor-pointer font-inter tracking-tight hover:bg-neutral-100 bg-neutral-50 dark:hover:bg-neutral-950 dark:bg-neutral-900 overflow-clip rounded-[18px] ring-1 ring-neutral-200 dark:ring-neutral-800">
         <div className="overflow-clip aspect-video bg-white">
-          <div className="group-hover:scale-120 h-full min-h-[16rem] md:min-h-[14rem] w-full object-cover transition-all">
+          <div className="group-hover:scale-120 h-full min-h-[16rem] md:min-h-[14rem] flex justify-center items-center w-full object-cover object-top transition-all">
             <ImageComponent />
           </div>
         </div>
