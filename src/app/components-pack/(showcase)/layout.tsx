@@ -5,33 +5,35 @@ import NavbarWebsite from "@/components/layout/NavbarWebsite";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dpstemplates.com/"),
-  title: "DP's Templates",
-  description: "Production-Ready UI Kits for Swift & Web",
+  metadataBase: new URL("https://dpstemplates.com"),
+  title: "Components Pack | DP's Templates",
+  description:
+    "Explore a collection of production-ready UI components for Next.js and Tailwind CSS. Copy, paste, and ship your next project faster.",
   openGraph: {
-    title: "DP's Templates",
+    title: "Components Pack | DP's Templates",
     description:
-      "Effortlessly integrate a library of ready-to-use SwiftUI views and Next.js UI components with DP's Templates. No complex setup or configuration required - just import and use. Ship pixel-perfect, production-ready interfaces in minutes and skip the boilerplate code. Our comprehensive collection includes buttons, cards, forms, navigation elements, and complete screen templates optimized for both mobile and web. Perfect for indie developers, startups, and design teams looking to accelerate their development workflow. Join our waitlist today for early access and exclusive launch discounts.",
+      "Explore a collection of production-ready UI components for Next.js and Tailwind CSS. Copy, paste, and ship your next project faster.",
+    url: "/components-pack",
     type: "website",
     images: [
       {
-        url: "https://dpstemplates.com/placeholder.webp",
+        url: "https://dpstemplates.com/og-components-pack.webp",
         width: 1200,
         height: 630,
-        alt: "DP's Templates - Ready-to-Use SwiftUI & Next.js Components",
+        alt: "UI Components for Next.js & Tailwind CSS",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DP's Templates",
+    title: "Components Pack | DP's Templates",
     description:
-      "Effortlessly integrate a library of ready-to-use SwiftUI views and Next.js UI components with DP's Templates. No complex setup or configuration required - just import and use. Ship pixel-perfect, production-ready interfaces in minutes and skip the boilerplate code. Our comprehensive collection includes buttons, cards, forms, navigation elements, and complete screen templates optimized for both mobile and web. Perfect for indie developers, startups, and design teams looking to accelerate their development workflow. Join our waitlist today for early access and exclusive launch discounts.",
-    images: ["https://dpstemplates.com/placeholder.webp"],
+      "Explore a collection of production-ready UI components for Next.js and Tailwind CSS. Copy, paste, and ship your next project faster.",
+    images: ["https://dpstemplates.com/og-components-pack.webp"],
   },
 };
 
-export default function RootLayout({
+export default function ComponentsPackLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

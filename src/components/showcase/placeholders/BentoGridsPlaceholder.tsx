@@ -18,7 +18,6 @@ const BentoGridsPlaceholder = () => {
             </div>
             <div className="col-span-2 row-span-1 bg-neutral-100 dark:bg-neutral-800/80 rounded-lg border border-neutral-200 dark:border-neutral-700"></div>
             <div className="col-span-2 row-span-1 bg-neutral-100 dark:bg-neutral-800/80 rounded-lg border border-neutral-200 dark:border-neutral-700 flex items-center p-1.5">
-              <div className="w-7 h-7 rounded-full border-2 border-green-400/80"></div>
             </div>
             <div className="col-span-3 row-span-1 bg-neutral-100 dark:bg-neutral-800/80 rounded-lg border border-neutral-200 dark:border-neutral-700"></div>
           </div>

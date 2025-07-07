@@ -11,7 +11,7 @@ const DropdownPlaceholder = () => {
         </div>
         <div className="h-auto bg-white dark:bg-neutral-900/50 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-700 w-full mt-1 p-1 space-y-1">
           <div className="h-5 w-full bg-neutral-100 dark:bg-neutral-800 rounded-md"></div>
-          <div className="h-5 w-full bg-sky-500/10 dark:bg-sky-500/20 rounded-md"></div>
+          <div className="h-5 w-full bg-indigo-600 dark:bg-indigo-600/20 rounded-md"></div>
           <div className="h-5 w-full bg-neutral-100 dark:bg-neutral-800 rounded-md"></div>
           <div className="h-5 w-full bg-neutral-100 dark:bg-neutral-800 rounded-md"></div>
         </div>

@@ -23,14 +23,14 @@ const WaitlistsPlaceholder = () => {
             </svg>
           </div>
           <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">
-            Want updates?
+            Get Early Access
           </h3>
           <p className="text-xs text-neutral-500 dark:text-neutral-400 mb-3">
-            Sign up to our newsletter
+            Sign up to our waitlist
           </p>
           <div className="flex w-full max-w-xs justify-center gap-x-2">
-            <div className="h-8 w-2/3 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg"></div>
-            <div className="h-8 w-1/3 bg-sky-500 rounded-lg"></div>
+            <div className="h-7 w-2/3 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg"></div>
+            <div className="h-7 w-1/3 bg-indigo-600 rounded-lg"></div>
           </div>
         </div>
       </div>

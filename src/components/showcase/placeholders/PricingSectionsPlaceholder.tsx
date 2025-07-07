@@ -21,7 +21,7 @@ const PricingCard = ({
 }) => (
   <div
     className={`
-      ${highlighted ? "h-full bg-white dark:bg-neutral-900 shadow-md border-2 border-sky-500" : "h-[95%] bg-white dark:bg-neutral-900/50 shadow-sm border border-neutral-200 dark:border-neutral-800"}
+      ${highlighted ? "h-full bg-white dark:bg-neutral-900 shadow-md border-2 border-indigo-600" : "h-[95%] bg-white dark:bg-neutral-900/50 shadow-sm border border-neutral-200 dark:border-neutral-800"}
       rounded-xl p-3 flex flex-col
     `}
   >
@@ -37,7 +37,7 @@ const PricingCard = ({
     <FeatureList />
     <div
       className={`h-6 w-full ${
-        highlighted ? "bg-sky-500" : "bg-neutral-200 dark:bg-neutral-700/80"
+        highlighted ? "bg-indigo-600" : "bg-neutral-200 dark:bg-neutral-700/80"
       } rounded-lg mt-3`}
     ></div>
   </div>

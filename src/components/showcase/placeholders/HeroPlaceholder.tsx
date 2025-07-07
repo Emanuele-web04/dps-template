@@ -19,7 +19,7 @@ const HeroPlaceholder = () => {
           </h2>
           <div className="w-1/3 h-px bg-neutral-300 dark:bg-neutral-700 my-3"></div>
           <div className="flex justify-center items-center gap-2">
-            <div className="h-6 w-20 bg-sky-500 rounded-lg"></div>
+            <div className="h-6 w-20 bg-indigo-600 rounded-lg"></div>
             <div className="h-6 w-20 bg-white dark:bg-neutral-900/50 border border-neutral-200 dark:border-neutral-700 rounded-lg"></div>
           </div>
         </div>
