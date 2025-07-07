@@ -14,8 +14,8 @@ const HeroPlaceholder = () => {
           <div className="w-1/2 h-2.5 bg-neutral-200 dark:bg-neutral-800 rounded-full"></div>
         </div>
         <div className="p-6 text-center flex flex-col items-center justify-center h-[160px] bg-white dark:bg-neutral-900">
-          <h2 className="text-lg font-medium text-neutral-700 dark:text-neutral-200">
-            Data to enrich your <br /> online business
+          <h2 className="text-base leading-5 font-medium text-neutral-700 dark:text-neutral-200">
+            Text to enrich your online hero section
           </h2>
           <div className="w-1/3 h-px bg-neutral-300 dark:bg-neutral-700 my-3"></div>
           <div className="flex justify-center items-center gap-2">
